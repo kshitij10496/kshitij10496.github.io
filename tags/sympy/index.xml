@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sympy on kshitij10496</title>
+    <link>http://www.kshitij10496.github.io/tags/sympy/</link>
+    <description>Recent content in Sympy on kshitij10496</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Aug 2016 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="http://www.kshitij10496.github.io/tags/sympy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GSoC Week 10 &amp; 11 - The One with `solvify`</title>
+      <link>http://www.kshitij10496.github.io/posts/gsoc-week-10-11/</link>
+      <pubDate>Sun, 07 Aug 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/gsoc-week-10-11/</guid>
+      <description>FiniteSet | list
+ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None  Adding domain support.
+I added a domain argument to isolve whose default value is the real domain (domain=S.Reals). A few limitation to the conditions of S.Infinity and S.NegativeInfinity followed.
+Another noticable point, from the point of implementation, was to deal with singularities and discontinuities of the given inequality. For this, I used the continuous_domain method to find the continuous domains of the expression within the specified domain.</description>
+    </item>
+    
+    <item>
+      <title>GSoC Week 09 - The One with Inequalities</title>
+      <link>http://www.kshitij10496.github.io/posts/gsoc-week-09/</link>
+      <pubDate>Sun, 24 Jul 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/gsoc-week-09/</guid>
+      <description>This week I worked on solving trigonometric inequalities.
+Trigonometric inequalities The primary univariate inequality solver - solve_univariate_inequality,
+depends upon the results of solve in order to solve the given inequality. Taking a cue from PR#10022 on incorporating solveset for inequalities, I worked on developing an approach for replacing the use of solve with solveset in solving inequalities.
+Idea
+ Convert Set-type output from solveset to list objects similar to that returned by solve.</description>
+    </item>
+    
+    <item>
+      <title>GSoC Week 07 - The One With Generalised Periodicity</title>
+      <link>http://www.kshitij10496.github.io/posts/gsoc-week-07/</link>
+      <pubDate>Thu, 07 Jul 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/gsoc-week-07/</guid>
+      <description>This week I updated my PR#11277 to find the period of a general function.
+Periodicity In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.
+Here are my notes on periodicity which were the literature reference for the development of the method:</description>
+    </item>
+    
+    <item>
+      <title>GSoC Week 06 - The One with Singularities</title>
+      <link>http://www.kshitij10496.github.io/posts/gsoc-week-06/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/gsoc-week-06/</guid>
+      <description>This week I worked on the topic of singularities.
+Singularities  A singularity is in general a point at which a given mathematical object is not defined.
+ Examples:
+ 1/x has a singularity at x = 0 as it seems to reach infinity. |x| (Absolute) has a singularity at x = 0 since it is not differentiable at that point. √x (Square root) has a singularity at x = 0 since it doesnot admit a tangent there.</description>
+    </item>
+    
+    <item>
+      <title>GSoC Weeks 04 &amp; 05 - The One with Periodicity</title>
+      <link>http://www.kshitij10496.github.io/posts/gsoc-week-04-05/</link>
+      <pubDate>Fri, 24 Jun 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/gsoc-week-04-05/</guid>
+      <description>Hi folks !
+The past couple of weeks were spent of developing heuristics for determining the fundamental period of a given trigonometric function.
+In our higher school, we all must have come across Trigonometric Functions. One of the most striking properties of these functions is their periodicty.
+The ability of a function to repeat its values in regular intervals has always caught my imagination.
+Motivation Well, SymPy ought to have a functionality to determine the period of a function.</description>
+    </item>
+    
+    <item>
+      <title>GSoC Week 03 - The One With Function Range (Part II)</title>
+      <link>http://www.kshitij10496.github.io/posts/gsoc-week-03/</link>
+      <pubDate>Fri, 10 Jun 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/gsoc-week-03/</guid>
+      <description>Hey !
+This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&amp;rsquo;s research on the same, I tried to develop these utility functions.
+Implementation Here, I have defined the two functions along with some of their implementation details:
+continuous_in(f, x, interval)
+The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval.</description>
+    </item>
+    
+    <item>
+      <title>GSoC Week 02 - The One With Function Range (Part I)</title>
+      <link>http://www.kshitij10496.github.io/posts/gsoc-week-02/</link>
+      <pubDate>Sat, 04 Jun 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/gsoc-week-02/</guid>
+      <description>This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
+Progress Suppose, we want to solve the following equation in the variable x:
+sin(x) = π / 2
+We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1</description>
+    </item>
+    
+    <item>
+      <title>GSoC Week 01 - The One with Intersections</title>
+      <link>http://www.kshitij10496.github.io/posts/gsoc-week-01/</link>
+      <pubDate>Sun, 29 May 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/gsoc-week-01/</guid>
+      <description>$ git log PR #11149 : Intersection of null Range and an Interval returns EmptySet
+PR #11164 : Intersection of certain ImageSets with Intervals
+In the next week, I will try to design a method to determine the range of a function in the given domain.
+This will require some digging up and a bit of research.
+Looking forward to it !</description>
+    </item>
+    
+    <item>
+      <title>Solving equations via Decomposition and Rewriting</title>
+      <link>http://www.kshitij10496.github.io/posts/solving-equations-via-decomposition-and-rewriting/</link>
+      <pubDate>Sun, 22 May 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/solving-equations-via-decomposition-and-rewriting/</guid>
+      <description>A robust framework for solving equations is a salient feature of any Computer Algebra System. An important idea in this regard is &amp;ldquo;Rewriting and Decomposition&amp;rdquo;. By using this techniques, we try to reduce the given equation to a set of simpler equations which can be solved with relative ease.
+An example here would be the best way to establish the significance of the above idea.
+If we have to solve for x in the equation f(x) = 0, where</description>
+    </item>
+    
+    <item>
+      <title>Auditing SymPy&#39;s Transcendental solver</title>
+      <link>http://www.kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0530</pubDate>
+      
+      <guid>http://www.kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</guid>
+      <description>Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
+ modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential).
+ using SymPy Set objects internally, instead of using the built-in Python lists.
+ use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs.</description>
+    </item>
+    
+  </channel>
+</rss>

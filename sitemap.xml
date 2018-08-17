@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/for-some-context/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/typing/</loc>
+    <lastmod>2017-12-10T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/duck-typing-in-python/</loc>
+    <lastmod>2017-12-03T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</loc>
+    <lastmod>2017-08-28T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/values/</loc>
+    <lastmod>2017-04-10T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/gsoc-week-10-11/</loc>
+    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/gsoc-week-09/</loc>
+    <lastmod>2016-07-24T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/gsoc-week-07/</loc>
+    <lastmod>2016-07-07T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/gsoc-week-06/</loc>
+    <lastmod>2016-07-01T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/gsoc-week-04-05/</loc>
+    <lastmod>2016-06-24T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/gsoc-week-03/</loc>
+    <lastmod>2016-06-10T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/gsoc-week-02/</loc>
+    <lastmod>2016-06-04T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/gsoc-week-01/</loc>
+    <lastmod>2016-05-29T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/solving-equations-via-decomposition-and-rewriting/</loc>
+    <lastmod>2016-05-22T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</loc>
+    <lastmod>2016-05-15T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/tags/go/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/categories/go/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/tags/gsoc/</loc>
+    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/categories/gsoc/</loc>
+    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/tags/medium/</loc>
+    <lastmod>2017-08-28T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/categories/medium/</loc>
+    <lastmod>2017-08-28T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/posts/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/tags/python/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/categories/python/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/tags/software/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/categories/software/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/tags/sympy/</loc>
+    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/categories/sympy/</loc>
+    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/tags/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/tags/typing/</loc>
+    <lastmod>2017-12-10T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/categories/typing/</loc>
+    <lastmod>2017-12-10T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.kshitij10496.github.io/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
