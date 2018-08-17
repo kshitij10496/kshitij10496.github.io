@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Medium on kshitij10496</title>
-    <link>http://www.kshitij10496.github.io/tags/medium/</link>
+    <link>https://kshitij10496.github.io/tags/medium/</link>
     <description>Recent content in Medium on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 28 Aug 2017 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="http://www.kshitij10496.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kshitij10496.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How Iterables Actually Work in Python</title>
-      <link>http://www.kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</link>
+      <link>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0530</pubDate>
       
-      <guid>http://www.kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</guid>
+      <guid>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</guid>
       <description>This past week I read about Python&amp;rsquo;s iterator protocol and how the philosophy of iteration is deeply embedded into the language design. Many features that I love about Python such as list comprehensions, tuple unpacking leverage the power of iterator protocol. I wrote an article on Medium explaining how developers can implement it and use these features much more efficiently in their day-to-day life.</description>
     </item>
     
