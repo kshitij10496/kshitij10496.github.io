@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on kshitij10496</title>
+    <link>https://kshitij10496.github.io/categories/</link>
+    <description>Recent content in Categories on kshitij10496</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://kshitij10496.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go</title>
+      <link>https://kshitij10496.github.io/categories/go/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/categories/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gsoc</title>
+      <link>https://kshitij10496.github.io/categories/gsoc/</link>
+      <pubDate>Sun, 07 Aug 2016 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/categories/gsoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Medium</title>
+      <link>https://kshitij10496.github.io/categories/medium/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/categories/medium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://kshitij10496.github.io/categories/python/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://kshitij10496.github.io/categories/software/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/categories/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sympy</title>
+      <link>https://kshitij10496.github.io/categories/sympy/</link>
+      <pubDate>Sun, 07 Aug 2016 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/categories/sympy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Typing</title>
+      <link>https://kshitij10496.github.io/categories/typing/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/categories/typing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

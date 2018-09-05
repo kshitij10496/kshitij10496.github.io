@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Kshitij Saraogi">
+    <meta name="description" content="Kshitij Saraogi&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://kshitij10496.github.io/">
+    <title>
+  Duck Typing in Python · kshitij10496
+</title>
+
+    <link rel="canonical" href="https://kshitij10496.github.io/posts/duck-typing-in-python/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.eed2c257f04d6434dadb0efa9a2b880efe926b9b1c0041bca61053be8f1cdfa1.css" integrity="sha256-7tLCV/BNZDTa2w76miuIDv6Sa5scAEG8phBTvo8c36E=" media="screen">
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.47.1" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kshitij10496
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/values/">Values</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Duck Typing in Python</h1>
+      <h2 class="date">December 3, 2017</h2>
+
+      
+    </header>
+
+    
+
+<h2 id="what-is-duck-typing">What is Duck Typing?</h2>
+
+<p>Python is a dynamic language which is strongly typed.
+Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as <code>object.attribute</code>:
+1. <code>attribute</code> is located by searching within the instance itself. This yields a positive result when the <code>attribute</code> being searched for is an instance variable or method.
+2. If the instance does not have the required <code>attribute</code>, the instance&rsquo;s class definition is searched. All the class variables, class methods and static methods fall into this category.
+3. If both these lookups do not return any result, the interpreter then proceeds to the base classes of the <code>object</code>(resolved by <a href="https://youtu.be/cuonAMJjHow">MRO</a>). The first match found is returned.</p>
+
+<p>The critical aspect of this binding process is it&rsquo;s *independence of the <strong>type</strong> of <code>object</code>*. Thus, if you try a lookup such as <code>object.name</code>, it will work on any <code>object</code> that happens to have a <code>name</code> attribute independent of the class of the <code>object</code>. This behavior is colloquially referred to as <strong><em>duck typing</em></strong> in reference to the adage <em>“if it looks like, quacks like, and walks like a duck, then it is a duck.”</em></p>
+
+<blockquote>
+<p>The idea is that you don&rsquo;t need a type in order to invoke an existing method on an object - if a method is defined on it, you can invoke it.</p>
+</blockquote>
+
+<h2 id="where-should-i-use-it-in-my-code">Where should I use it in my code?</h2>
+
+<p>More often than not we write programs, either deliberately or unwittingly that rely on duck typing.</p>
+
+<p>While defining classes, the <em>magic</em> methods(or <em>dunder</em> methods) implement some sort of protocol supported by language. For example,
+- <code>__iter__</code> and <code>__next__</code> methods are used to implement the Iterator protocol. The instances of the class can now be used in <code>for</code> loops.
+- if we declare the <code>__len__</code> and <code>__getitem__</code> methods inside a class, it&rsquo;s instances are called <code>sequences</code>. All the objects of this class are now subscriptable by index (similar to <code>list</code>) as well as can be iterated over.</p>
+
+<h2 id="the-problem-of-tabulation">The Problem of Tabulation</h2>
+
+<p>Suppose we are asked to display a dictionary of country names and it&rsquo;s captial in a tabular format. Let us try to write a generic utility function which displays a given input mapping in a tabular form:</p>
+
+<p><strong>Attempt 01</strong></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">def tabulate_mapping(mapping, headers):
+    &#39;&#39;&#39;Tabulates the input mapping as columns with given headers.
+    
+    &gt;&gt;&gt; mapping = {&#39;India&#39;: &#39;New Delhi&#39;,
+    ...             &#39;USA&#39;: &#39;Washington&#39;,
+    ...             &#39;England&#39;: &#39;London&#39;}
+    &gt;&gt;&gt; headers = (&#39;Country&#39;, &#39;Captial&#39;)
+    &gt;&gt;&gt; tabulate_mapping_01(mapping, headers)
+            Country |        Capital |
+    ----------------------------------
+            England |         London |
+              India |      New Delhi |
+                USA |     Washington |
+    &#39;&#39;&#39;
+    heading = &#39;&#39;
+    for header in headers:  ##### NOTE 1
+        heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
+    print(heading)
+    print(&#39;-&#39;*len(heading))
+
+    for k, v in mapping.items():  ##### NOTE 2
+        print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))</pre></div>
+<p>The code should look pretty straighforward to any programmer who has written even a few lines of Python. However, there are two salient features about the code which do not strike us at the first sight. After some experimenting, you will figure out the following:
+1. Any iterable can be passed as <code>headers</code> i.e. <code>list</code>, <code>tuple</code>, user-defined sequences. Even unordered collections such as <code>dict</code>, <code>set</code> would also work.
+2. Any object which implements an <code>items</code> method can be printed using <code>tabulate_mapping</code> function.</p>
+
+<p><strong>Duck Typing At Work!</strong></p>
+
+<p>Let us create a class which extends the Python built-in <code>list</code> and implements a <code>items</code> method.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">class MyList(list):
+    &#39;&#39;&#39; A user-defined collection data type which extends the built-in list.
+    
+    &gt;&gt;&gt; alphabet = MyList(*&#39;ABC&#39;)
+    &gt;&gt;&gt; print(alphabet)
+    [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]
+    &gt;&gt;&gt; alphabet[1]
+    &#39;B&#39;
+    &gt;&gt;&gt; for i, item in alphabet.items():
+    ...     print(i, item)
+    1 A
+    2 B
+    3 C
+    &#39;&#39;&#39;
+    def __init__(self, *args):
+        super().__init__(args)
+        
+    def items(self):
+        &#39;&#39;&#39;Alternate utility to `enumerate` on the instance&#39;&#39;&#39;
+        for i, item in enumerate(self, start=1):
+            yield i, item</pre></div>
+<p>Now, by the grace of Duck Typing, we can use the <code>tabulate_mapping</code> function with instances of <code>MyList</code> class. However, what if we do not want malicious objects use our code this way. We all know about SQL Injection. It&rsquo;s about time we become aware of our privacy.</p>
+
+<h2 id="the-curious-case-of-input-validation">The Curious Case of Input Validation</h2>
+
+<p>In the function <code>tabulate_mapping</code>, observe that we have not written any code for validating the inputs. With Duck Typing in the fray, it is important to understand the need of a guideline on validating inputs.</p>
+
+<p>Programmers coming from a background of a statically typed background would be inclined to perform <em>static</em> type checks on the object. As we have seen, strict type check can be severely restrictive to the point where the developers miss out on the cool features Python has to offer.
+i.e <strong>Too much of <code>isinstance</code> and <code>hasattr</code> works but it is neither fun nor Pythonic!</strong></p>
+
+<p>We will perform different kinds of input validation for the <code>tabulate_mapping</code> function based on the requirements:</p>
+
+<ol>
+<li>If we want the <code>tabulate_mapping</code> to be generic utility which can work on any <code>mapping</code> object with <code>items</code> and iterable <code>headers</code>.</li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def tabulate_mapping_v1(mapping, headers):" data-lang="def tabulate_mapping_v1(mapping, headers):">        
+        # Validate headers
+        try:
+            headers_iter = iter(headers)
+        except TypeError as e:
+            raise ValueError(&#39;headers needs to be an iterable.&#39;)
+
+        # Validate mapping
+         try:
+             mapping_items = mapping.items()
+         except AttributeError as e:
+             raise ValueError(&#39;mapping should have an items method.&#39;)
+
+        heading = &#39;&#39;
+        
+         for header in headers_iter:
+             heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
+
+         print(heading)
+         print(&#39;-&#39;*len(heading))
+         
+         for k, v in mapping_items:
+             print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))</code></pre></div>
+<ol>
+<li>If we want to restrict the <code>mapping</code> object to an instance of a subclass of the built-in <code>dict</code> and the <code>headers</code> are specified to be a <code>list</code> object:</li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def tabulate_mapping_v2(mapping, headers):" data-lang="def tabulate_mapping_v2(mapping, headers):">        
+        # Validate headers
+        if not isinstance(headers, list)
+            raise ValueError(&#39;headers needs to be a list object.&#39;)
+
+        # Validate mapping
+        if not isinstance(mapping, dict):
+            raise ValueError(&#39;mapping needs to be a dict object.&#39;)
+     
+        heading = &#39;&#39;
+        
+         for header in headers_iter:
+             heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
+
+         print(heading)
+         print(&#39;-&#39;*len(heading))
+         
+         for k, v in mapping_items:
+             print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))</code></pre></div>
+<h1 id="conclusion">Conclusion</h1>
+
+<blockquote>
+<p>Whenever writing Python, we need to clearly define the allowed interfaces that can be used in place of an object rather than on the basis of classes the object.</p>
+</blockquote>
+
+<p>There is no distinction between the <em>right</em> way and the <em>wrong</em> way when it comes to dealing with objects in Python. The most Pythonic code at a given situation depends entirely on the requirements of the user and the practicality of the use cases. The consideration of Python&rsquo;s Data Model and duck typing can help one write clearer, readable and Pythonic code.</p>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kshitij10496" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello Friend</p>
+    
+     © 2017    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

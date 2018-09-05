@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on kshitij10496</title>
+    <link>https://kshitij10496.github.io/tags/go/</link>
+    <description>Recent content in Go on kshitij10496</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Dec 2017 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://kshitij10496.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>For some Context</title>
+      <link>https://kshitij10496.github.io/posts/for-some-context/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
+      <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context: - How does the use of context help us in programming? - When should a programmer use context?
+In this blog post, I will share what I understand about context.
+Motivation Consider you are an event manager of a restaurant.</description>
+    </item>
+    
+    <item>
+      <title>Typing in Python, Go and JavaScript</title>
+      <link>https://kshitij10496.github.io/posts/typing/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/typing/</guid>
+      <description>Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &amp;ldquo;ask for forgiveness&amp;rdquo; if the post seems too colloquial and pragmatic.
+ Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following: 1. &amp;ldquo;Python is a strongly typed, dynamic language.&amp;rdquo; 2. &amp;ldquo;Go is a statically typed, strong language.&amp;rdquo; 3. &amp;ldquo;JavaScript is a dynamic language which is weakly typed.</description>
+    </item>
+    
+  </channel>
+</rss>
