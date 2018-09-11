@@ -6,10 +6,28 @@
     <description>Recent content in Tags on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Dec 2017 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 09 Sep 2018 19:03:31 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git</title>
+      <link>https://kshitij10496.github.io/tags/git/</link>
+      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://kshitij10496.github.io/tags/github/</link>
+      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/github/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Go</title>
@@ -30,11 +48,29 @@
     </item>
     
     <item>
+      <title>Hugo</title>
+      <link>https://kshitij10496.github.io/tags/hugo/</link>
+      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Medium</title>
       <link>https://kshitij10496.github.io/tags/medium/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/medium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta</title>
+      <link>https://kshitij10496.github.io/tags/meta/</link>
+      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/meta/</guid>
       <description></description>
     </item>
     
