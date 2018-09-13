@@ -110,25 +110,25 @@
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/go/</loc>
-    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kshitij10496.github.io/tags/go/</loc>
     <lastmod>2017-12-17T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/gsoc/</loc>
-    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <loc>https://kshitij10496.github.io/categories/go/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/gsoc/</loc>
+    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/categories/gsoc/</loc>
     <lastmod>2016-08-07T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -140,13 +140,13 @@
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/medium/</loc>
+    <loc>https://kshitij10496.github.io/tags/medium/</loc>
     <lastmod>2017-08-28T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/tags/medium/</loc>
+    <loc>https://kshitij10496.github.io/categories/medium/</loc>
     <lastmod>2017-08-28T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -164,19 +164,13 @@
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/python/</loc>
-    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://kshitij10496.github.io/tags/python/</loc>
     <lastmod>2017-12-17T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/software/</loc>
+    <loc>https://kshitij10496.github.io/categories/python/</loc>
     <lastmod>2017-12-17T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -188,13 +182,19 @@
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/sympy/</loc>
-    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <loc>https://kshitij10496.github.io/categories/software/</loc>
+    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/sympy/</loc>
+    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/categories/sympy/</loc>
     <lastmod>2016-08-07T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -206,13 +206,13 @@
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/typing/</loc>
+    <loc>https://kshitij10496.github.io/tags/typing/</loc>
     <lastmod>2017-12-10T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/tags/typing/</loc>
+    <loc>https://kshitij10496.github.io/categories/typing/</loc>
     <lastmod>2017-12-10T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
