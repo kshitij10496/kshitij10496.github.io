@@ -32,5 +32,23 @@ Motivation Consider you are an event manager of a restaurant.</description>
  Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following: 1. &amp;ldquo;Python is a strongly typed, dynamic language.&amp;rdquo; 2. &amp;ldquo;Go is a statically typed, strong language.&amp;rdquo; 3. &amp;ldquo;JavaScript is a dynamic language which is weakly typed.</description>
     </item>
     
+    <item>
+      <title>Duck Typing in Python</title>
+      <link>https://kshitij10496.github.io/posts/duck-typing-in-python/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
+      <description>What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute: 1. attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
+    </item>
+    
+    <item>
+      <title>How Iterables Actually Work in Python</title>
+      <link>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</guid>
+      <description>This past week I read about Python&amp;rsquo;s iterator protocol and how the philosophy of iteration is deeply embedded into the language design. Many features that I love about Python such as list comprehensions, tuple unpacking leverage the power of iterator protocol. I wrote an article on Medium explaining how developers can implement it and use these features much more efficiently in their day-to-day life.</description>
+    </item>
+    
   </channel>
 </rss>
