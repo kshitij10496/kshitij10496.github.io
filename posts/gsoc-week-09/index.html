@@ -63,6 +63,10 @@
           </li>
         
           <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
             <a class="navigation-link" href="https://drive.google.com/file/d/1ngZKTnKI838GstzdNyNfKaa1wosTlteI/view?usp=sharing">RÉSUMÉ</a>
           </li>
         
@@ -144,10 +148,10 @@ Following which we can generalise the output over the entire domain of the funct
 
 <p>A major issue here is the representation of the final solution set.<br />
   For example:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  In []: solveset(cos(x)&lt;0, x, domain=S.Reals)
-  <span style="">⎡</span>         <span style="">π</span>           3<span style="">⋅π</span>         <span style="">⎤</span>
-  <span style="">⎢</span>2*n*pi + <span style="">─</span>, 2*n*pi + <span style="">───</span>  | n <span style="">∊</span> <span style="">ℤ⎥</span>
-  <span style="">⎣</span>         2            2          <span style="">⎦</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  In []: solveset(cos(x)<span style="color:#ff79c6">&lt;</span><span style="color:#bd93f9">0</span>, x, domain<span style="color:#ff79c6">=</span>S<span style="color:#ff79c6">.</span>Reals)
+  ⎡         π           <span style="color:#bd93f9">3</span>⋅π         ⎤
+  ⎢<span style="color:#bd93f9">2</span><span style="color:#ff79c6">*</span>n<span style="color:#ff79c6">*</span>pi <span style="color:#ff79c6">+</span> ─, <span style="color:#bd93f9">2</span><span style="color:#ff79c6">*</span>n<span style="color:#ff79c6">*</span>pi <span style="color:#ff79c6">+</span> ───  <span style="color:#ff79c6">|</span> n ∊ ℤ⎥
+  ⎣         <span style="color:#bd93f9">2</span>            <span style="color:#bd93f9">2</span>          ⎦</code></pre></div>
 <p>Currently, we do not have a <code>Set</code> object for representing this.<br />
   For this, we need to implement an <em>Indexed Union</em> : <code>Union(X(a) for a in I)</code></p>
 

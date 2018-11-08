@@ -63,6 +63,10 @@
           </li>
         
           <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
             <a class="navigation-link" href="https://drive.google.com/file/d/1ngZKTnKI838GstzdNyNfKaa1wosTlteI/view?usp=sharing">RÉSUMÉ</a>
           </li>
         
@@ -137,7 +141,7 @@ Dynamic binding is the capability to use an instance without regard for its type
 <p>Suppose we are asked to display a dictionary of country names and it&rsquo;s captial in a tabular format. Let us try to write a generic utility function which displays a given input mapping in a tabular form:</p>
 
 <p><strong>Attempt 01</strong></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">def tabulate_mapping(mapping, headers):
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">def tabulate_mapping(mapping, headers):
     &#39;&#39;&#39;Tabulates the input mapping as columns with given headers.
     
     &gt;&gt;&gt; mapping = {&#39;India&#39;: &#39;New Delhi&#39;,
@@ -166,7 +170,7 @@ Dynamic binding is the capability to use an instance without regard for its type
 <p><strong>Duck Typing At Work!</strong></p>
 
 <p>Let us create a class which extends the Python built-in <code>list</code> and implements a <code>items</code> method.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">class MyList(list):
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">class MyList(list):
     &#39;&#39;&#39; A user-defined collection data type which extends the built-in list.
     
     &gt;&gt;&gt; alphabet = MyList(*&#39;ABC&#39;)
@@ -201,7 +205,7 @@ i.e <strong>Too much of <code>isinstance</code> and <code>hasattr</code> works b
 <ol>
 <li>If we want the <code>tabulate_mapping</code> to be generic utility which can work on any <code>mapping</code> object with <code>items</code> and iterable <code>headers</code>.</li>
 </ol>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def tabulate_mapping_v1(mapping, headers):" data-lang="def tabulate_mapping_v1(mapping, headers):">        
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def tabulate_mapping_v1(mapping, headers):" data-lang="def tabulate_mapping_v1(mapping, headers):">        
         # Validate headers
         try:
             headers_iter = iter(headers)
@@ -227,7 +231,7 @@ i.e <strong>Too much of <code>isinstance</code> and <code>hasattr</code> works b
 <ol>
 <li>If we want to restrict the <code>mapping</code> object to an instance of a subclass of the built-in <code>dict</code> and the <code>headers</code> are specified to be a <code>list</code> object:</li>
 </ol>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def tabulate_mapping_v2(mapping, headers):" data-lang="def tabulate_mapping_v2(mapping, headers):">        
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def tabulate_mapping_v2(mapping, headers):" data-lang="def tabulate_mapping_v2(mapping, headers):">        
         # Validate headers
         if not isinstance(headers, list)
             raise ValueError(&#39;headers needs to be a list object.&#39;)

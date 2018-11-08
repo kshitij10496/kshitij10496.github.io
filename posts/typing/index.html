@@ -63,6 +63,10 @@
           </li>
         
           <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
             <a class="navigation-link" href="https://drive.google.com/file/d/1ngZKTnKI838GstzdNyNfKaa1wosTlteI/view?usp=sharing">RÉSUMÉ</a>
           </li>
         
@@ -152,17 +156,17 @@ Each group defines important characteristics of a programming language independe
 <hr />
 
 <h3 id="python">Python</h3>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">&gt;&gt;&gt; age = 21
-&gt;&gt;&gt; age = <span style="font-style:italic">&#39;21&#39;</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">21</span>
+<span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;21&#39;</span></code></pre></div>
 <p><strong>Conclusion:</strong> The type of name <code>age</code> is the type of the object it refers to at that particular instant. Moreover, no further restriction is laid on it with regards to what values it can/cannot hold in the future.</p>
 
 <h3 id="go">Go</h3>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">age := 21
-age = <span style="font-style:italic">&#34;21&#34;</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">age <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">21</span>
+age = <span style="color:#f1fa8c">&#34;21&#34;</span></code></pre></div>
 <p><strong>Conclusion:</strong> A compile time assignment error is raised. Once a type is associated with a variable, the variable cannot hold a value of other data types.</p>
 
 <h3 id="javascript">JavaScript</h3>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">age = 21
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">age = 21
 age = &#34;21&#34;</pre></div>
 <p><strong>Conclusion:</strong> Same as Python</p>
 
@@ -211,7 +215,7 @@ TypeError: unsupported operand type(s) for +: &lsquo;int&rsquo; and &lsquo;str&r
 
 <p>str(a) + b # Explicit type conversion of integer to string
 &lsquo;10K&rsquo;</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">2. Adding an integer to a floating point number
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">2. Adding an integer to a floating point number
 ```python
 &gt;&gt;&gt; a, b = 1, 2.5
 &gt;&gt;&gt; a + b # No error
@@ -225,15 +229,15 @@ TypeError: unsupported operand type(s) for +: &lsquo;int&rsquo; and &lsquo;str&r
 
 <ol>
 <li><p>Adding a number to a string</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="font-weight:bold">func</span> AddNumStr() {
- a, b := 10, <span style="font-style:italic">&#34;K&#34;</span>
- fmt.Println(a + b)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> AddNumStr() {
+ a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#34;K&#34;</span>
+ fmt.Println(a <span style="color:#ff79c6">+</span> b)
 }</code></pre></div></li>
 
 <li><p>Adding an integer to a floating point number</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="font-weight:bold">func</span> AddNumFloat() {
- a, b := 1, 2.5
- fmt.Println(a + b)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> AddNumFloat() {
+ a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
+ fmt.Println(a <span style="color:#ff79c6">+</span> b)
 }</code></pre></div></li>
 </ol>
 
@@ -243,17 +247,17 @@ TypeError: unsupported operand type(s) for +: &lsquo;int&rsquo; and &lsquo;str&r
 
 <ol>
 <li><p>Adding a number to a string</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">&gt; a = 10
-&gt; b = <span style="font-style:italic">&#34;K&#34;</span>
-&gt; a + b
-<span style="font-style:italic">&#39;10K&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
+<span style="color:#ff79c6">&gt;</span> b <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;K&#34;</span>
+<span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">+</span> b
+<span style="color:#f1fa8c">&#39;10K&#39;</span>
 </code></pre></div></li>
 
 <li><p>Adding an integer to a floating point number</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">&gt; a = 1
-&gt; b = 2.5
-&gt; a + b
-3.5
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
+<span style="color:#ff79c6">&gt;</span> b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">2.5</span>
+<span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">+</span> b
+<span style="color:#bd93f9">3.5</span>
 </code></pre></div>
 <p><strong>Conclusion:</strong> The compiler <em>implicitly</em> converts the type of values to make sense of the operation rather than raising errors.</p></li>
 </ol>

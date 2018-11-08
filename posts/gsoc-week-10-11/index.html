@@ -63,6 +63,10 @@
           </li>
         
           <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
             <a class="navigation-link" href="https://drive.google.com/file/d/1ngZKTnKI838GstzdNyNfKaa1wosTlteI/view?usp=sharing">RÉSUMÉ</a>
           </li>
         
@@ -111,7 +115,7 @@
         
 
 <p>FiniteSet   | list</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">  ImageSet,   | list (if `f` is periodic)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">  ImageSet,   | list (if `f` is periodic)
   Union       |
 
   EmptySet    | empty list
@@ -144,11 +148,11 @@ We need a new <code>Set</code> object : <code>BigUnion</code> to represent infin
 <h3 id="new-implementation"><em>New Implementation</em></h3>
 
 <p>I have opened <a href="https://github.com/sympy/sympy/pull/11458">PR#11458</a> for the same with all the implementation details.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">In []: isolve(cos(x) &gt; S(0), x, relational=False)
-Out[]: [0, pi/2) U (3*pi/2, 2*pi)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">In []: isolve(cos(x) <span style="color:#ff79c6">&gt;</span> S(<span style="color:#bd93f9">0</span>), x, relational<span style="color:#ff79c6">=</span>False)
+Out[]: [<span style="color:#bd93f9">0</span>, pi<span style="color:#ff79c6">/</span><span style="color:#bd93f9">2</span>) U (<span style="color:#bd93f9">3</span><span style="color:#ff79c6">*</span>pi<span style="color:#ff79c6">/</span><span style="color:#bd93f9">2</span>, <span style="color:#bd93f9">2</span><span style="color:#ff79c6">*</span>pi)
 
-In []: isolve(tan(x) &gt; S(0), x, relational=False)
-Out[]: (0, pi/2)</code></pre></div>
+In []: isolve(tan(x) <span style="color:#ff79c6">&gt;</span> S(<span style="color:#bd93f9">0</span>), x, relational<span style="color:#ff79c6">=</span>False)
+Out[]: (<span style="color:#bd93f9">0</span>, pi<span style="color:#ff79c6">/</span><span style="color:#bd93f9">2</span>)</code></pre></div>
 <h3 id="after-thoughts"><em>After thoughts</em></h3>
 
 <p>For the past couple of weeks, I haven&rsquo;t been able to give much time to the project due to my college schedule.
