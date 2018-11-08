@@ -6,10 +6,21 @@
     <description>Recent content in Posts on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Sep 2018 19:03:31 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 04 Nov 2018 00:21:02 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Make Blog Great Again</title>
+      <link>https://kshitij10496.github.io/posts/blogging/</link>
+      <pubDate>Sun, 04 Nov 2018 00:21:02 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/blogging/</guid>
+      <description>tl;dr: post about posting more posts
+I have forgotten to write blog posts for over a year or have I?
+Blogging 101 I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
+    </item>
     
     <item>
       <title>Hugo Blog On GitHub Pages</title>

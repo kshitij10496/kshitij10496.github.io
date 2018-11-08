@@ -6,10 +6,21 @@
     <description>Recent content on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Oct 2018 21:45:29 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 04 Nov 2018 00:21:02 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Make Blog Great Again</title>
+      <link>https://kshitij10496.github.io/posts/blogging/</link>
+      <pubDate>Sun, 04 Nov 2018 00:21:02 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/blogging/</guid>
+      <description>tl;dr: post about posting more posts
+I have forgotten to write blog posts for over a year or have I?
+Blogging 101 I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
+    </item>
     
     <item>
       <title>Quotes</title>
@@ -19,9 +30,9 @@
       <guid>https://kshitij10496.github.io/quotes/</guid>
       <description>Curated list of my favourite quotes, adages and maxims
 &amp;#34;We do not learn from experience... we learn from reflecting on experience.&amp;#34; John Dewey  tags: life
-&amp;#34;All animals are equal but some animals are more equal than others.&amp;#34; Animal Farm, George Orwell tags: society
+&amp;#34;All animals are equal but some animals are more equal than others.&amp;#34; Animal Farm, George Orwell tags: equality, society
 “Be the change that you wish to see in the world.” Mahatma Gandhi tags: motivation
-“Fill the unforgiving minute with sixty seconds&amp;#39; worth of distance run.” Rudyard Kipling tags: motivation</description>
+“Fill the unforgiving minute with sixty seconds&amp;#39; worth of distance run.</description>
     </item>
     
     <item>

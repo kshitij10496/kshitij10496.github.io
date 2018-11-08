@@ -6,7 +6,7 @@
     <description>Recent content in Categories on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Sep 2018 19:03:31 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 04 Nov 2018 00:21:02 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Blog</title>
       <link>https://kshitij10496.github.io/categories/blog/</link>
-      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
+      <pubDate>Sun, 04 Nov 2018 00:21:02 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/categories/blog/</guid>
       <description></description>
@@ -35,6 +35,15 @@
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/categories/medium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self</title>
+      <link>https://kshitij10496.github.io/categories/self/</link>
+      <pubDate>Sun, 04 Nov 2018 00:21:02 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/categories/self/</guid>
       <description></description>
     </item>
     
