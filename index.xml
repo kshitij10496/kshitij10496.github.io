@@ -6,10 +6,22 @@
     <description>Recent content on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Sep 2018 19:03:31 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 31 Oct 2018 21:45:29 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Quotes</title>
+      <link>https://kshitij10496.github.io/quotes/</link>
+      <pubDate>Wed, 31 Oct 2018 21:45:29 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/quotes/</guid>
+      <description>Curated list of my favourite quotes, adages and maxims:
+ Jobs are owned by the company, you own your career!
+— Earl Nightingale
+ </description>
+    </item>
     
     <item>
       <title>Hugo Blog On GitHub Pages</title>
@@ -209,8 +221,8 @@ If we have to solve for x in the equation f(x) = 0, where</description>
       <guid>https://kshitij10496.github.io/about/</guid>
       <description>Hey there!
 This is Kshitij and you have reached my small place on the World Wide Web. 😄 😎
-I’m a software developer and an aspiring doodle artist from India. I like to think of myself as a problem solver who prefers to leverage the potential of technology to build a better, efficient and robust (possibly, antifragile) solutions.
- Builds simple APIs for everything useful Writes CLI for everything fun Reads daily Football on weekends Currently learning to draw, design &amp;amp; doodle  Recently, I designed a monogram with my initals.</description>
+I’m a software developer, an amateur poker player and an aspiring doodle artist from India. I like to think of myself as a problem solver who prefers to leverage the potential of technology to build a better, efficient and robust (possibly, antifragile) solutions.
+ Builds simple APIs for everything useful Writes CLI for everything fun Reads daily Football/Poker on weekends Currently learning to draw, design &amp;amp; doodle  Recently, I designed a monogram with my initals.</description>
     </item>
     
   </channel>

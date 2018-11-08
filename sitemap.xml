@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kshitij10496.github.io/quotes/</loc>
+    <lastmod>2018-10-31T21:45:29+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/posts/hugo-blog-setup/</loc>
     <lastmod>2018-09-09T19:03:31+05:30</lastmod>
   </url>
@@ -190,7 +195,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/</loc>
-    <lastmod>2018-09-09T19:03:31+05:30</lastmod>
+    <lastmod>2018-10-31T21:45:29+05:30</lastmod>
     <priority>0</priority>
   </url>
   
