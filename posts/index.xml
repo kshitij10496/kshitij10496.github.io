@@ -6,10 +6,20 @@
     <description>Recent content in Posts on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Nov 2018 00:21:02 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 11 Nov 2018 09:06:32 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why I Write Go</title>
+      <link>https://kshitij10496.github.io/posts/on-go/</link>
+      <pubDate>Sun, 11 Nov 2018 09:06:32 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/on-go/</guid>
+      <description>tl;dr: This is not a rant about how Go is &amp;ldquo;superior&amp;rdquo; to other languages. It&amp;rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊
+off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&amp;rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins.</description>
+    </item>
     
     <item>
       <title>Make Blog Great Again</title>

@@ -11,10 +11,10 @@
 
     <base href="https://kshitij10496.github.io/">
     <title>
-  GSoC Weeks 04 &amp; 05 - The One with Periodicity · kshitij10496
+  Why I Write Go · kshitij10496
 </title>
 
-    <link rel="canonical" href="https://kshitij10496.github.io/posts/gsoc-week-04-05/">
+    <link rel="canonical" href="https://kshitij10496.github.io/posts/on-go/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -83,30 +83,30 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">GSoC Weeks 04 &amp; 05 - The One with Periodicity</h1>
+          <h1 class="title">Why I Write Go</h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2016-06-24T00:00:00&#43;05:30'>
-                June 24, 2016
+              <time datetime='2018-11-11T09:06:32&#43;05:30'>
+                November 11, 2018
               </time>
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              2 minutes read
+              3 minutes read
             </span>
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="https://kshitij10496.github.io/categories/gsoc">GSoC</a></div>
+    <a href="https://kshitij10496.github.io/categories/self">Self</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://kshitij10496.github.io/tags/sympy">Sympy</a>
+    <a href="https://kshitij10496.github.io/tags/go">Go</a>
       <span class="separator">•</span>
-    <a href="https://kshitij10496.github.io/tags/python">Python</a></div>
+    <a href="https://kshitij10496.github.io/tags/lego">Lego</a></div>
 
         </div>
       </header>
@@ -114,54 +114,57 @@
       <div>
         
 
-<p>Hi folks !</p>
+<p><strong>tl;dr</strong>: This is not a rant about how Go is &ldquo;superior&rdquo; to other languages. It&rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊</p>
 
-<p>The past couple of weeks were spent of developing heuristics for determining the
-fundamental period of a given trigonometric function.</p>
+<hr />
 
-<p>In our higher school, we all must have come across <code>Trigonometric Functions</code>.
-One of the most striking properties of these functions is their periodicty.<br />
-The ability of a function to repeat its values in regular intervals has always
-caught my imagination.</p>
+<p><strong>off-topic</strong>: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins. Good ol&rsquo; days!</p>
 
-<h2 id="motivation"><strong>Motivation</strong></h2>
+<hr />
 
-<p>Well, SymPy ought to have a functionality to determine the period of a function.
-The instigated me to implement this function now was the build failure in my
-PR#11141 on <code>solve_decomposition</code>.</p>
+<h1 id="inspiration">Inspiration</h1>
 
-<h3 id="issue"><strong>Issue</strong></h3>
+<p>Reading Rob Pike&rsquo;s post titled &ldquo;<a href="https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html">Less is exponentially more</a>&rdquo;, I found myself introspecting about the way I write software. The article evoked some joy in me, stimulated that deep-seated feel-good core - the part of my being that enjoys programming. And I want to share it with everyone!</p>
 
-<p><code>function_range(sin(x), x, domain=S.Reals)</code> causes the build to time-out as the
-number of critical points of <code>sin(x)</code> in the entire real domain is infinite.
-The same goes for other trigonometric functions as well.</p>
+<h1 id="why-go">Why Go?</h1>
 
-<p>However, if we can set the <code>domain</code> argument to be a finite interval which
-encompasses the entire behaviour of <code>sin(x)</code> over the entire real domain, our
-issue can be solved.</p>
+<p>During my GSoC, I used to struggle with grasping the idea of classes implementing behaviours and how would it be useful for subclasses - inheritance.</p>
 
-<p>This led me to the idea of using the periodicity of the function as its domain.</p>
+<p>For example, let&rsquo;s consider a <code>Point</code> class representing a point in the Cartesian Space.<br />
+1. Should <code>distance</code> be a method on this class?<br />
+2. Does <code>distance</code> define the &ldquo;behaviour&rdquo; of a <code>Point</code>?</p>
 
-<h2 id="design"><strong>Design</strong></h2>
+<p>*Not necessarily!  *</p>
 
-<p><code>f = sin(x) + sin(2*x) + cos(3*x)</code></p>
+<p>(After reading some mathematics on Measure Theory, I came to know that &ldquo;distance&rdquo; is a quantity defined by a &ldquo;metric function&rdquo; - property of the space rather than any entity.)<br />
+In our case, the <code>distance</code> should be a method on the <code>CartesianSpace</code> rather than <code>Point</code>.</p>
 
-<p>We know that the period of <code>f</code> is <code>2⋅π</code>
-i.e. the LCM of the periods of individual function.</p>
+<ul>
+<li>The question that arises then is how can I assure that I can always compute distance between given pair of <code>Point</code> values, or any geometrical entity for that matter?<br /></li>
+<li>Should I just override the <code>distance</code> method in each geometrical class?<br /></li>
+<li>If so, what purpose does the base <code>distance</code> method in <code>CartesianSpace</code> serve now?</li>
+</ul>
 
-<p><em>It is known !</em></p>
+<p>I would agree that these questions are subjective and I respect your solution to the problem.</p>
 
-<p>Hence, in order to find the period of <code>f</code>, we need the functionality to determine
-the period simpler trigonometric functions such as <code>sin(x)</code>, <code>sin(2*x)</code> and <code>cos(3*x)</code></p>
+<p>However, then I came to know about <a href="https://kshitij10496.github.io/posts/duck-typing-in-python/">Duck Typing in Python</a> and it&rsquo;s approach to the problem. However, I was not satisfied with the Python implementation. It almost felt kind of a convenience pattern which was incompatible with Pythonic code.</p>
 
-<h3 id="property"><strong>Property</strong></h3>
+<p>Eventually, I found about Go <code>interfaces</code>.(Plus, CSP! ❤️)</p>
 
-<blockquote>
-<p>If the period of <code>g(x)</code> is <code>T</code>, then the period of <code>g(a*x)</code> is <code>T/a</code>.</p>
-</blockquote>
+<h1 id="things-i-like-about-go">Things I like about Go</h1>
 
-<p>Using this property, we can easily compute the periods of <code>sin(2*x)</code> and <code>cos(3*x)</code>
-with our knowledge of the periodicity of the fundamental trigonometric functions.</p>
+<p>Coming back to the question - <em>&ldquo;Why I Write Go?&rdquo;</em>, here are some of my favourite reasons:</p>
+
+<ul>
+<li>emphasis on separation between state and behaviour</li>
+<li>composition over inheritance; think <em>legos</em> 🧩</li>
+<li>simplicity in design; <strong>less is more</strong>, indeed</li>
+</ul>
+
+<p>More importantly, I rediscovered the joy of putting tiny pieces togerther and building something greater than the sum of the individual parts (read off-topic).
+In addition to writing “cleaner and more readable” code, I find a lot more clarity when it comes to solving problems and coherence in my thinking while implementing the solution. I guess that is the underappreciated USP of Go, for me, ofcourse! 😁</p>
+
+<p>So what is your favourite programming language and why? 😃</p>
 
       </div>
 
