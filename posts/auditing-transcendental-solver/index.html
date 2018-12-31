@@ -10,9 +10,11 @@
     <meta name="keywords" content="blog,developer,personal">
 
     <base href="https://kshitij10496.github.io/">
-    <title>Tag: Motivation · kshitij10496</title>
+    <title>
+  Auditing SymPy&#39;s Transcendental solver · kshitij10496
+</title>
 
-    <link rel="canonical" href="https://kshitij10496.github.io/tags/motivation/">
+    <link rel="canonical" href="https://kshitij10496.github.io/posts/auditing-transcendental-solver/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -33,9 +35,6 @@
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
 
-    
-      <link href="https://kshitij10496.github.io/tags/motivation/index.xml" rel="alternate" type="application/rss+xml" title="kshitij10496" />
-      <link href="https://kshitij10496.github.io/tags/motivation/index.xml" rel="feed" type="application/rss+xml" title="kshitij10496" />
     
 
     <meta name="generator" content="Hugo 0.47.1" />
@@ -82,30 +81,91 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Tag: Motivation</h1>
-  <ul>
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Auditing SymPy&#39;s Transcendental solver</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2016-05-15T00:00:00&#43;05:30'>
+                May 15, 2016
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              One minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://kshitij10496.github.io/categories/gsoc/">GSoC</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://kshitij10496.github.io/tags/sympy/">Sympy</a>
+      <span class="separator">•</span>
+    <a href="https://kshitij10496.github.io/tags/python/">Python</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+
+<p>Having considered the current codebase of <code>_tsolve</code> function, I find the following few points considered while implementing the new solver:</p>
+
+<ul>
+<li>modularise the code for various classes of equations(LambertW, <code>bivariate</code> equation type, logarithmic, exponential).<br /></li>
+<li>using SymPy <code>Set</code> objects internally, instead of using the built-in Python <code>lists</code>.<br /></li>
+<li>use of <code>decompogen</code> function to check for possible decomposition of the given expression into simpler functions.</li>
+<li>handle the case where the given equation has no closed-form solution and infinite recursion occurs.</li>
+</ul>
+
+<p>These are just a handful of strategies that I intend to use. However, the whole process of development is going to a lot more complex and might need some more considerations from my side.</p>
+
+<h3 id="task-implement-transolve-function">Task : Implement <code>transolve</code> function.</h3>
+
+<p>My plan is to do a <em>test-driven development</em> for this solver.<br />
+For this, I will start by porting the relevant tests present in <code>test_solvers.py</code> module to the <code>test_solveset.py</code>.
+Following this, I will start the developement process of the <code>transolve</code> solver.</p>
+
+<p>I aim to accomplish a major portion of this task by the end of this week.</p>
+
+<p>Thats all for now.
+And the coding begins !</p>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
     
-    <li>
-      <span>December 31, 2018</span>
-      <a href="https://kshitij10496.github.io/posts/reading-2019/">Reading List 2019</a>
-    </li>
     
-    <li>
-      <span>November 4, 2018</span>
-      <a href="https://kshitij10496.github.io/posts/blogging/">Make Blog Great Again</a>
-    </li>
     
-  </ul>
-  
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kshitij10496" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
 
-
-
-
-
-
-</section>
-
+    
+  </section>
 
       </div>
 

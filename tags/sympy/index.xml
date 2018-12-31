@@ -123,10 +123,10 @@ If we have to solve for x in the equation f(x) = 0, where</description>
     
     <item>
       <title>Auditing SymPy&#39;s Transcendental solver</title>
-      <link>https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</link>
+      <link>https://kshitij10496.github.io/posts/auditing-transcendental-solver/</link>
       <pubDate>Sun, 15 May 2016 00:00:00 +0530</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</guid>
+      <guid>https://kshitij10496.github.io/posts/auditing-transcendental-solver/</guid>
       <description>Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
  modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential).
  using SymPy Set objects internally, instead of using the built-in Python lists.

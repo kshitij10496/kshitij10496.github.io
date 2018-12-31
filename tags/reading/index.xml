@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Motivation on kshitij10496</title>
-    <link>https://kshitij10496.github.io/tags/motivation/</link>
-    <description>Recent content in Motivation on kshitij10496</description>
+    <title>Reading on kshitij10496</title>
+    <link>https://kshitij10496.github.io/tags/reading/</link>
+    <description>Recent content in Reading on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 31 Dec 2018 16:56:40 +0530</lastBuildDate>
     
-	<atom:link href="https://kshitij10496.github.io/tags/motivation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kshitij10496.github.io/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       <guid>https://kshitij10496.github.io/posts/reading-2019/</guid>
       <description>Heading into 2019, I aim to read a lot of books across genres - from historical fictions to the latest genetics developments, from philosophy about human societies to the realities of individual emotions.
 Over the weekend, I updated my Goodreads shelves and downloaded a lot of &amp;ldquo;Samples&amp;rdquo; on my Kindle from the Amazon Store. My intention is to read these preview chapters at random on my Kindle and dive into only those books which interest me.</description>
-    </item>
-    
-    <item>
-      <title>Make Blog Great Again</title>
-      <link>https://kshitij10496.github.io/posts/blogging/</link>
-      <pubDate>Sun, 04 Nov 2018 00:21:02 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/blogging/</guid>
-      <description>tl;dr: post about posting more posts
-I have forgotten to write blog posts for over a year or have I?
-Blogging 101 I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
     </item>
     
   </channel>
