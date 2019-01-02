@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kshitij10496.github.io/posts/on-education/</loc>
+    <lastmod>2019-01-02T21:14:45+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/posts/reading-2019/</loc>
     <lastmod>2018-12-31T16:56:40+05:30</lastmod>
   </url>
@@ -130,6 +135,12 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/tags/essay/</loc>
+    <lastmod>2019-01-02T21:14:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/tags/git/</loc>
     <lastmod>2018-09-09T19:03:31+05:30</lastmod>
     <priority>0</priority>
@@ -172,6 +183,12 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/categories/life/</loc>
+    <lastmod>2019-01-02T21:14:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/categories/medium/</loc>
     <lastmod>2017-08-28T00:00:00+05:30</lastmod>
     <priority>0</priority>
@@ -191,7 +208,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/posts/</loc>
-    <lastmod>2018-12-31T16:56:40+05:30</lastmod>
+    <lastmod>2019-01-02T21:14:45+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -209,7 +226,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/categories/self/</loc>
-    <lastmod>2018-12-31T16:56:40+05:30</lastmod>
+    <lastmod>2019-01-02T21:14:45+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -233,7 +250,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/tags/</loc>
-    <lastmod>2018-09-09T19:03:31+05:30</lastmod>
+    <lastmod>2019-01-02T21:14:45+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -245,13 +262,13 @@
   
   <url>
     <loc>https://kshitij10496.github.io/tags/writing/</loc>
-    <lastmod>2018-11-04T00:21:02+05:30</lastmod>
+    <lastmod>2019-01-02T21:14:45+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/</loc>
-    <lastmod>2018-12-31T16:56:40+05:30</lastmod>
+    <lastmod>2019-01-02T21:14:45+05:30</lastmod>
     <priority>0</priority>
   </url>
   

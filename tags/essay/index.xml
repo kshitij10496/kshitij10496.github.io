@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Writing on kshitij10496</title>
-    <link>https://kshitij10496.github.io/tags/writing/</link>
-    <description>Recent content in Writing on kshitij10496</description>
+    <title>Essay on kshitij10496</title>
+    <link>https://kshitij10496.github.io/tags/essay/</link>
+    <description>Recent content in Essay on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 02 Jan 2019 21:14:45 +0530</lastBuildDate>
     
-	<atom:link href="https://kshitij10496.github.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kshitij10496.github.io/tags/essay/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,17 +23,6 @@ There are 2 complementary aspects of getting an education:
  the practical education learned from life experiences dealing in the real world.
   I&amp;rsquo;m sure that most of us would agree that they fall somewhere on this spectrum of the wise and academic to the streetwise and practical.
 Too much theory results in losing Skin in The Game while too much of hacking renders the bigger picture of your life a blur.</description>
-    </item>
-    
-    <item>
-      <title>Make Blog Great Again</title>
-      <link>https://kshitij10496.github.io/posts/blogging/</link>
-      <pubDate>Sun, 04 Nov 2018 00:21:02 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/blogging/</guid>
-      <description>tl;dr: post about posting more posts
-I have forgotten to write blog posts for over a year or have I?
-Blogging 101 I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
     </item>
     
   </channel>

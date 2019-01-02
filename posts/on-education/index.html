@@ -11,10 +11,10 @@
 
     <base href="https://kshitij10496.github.io/">
     <title>
-  Auditing SymPy&#39;s Transcendental solver · kshitij10496
+  On Education · kshitij10496
 </title>
 
-    <link rel="canonical" href="https://kshitij10496.github.io/posts/auditing-transcendental-solver/">
+    <link rel="canonical" href="https://kshitij10496.github.io/posts/on-education/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -85,14 +85,14 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Auditing SymPy&#39;s Transcendental solver</h1>
+          <h1 class="title">On Education</h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2016-05-15T00:00:00&#43;05:30'>
-                May 15, 2016
+              <time datetime='2019-01-02T21:14:45&#43;05:30'>
+                January 2, 2019
               </time>
             </span>
             <span class="reading-time">
@@ -102,41 +102,40 @@
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="https://kshitij10496.github.io/categories/gsoc/">GSoC</a></div>
+    <a href="https://kshitij10496.github.io/categories/self/">Self</a>
+      <span class="separator">•</span>
+    <a href="https://kshitij10496.github.io/categories/life/">Life</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://kshitij10496.github.io/tags/sympy/">Sympy</a>
+    <a href="https://kshitij10496.github.io/tags/writing/">writing</a>
       <span class="separator">•</span>
-    <a href="https://kshitij10496.github.io/tags/python/">Python</a></div>
+    <a href="https://kshitij10496.github.io/tags/essay/">essay</a></div>
 
         </div>
       </header>
 
       <div>
-        
+        <p>Let&rsquo;s talk about education.</p>
 
-<p>Having considered the current codebase of <code>_tsolve</code> function, I find the following few points considered while implementing the new solver:</p>
+<p>There are 2 complementary aspects of getting an education:</p>
 
-<ul>
-<li>modularise the code for various classes of equations(LambertW, <code>bivariate</code> equation type, logarithmic, exponential).<br /></li>
-<li>using SymPy <code>Set</code> objects internally, instead of using the built-in Python <code>lists</code>.<br /></li>
-<li>use of <code>decompogen</code> function to check for possible decomposition of the given expression into simpler functions.</li>
-<li>handle the case where the given equation has no closed-form solution and infinite recursion occurs.</li>
-</ul>
+<ol>
+<li><p>the <strong>scholarly education</strong> obtained from rigorously studying academic texts obtained from schooling.</p></li>
 
-<p>These are just a handful of strategies that I intend to use. However, the whole process of development is going to a lot more complex and might need some more considerations from my side.</p>
+<li><p>the <strong>practical education</strong> learned from life experiences dealing in the real world.</p></li>
+</ol>
 
-<h3 id="task-implement-transolve-function">Task : Implement <code>transolve</code> function.</h3>
+<p>I&rsquo;m sure that most of us would agree that they fall somewhere on this spectrum of <em>the wise and academic</em> to <em>the streetwise and practical</em>.</p>
 
-<p>My plan is to do a <em>test-driven development</em> for this solver.<br />
-For this, I will start by porting the relevant tests present in <code>test_solvers.py</code> module to the <code>test_solveset.py</code>.
-Following this, I will start the developement process of the <code>transolve</code> solver.</p>
+<p>Too much theory results in losing <em>Skin in The Game</em> while too much of hacking renders the bigger picture of your life a blur. Thus, a balance between the two is essential for personal growth, realising our potential and having a sense of direction in life.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&#34;If people cannot write well, they cannot think well,
+and if they cannot think well, others will do their thinking for them.&#34;
+                                                       - George Orwell</pre></div>
+<p>I think an important way to strike this balance is to write regularly and share it with others.
+This is the reason why I have decided to write a post every day for the rest of <em>January 2019</em>.</p>
 
-<p>I aim to accomplish a major portion of this task by the end of this week.</p>
-
-<p>Thats all for now.
-And the coding begins !</p>
+<p><strong>Inspiration:</strong> <a href="https://www.goodreads.com/book/show/1221559.Letters_from_a_Self_Made_Merchant_to_His_Son">Letters from a Self-Made Merchant To His Son</a>.</p>
 
       </div>
 
