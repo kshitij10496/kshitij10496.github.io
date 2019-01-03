@@ -6,23 +6,35 @@
     <description>Recent content in Life on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jan 2019 21:14:45 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 03 Jan 2019 23:30:07 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/categories/life/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>On Education</title>
+      <title>Asymmetry</title>
+      <link>https://kshitij10496.github.io/posts/on-asymmetry/</link>
+      <pubDate>Thu, 03 Jan 2019 23:30:07 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/on-asymmetry/</guid>
+      <description>cross-posting from 200 Words A Day
+Let&amp;rsquo;s talk about the asymmetries in our lives today.
+After reading Fooled By Randomness and The Black Swan from Nassim Nicholas Taleb, I am convinced by the presence and importance of asymmetries in all walks of our lives. Moreover, these asymmetries are almost always associated with a &amp;ldquo;rare&amp;rdquo;(low probability), &amp;ldquo;unforeseeable&amp;rdquo;, highly consequential event (called a Black Swan).
+Turning a blind eye to them can result in a massive blowup – the much fraught unbecoming.</description>
+    </item>
+    
+    <item>
+      <title>Education</title>
       <link>https://kshitij10496.github.io/posts/on-education/</link>
       <pubDate>Wed, 02 Jan 2019 21:14:45 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/on-education/</guid>
-      <description>Let&amp;rsquo;s talk about education.
+      <description>cross-posting from 200 Words A Day
+Let&amp;rsquo;s talk about education today.
 There are 2 complementary aspects of getting an education:
  the scholarly education obtained from rigorously studying academic texts obtained from schooling.
  the practical education learned from life experiences dealing in the real world.
-  I&amp;rsquo;m sure that most of us would agree that they fall somewhere on this spectrum of the wise and academic to the streetwise and practical.
-Too much theory results in losing Skin in The Game while too much of hacking renders the bigger picture of your life a blur.</description>
+  I&amp;rsquo;m sure that most of us would agree that they fall somewhere on this spectrum of the wise and academic to the streetwise and practical.</description>
     </item>
     
   </channel>
