@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="KSHITIJ SARAOGI">
+    <meta name="description" content="Kshitij Saraogi&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://kshitij10496.github.io/">
+    <title>
+  Postgres With Docker · kshitij10496
+</title>
+
+    <link rel="canonical" href="https://kshitij10496.github.io/posts/postgres-with-docker/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.b700a5478d33a4b06fa64fda9115605b92a8bd20085b1c9f79d7e6c2e31bf084.css" integrity="sha256-twClR40zpLBvpk/akRVgW5KovSAIWxyfedfmwuMb8IQ=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.47.1" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kshitij10496
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/about/">ABOUT</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/posts/">BLOG</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/values/">VALUES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing">RÉSUMÉ</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Postgres With Docker</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-01-13T16:16:55&#43;05:30'>
+                January 13, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              5 minutes read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://kshitij10496.github.io/categories/tutorial/">Tutorial</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://kshitij10496.github.io/tags/postgres/">postgres</a>
+      <span class="separator">•</span>
+    <a href="https://kshitij10496.github.io/tags/docker/">docker</a>
+      <span class="separator">•</span>
+    <a href="https://kshitij10496.github.io/tags/databases/">databases</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+
+<p>Lately, I have been experimenting with running PostgreSQL in a Docker container
+and communicating with it - from an application. This article documents my
+experience, learnings and methodology.</p>
+
+<h1 id="problem">Problem</h1>
+
+<p>I have got a lot of small personal projects which use separate databases.<br />
+Each DB is associated with a unique configuration (combination of user, password, name)
+which as exported as environment variables in the relevant applications.</p>
+
+<p>Now, this soon got messy as my machine was polluted with lots of DBs and their
+configurations. Thus, I started exploring the possibility of using containers
+for the task of running the DBs.</p>
+
+<h1 id="getting-started">Getting Started</h1>
+
+<p>Before starting diving into reading endless documentation, articles and tutorials,
+I wrote down some basic questions which I wanted to be answered first.
+My prime concern was getting up to speed with performing fundamental DB operations
+as quickly as possible with the new container layer.</p>
+
+<ol>
+<li>How can I initialise the DB with some schema as soon as it starts up?</li>
+<li>Can I access the DB via command-line and perform SQL commands using <code>psql</code>?</li>
+<li>How do I connect to the DB via a running application?</li>
+<li>What is the way to persist data once the running DB container is stopped?</li>
+</ol>
+
+<p>Based on my prior experience with Docker, I already knew that as soon as a
+container is stopped all the data stored in it gets deleted. Thus, persisting
+data changes would be a major challenge otherwise the whole point of using
+containers is <em>moo</em>. 🐮</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+<li><a href="https://docs.docker.com/install/#supported-platforms">Install <code>docker</code></a></li>
+<li><a href="https://docs.docker.com/compose/install/">Install <code>docker-compose</code></a></li>
+</ul>
+
+<h1 id="project">Project</h1>
+
+<p>We will a PostgreSQL DB for all the members of the infamous <strong>League of Shadows</strong> 👹.<br />
+This database is mission-critical to the Gotham PD for protecting the city from
+future acts of terrorisms.</p>
+
+<h2 id="basic">Basic</h2>
+
+<h3 id="1-design-the-db-schema">1. Design the DB schema</h3>
+
+<p>We will keep it simple for now as we are more concerned with learning how to use
+Postgres from a running container rather than focusing on the database schema design.</p>
+
+<p>We will use a single table called <code>members</code> as follows:</p>
+
+<hr />
+
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>bio</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>Ra&rsquo;s al Ghul</td>
+<td>He is the founder of The League of Shadows.</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Bruce Wayne</td>
+<td>Batman&rsquo;s secret identity is Bruce Wayne, an American billionaire, playboy, philanthropist, and owner of Wayne Enterprises.</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Talia al Ghul</td>
+<td>She is the daughter of Ra&rsquo;s al Ghul.</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Bane</td>
+<td>Bane was once a member of The League until he was excommunicated by Ra&rsquo;s al Ghul.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="2-create-and-run-the-postgresdb-container">2. Create and run the PostgresDB container</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker run --detach <span style="color:#f1fa8c">\ </span><span style="color:#6272a4"># run the container in background
+</span><span style="color:#6272a4"></span>            --name <span style="color:#f1fa8c">&#34;shadowsDB&#34;</span> <span style="color:#6272a4"># name the container
+</span><span style="color:#6272a4"></span>            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_USER</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;batman&#34;</span> <span style="color:#f1fa8c">\ </span><span style="color:#6272a4"># configuration specific to our database
+</span><span style="color:#6272a4"></span>            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_PASSWORD</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;blueflower&#34;</span> <span style="color:#f1fa8c">\
+</span><span style="color:#f1fa8c"></span>            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_DB</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;league_of_shadows&#34;</span> <span style="color:#f1fa8c">\
+</span><span style="color:#f1fa8c"></span>            
+            postgres:11.1-alpine </code></pre></div>
+<ul>
+<li>This command will run a container with a DB named &ldquo;league_of_shadows&rdquo; for the user &ldquo;batman&rdquo;.</li>
+<li>We are using <code>--detach</code> primarily because we do not want to pollute our terminal with logs from PostgreSQL.</li>
+<li>We use the Alpine image for experimentation purpose only. (<code>bash</code>)</li>
+</ul>
+
+<h3 id="3-using-docker-compose-instead-for-a-simpler-interface">3. Using <code>docker-compose</code> instead for a simpler interface.</h3>
+
+<p>As you can see, the multi-line command looks a bit clunky and is prone to mistakes.<br />
+Let&rsquo;s rewrite the same command in a <code>docker-compose.yml</code> file instead.</p>
+
+<p>Create the following <code>docker-compose.yml</code> file inside the project directory <code>shadows</code>:</p>
+
+<script src="https://gist.github.com/kshitij10496/0fd513ea8c8ece1d4c9dba03bd988489.js"></script>
+
+<p>Now we can run the container from within the <code>shadows</code> directory with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker-compose up</code></pre></div>
+<h3 id="4-access-the-db-running-within-the-container">4. Access the DB running within the container</h3>
+
+<p>Now that the container is running, open a new terminal.</p>
+
+<p><strong>Execise:</strong> Check whether the DB has any tables or data?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker <span style="color:#8be9fd;font-style:italic">exec</span> -it shadowsDB bash <span style="color:#6272a4"># opens up a Bash session inside the DB container
+</span><span style="color:#6272a4"></span>
+$ psql league_of_shadows -U batman <span style="color:#6272a4"># connect to the DB
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">league_of_shadows</span><span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">\d</span>t <span style="color:#6272a4"># list tables in the DB
+</span><span style="color:#6272a4"></span>Did not find any relations.</code></pre></div>
+<p>It&rsquo;s empty! 😢</p>
+
+<ul>
+<li>Thanks to naming our container and using the <strong>Alpine</strong> image, we can easily use <code>bash</code> here.</li>
+<li>Password is not required when you are connecting to the DB from inside the container.</li>
+</ul>
+
+<p><em>I encourage you to play around inside the container.</em></p>
+
+<h3 id="5-loading-data-into-the-db">5. Loading data into the DB</h3>
+
+<p>(<em>pwd: <code>shadows</code></em>)</p>
+
+<p>Let&rsquo;s add our all important data to the empty DB.</p>
+
+<ol>
+<li>(optional) If you are still inside the container, exit it by closing the bash session.</li>
+<li>Create <code>1.sql</code> and <code>2.sql</code> files inside a <code>postgres</code> directory within the project.<br />
+The SQL files hold the SQL instructions required for creating the DB table and populating it respectively.</li>
+</ol>
+
+<script src="https://gist.github.com/kshitij10496/4eb85645164a454b7db72a9bb5c2ba48.js"></script>
+
+<script src="https://gist.github.com/kshitij10496/aada57ee13fecb9ae8a8f9f4264339b4.js"></script>
+
+<ol>
+<li>Add the files to the container as volume by modifying the <code>docker-compose.yml</code></li>
+</ol>
+
+<script src="https://gist.github.com/kshitij10496/88474f0a63643f59337574774a00f52a.js"></script>
+
+<ol>
+<li>Rebuild and run the container</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ docker-compose down <span style="color:#6272a4"># Stop the running container
+</span><span style="color:#6272a4"></span>Stopping shadowsDB ... <span style="color:#ff79c6">done</span>
+Removing shadowsDB ... <span style="color:#ff79c6">done</span>
+Removing network shadows_default
+
+$ docker-compose up</code></pre></div>
+<ol>
+<li>Access the container using Step#4 from above.</li>
+<li>Verify that the DB is populated with the data.</li>
+</ol>
+
+<p><em>Notes</em></p>
+
+<ul>
+<li>The SQL files inside the <code>postgres</code> directory are executed in alphabetic order. i.e. <code>1.sql</code> -&gt; <code>2.sql</code>.<br /></li>
+<li>You can access the <code>./docker-entrypoint-initdb.d</code> folder from within the container to locate the SQL files.</li>
+</ul>
+
+<h3 id="6-the-dark-knight">6. The Dark Knight</h3>
+
+<p>Now that Gotham PD has created the DB, Gordon reveals that Mr. Wayne is infact Batman
+and not a member of the League. Thus, we should remove <code>Bruce Wayne</code> from the table.</p>
+
+<ol>
+<li>Connect to the DB within the continer using Step#4.</li>
+<li>Delete the row with <code>Bruce Wayne</code>: <code>DELETE FROM members WHERE id=2;</code></li>
+<li>Close the connection.</li>
+<li>Exit the container.</li>
+<li>Stop the container with <code>$ docker-compose down</code></li>
+<li>Restart the container: <code>$ docker-compose up</code></li>
+<li>Is <code>Bruce Wayne</code> removed from our DB?</li>
+</ol>
+
+<p>Sadly, <strong>no</strong>! The reason being we are not persisting the changes made in the previous container
+to the current container.</p>
+
+<h3 id="7-data-persistence">7. Data Persistence</h3>
+
+<p>We simply need to define a new volume for the container where we can store a dump
+of the database. This could any empty directory on your machine which will reflect
+the <code>/var/lib/postgresql/data</code> directory present inside the DB container.</p>
+
+<ol>
+<li>Modify <code>docker-compose.yml</code> by adding the new volume.
+<script src="https://gist.github.com/kshitij10496/2e203ce2651671cd8b5d10ff23c1c319.js"></script></li>
+<li>Repeat Step#7</li>
+<li>Verify that <code>Bruce Wayne</code> is successfully removed from the DB.</li>
+</ol>
+
+<p>Gotham is now more resilient than ever!
+Kudos 🎉</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>After spending an entire afternoon exploring Docker and Postgres, I&rsquo;m convinced that
+using containers for running the DB and application provides me a lot of peace of mind
+worth the initial burden of writing the <code>Dockerfile</code> and <code>docker-compose.yml</code> files.
+From now onwards, I will definitely use Docker containers for running my databases.<br />
+Hopefully, you will consider the same when starting a new project! 😁</p>
+
+<h1 id="references">References</h1>
+
+<ul>
+<li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+<li><a href="https://hub.docker.com/_/postgres/">PostgreSQL Docker Image</a></li>
+<li><a href="https://en.wikipedia.org/wiki/League_of_Assassins#Members">League of Assassins Members Wikipedia</a></li>
+</ul>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kshitij10496" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello Friend</p>
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-125667904-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

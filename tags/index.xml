@@ -6,10 +6,28 @@
     <description>Recent content in Tags on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Jan 2019 23:30:07 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jan 2019 16:16:55 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Databases</title>
+      <link>https://kshitij10496.github.io/tags/databases/</link>
+      <pubDate>Sun, 13 Jan 2019 16:16:55 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/databases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://kshitij10496.github.io/tags/docker/</link>
+      <pubDate>Sun, 13 Jan 2019 16:16:55 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Essay</title>
@@ -89,6 +107,15 @@
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/oop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postgres</title>
+      <link>https://kshitij10496.github.io/tags/postgres/</link>
+      <pubDate>Sun, 13 Jan 2019 16:16:55 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/postgres/</guid>
       <description></description>
     </item>
     

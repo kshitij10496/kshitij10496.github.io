@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kshitij10496.github.io/posts/postgres-with-docker/</loc>
+    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/posts/fahrenheit-451/</loc>
     <lastmod>2019-01-05T17:49:01+05:30</lastmod>
   </url>
@@ -145,6 +150,18 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/tags/databases/</loc>
+    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/tags/docker/</loc>
+    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/tags/essay/</loc>
     <lastmod>2019-01-03T23:30:07+05:30</lastmod>
     <priority>0</priority>
@@ -217,8 +234,14 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/tags/postgres/</loc>
+    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/posts/</loc>
-    <lastmod>2019-01-05T17:49:01+05:30</lastmod>
+    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -266,7 +289,13 @@
   
   <url>
     <loc>https://kshitij10496.github.io/tags/</loc>
-    <lastmod>2019-01-03T23:30:07+05:30</lastmod>
+    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/categories/tutorial/</loc>
+    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -284,7 +313,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/</loc>
-    <lastmod>2019-01-05T17:49:01+05:30</lastmod>
+    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
     <priority>0</priority>
   </url>
   

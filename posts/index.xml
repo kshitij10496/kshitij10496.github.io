@@ -6,10 +6,22 @@
     <description>Recent content in Posts on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Jan 2019 17:49:01 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jan 2019 16:16:55 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Postgres With Docker</title>
+      <link>https://kshitij10496.github.io/posts/postgres-with-docker/</link>
+      <pubDate>Sun, 13 Jan 2019 16:16:55 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/postgres-with-docker/</guid>
+      <description>Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
+Problem I have got a lot of small personal projects which use separate databases.
+Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
+Now, this soon got messy as my machine was polluted with lots of DBs and their configurations.</description>
+    </item>
     
     <item>
       <title>Review: Fahrenheit 451</title>
