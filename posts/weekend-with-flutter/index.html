@@ -147,7 +147,7 @@ After some online research, I discovered that no existing application/software f
 
 <p>Kicking off the project, I started drawing basic layouts for the app screens on a piece of paper. My primary focus during this stage was to developing the bare minimum functionalities. With no idea of how to implement these layouts, I relied solely on my determination of getting them to work - after all it&rsquo;s just UI!</p>
 
-<p><img src="https://photos.app.goo.gl/zztVwbSwwYX6y34s8" alt="layouts" /></p>
+<p><img src="images/play350-layout.jpg" alt="layouts" /></p>
 
 <h2 id="choosing-flutter">Choosing Flutter</h2>
 
@@ -161,12 +161,15 @@ In addition to sparing me from writing Java-XML and Javascript, Flutter provided
 
 <p>After setting my dev env, I completed the Google Codelabs to get a brief idea of how things worked in Flutter.
 I would highly recommend working out the Udacity Course on building Flutter apps as well.
-These resources taught me the following central concepts for building apps in Flutter:
-1. <strong>Stateless Widgets</strong> : equivalent to static web pages like this blog post
-2. <strong>Stateful Widgets</strong> : dynamic pages where contents change with user interactions
-3. <strong>State Management</strong> : managing the data for Stateful Widgets
-4. <strong>Routes</strong> : analogous to the URL for an application screen
-5. <strong>Navigation</strong> : moving around the application screen via respective routes</p>
+These resources taught me the following central concepts for building apps in Flutter:</p>
+
+<ol>
+<li><strong>Stateless Widgets</strong> : equivalent to static web pages like this blog post</li>
+<li><strong>Stateful Widgets</strong> : dynamic pages where contents change with user interactions</li>
+<li><strong>State Management</strong> : managing the data for Stateful Widgets</li>
+<li><strong>Routes</strong> : analogous to the URL for an application screen</li>
+<li><strong>Navigation</strong> : moving around the application screen via respective routes</li>
+</ol>
 
 <p>My major takeaway from the exercises was: <strong>&ldquo;Everything in Flutter is a widget&rdquo;.</strong></p>
 
@@ -174,9 +177,7 @@ These resources taught me the following central concepts for building apps in Fl
 The decision to complete the sample project along in the codelabs paid rich dividends as I started developing my own app.</p>
 
 <h1 id="building-screens">Building screens</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">- Process
-- How to decide Stateful widgets?
-- How to decide what State to maintain?</pre></div>
+
 <p>With my initial focus on emulating the layouts I had built into the app, I started off by implementing every screen as a <em>Stateless Widget</em> and fixing on the display layout with the help of <em>Hot Reload</em>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#6272a4">// The Welcome Screen is the 1st page of the application.
 </span><span style="color:#6272a4">// It is a StatelessWidget as the only possible option for the user is to tap a button 
@@ -241,6 +242,12 @@ Note: Each <em>Stateful Screen</em> is related to its corresponding <em>ScreenSt
 <li>Anything that the screen needs to modify upon user interactions (e.g. like/unlike, retweet/share, text input) should be stored as instance variable in the respective ScreenState class.</li>
 </ul></li>
 </ul>
+
+<p><img src="images/play350-welcome.png" alt="welcome screen" /></p>
+
+<p><img src="images/play350-gameplay.png" alt="game play screen" /></p>
+
+<p><img src="images/play350-gameresult.png" alt="game result screen" /></p>
 
 <h1 id="navigation">Navigation</h1>
 
