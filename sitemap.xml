@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kshitij10496.github.io/posts/weekend-with-flutter/</loc>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/posts/postgres-with-docker/</loc>
     <lastmod>2019-01-13T16:16:55+05:30</lastmod>
   </url>
@@ -144,6 +149,12 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/tags/cards/</loc>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/categories/</loc>
     <lastmod>2018-11-04T00:21:02+05:30</lastmod>
     <priority>0</priority>
@@ -156,6 +167,12 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/tags/development/</loc>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/tags/docker/</loc>
     <lastmod>2019-01-13T16:16:55+05:30</lastmod>
     <priority>0</priority>
@@ -164,6 +181,18 @@
   <url>
     <loc>https://kshitij10496.github.io/tags/essay/</loc>
     <lastmod>2019-01-03T23:30:07+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/tags/flutter/</loc>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/tags/game/</loc>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -222,6 +251,12 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/categories/mobile-app/</loc>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/tags/motivation/</loc>
     <lastmod>2018-12-31T16:56:40+05:30</lastmod>
     <priority>0</priority>
@@ -241,7 +276,13 @@
   
   <url>
     <loc>https://kshitij10496.github.io/posts/</loc>
-    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/categories/project/</loc>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -289,7 +330,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/tags/</loc>
-    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -313,7 +354,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/</loc>
-    <lastmod>2019-01-13T16:16:55+05:30</lastmod>
+    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
     <priority>0</priority>
   </url>
   

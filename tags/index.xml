@@ -6,10 +6,19 @@
     <description>Recent content in Tags on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Jan 2019 16:16:55 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 03 Feb 2019 00:01:51 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cards</title>
+      <link>https://kshitij10496.github.io/tags/cards/</link>
+      <pubDate>Sun, 03 Feb 2019 00:01:51 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/cards/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Databases</title>
@@ -17,6 +26,15 @@
       <pubDate>Sun, 13 Jan 2019 16:16:55 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/databases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://kshitij10496.github.io/tags/development/</link>
+      <pubDate>Sun, 03 Feb 2019 00:01:51 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/development/</guid>
       <description></description>
     </item>
     
@@ -35,6 +53,24 @@
       <pubDate>Thu, 03 Jan 2019 23:30:07 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/essay/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>https://kshitij10496.github.io/tags/flutter/</link>
+      <pubDate>Sun, 03 Feb 2019 00:01:51 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game</title>
+      <link>https://kshitij10496.github.io/tags/game/</link>
+      <pubDate>Sun, 03 Feb 2019 00:01:51 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/game/</guid>
       <description></description>
     </item>
     

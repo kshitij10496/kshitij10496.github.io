@@ -6,10 +6,21 @@
     <description>Recent content on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Jan 2019 16:16:55 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 03 Feb 2019 00:01:51 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Weekend With Flutter</title>
+      <link>https://kshitij10496.github.io/posts/weekend-with-flutter/</link>
+      <pubDate>Sun, 03 Feb 2019 00:01:51 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/weekend-with-flutter/</guid>
+      <description>I built my first-ever mobile application as a weekend project.
+This post describes my experience, thoughts and emotions over the past few days.
+Motivation Last week, my friends introduced me to a cards game called &amp;ldquo;350&amp;rdquo;. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
+    </item>
     
     <item>
       <title>Postgres With Docker</title>
