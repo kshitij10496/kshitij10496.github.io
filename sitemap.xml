@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kshitij10496.github.io/posts/magical-files/</loc>
+    <lastmod>2019-02-10T20:47:16+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/posts/weekend-with-flutter/</loc>
     <lastmod>2019-02-03T00:01:51+05:30</lastmod>
   </url>
@@ -245,6 +250,12 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/tags/linux/</loc>
+    <lastmod>2019-02-10T20:47:16+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/categories/medium/</loc>
     <lastmod>2017-08-28T00:00:00+05:30</lastmod>
     <priority>0</priority>
@@ -269,6 +280,12 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/tags/osx/</loc>
+    <lastmod>2019-02-10T20:47:16+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/tags/postgres/</loc>
     <lastmod>2019-01-13T16:16:55+05:30</lastmod>
     <priority>0</priority>
@@ -276,13 +293,13 @@
   
   <url>
     <loc>https://kshitij10496.github.io/posts/</loc>
-    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+    <lastmod>2019-02-10T20:47:16+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/project/</loc>
-    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+    <lastmod>2019-02-10T20:47:16+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -318,7 +335,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/categories/software/</loc>
-    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-10T20:47:16+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -347,6 +364,12 @@
   </url>
   
   <url>
+    <loc>https://kshitij10496.github.io/tags/unix/</loc>
+    <lastmod>2019-02-10T20:47:16+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kshitij10496.github.io/tags/writing/</loc>
     <lastmod>2019-01-02T21:14:45+05:30</lastmod>
     <priority>0</priority>
@@ -354,7 +377,7 @@
   
   <url>
     <loc>https://kshitij10496.github.io/</loc>
-    <lastmod>2019-02-03T00:01:51+05:30</lastmod>
+    <lastmod>2019-02-10T20:47:16+05:30</lastmod>
     <priority>0</priority>
   </url>
   

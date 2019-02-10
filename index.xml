@@ -6,10 +6,22 @@
     <description>Recent content on kshitij10496</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 03 Feb 2019 00:01:51 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 10 Feb 2019 20:47:16 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Magical Files</title>
+      <link>https://kshitij10496.github.io/posts/magical-files/</link>
+      <pubDate>Sun, 10 Feb 2019 20:47:16 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/magical-files/</guid>
+      <description>Context My Downloads folder is a mess!
+I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
+&amp;ldquo;Is there a way to only list all the PDF files present in a directory?&amp;rdquo;
+Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
+    </item>
     
     <item>
       <title>Weekend with Flutter</title>
