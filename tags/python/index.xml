@@ -56,8 +56,7 @@ Motivation Consider you are an event manager of a restaurant.</description>
       <pubDate>Sun, 07 Aug 2016 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-10-11/</guid>
-      <description>FiniteSet | list
-ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None  Adding domain support.
+      <description>FiniteSet | list ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None  Adding domain support.
 I added a domain argument to isolve whose default value is the real domain (domain=S.Reals). A few limitation to the conditions of S.Infinity and S.NegativeInfinity followed.
 Another noticable point, from the point of implementation, was to deal with singularities and discontinuities of the given inequality. For this, I used the continuous_domain method to find the continuous domains of the expression within the specified domain.</description>
     </item>
@@ -162,10 +161,10 @@ If we have to solve for x in the equation f(x) = 0, where</description>
     
     <item>
       <title>Auditing SymPy&#39;s Transcendental solver</title>
-      <link>https://kshitij10496.github.io/posts/auditing-transcendental-solver/</link>
+      <link>https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</link>
       <pubDate>Sun, 15 May 2016 00:00:00 +0530</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/auditing-transcendental-solver/</guid>
+      <guid>https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</guid>
       <description>Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
  modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential).
  using SymPy Set objects internally, instead of using the built-in Python lists.

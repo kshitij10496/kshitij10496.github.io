@@ -7,23 +7,23 @@
 
     <meta name="author" content="KSHITIJ SARAOGI">
     <meta name="description" content="Kshitij Saraogi&#39;s personal website">
-    <meta name="keywords" content="blog,developer,personal">
+    <meta name="keywords" content="blog,developer,personal,minimal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GSoC Week 10 &amp; 11 - The One with `solvify`"/>
-<meta name="twitter:description" content="FiniteSet | list
-ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None  Adding domain support.
+<meta name="twitter:description" content="FiniteSet | list ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None  Adding domain support.
 I added a domain argument to isolve whose default value is the real domain (domain=S.Reals). A few limitation to the conditions of S.Infinity and S.NegativeInfinity followed.
 Another noticable point, from the point of implementation, was to deal with singularities and discontinuities of the given inequality. For this, I used the continuous_domain method to find the continuous domains of the expression within the specified domain."/>
 
     <meta property="og:title" content="GSoC Week 10 &amp; 11 - The One with `solvify`" />
-<meta property="og:description" content="FiniteSet | list
-ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None  Adding domain support.
+<meta property="og:description" content="FiniteSet | list ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None  Adding domain support.
 I added a domain argument to isolve whose default value is the real domain (domain=S.Reals). A few limitation to the conditions of S.Infinity and S.NegativeInfinity followed.
 Another noticable point, from the point of implementation, was to deal with singularities and discontinuities of the given inequality. For this, I used the continuous_domain method to find the continuous domains of the expression within the specified domain." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/gsoc-week-10-11/" /><meta property="article:published_time" content="2016-08-07T00:00:00&#43;05:30"/>
-<meta property="article:modified_time" content="2016-08-07T00:00:00&#43;05:30"/>
+<meta property="og:url" content="https://kshitij10496.github.io/posts/gsoc-week-10-11/" />
+<meta property="article:published_time" content="2016-08-07T00:00:00+05:30" />
+<meta property="article:modified_time" content="2016-08-07T00:00:00+05:30" />
+
 
     
       <base href="https://kshitij10496.github.io/posts/gsoc-week-10-11/">
@@ -37,8 +37,8 @@ Another noticable point, from the point of implementation, was to deal with sing
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
@@ -52,10 +52,12 @@ Another noticable point, from the point of implementation, was to deal with sing
 
     
 
+    
+    
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.47.1" />
+    <meta name="generator" content="Hugo 0.58.3" />
   </head>
 
   <body class=" ">
@@ -79,11 +81,7 @@ Another noticable point, from the point of implementation, was to deal with sing
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/values/">VALUES</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+            <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
           </li>
         
           <li class="navigation-item">
@@ -134,8 +132,9 @@ Another noticable point, from the point of implementation, was to deal with sing
       <div>
         
 
-<p>FiniteSet   | list</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">  ImageSet,   | list (if `f` is periodic)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">  FiniteSet   | list
+
+  ImageSet,   | list (if `f` is periodic)
   Union       |
 
   EmptySet    | empty list
@@ -206,6 +205,8 @@ I try to make up for the lost time during the weekend and meet the 40 hour weekl
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
       </footer>
     </article>
 
@@ -219,9 +220,9 @@ I try to make up for the lost time during the weekend and meet the 40 hour weekl
     
       <p>Hello Friend</p>
     
-     © 2019
     
-       · 
+    
+      
       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
     

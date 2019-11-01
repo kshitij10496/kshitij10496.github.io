@@ -7,7 +7,7 @@
 
     <meta name="author" content="KSHITIJ SARAOGI">
     <meta name="description" content="Kshitij Saraogi&#39;s personal website">
-    <meta name="keywords" content="blog,developer,personal">
+    <meta name="keywords" content="blog,developer,personal,minimal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Typing in Python, Go and JavaScript"/>
@@ -18,8 +18,10 @@
 <meta property="og:description" content="Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &ldquo;ask for forgiveness&rdquo; if the post seems too colloquial and pragmatic.
  Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following: 1. &ldquo;Python is a strongly typed, dynamic language.&rdquo; 2. &ldquo;Go is a statically typed, strong language.&rdquo; 3. &ldquo;JavaScript is a dynamic language which is weakly typed." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/typing/" /><meta property="article:published_time" content="2017-12-10T00:00:00&#43;05:30"/>
-<meta property="article:modified_time" content="2017-12-10T00:00:00&#43;05:30"/>
+<meta property="og:url" content="https://kshitij10496.github.io/posts/typing/" />
+<meta property="article:published_time" content="2017-12-10T00:00:00+05:30" />
+<meta property="article:modified_time" content="2017-12-10T00:00:00+05:30" />
+
 
     
       <base href="https://kshitij10496.github.io/posts/typing/">
@@ -33,8 +35,8 @@
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
@@ -48,10 +50,12 @@
 
     
 
+    
+    
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.47.1" />
+    <meta name="generator" content="Hugo 0.58.3" />
   </head>
 
   <body class=" ">
@@ -75,11 +79,7 @@
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/values/">VALUES</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+            <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
           </li>
         
           <li class="navigation-item">
@@ -215,29 +215,23 @@ i.e a strongly typed language is restrictive of type intermingling.</p>
 <h3 id="python-1">Python</h3>
 
 <ol>
-<li>Adding a number to a string
-```python
-&gt;&gt;&gt; a, b = 10, &lsquo;K&rsquo;
-&gt;&gt;&gt; a + b # Binary operation on different types
-&hellip;
-TypeError: unsupported operand type(s) for +: &lsquo;int&rsquo; and &lsquo;str&rsquo;</li>
+<li><p>Adding a number to a string</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> a, b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#39;K&#39;</span>
+<span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># Binary operation on different types</span>
+<span style="color:#ff79c6">...</span>
+TypeError: unsupported operand <span style="color:#8be9fd;font-style:italic">type</span>(s) <span style="color:#ff79c6">for</span> <span style="color:#ff79c6">+</span>: <span style="color:#f1fa8c">&#39;int&#39;</span> <span style="color:#ff79c6">and</span> <span style="color:#f1fa8c">&#39;str&#39;</span>
+
+<span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> <span style="color:#8be9fd;font-style:italic">ord</span>(b) <span style="color:#6272a4"># Explicit type conversion of string to integer</span>
+<span style="color:#bd93f9">85</span>
+
+<span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#8be9fd;font-style:italic">str</span>(a) <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># Explicit type conversion of integer to string</span>
+<span style="color:#f1fa8c">&#39;10K&#39;</span></code></pre></div></li>
+
+<li><p>Adding an integer to a floating point number</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> a, b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
+<span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># No error</span>
+<span style="color:#bd93f9">3.5</span></code></pre></div></li>
 </ol>
-
-<blockquote>
-<blockquote>
-<blockquote>
-<p>a + ord(b) # Explicit type conversion of string to integer
-85</p>
-
-<p>str(a) + b # Explicit type conversion of integer to string
-&lsquo;10K&rsquo;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">2. Adding an integer to a floating point number
-```python
-&gt;&gt;&gt; a, b = 1, 2.5
-&gt;&gt;&gt; a + b # No error
-3.5</pre></div></blockquote>
-</blockquote>
-</blockquote>
 
 <p><strong>Conclusion:</strong> Raises errors when sense cannot be made. Also, the interpreter is not restrictive enough to spoil the fun in programming.</p>
 
@@ -245,15 +239,15 @@ TypeError: unsupported operand type(s) for +: &lsquo;int&rsquo; and &lsquo;str&r
 
 <ol>
 <li><p>Adding a number to a string</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> AddNumStr() {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumStr</span>() {
  a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#34;K&#34;</span>
- fmt.Println(a <span style="color:#ff79c6">+</span> b)
+ fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
 }</code></pre></div></li>
 
 <li><p>Adding an integer to a floating point number</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> AddNumFloat() {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumFloat</span>() {
  a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
- fmt.Println(a <span style="color:#ff79c6">+</span> b)
+ fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
 }</code></pre></div></li>
 </ol>
 
@@ -308,6 +302,8 @@ TypeError: unsupported operand type(s) for +: &lsquo;int&rsquo; and &lsquo;str&r
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
       </footer>
     </article>
 
@@ -321,9 +317,9 @@ TypeError: unsupported operand type(s) for +: &lsquo;int&rsquo; and &lsquo;str&r
     
       <p>Hello Friend</p>
     
-     © 2019
     
-       · 
+    
+      
       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
     

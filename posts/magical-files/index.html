@@ -7,23 +7,25 @@
 
     <meta name="author" content="KSHITIJ SARAOGI">
     <meta name="description" content="Kshitij Saraogi&#39;s personal website">
-    <meta name="keywords" content="blog,developer,personal">
+    <meta name="keywords" content="blog,developer,personal,minimal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Magical Files"/>
 <meta name="twitter:description" content="Context My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
-&ldquo;Is there a way to only list all the PDF files present in a directory?&rdquo;
+“Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*."/>
 
     <meta property="og:title" content="Magical Files" />
 <meta property="og:description" content="Context My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
-&ldquo;Is there a way to only list all the PDF files present in a directory?&rdquo;
+“Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/magical-files/" /><meta property="article:published_time" content="2019-02-10T20:47:16&#43;05:30"/>
-<meta property="article:modified_time" content="2019-02-10T20:47:16&#43;05:30"/>
+<meta property="og:url" content="https://kshitij10496.github.io/posts/magical-files/" />
+<meta property="article:published_time" content="2019-02-10T18:55:02+05:30" />
+<meta property="article:modified_time" content="2019-02-10T18:55:02+05:30" />
+
 
     
       <base href="https://kshitij10496.github.io/posts/magical-files/">
@@ -37,8 +39,8 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
@@ -52,10 +54,12 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
 
     
 
+    
+    
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.47.1" />
+    <meta name="generator" content="Hugo 0.58.3" />
   </head>
 
   <body class=" ">
@@ -79,11 +83,7 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/values/">VALUES</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+            <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
           </li>
         
           <li class="navigation-item">
@@ -109,7 +109,7 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2019-02-10T20:47:16&#43;05:30'>
+              <time datetime='2019-02-10T18:55:02&#43;05:30'>
                 February 10, 2019
               </time>
             </span>
@@ -142,36 +142,31 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
 
 <p>My <code>Downloads</code> folder is a mess!</p>
 
-<p>I have got hundreds of files in that directory.
-Most of them are PDF documents with some images, archives and disk images.</p>
+<p>I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.</p>
 
-<p>&ldquo;Is there a way to only list all the PDF files present in a directory?&rdquo;</p>
+<p>“Is there a way to only list all the PDF files present in a directory?”</p>
 
-<p>Well, filtering based on file extension (<code>.pdf</code>) should be able to do this for me.
-Moreover, I can leverage the power of regular expression: <code>$ ls -lh ~/Downloads/*.pdf</code></p>
+<p>Well, filtering based on file extension (<code>.pdf</code>) should be able to do this for me. Moreover, I can leverage the power of regular expression: <code>$ ls -lh ~/Downloads/*.pdf</code></p>
 
 <p>After some experimentation, I discovered that a non-negligible number of files stored in PDF format existed which did not have a <code>.pdf</code> extension 😱:</p>
 
 <ol>
-<li>The university&rsquo;s portal only allows us to download PDFs with a <code>.jsp</code> extension. 😓</li>
+<li>The university’s portal only allows us to download PDFs with a <code>.jsp</code> extension. 😓</li>
 <li>I had a <code>FileHandler.ashx</code> file that also contained data in PDF format.</li>
 </ol>
 
-<p>These findings helped me infer that the use of <code>*.pdf</code> RegEx is not robust enough to ensure that all PDF documents are selected.
-Apparently, even the OSX&rsquo;s Finder fails at detecting the file &ldquo;Kind&rdquo; for <code>FileHandler.ashx</code>.</p>
+<p>These findings helped me infer that the use of <code>*.pdf</code> RegEx is not robust enough to ensure that all PDF documents are selected. Apparently, even the OSX’s Finder fails at detecting the file “Kind” for <code>FileHandler.ashx</code>.</p>
 
-<p><img src="images/magical-files-finder.png" alt="Finder" /></p>
+<p>Finder</p>
 
 <p>Looking for something more sophisticated, eh?</p>
 
 <h1 id="detour-magic-numbers">Detour: Magic Numbers ✨</h1>
 
 <p>What is a <strong>magic number</strong>?<br />
-Any constant numerical or text value that you find in your code is a magic number, especially the ones you &ldquo;forget&rdquo; to comment/document.</p>
+Any constant numerical or text value that you find in your code is a magic number, especially the ones you “forget” to comment/document.</p>
 
-<p>Interestingly enough, many files have such constants that identify the contained data.
-In addition to this, detecting such constants in files is a simple and effective way of distinguishing between many file formats. 😲
-These magic numbers, used to identify or verify the content of a file, are also called &ldquo;file signatures&rdquo;.</p>
+<p>Interestingly enough, many files have such constants that identify the contained data. In addition to this, detecting such constants in files is a simple and effective way of distinguishing between many file formats. 😲 These magic numbers, used to identify or verify the content of a file, are also called “file signatures”.</p>
 
 <p>Examples:</p>
 
@@ -181,36 +176,32 @@ These magic numbers, used to identify or verify the content of a file, are also 
 <li><code>&lt;!DOCTYPE HTML&gt;</code> indicate HTML documents.</li>
 </ol>
 
-<p><strong>caution</strong> ⚠️:</p>
+<p><strong>caution ⚠️:</strong></p>
 
 <p>The magic number approach offers better guarantees that the format will be identified correctly, and can often determine more precise information about the file.</p>
 
 <ol>
-<li>Since reasonably reliable &ldquo;magic number&rdquo; tests can be fairly complex, and each file must effectively be tested against every possibility in the magic database, this approach is relatively inefficient, especially for displaying large lists of files.</li>
+<li>Since reasonably reliable “magic number” tests can be fairly complex, and each file must effectively be tested against every possibility in the magic database, this approach is relatively inefficient, especially for displaying large lists of files.</li>
 <li>Also, data must be read from the file itself, increasing latency as opposed to metadata stored in the directory.</li>
-<li>Where file types don&rsquo;t lend themselves to recognition in this way, the system must fall back to metadata.
-<br /></li>
+<li>Where file types don’t lend themselves to recognition in this way, the system must fall back to metadata.</li>
 </ol>
 
-<p><strong>green light</strong> ✅:</p>
+<p><strong>green light ✅:</strong></p>
 
-<p>Failing a well-designed magic number test is a <strong>pretty sure sign</strong> that the file is either <strong>corrupt</strong> or of the <strong>wrong type</strong>.
-On the other hand, a valid magic number <strong>does not guarantee</strong> that the file is not corrupt or is of a correct type.</p>
+<p>Failing a well-designed magic number test is a pretty sure sign that the file is either <strong>corrupt</strong> or of the <strong>wrong type</strong>. On the other hand, a valid magic number does not guarantee that the file is not corrupt or is of a correct type.</p>
 
 <h1 id="preliminary-research">Preliminary Research</h1>
 
-<p>I have previously used the Unix <code>file</code> command for determining the file type by performing some &ldquo;tests&rdquo; via system calls.
-One of them is the <strong>magic test</strong> which checks the file header for the existence of these magic numbers using the <code>libmagic</code> library written in C.</p>
+<p>I have previously used the Unix <code>file</code> command for determining the file type by performing some “tests” via system calls. One of them is the <strong>magic test</strong> which checks the file header for the existence of these magic numbers using the <code>libmagic</code> library written in C.</p>
 
-<p>The next question confronting me: &ldquo;Is there a way to use the libmagic library from Go?&rdquo;</p>
+<p>The next question confronting me: “Is there a way to use the libmagic library from Go?”</p>
 
-<p>That&rsquo;s when I found the <a href="https://github.com/rakyll/magicmime">rakyll/magicmime</a> package from the inimitable JBD. 🎉<br />
+<p>That’s when I found the <a href="https://github.com/rakyll/magicmime">rakyll/magicmime</a> package from the inimitable JBD. 🎉
 It provides Go bindings for the <code>libmagic</code> library - exactly what I was looking for! 😁</p>
 
 <h1 id="solution">Solution</h1>
 
-<p>This week I will be developing a CLI using <a href="https://github.com/spf13/cobra">spf13/cobra</a> which can help the users filter files based on it&rsquo;s format. My intention is to make a simple, decoupled and UNIX pipe compatible tool that plays well with other utilities.
-With my university exams starting in 10 days, this week would be the optimal period for me to work on the project.</p>
+<p>This week I will be developing a CLI using <a href="https://github.com/spf13/cobra">spf13/cobra</a> which can help the users filter files based on it’s format. My intention is to make a simple, decoupled and UNIX pipe compatible tool that plays well with other utilities. With my university exams starting in 10 days, this week would be the optimal period for me to work on the project.</p>
 
 <p>In case there are any existing solutions for solving this, do let me know!<br />
 If you currently experience this problem, I would love to hear your thoughts. 😃</p>
@@ -250,6 +241,8 @@ If you currently experience this problem, I would love to hear your thoughts. �
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
       </footer>
     </article>
 
@@ -263,9 +256,9 @@ If you currently experience this problem, I would love to hear your thoughts. �
     
       <p>Hello Friend</p>
     
-     © 2019
     
-       · 
+    
+      
       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
     

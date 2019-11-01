@@ -7,7 +7,7 @@
 
     <meta name="author" content="KSHITIJ SARAOGI">
     <meta name="description" content="Kshitij Saraogi&#39;s personal website">
-    <meta name="keywords" content="blog,developer,personal">
+    <meta name="keywords" content="blog,developer,personal,minimal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Duck Typing in Python"/>
@@ -16,8 +16,10 @@
     <meta property="og:title" content="Duck Typing in Python" />
 <meta property="og:description" content="What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute: 1. attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/duck-typing-in-python/" /><meta property="article:published_time" content="2017-12-03T00:00:00&#43;05:30"/>
-<meta property="article:modified_time" content="2017-12-03T00:00:00&#43;05:30"/>
+<meta property="og:url" content="https://kshitij10496.github.io/posts/duck-typing-in-python/" />
+<meta property="article:published_time" content="2017-12-03T00:00:00+05:30" />
+<meta property="article:modified_time" content="2017-12-03T00:00:00+05:30" />
+
 
     
       <base href="https://kshitij10496.github.io/posts/duck-typing-in-python/">
@@ -31,8 +33,8 @@
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
@@ -46,10 +48,12 @@
 
     
 
+    
+    
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.47.1" />
+    <meta name="generator" content="Hugo 0.58.3" />
   </head>
 
   <body class=" ">
@@ -73,11 +77,7 @@
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/values/">VALUES</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+            <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
           </li>
         
           <li class="navigation-item">
@@ -217,53 +217,53 @@ i.e <strong>Too much of <code>isinstance</code> and <code>hasattr</code> works b
 <p>We will perform different kinds of input validation for the <code>tabulate_mapping</code> function based on the requirements:</p>
 
 <ol>
-<li>If we want the <code>tabulate_mapping</code> to be generic utility which can work on any <code>mapping</code> object with <code>items</code> and iterable <code>headers</code>.</li>
-</ol>
+<li><p>If we want the <code>tabulate_mapping</code> to be generic utility which can work on any <code>mapping</code> object with <code>items</code> and iterable <code>headers</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def tabulate_mapping_v1(mapping, headers):" data-lang="def tabulate_mapping_v1(mapping, headers):">        
-        # Validate headers
-        try:
-            headers_iter = iter(headers)
-        except TypeError as e:
-            raise ValueError(&#39;headers needs to be an iterable.&#39;)
+    # Validate headers
+    try:
+        headers_iter = iter(headers)
+    except TypeError as e:
+        raise ValueError(&#39;headers needs to be an iterable.&#39;)
 
-        # Validate mapping
-         try:
-             mapping_items = mapping.items()
-         except AttributeError as e:
-             raise ValueError(&#39;mapping should have an items method.&#39;)
+    # Validate mapping
+     try:
+         mapping_items = mapping.items()
+     except AttributeError as e:
+         raise ValueError(&#39;mapping should have an items method.&#39;)
 
-        heading = &#39;&#39;
+    heading = &#39;&#39;
         
-         for header in headers_iter:
-             heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
+     for header in headers_iter:
+         heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
 
-         print(heading)
-         print(&#39;-&#39;*len(heading))
+     print(heading)
+     print(&#39;-&#39;*len(heading))
          
-         for k, v in mapping_items:
-             print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))</code></pre></div>
-<ol>
-<li>If we want to restrict the <code>mapping</code> object to an instance of a subclass of the built-in <code>dict</code> and the <code>headers</code> are specified to be a <code>list</code> object:</li>
-</ol>
+     for k, v in mapping_items:
+         print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))</code></pre></div></li>
+
+<li><p>If we want to restrict the <code>mapping</code> object to an instance of a subclass of the built-in <code>dict</code> and the <code>headers</code> are specified to be a <code>list</code> object:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def tabulate_mapping_v2(mapping, headers):" data-lang="def tabulate_mapping_v2(mapping, headers):">        
-        # Validate headers
-        if not isinstance(headers, list)
-            raise ValueError(&#39;headers needs to be a list object.&#39;)
+    # Validate headers
+    if not isinstance(headers, list)
+        raise ValueError(&#39;headers needs to be a list object.&#39;)
 
-        # Validate mapping
-        if not isinstance(mapping, dict):
-            raise ValueError(&#39;mapping needs to be a dict object.&#39;)
+    # Validate mapping
+    if not isinstance(mapping, dict):
+        raise ValueError(&#39;mapping needs to be a dict object.&#39;)
      
-        heading = &#39;&#39;
+    heading = &#39;&#39;
         
-         for header in headers_iter:
-             heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
+     for header in headers_iter:
+         heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
 
-         print(heading)
-         print(&#39;-&#39;*len(heading))
+     print(heading)
+     print(&#39;-&#39;*len(heading))
          
-         for k, v in mapping_items:
-             print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))</code></pre></div>
+     for k, v in mapping_items:
+         print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))</code></pre></div></li>
+</ol>
+
 <h1 id="conclusion">Conclusion</h1>
 
 <blockquote>
@@ -298,6 +298,8 @@ i.e <strong>Too much of <code>isinstance</code> and <code>hasattr</code> works b
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
       </footer>
     </article>
 
@@ -311,9 +313,9 @@ i.e <strong>Too much of <code>isinstance</code> and <code>hasattr</code> works b
     
       <p>Hello Friend</p>
     
-     © 2019
     
-       · 
+    
+      
       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
     

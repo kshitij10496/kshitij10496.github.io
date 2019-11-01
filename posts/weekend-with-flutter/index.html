@@ -7,21 +7,23 @@
 
     <meta name="author" content="KSHITIJ SARAOGI">
     <meta name="description" content="Kshitij Saraogi&#39;s personal website">
-    <meta name="keywords" content="blog,developer,personal">
+    <meta name="keywords" content="blog,developer,personal,minimal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Weekend with Flutter"/>
 <meta name="twitter:description" content="I built my first-ever mobile application as a weekend project.
 This post describes my experience, thoughts and emotions over the past few days.
-Motivation Last week, my friends introduced me to a cards game called &ldquo;350&rdquo;. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information."/>
+Motivation Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information."/>
 
     <meta property="og:title" content="Weekend with Flutter" />
 <meta property="og:description" content="I built my first-ever mobile application as a weekend project.
 This post describes my experience, thoughts and emotions over the past few days.
-Motivation Last week, my friends introduced me to a cards game called &ldquo;350&rdquo;. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information." />
+Motivation Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/weekend-with-flutter/" /><meta property="article:published_time" content="2019-02-03T00:01:51&#43;05:30"/>
-<meta property="article:modified_time" content="2019-02-03T00:01:51&#43;05:30"/>
+<meta property="og:url" content="https://kshitij10496.github.io/posts/weekend-with-flutter/" />
+<meta property="article:published_time" content="2019-02-03T19:14:09+05:30" />
+<meta property="article:modified_time" content="2019-02-03T19:14:09+05:30" />
+
 
     
       <base href="https://kshitij10496.github.io/posts/weekend-with-flutter/">
@@ -35,8 +37,8 @@ Motivation Last week, my friends introduced me to a cards game called &ldquo;350
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
@@ -50,10 +52,12 @@ Motivation Last week, my friends introduced me to a cards game called &ldquo;350
 
     
 
+    
+    
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.47.1" />
+    <meta name="generator" content="Hugo 0.58.3" />
   </head>
 
   <body class=" ">
@@ -77,11 +81,7 @@ Motivation Last week, my friends introduced me to a cards game called &ldquo;350
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/values/">VALUES</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/quotes/">QUOTES</a>
+            <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
           </li>
         
           <li class="navigation-item">
@@ -107,7 +107,7 @@ Motivation Last week, my friends introduced me to a cards game called &ldquo;350
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2019-02-03T00:01:51&#43;05:30'>
+              <time datetime='2019-02-03T19:14:09&#43;05:30'>
                 February 3, 2019
               </time>
             </span>
@@ -145,13 +145,9 @@ This post describes my experience, thoughts and emotions over the past few days.
 
 <h1 id="motivation">Motivation</h1>
 
-<p>Last week, my friends introduced me to a cards game called &ldquo;350&rdquo;.
-It involved bidding points, calling trumps, playing hands - so much fun!
-Now the only issue was that there was no simple way to store our points table.
-We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information. I used Google Excel&rsquo;s Android app as an ad-hoc way to track individual scores so as to reduce some friction. Excel sheet worked fine but it still could not display game related information in a consumable format.</p>
+<p>Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information. I used Google Excel’s Android app as an ad-hoc way to track individual scores so as to reduce some friction. Excel sheet worked fine but it still could not display game related information in a consumable format.</p>
 
-<p>The next morning I started to think <strong>there must be a better way</strong> to do this.
-After some online research, I discovered that no existing application/software for book-keeping specifically for this game. Thus, my decision to dedicate the weekend on developing a simple mobile app for this.</p>
+<p>The next morning I started to think there <strong>must be a better way</strong> to do this. After some online research, I discovered that no existing application/software for book-keeping specifically for this game. Thus, my decision to dedicate the weekend on developing a simple mobile app for this.</p>
 
 <p>I was pretty excited about the project as this would be my first attempt at app development in around 4 years writing software. At the same time, it was a bit scary as I had no idea about the timeline and whether developing a MVP is even a practical expectation. However, being the optimist that I am, I decided to give it a go.</p>
 
@@ -161,23 +157,19 @@ After some online research, I discovered that no existing application/software f
 
 <h2 id="desgining-layouts">Desgining layouts</h2>
 
-<p>Kicking off the project, I started drawing basic layouts for the app screens on a piece of paper. My primary focus during this stage was to developing the bare minimum functionalities. With no idea of how to implement these layouts, I relied solely on my determination of getting them to work - after all it&rsquo;s just UI!</p>
+<p>Kicking off the project, I started drawing basic layouts for the app screens on a piece of paper. My primary focus during this stage was to developing the bare minimum functionalities. With no idea of how to implement these layouts, I relied solely on my determination of getting them to work - after all it’s just UI!</p>
 
-<p><img src="images/play350-layout.jpg" alt="layouts" /></p>
+<p><img src="https://kshitij10496.github.io/images/posts/play350-layout.jpg" alt="layouts" /></p>
 
 <h2 id="choosing-flutter">Choosing Flutter</h2>
 
-<p>After building the screen layouts, I started looking for frameworks and tools which help build the actual app. I read about <a href="https://developer.android.com/studio/"><strong>Android Studio Code</strong></a>, <a href="https://facebook.github.io/react-native/"><strong>React Native</strong></a> and <a href="https://flutter.io/"><strong>Flutter</strong></a>.
-With my focus on rapid development, flexible UI and personal productivity, I choose Flutter.
-In addition to sparing me from writing Java-XML and Javascript, Flutter provided me with the added benefit of building cross-platform native applications.</p>
+<p>After building the screen layouts, I started looking for frameworks and tools which help build the actual app. I read about <a href="https://developer.android.com/studio/">Android Studio Code</a>, <a href="https://facebook.github.io/react-native/">React Native</a> and <a href="https://flutter.dev/">Flutter</a>. With my focus on rapid development, flexible UI and personal productivity, I choose Flutter. In addition to sparing me from writing Java-XML and Javascript, Flutter provided me with the added benefit of building cross-platform native applications.</p>
 
 <h1 id="flutter-101">Flutter 101</h1>
 
-<p>The major issue with Flutter was that the application code must be written in <em>Dart</em>. With a clock on my back, the last thing I wanted to do was spend time learning a new programming language. So, I decided to dive head first into building the app itself and learning Dart syntax on the go.</p>
+<p>The major issue with Flutter was that the application code must be written in Dart. With a clock on my back, the last thing I wanted to do was spend time learning a new programming language. So, I decided to dive head first into building the app itself and learning Dart syntax on the go.</p>
 
-<p>After setting my dev env, I completed the Google Codelabs to get a brief idea of how things worked in Flutter.
-I would highly recommend working out the Udacity Course on building Flutter apps as well.
-These resources taught me the following central concepts for building apps in Flutter:</p>
+<p>After setting my dev env, I completed the Google Codelabs to get a brief idea of how things worked in Flutter. I would highly recommend working out the Udacity Course on building Flutter apps as well. These resources taught me the following central concepts for building apps in Flutter:</p>
 
 <ol>
 <li><strong>Stateless Widgets</strong> : equivalent to static web pages like this blog post</li>
@@ -187,14 +179,14 @@ These resources taught me the following central concepts for building apps in Fl
 <li><strong>Navigation</strong> : moving around the application screen via respective routes</li>
 </ol>
 
-<p>My major takeaway from the exercises was: <strong>&ldquo;Everything in Flutter is a widget&rdquo;.</strong></p>
+<p>My major takeaway from the exercises was: <strong>“Everything in Flutter is a widget”</strong>.</p>
 
 <p>It took me around 6 hours to complete both the labs along with their quizzes.<br />
 The decision to complete the sample project along in the codelabs paid rich dividends as I started developing my own app.</p>
 
 <h1 id="building-screens">Building screens</h1>
 
-<p>With my initial focus on emulating the layouts I had built into the app, I started off by implementing every screen as a <em>Stateless Widget</em> and fixing on the display layout with the help of <em>Hot Reload</em>.</p>
+<p>With my initial focus on emulating the layouts I had built into the app, I started off by implementing every screen as a Stateless Widget and fixing on the display layout with the help of <em>Hot Reload</em>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#6272a4">// The Welcome Screen is the 1st page of the application.
 </span><span style="color:#6272a4">// It is a StatelessWidget as the only possible option for the user is to tap a button 
 </span><span style="color:#6272a4">// and navigate to a new screen.
@@ -209,8 +201,7 @@ The decision to complete the sample project along in the codelabs paid rich divi
 
   <span style="color:#6272a4">// Implement methods for building the screen body layout
 </span><span style="color:#6272a4"></span>}</code></pre></div>
-<p>When I was fairly satisfied with the screen, I refactored the code to a <em>Stateful Widget</em> along with the relevant <em>State</em> data.
-Note: Each <em>Stateful Screen</em> is related to its corresponding <em>ScreenState class</em> which stores the state and screen layout instructions.</p>
+<p>When I was fairly satisfied with the screen, I refactored the code to a <em>Stateful Widget</em> along with the relevant <em>State</em> data. Note: Each <em>Stateful Screen</em> is related to its corresponding <em>ScreenState class</em> which stores the state and screen layout instructions.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">GameBidderScreen</span> <span style="color:#8be9fd;font-style:italic">extends</span> StatefulWidget {
   <span style="color:#6272a4">// Data which is not modified for this particular screen
 </span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">final</span> <span style="color:#8be9fd">String</span> boardID;
@@ -247,30 +238,25 @@ Note: Each <em>Stateful Screen</em> is related to its corresponding <em>ScreenSt
 <li><p>How to decide whether a screen should be a <em>Stateless Widget</em> or a <em>Stateful Widget</em>?</p>
 
 <ul>
-<li>If any user interactions (tap, long press, drag) change <strong>this</strong> screen&rsquo;s content, use, then the screen can be a Stateless Widget.</li>
+<li>If any user interactions (tap, long press, drag) change <strong>this</strong> screen’s content, use, then the screen can be a Stateless Widget.</li>
 <li>Note this conditional holds, even if some actions prompt navigation to another new screen entirely.</li>
 </ul></li>
 
 <li><p>What data should be stored as the screen state?</p>
 
 <ul>
-<li>Anything that the screen should not be able to change (e.g. user&rsquo;s name, email) should not be a state variable; it should rather be a <em>final</em> instance variable in the Screen widget. Most likely, the value for such variables will be passed in from previous screens in the application flow.</li>
+<li>Anything that the screen should not be able to change (e.g. user’s name, email) should not be a state variable; it should rather be a <em>final</em> instance variable in the Screen widget. Most likely, the value for such variables will be passed in from previous screens in the application flow.</li>
 <li>Anything that the screen needs to modify upon user interactions (e.g. like/unlike, retweet/share, text input) should be stored as instance variable in the respective ScreenState class.</li>
 </ul></li>
 </ul>
 
-<p><img src="images/play350-welcome.png" alt="welcome screen" /></p>
-
-<p><img src="images/play350-gameplay.png" alt="game play screen" /></p>
-
-<p><img src="images/play350-gameresult.png" alt="game result screen" /></p>
+<p><img src="https://kshitij10496.github.io/images/posts/play350-welcome.png" alt="welcome screen" />
+<img src="https://kshitij10496.github.io/images/posts/play350-gameplay.png" alt="gameplay screen" />
+<img src="https://kshitij10496.github.io/images/posts/play350-gameresult.png" alt="gameresult screen" /></p>
 
 <h1 id="navigation">Navigation</h1>
 
-<p>Now that we have built our screen layouts, its about time to connect all of them and build the user flow.
-Flutter uses a <strong>stack based navigation</strong> system for moving around screens.
-Basically, this means that you <strong>push</strong> a new screen on top of the current screen if you want to switch.
-Moreover, you have to <strong>pop</strong> screens in order to reduce the amount of RAM consumed by your application.</p>
+<p>Now that we have built our screen layouts, its about time to connect all of them and build the user flow. Flutter uses a <strong>stack based navigation</strong> system for moving around screens. Basically, this means that you <strong>push</strong> a new screen on top of the current screen if you want to switch. Moreover, you have to <strong>pop</strong> screens in order to reduce the amount of RAM consumed by your application.</p>
 
 <p>In my case, I decided to pop screens before pushing in new ones whenever the user decided to start a <em>New Game</em>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  <span style="color:#6272a4">// When the user presses the &#34;New Game&#34; button on the result screen.
@@ -293,7 +279,7 @@ Moreover, you have to <strong>pop</strong> screens in order to reduce the amount
           ),
         );
       },</code></pre></div>
-<h1 id="what-s-next">What&rsquo;s Next?</h1>
+<h1 id="what-s-next">What’s Next?</h1>
 
 <p>In the future, I plan to complete the following tasks as well:</p>
 
@@ -301,16 +287,14 @@ Moreover, you have to <strong>pop</strong> screens in order to reduce the amount
 <li>Firebase integration</li>
 <li>Use Firestore database</li>
 <li>Google Sign-In</li>
-<li>Explore &ldquo;Animations&rdquo;</li>
+<li>Explore “Animations”</li>
 <li>Make scoreboard interactive.</li>
 <li>Add synchronisation between players.</li>
 </ul>
 
 <h1 id="parting-thoughts">Parting Thoughts</h1>
 
-<p>I am super satisfied and proud of myself for completing the MVP I had set out at the start of the weekend.
-It was all down to the ease with which I was able to get things done in Flutter even though I did not learn Dart.
-Even though this would not be the best code architecture, I am fairly happy to get it working.</p>
+<p>I am super satisfied and proud of myself for completing the MVP I had set out at the start of the weekend. It was all down to the ease with which I was able to get things done in Flutter even though I did not learn Dart. Even though this would not be the best code architecture, I am fairly happy to get it working.</p>
 
 <p>Do give the app a try if you like to play 350.<br />
 Happy to incorporate feedback into the app! 😁</p>
@@ -349,6 +333,8 @@ Happy to incorporate feedback into the app! 😁</p>
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
       </footer>
     </article>
 
@@ -362,9 +348,9 @@ Happy to incorporate feedback into the app! 😁</p>
     
       <p>Hello Friend</p>
     
-     © 2019
     
-       · 
+    
+      
       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
     
