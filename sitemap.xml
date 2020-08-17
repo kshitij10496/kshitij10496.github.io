@@ -1,343 +1,370 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kshitij10496.github.io/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <lastmod>2020-08-17T21:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/tags/linux/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <loc>https://kshitij10496.github.io/categories/</loc>
+    <lastmod>2020-08-17T21:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/posts/magical-files/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <loc>https://kshitij10496.github.io/tags/chess/</loc>
+    <lastmod>2020-08-17T21:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/tags/osx/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <loc>https://kshitij10496.github.io/posts/2020-08-17/</loc>
+    <lastmod>2020-08-17T21:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/posts/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <loc>https://kshitij10496.github.io/categories/journal/</loc>
+    <lastmod>2020-08-17T21:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/project/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <loc>https://kshitij10496.github.io/tags/keyboard/</loc>
+    <lastmod>2020-08-17T21:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kshitij10496.github.io/categories/software/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <loc>https://kshitij10496.github.io/tags/learning/</loc>
+    <lastmod>2020-08-17T21:16:47+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <lastmod>2020-08-17T21:16:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/posts/</loc>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/tags/linux/</loc>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/posts/magical-files/</loc>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/tags/osx/</loc>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/categories/project/</loc>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kshitij10496.github.io/categories/software/</loc>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/unix/</loc>
-    <lastmod>2019-02-10T18:55:02+05:30</lastmod>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/cards/</loc>
-    <lastmod>2019-02-03T19:14:09+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/development/</loc>
-    <lastmod>2019-02-03T19:14:09+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/flutter/</loc>
-    <lastmod>2019-02-03T19:14:09+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/game/</loc>
-    <lastmod>2019-02-03T19:14:09+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/mobile-app/</loc>
-    <lastmod>2019-02-03T19:14:09+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/weekend-with-flutter/</loc>
-    <lastmod>2019-02-03T19:14:09+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/databases/</loc>
-    <lastmod>2019-01-13T20:47:59+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/docker/</loc>
-    <lastmod>2019-01-13T20:47:59+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/postgres/</loc>
-    <lastmod>2019-01-13T20:47:59+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/postgres-with-docker/</loc>
-    <lastmod>2019-01-13T20:47:59+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/tutorial/</loc>
-    <lastmod>2019-01-13T20:47:59+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/books/</loc>
-    <lastmod>2019-01-05T21:26:33+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/reading/</loc>
-    <lastmod>2019-01-05T21:26:33+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/review/</loc>
-    <lastmod>2019-01-05T21:26:33+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/fahrenheit-451/</loc>
-    <lastmod>2019-01-05T21:26:33+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/on-asymmetry/</loc>
-    <lastmod>2019-01-03T21:33:32+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/essay/</loc>
-    <lastmod>2019-01-03T21:33:32+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/life/</loc>
-    <lastmod>2019-01-03T21:33:32+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/on-education/</loc>
-    <lastmod>2019-01-02T21:37:59+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/writing/</loc>
-    <lastmod>2019-01-02T21:37:59+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/on-non-violence/</loc>
-    <lastmod>2018-11-28T20:14:30+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/go/</loc>
-    <lastmod>2018-11-11T09:06:32+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/lego/</loc>
-    <lastmod>2018-11-11T09:06:32+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/self/</loc>
-    <lastmod>2018-11-11T09:06:32+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/on-go/</loc>
-    <lastmod>2018-11-11T09:06:32+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/blog/</loc>
-    <lastmod>2018-11-04T00:21:02+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/blogging/</loc>
-    <lastmod>2018-11-04T00:21:02+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/motivation/</loc>
-    <lastmod>2018-11-04T00:21:02+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/quotes/</loc>
-    <lastmod>2018-10-31T21:45:29+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/git/</loc>
-    <lastmod>2018-09-09T19:03:31+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/github/</loc>
-    <lastmod>2018-09-09T19:03:31+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/hugo/</loc>
-    <lastmod>2018-09-09T19:03:31+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/hugo-blog-setup/</loc>
-    <lastmod>2018-09-09T19:03:31+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/setup/</loc>
-    <lastmod>2018-09-09T19:03:31+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/for-some-context/</loc>
-    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/python/</loc>
-    <lastmod>2017-12-17T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/typing/</loc>
-    <lastmod>2017-12-10T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/typing/</loc>
-    <lastmod>2017-12-10T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/duck-typing-in-python/</loc>
-    <lastmod>2017-12-03T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/oop/</loc>
-    <lastmod>2017-12-03T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</loc>
-    <lastmod>2017-08-28T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/iterable/</loc>
-    <lastmod>2017-08-28T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/medium/</loc>
-    <lastmod>2017-08-28T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/values/</loc>
-    <lastmod>2017-04-10T00:00:00+05:30</lastmod>
+    <lastmod>2019-11-01T21:49:42+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/categories/gsoc/</loc>
-    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/gsoc-week-10-11/</loc>
-    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/tags/sympy/</loc>
-    <lastmod>2016-08-07T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/gsoc-week-09/</loc>
-    <lastmod>2016-07-24T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/gsoc-week-07/</loc>
-    <lastmod>2016-07-07T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/gsoc-week-06/</loc>
-    <lastmod>2016-07-01T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/gsoc-week-04-05/</loc>
-    <lastmod>2016-06-24T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/gsoc-week-03/</loc>
-    <lastmod>2016-06-10T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/gsoc-week-02/</loc>
-    <lastmod>2016-06-04T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/gsoc-week-01/</loc>
-    <lastmod>2016-05-29T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/solving-equations-via-decomposition-and-rewriting/</loc>
-    <lastmod>2016-05-22T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</loc>
-    <lastmod>2016-05-15T00:00:00+05:30</lastmod>
+    <lastmod>2018-12-19T23:39:05+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/about/</loc>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kshitij10496.github.io/now/</loc>
+    <lastmod>2019-11-03T16:30:11+05:30</lastmod>
   </url>
   
 </urlset>

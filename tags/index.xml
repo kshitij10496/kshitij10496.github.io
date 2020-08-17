@@ -1,15 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on kshitij10496</title>
+    <title>Tags on Blog | kxsh</title>
     <link>https://kshitij10496.github.io/tags/</link>
-    <description>Recent content in Tags on kshitij10496</description>
+    <description>Recent content in Tags on Blog | kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 10 Feb 2019 18:55:02 +0530</lastBuildDate>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 17 Aug 2020 21:16:47 +0200</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chess</title>
+      <link>https://kshitij10496.github.io/tags/chess/</link>
+      <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/chess/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keyboard</title>
+      <link>https://kshitij10496.github.io/tags/keyboard/</link>
+      <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learning</title>
+      <link>https://kshitij10496.github.io/tags/learning/</link>
+      <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>

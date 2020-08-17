@@ -4,67 +4,87 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="KSHITIJ SARAOGI">
-    <meta name="description" content="Kshitij Saraogi&#39;s personal website">
+    <meta name="description" content="Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &ldquo;ask for forgiveness&rdquo; if the post seems too colloquial and pragmatic.
+ Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
+ &ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed.">
     <meta name="keywords" content="blog,developer,personal,minimal">
+
+    
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Typing in Python, Go and JavaScript"/>
 <meta name="twitter:description" content="Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &ldquo;ask for forgiveness&rdquo; if the post seems too colloquial and pragmatic.
- Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following: 1. &ldquo;Python is a strongly typed, dynamic language.&rdquo; 2. &ldquo;Go is a statically typed, strong language.&rdquo; 3. &ldquo;JavaScript is a dynamic language which is weakly typed."/>
+ Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
+ &ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed."/>
 
     <meta property="og:title" content="Typing in Python, Go and JavaScript" />
 <meta property="og:description" content="Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &ldquo;ask for forgiveness&rdquo; if the post seems too colloquial and pragmatic.
- Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following: 1. &ldquo;Python is a strongly typed, dynamic language.&rdquo; 2. &ldquo;Go is a statically typed, strong language.&rdquo; 3. &ldquo;JavaScript is a dynamic language which is weakly typed." />
+ Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
+ &ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kshitij10496.github.io/posts/typing/" />
 <meta property="article:published_time" content="2017-12-10T00:00:00+05:30" />
-<meta property="article:modified_time" content="2017-12-10T00:00:00+05:30" />
+<meta property="article:modified_time" content="2018-12-19T23:39:05+05:30" />
 
 
     
       <base href="https://kshitij10496.github.io/posts/typing/">
     
     <title>
-  Typing in Python, Go and JavaScript · kshitij10496
+  Typing in Python, Go and JavaScript · Blog | kxsh
 </title>
 
     
       <link rel="canonical" href="https://kshitij10496.github.io/posts/typing/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.f70edcb32123148165d54be4a129384360c45f866f497c0c852b6416322e0ebc.css" integrity="sha256-9w7csyEjFIFl1UvkoSk4Q2DEX4ZvSXwMhStkFjIuDrw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.45caaf38ec3d81b4f33dd2d8989830332bc173153cb6c25c78e8c8ba385c5cc1.css" integrity="sha256-RcqvOOw9gbTzPdLYmJgwMyvBcxU8tsJceOjIujhcXME=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.e78e80fc3a585a4d1c8fc7f58623b6ff852411e38431a9cd1792877ecaa160f6.css" integrity="sha256-546A/DpYWk0cj8f1hiO2/4UkEeOEManNF5KHfsqhYPY=" crossorigin="anonymous" media="screen" />
+      
     
 
     
 
     
 
-    
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
 
-    
-    
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
-
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.74.3" />
   </head>
 
-  <body class=" ">
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=""
+  >
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://kshitij10496.github.io/">
-      kshitij10496
+      Blog | kxsh
     </a>
+    
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
@@ -75,7 +95,7 @@
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/posts/">BLOG</a>
+            <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
           </li>
         
           <li class="navigation-item">
@@ -89,6 +109,7 @@
       
       
     </ul>
+    
   </section>
 </nav>
 
@@ -111,7 +132,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              5 minutes read
+              5-minute read
             </span>
           </div>
           <div class="categories">
@@ -131,91 +152,68 @@
 
       <div>
         
-
-<blockquote>
+        <blockquote>
 <p>Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I <a href="https://stackoverflow.com/questions/11360858/what-is-the-eafp-principle-in-python">&ldquo;ask for forgiveness&rdquo;</a> if the post seems too colloquial and pragmatic.</p>
 </blockquote>
-
-<p>Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
-1. &ldquo;Python is a strongly typed, dynamic language.&rdquo;
-2. &ldquo;Go is a statically typed, strong language.&rdquo;
-3. &ldquo;JavaScript is a dynamic language which is weakly typed.&rdquo;</p>
-
+<p>Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:</p>
+<ol>
+<li>&ldquo;Python is a strongly typed, dynamic language.&rdquo;</li>
+<li>&ldquo;Go is a statically typed, strong language.&rdquo;</li>
+<li>&ldquo;JavaScript is a dynamic language which is weakly typed.&rdquo;</li>
+</ol>
 <p>(Aside: Wikipedia pages of inidividual languages themselves have a bullet titled &ldquo;Typing Discipline&rdquo; in the sidebox).</p>
-
 <p>Depending upon your programming background and experience, the above statements might either look deceptively simple to read or seem downright counter-intuitive, yet they are the source of some very famous warts in the respective languages.
 A good understanding of the fundamentals behind such statements can help programmers develop more reasonable expectations from the code they write.</p>
-
-<p>We begin by defining 4 terms central to the discussion, namely:
-- Static Typing | Dynamic Typing
-- Strong Typing | Weak Typing</p>
-
+<p>We begin by defining 4 terms central to the discussion, namely:</p>
+<ul>
+<li>Static Typing | Dynamic Typing</li>
+<li>Strong Typing | Weak Typing</li>
+</ul>
 <p>The terms grouped together are sematically antonyms to each other.
 Each group defines important characteristics of a programming language independent of the other group.</p>
-
 <h2 id="static-typing-dynamic-typing">Static Typing, Dynamic Typing</h2>
-
 <p>Whether a language is statically typed or dynamically typed depends on how the compiler/interpreter handles variables and at what point during the execution of the program.</p>
-
 <h3 id="static-typing">Static Typing</h3>
-
 <p>In a statically typed language, the variable itself has a type; if you have a variable that&rsquo;s an integer, you won&rsquo;t be able to assign any other type of value to it later. Some statically typed languages require you to write out the types of all your variables, while others will deduce many of them for you automatically.</p>
-
 <p>Moreover, the compiler can tell which the <em>type</em> of a variable, without executing the program.</p>
-
 <h3 id="dynamic-typing">Dynamic Typing</h3>
-
 <p>In a dynamically typed language, a variable is simply a value bound to a name; the value(or object) has a type &ndash; like &ldquo;integer&rdquo; or &ldquo;string&rdquo; or &ldquo;list&rdquo; &ndash; but the variable itself doesn&rsquo;t. We can have a variable which, right now, holds a number, and later assign a string to it.</p>
-
 <p>The programmer is free to bind names to different objects with a different type. So long as you only perform operations valid for the type the interpreter doesn&rsquo;t care what type they actually are.</p>
-
-<hr />
-
+<hr>
 <h3 id="python">Python</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">21</span>
-<span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;21&#39;</span></code></pre></div>
-<p><strong>Conclusion:</strong> The type of name <code>age</code> is the type of the object it refers to at that particular instant. Moreover, no further restriction is laid on it with regards to what values it can/cannot hold in the future.</p>
-
+<span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;21&#39;</span>
+</code></pre></div><p><strong>Conclusion:</strong> The type of name <code>age</code> is the type of the object it refers to at that particular instant. Moreover, no further restriction is laid on it with regards to what values it can/cannot hold in the future.</p>
 <h3 id="go">Go</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">age <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">21</span>
-age = <span style="color:#f1fa8c">&#34;21&#34;</span></code></pre></div>
-<p><strong>Conclusion:</strong> A compile time assignment error is raised. Once a type is associated with a variable, the variable cannot hold a value of other data types.</p>
-
+age = <span style="color:#f1fa8c">&#34;21&#34;</span>
+</code></pre></div><p><strong>Conclusion:</strong> A compile time assignment error is raised. Once a type is associated with a variable, the variable cannot hold a value of other data types.</p>
 <h3 id="javascript">JavaScript</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">age = 21
-age = &#34;21&#34;</pre></div>
-<p><strong>Conclusion:</strong> Same as Python</p>
-
-<hr />
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">age = 21
+age = &#34;21&#34;
+</code></pre></div><p><strong>Conclusion:</strong> Same as Python</p>
+<hr>
 <h2 id="strong-typing-weak-typing">Strong Typing, Weak Typing</h2>
-
 <p>The distinction between such typing comes to the fore when we write programming statements which involves performing an operation on values of different <em>types</em>.</p>
-
 <h4 id="expected-behaviors">Expected Behaviors</h4>
-
 <ul>
 <li><strong>Strongly typed language:</strong> more likely to generate an error (either at runtime or compile time depending on whether the language is interpreted or compiled).</li>
 <li><strong>Weakly typed language:</strong> either produces unpredictable results or perform implicit type conversions to make sense of the expression.</li>
 </ul>
-
 <p>In order to resolve the error raised in a strongly typed language, the programmer needs to explicitly convert the type of values to the desired type.</p>
-
 <p>The terms &ldquo;strong&rdquo; and &ldquo;weak&rdquo; are themselves relative by nature. Thus, a person calls some programming language &ldquo;X&rdquo; as strongly(or weakly) typed is totally subjective. From the First Principles perspective, what the person wants to claim is that language &ldquo;X&rdquo; enforces type checks before performing any operations. Every developer will have a different measure of how rigorous these checks are.</p>
-
 <p>Rule of Thumb: the more type coercions (implicit conversions) for built-in operators the language offers, the weaker the typing. (This could also be viewed as more built-in overloading of built-in operators.)
 i.e a strongly typed language is restrictive of type intermingling.</p>
-
-<p>Let us understand this distinction with 2 operations which every programmer must have comes across:
-1. Adding a number to a string
-2. Adding an integer to a floating point number</p>
-
-<hr />
-
-<h3 id="python-1">Python</h3>
-
+<p>Let us understand this distinction with 2 operations which every programmer must have comes across:</p>
 <ol>
-<li><p>Adding a number to a string</p>
+<li>Adding a number to a string</li>
+<li>Adding an integer to a floating point number</li>
+</ol>
+<hr>
+<h3 id="python-1">Python</h3>
+<ol>
+<li>Adding a number to a string</li>
+</ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> a, b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#39;K&#39;</span>
 <span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># Binary operation on different types</span>
 <span style="color:#ff79c6">...</span>
@@ -225,83 +223,57 @@ TypeError: unsupported operand <span style="color:#8be9fd;font-style:italic">typ
 <span style="color:#bd93f9">85</span>
 
 <span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#8be9fd;font-style:italic">str</span>(a) <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># Explicit type conversion of integer to string</span>
-<span style="color:#f1fa8c">&#39;10K&#39;</span></code></pre></div></li>
-
-<li><p>Adding an integer to a floating point number</p>
+<span style="color:#f1fa8c">&#39;10K&#39;</span>
+</code></pre></div><ol start="2">
+<li>Adding an integer to a floating point number</li>
+</ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> a, b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
 <span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># No error</span>
-<span style="color:#bd93f9">3.5</span></code></pre></div></li>
-</ol>
-
-<p><strong>Conclusion:</strong> Raises errors when sense cannot be made. Also, the interpreter is not restrictive enough to spoil the fun in programming.</p>
-
+<span style="color:#bd93f9">3.5</span>
+</code></pre></div><p><strong>Conclusion:</strong> Raises errors when sense cannot be made. Also, the interpreter is not restrictive enough to spoil the fun in programming.</p>
 <h3 id="go-1">Go</h3>
-
 <ol>
-<li><p>Adding a number to a string</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumStr</span>() {
- a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#34;K&#34;</span>
- fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
-}</code></pre></div></li>
-
-<li><p>Adding an integer to a floating point number</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumFloat</span>() {
- a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
- fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
-}</code></pre></div></li>
+<li>Adding a number to a string</li>
 </ol>
-
-<p><strong>Conclusion:</strong> In both the cases, an &ldquo;invalid operation&rdquo; compile-time error is raised.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumStr</span>() {
+     a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#34;K&#34;</span>
+     fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
+}
+</code></pre></div><ol start="2">
+<li>Adding an integer to a floating point number</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumFloat</span>() {
+     a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
+     fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
+}
+</code></pre></div><p><strong>Conclusion:</strong> In both the cases, an &ldquo;invalid operation&rdquo; compile-time error is raised.</p>
 <h3 id="javascript-1">JavaScript</h3>
-
 <ol>
-<li><p>Adding a number to a string</p>
+<li>Adding a number to a string</li>
+</ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
 <span style="color:#ff79c6">&gt;</span> b <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;K&#34;</span>
 <span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">+</span> b
 <span style="color:#f1fa8c">&#39;10K&#39;</span>
-</code></pre></div></li>
-
-<li><p>Adding an integer to a floating point number</p>
+</code></pre></div><ol start="2">
+<li>Adding an integer to a floating point number</li>
+</ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
 <span style="color:#ff79c6">&gt;</span> b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">2.5</span>
 <span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">+</span> b
 <span style="color:#bd93f9">3.5</span>
-</code></pre></div>
-<p><strong>Conclusion:</strong> The compiler <em>implicitly</em> converts the type of values to make sense of the operation rather than raising errors.</p></li>
-</ol>
-
-<hr />
-
+</code></pre></div><p><strong>Conclusion:</strong> The compiler <em>implicitly</em> converts the type of values to make sense of the operation rather than raising errors.</p>
+<hr>
 <p>I hope that after reading this article, you are able to justify the statements regarding the type systems used in different languages. In this post, I explored these principles across Python, Go and JS just to cover a variety of examples. I encourage you to perform the same on the languages you know and share your results in the comments below.</p>
 
       </div>
+
 
       <footer>
         
 
 
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "kshitij10496" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
         
         
       </footer>
@@ -312,36 +284,35 @@ TypeError: unsupported operand <span style="color:#8be9fd;font-style:italic">typ
 
       </div>
 
-      <footer class="footer">
-  <section class="container">
-    
-      <p>Hello Friend</p>
-    
-    
-    
       
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    
-    
-  </section>
-</footer>
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Hello Friend</p>
+      
+      
+        ©
+        
+          2016 -
+        
+        2020
+         KSHITIJ SARAOGI 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
 
     </main>
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-125667904-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
 
+    
+
+    
 
   </body>
 

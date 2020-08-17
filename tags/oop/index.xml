@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OOP on kshitij10496</title>
+    <title>OOP on Blog | kxsh</title>
     <link>https://kshitij10496.github.io/tags/oop/</link>
-    <description>Recent content in OOP on kshitij10496</description>
+    <description>Recent content in OOP on Blog | kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sun, 03 Dec 2017 00:00:00 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/oop/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +18,8 @@
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
-      <description>What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute: 1. attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
+      <description>What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+ attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
     </item>
     
   </channel>

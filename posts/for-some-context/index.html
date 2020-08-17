@@ -4,69 +4,87 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="KSHITIJ SARAOGI">
-    <meta name="description" content="Kshitij Saraogi&#39;s personal website">
+    <meta name="description" content="There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
+ How does the use of context help us in programming? When should a programmer use context?  In this blog post, I will share what I understand about context.
+Motivation Consider you are an event manager of a restaurant.">
     <meta name="keywords" content="blog,developer,personal,minimal">
+
+    
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="For some Context"/>
-<meta name="twitter:description" content="There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context: - How does the use of context help us in programming? - When should a programmer use context?
-In this blog post, I will share what I understand about context.
+<meta name="twitter:description" content="There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
+ How does the use of context help us in programming? When should a programmer use context?  In this blog post, I will share what I understand about context.
 Motivation Consider you are an event manager of a restaurant."/>
 
     <meta property="og:title" content="For some Context" />
-<meta property="og:description" content="There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context: - How does the use of context help us in programming? - When should a programmer use context?
-In this blog post, I will share what I understand about context.
+<meta property="og:description" content="There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
+ How does the use of context help us in programming? When should a programmer use context?  In this blog post, I will share what I understand about context.
 Motivation Consider you are an event manager of a restaurant." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kshitij10496.github.io/posts/for-some-context/" />
 <meta property="article:published_time" content="2017-12-17T00:00:00+05:30" />
-<meta property="article:modified_time" content="2017-12-17T00:00:00+05:30" />
+<meta property="article:modified_time" content="2018-12-19T23:39:05+05:30" />
 
 
     
       <base href="https://kshitij10496.github.io/posts/for-some-context/">
     
     <title>
-  For some Context · kshitij10496
+  For some Context · Blog | kxsh
 </title>
 
     
       <link rel="canonical" href="https://kshitij10496.github.io/posts/for-some-context/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.f70edcb32123148165d54be4a129384360c45f866f497c0c852b6416322e0ebc.css" integrity="sha256-9w7csyEjFIFl1UvkoSk4Q2DEX4ZvSXwMhStkFjIuDrw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.45caaf38ec3d81b4f33dd2d8989830332bc173153cb6c25c78e8c8ba385c5cc1.css" integrity="sha256-RcqvOOw9gbTzPdLYmJgwMyvBcxU8tsJceOjIujhcXME=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.e78e80fc3a585a4d1c8fc7f58623b6ff852411e38431a9cd1792877ecaa160f6.css" integrity="sha256-546A/DpYWk0cj8f1hiO2/4UkEeOEManNF5KHfsqhYPY=" crossorigin="anonymous" media="screen" />
+      
     
 
     
 
     
 
-    
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
 
-    
-    
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
-
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.74.3" />
   </head>
 
-  <body class=" ">
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=""
+  >
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://kshitij10496.github.io/">
-      kshitij10496
+      Blog | kxsh
     </a>
+    
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
@@ -77,7 +95,7 @@ Motivation Consider you are an event manager of a restaurant." />
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/posts/">BLOG</a>
+            <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
           </li>
         
           <li class="navigation-item">
@@ -91,6 +109,7 @@ Motivation Consider you are an event manager of a restaurant." />
       
       
     </ul>
+    
   </section>
 </nav>
 
@@ -113,7 +132,7 @@ Motivation Consider you are an event manager of a restaurant." />
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              3 minutes read
+              3-minute read
             </span>
           </div>
           <div class="categories">
@@ -131,49 +150,48 @@ Motivation Consider you are an event manager of a restaurant." />
 
       <div>
         
-
-<p>There are a lot of good resources about using <code>context</code> packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
-- How does the use of context help us in programming?
-- When should a programmer use context?</p>
-
+          <img src='images/covers/for-some-context.png' alt="Featured image"/>
+        
+        <p>There are a lot of good resources about using <code>context</code> packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:</p>
+<ul>
+<li>How does the use of context help us in programming?</li>
+<li>When should a programmer use context?</li>
+</ul>
 <p>In this blog post, I will share what I understand about <code>context</code>.</p>
-
 <h2 id="motivation">Motivation</h2>
-
-<p>Consider you are an event manager of a restaurant. A customer wants to throw a party for 50 people on New Year Eve and you are tasked with organizing the event. Given the magnitude of the event, you start planning and assign jobs to your suboridinates:
-- waiters are instructed to look their best,
-– chefs must prepare the grocery list,
-- errand boys to fetch the grocery.
-- playlist for the &ldquo;DJ&rdquo;,
-- someone for decoration</p>
-
+<p>Consider you are an event manager of a restaurant. A customer wants to throw a party for 50 people on New Year Eve and you are tasked with organizing the event. Given the magnitude of the event, you start planning and assign jobs to your suboridinates:</p>
+<ul>
+<li>waiters are instructed to look their best,
+– chefs must prepare the grocery list,</li>
+<li>errand boys to fetch the grocery.</li>
+<li>playlist for the &ldquo;DJ&rdquo;,</li>
+<li>someone for decoration</li>
+</ul>
 <p>The preparations are going smoothly on your end and you expect a picturesque celebration under your leadership. However, a couple of days later the same customer profusely apologizes for cancelling the event due to some reason.
 Even though you are disappointed by this request, you accept the apology.</p>
-
-<p>There are two alternates for you to choose from:
-1. Immediately cancel all the arrangements
-2. Wait till the New Year Eve for some other miraculous booking</p>
-
+<p>There are two alternates for you to choose from:</p>
+<ol>
+<li>Immediately cancel all the arrangements</li>
+<li>Wait till the New Year Eve for some other miraculous booking</li>
+</ol>
 <p>Being a rational manager, you immeditately start off to cancel all arrangements rather than waiting till the New Year&rsquo;s eve because you do not want to waste resources(time and money).</p>
-
-<p>This is exactly what &ldquo;context&rdquo; is used for in programming:
-- Cancellation progropagation
-- Scoping values (passing grocery list around, organizing the playlist)
-The use of context can make programs efficient with respect to use of computer resources as well as graceful fallback mechanism.</p>
-
+<p>This is exactly what &ldquo;context&rdquo; is used for in programming:</p>
+<ul>
+<li>Cancellation progropagation</li>
+<li>Scoping values (passing grocery list around, organizing the playlist)
+The use of context can make programs efficient with respect to use of computer resources as well as graceful fallback mechanism.</li>
+</ul>
 <p>Let us understand how we can use <code>context</code> with a simple example.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">// Some time consuming process like:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">// Some time consuming process like:
 // - API calls
 // - Cruching data from database
 //
 func someFunc() {
     fmt.Println(&#34;Starting computation&#34;)
     time.Sleep(10*time.Second)
-    fmt.Println(&#34;Completed computing&#34;)</pre></div>
-<p>Now, the caller of this function is expected to wait for a while (10s in this case) until the processing is complete. However, if the user somehow decides to cancel this process before it completes, he is at a loss. The only way the user can exit is by <code>CTRL</code> + <code>C</code> i.e by sending an interuption signal to the running process; this maynot even be possible all the time. However, the use of <code>context</code> provides him a way to set time deadlines or logical cancellations. Maybe the user wants to wait for atmost 5 seconds before cancelling; the context gives him this power.</p>
-
+    fmt.Println(&#34;Completed computing&#34;)
+</code></pre></div><p>Now, the caller of this function is expected to wait for a while (10s in this case) until the processing is complete. However, if the user somehow decides to cancel this process before it completes, he is at a loss. The only way the user can exit is by <code>CTRL</code> + <code>C</code> i.e by sending an interuption signal to the running process; this maynot even be possible all the time. However, the use of <code>context</code> provides him a way to set time deadlines or logical cancellations. Maybe the user wants to wait for atmost 5 seconds before cancelling; the context gives him this power.</p>
 <h1 id="resources">Resources</h1>
-
 <ul>
 <li><a href="https://youtu.be/LSzR0VEraWw">justforfunc#9: The Context Package in Go</a></li>
 <li><a href="https://blog.golang.org/context">Go Concurrency Patterns: Context</a></li>
@@ -181,30 +199,12 @@ func someFunc() {
 
       </div>
 
+
       <footer>
         
 
 
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "kshitij10496" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
         
         
       </footer>
@@ -215,36 +215,35 @@ func someFunc() {
 
       </div>
 
-      <footer class="footer">
-  <section class="container">
-    
-      <p>Hello Friend</p>
-    
-    
-    
       
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    
-    
-  </section>
-</footer>
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Hello Friend</p>
+      
+      
+        ©
+        
+          2016 -
+        
+        2020
+         KSHITIJ SARAOGI 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
 
     </main>
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-125667904-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
 
+    
+
+    
 
   </body>
 

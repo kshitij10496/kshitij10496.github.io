@@ -4,67 +4,84 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="KSHITIJ SARAOGI">
-    <meta name="description" content="Kshitij Saraogi&#39;s personal website">
+    <meta name="description" content="tl;dr: This is not a rant about how Go is &ldquo;superior&rdquo; to other languages. It&rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊
+ off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins.">
     <meta name="keywords" content="blog,developer,personal,minimal">
+
+    
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Why I Write Go"/>
 <meta name="twitter:description" content="tl;dr: This is not a rant about how Go is &ldquo;superior&rdquo; to other languages. It&rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊
-off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins."/>
+ off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins."/>
 
     <meta property="og:title" content="Why I Write Go" />
 <meta property="og:description" content="tl;dr: This is not a rant about how Go is &ldquo;superior&rdquo; to other languages. It&rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊
-off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins." />
+ off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kshitij10496.github.io/posts/on-go/" />
 <meta property="article:published_time" content="2018-11-11T09:06:32+05:30" />
-<meta property="article:modified_time" content="2018-11-11T09:06:32+05:30" />
+<meta property="article:modified_time" content="2018-12-19T23:39:05+05:30" />
 
 
     
       <base href="https://kshitij10496.github.io/posts/on-go/">
     
     <title>
-  Why I Write Go · kshitij10496
+  Why I Write Go · Blog | kxsh
 </title>
 
     
       <link rel="canonical" href="https://kshitij10496.github.io/posts/on-go/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.f70edcb32123148165d54be4a129384360c45f866f497c0c852b6416322e0ebc.css" integrity="sha256-9w7csyEjFIFl1UvkoSk4Q2DEX4ZvSXwMhStkFjIuDrw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.45caaf38ec3d81b4f33dd2d8989830332bc173153cb6c25c78e8c8ba385c5cc1.css" integrity="sha256-RcqvOOw9gbTzPdLYmJgwMyvBcxU8tsJceOjIujhcXME=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.e78e80fc3a585a4d1c8fc7f58623b6ff852411e38431a9cd1792877ecaa160f6.css" integrity="sha256-546A/DpYWk0cj8f1hiO2/4UkEeOEManNF5KHfsqhYPY=" crossorigin="anonymous" media="screen" />
+      
     
 
     
 
     
 
-    
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
 
-    
-    
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/logo.png" sizes="16x16">
-
-    <meta name="generator" content="Hugo 0.58.3" />
+    <meta name="generator" content="Hugo 0.74.3" />
   </head>
 
-  <body class=" ">
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=""
+  >
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://kshitij10496.github.io/">
-      kshitij10496
+      Blog | kxsh
     </a>
+    
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
@@ -75,7 +92,7 @@ off-topic: When I was a little boy 👦, I used to play all day long with my leg
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://kshitij10496.github.io/posts/">BLOG</a>
+            <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
           </li>
         
           <li class="navigation-item">
@@ -89,6 +106,7 @@ off-topic: When I was a little boy 👦, I used to play all day long with my leg
       
       
     </ul>
+    
   </section>
 </nav>
 
@@ -111,7 +129,7 @@ off-topic: When I was a little boy 👦, I used to play all day long with my leg
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              3 minutes read
+              3-minute read
             </span>
           </div>
           <div class="categories">
@@ -129,85 +147,49 @@ off-topic: When I was a little boy 👦, I used to play all day long with my leg
 
       <div>
         
-
-<p><strong>tl;dr</strong>: This is not a rant about how Go is &ldquo;superior&rdquo; to other languages. It&rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊</p>
-
-<hr />
-
+        <p><strong>tl;dr</strong>: This is not a rant about how Go is &ldquo;superior&rdquo; to other languages. It&rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊</p>
+<hr>
 <p><strong>off-topic</strong>: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins. Good ol&rsquo; days!</p>
-
-<hr />
-
+<hr>
 <h1 id="inspiration">Inspiration</h1>
-
 <p>Reading Rob Pike&rsquo;s post titled &ldquo;<a href="https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html">Less is exponentially more</a>&rdquo;, I found myself introspecting about the way I write software. The article evoked some joy in me, stimulated that deep-seated feel-good core - the part of my being that enjoys programming. And I want to share it with everyone!</p>
-
 <h1 id="why-go">Why Go?</h1>
-
 <p>During my GSoC, I used to struggle with grasping the idea of classes implementing behaviours and how would it be useful for subclasses - inheritance.</p>
-
-<p>For example, let&rsquo;s consider a <code>Point</code> class representing a point in the Cartesian Space.<br />
-1. Should <code>distance</code> be a method on this class?<br />
-2. Does <code>distance</code> define the &ldquo;behaviour&rdquo; of a <code>Point</code>?</p>
-
+<p>For example, let&rsquo;s consider a <code>Point</code> class representing a point in the Cartesian Space.</p>
+<ol>
+<li>Should <code>distance</code> be a method on this class?</li>
+<li>Does <code>distance</code> define the &ldquo;behaviour&rdquo; of a <code>Point</code>?</li>
+</ol>
 <p>*Not necessarily!  *</p>
-
-<p>(After reading some mathematics on Measure Theory, I came to know that &ldquo;distance&rdquo; is a quantity defined by a &ldquo;metric function&rdquo; - property of the space rather than any entity.)<br />
+<p>(After reading some mathematics on Measure Theory, I came to know that &ldquo;distance&rdquo; is a quantity defined by a &ldquo;metric function&rdquo; - property of the space rather than any entity.)<br>
 In our case, the <code>distance</code> should be a method on the <code>CartesianSpace</code> rather than <code>Point</code>.</p>
-
 <ul>
-<li>The question that arises then is how can I assure that I can always compute distance between given pair of <code>Point</code> values, or any geometrical entity for that matter?<br /></li>
-<li>Should I just override the <code>distance</code> method in each geometrical class?<br /></li>
+<li>The question that arises then is how can I assure that I can always compute distance between given pair of <code>Point</code> values, or any geometrical entity for that matter?</li>
+<li>Should I just override the <code>distance</code> method in each geometrical class?</li>
 <li>If so, what purpose does the base <code>distance</code> method in <code>CartesianSpace</code> serve now?</li>
 </ul>
-
 <p>I would agree that these questions are subjective and I respect your solution to the problem.</p>
-
 <p>However, then I came to know about <a href="https://kshitij10496.github.io/posts/duck-typing-in-python/">Duck Typing in Python</a> and it&rsquo;s approach to the problem. However, I was not satisfied with the Python implementation. It almost felt kind of a convenience pattern which was incompatible with Pythonic code.</p>
-
 <p>Eventually, I found about Go <code>interfaces</code>.(Plus, CSP! ❤️)</p>
-
 <h1 id="things-i-like-about-go">Things I like about Go</h1>
-
-<p>Coming back to the question - <em>&ldquo;Why I Write Go?&rdquo;</em>, here are some of my favourite reasons:</p>
-
+<p>Coming back to the question - <em>&ldquo;Why I Write Go?&quot;</em>, here are some of my favourite reasons:</p>
 <ul>
 <li>emphasis on separation between state and behaviour</li>
 <li>composition over inheritance; think <em>legos</em> 🧩</li>
 <li>simplicity in design; <strong>less is more</strong>, indeed</li>
 </ul>
-
 <p>More importantly, I rediscovered the joy of putting tiny pieces togerther and building something greater than the sum of the individual parts (read off-topic).
 In addition to writing “cleaner and more readable” code, I find a lot more clarity when it comes to solving problems and coherence in my thinking while implementing the solution. I guess that is the underappreciated USP of Go, for me, ofcourse! 😁</p>
-
 <p>So what is your favourite programming language and why? 😃</p>
 
       </div>
+
 
       <footer>
         
 
 
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "kshitij10496" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
         
         
       </footer>
@@ -218,36 +200,35 @@ In addition to writing “cleaner and more readable” code, I find a lot more c
 
       </div>
 
-      <footer class="footer">
-  <section class="container">
-    
-      <p>Hello Friend</p>
-    
-    
-    
       
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    
-    
-  </section>
-</footer>
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Hello Friend</p>
+      
+      
+        ©
+        
+          2016 -
+        
+        2020
+         KSHITIJ SARAOGI 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
 
     </main>
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-125667904-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
 
+    
+
+    
 
   </body>
 

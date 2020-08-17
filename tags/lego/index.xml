@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lego on kshitij10496</title>
+    <title>Lego on Blog | kxsh</title>
     <link>https://kshitij10496.github.io/tags/lego/</link>
-    <description>Recent content in Lego on kshitij10496</description>
+    <description>Recent content in Lego on Blog | kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sun, 11 Nov 2018 09:06:32 +0530</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/lego/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +19,7 @@
       
       <guid>https://kshitij10496.github.io/posts/on-go/</guid>
       <description>tl;dr: This is not a rant about how Go is &amp;ldquo;superior&amp;rdquo; to other languages. It&amp;rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊
-off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&amp;rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins.</description>
+ off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&amp;rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins.</description>
     </item>
     
   </channel>
