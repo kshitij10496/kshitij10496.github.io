@@ -13,7 +13,20 @@
     
     
     <item>
-      <title>Getting Started</title>
+      <title>Floating Pins</title>
+      <link>https://kshitij10496.github.io/posts/2020-08-18/</link>
+      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/2020-08-18/</guid>
+      <description>IoT &amp;ldquo;Reading input from mechanical devices is easy.
+Reading input resiliently from mechanical devices is not.&amp;quot;
+Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &amp;ldquo;false-positives&amp;rdquo; (reading button press when it wasn&amp;rsquo;t in reality) from the input space?
+Causes (potential):
+ Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - pin with an indeterminant/fluctuating value.</description>
+    </item>
+    
+    <item>
+      <title>An Ode to Joy</title>
       <link>https://kshitij10496.github.io/posts/2020-08-17/</link>
       <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
       

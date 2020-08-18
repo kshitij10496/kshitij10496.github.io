@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>chess on Blog | kxsh</title>
-    <link>https://kshitij10496.github.io/tags/chess/</link>
-    <description>Recent content in chess on Blog | kxsh</description>
+    <title>iot on Blog | kxsh</title>
+    <link>https://kshitij10496.github.io/tags/iot/</link>
+    <description>Recent content in iot on Blog | kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Tue, 18 Aug 2020 16:17:34 +0200</lastBuildDate>
     
-	<atom:link href="https://kshitij10496.github.io/tags/chess/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kshitij10496.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,16 +23,6 @@ Reading input resiliently from mechanical devices is not.&amp;quot;
 Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &amp;ldquo;false-positives&amp;rdquo; (reading button press when it wasn&amp;rsquo;t in reality) from the input space?
 Causes (potential):
  Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - pin with an indeterminant/fluctuating value.</description>
-    </item>
-    
-    <item>
-      <title>An Ode to Joy</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-17/</link>
-      <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-17/</guid>
-      <description>Learning should be a constant. Deliberate practice should be the tool.
-Keyboard Basics After a break of 2 weeks, I picked up my keyboard practice back again. Just to get some practice, I have decided the first week solely on revisiting the tunes/melodies I have already learned. This has the added benefit of easing me into reading the music sheet again as well as providing me with small boosts of confidence in the initial phase.</description>
     </item>
     
   </channel>

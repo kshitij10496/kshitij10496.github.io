@@ -7,17 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 17 Aug 2020 21:16:47 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 16:17:34 +0200</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>arduino</title>
+      <link>https://kshitij10496.github.io/tags/arduino/</link>
+      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>chess</title>
       <link>https://kshitij10496.github.io/tags/chess/</link>
-      <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
+      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/chess/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iot</title>
+      <link>https://kshitij10496.github.io/tags/iot/</link>
+      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/iot/</guid>
       <description></description>
     </item>
     
