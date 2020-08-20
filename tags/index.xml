@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 19 Aug 2020 13:30:11 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 13:59:10 +0200</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chess</title>
+      <link>https://kshitij10496.github.io/tags/chess/</link>
+      <pubDate>Thu, 20 Aug 2020 13:59:10 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/chess/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://kshitij10496.github.io/tags/math/</link>
+      <pubDate>Thu, 20 Aug 2020 13:59:10 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/math/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>keyboard</title>
@@ -27,15 +45,6 @@
       <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/arduino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chess</title>
-      <link>https://kshitij10496.github.io/tags/chess/</link>
-      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/chess/</guid>
       <description></description>
     </item>
     
