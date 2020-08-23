@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 22 Aug 2020 21:47:27 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 23:27:49 +0200</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chess</title>
+      <link>https://kshitij10496.github.io/tags/chess/</link>
+      <pubDate>Sun, 23 Aug 2020 23:27:49 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/chess/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>memory</title>
@@ -27,15 +36,6 @@
       <pubDate>Sat, 22 Aug 2020 21:47:27 +0200</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/nature/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chess</title>
-      <link>https://kshitij10496.github.io/tags/chess/</link>
-      <pubDate>Fri, 21 Aug 2020 09:49:14 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/chess/</guid>
       <description></description>
     </item>
     
