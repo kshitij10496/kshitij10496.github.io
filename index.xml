@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 23 Aug 2020 23:27:49 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 14:55:58 +0200</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 08 24</title>
+      <link>https://kshitij10496.github.io/posts/2020-08-24/</link>
+      <pubDate>Mon, 24 Aug 2020 14:55:58 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/2020-08-24/</guid>
+      <description>What brought me joy today?  This concise article on technological evolution in the way we write and deploy software - from VMs to Docker. Pretty basic but well put.  Not a lot going on but it&amp;rsquo;s normal to not be super active everyday.</description>
+    </item>
     
     <item>
       <title>Decompress Sunday</title>
@@ -74,7 +83,7 @@ It was really inspirational and reaffirms the belief that we all are artists ins
 Reading input resiliently from mechanical devices is not.&amp;quot;
 Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &amp;ldquo;false-positives&amp;rdquo; (reading button press when it wasn&amp;rsquo;t in reality) from the input space?
 Causes (potential):
- Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - pin with an indeterminant/fluctuating value.</description>
+ Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - an input pin on a microcontroller that does not have a specified state (either High voltage, or Low voltage).</description>
     </item>
     
     <item>

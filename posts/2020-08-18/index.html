@@ -11,7 +11,7 @@
 Reading input resiliently from mechanical devices is not.&quot;
 Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &ldquo;false-positives&rdquo; (reading button press when it wasn&rsquo;t in reality) from the input space?
 Causes (potential):
- Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - pin with an indeterminant/fluctuating value.">
+ Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - an input pin on a microcontroller that does not have a specified state (either High voltage, or Low voltage).">
     <meta name="keywords" content="blog,developer,personal,minimal">
 
     
@@ -22,14 +22,14 @@ Causes (potential):
 Reading input resiliently from mechanical devices is not.&quot;
 Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &ldquo;false-positives&rdquo; (reading button press when it wasn&rsquo;t in reality) from the input space?
 Causes (potential):
- Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - pin with an indeterminant/fluctuating value."/>
+ Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - an input pin on a microcontroller that does not have a specified state (either High voltage, or Low voltage)."/>
 
     <meta property="og:title" content="Floating Pins" />
 <meta property="og:description" content="IoT &ldquo;Reading input from mechanical devices is easy.
 Reading input resiliently from mechanical devices is not.&quot;
 Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &ldquo;false-positives&rdquo; (reading button press when it wasn&rsquo;t in reality) from the input space?
 Causes (potential):
- Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - pin with an indeterminant/fluctuating value." />
+ Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - an input pin on a microcontroller that does not have a specified state (either High voltage, or Low voltage)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kshitij10496.github.io/posts/2020-08-18/" />
 <meta property="article:published_time" content="2020-08-18T16:17:34+02:00" />
@@ -138,7 +138,7 @@ Causes (potential):
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              One-minute read
+              2-minute read
             </span>
           </div>
           <div class="categories">
@@ -169,7 +169,7 @@ Reading input <strong>resiliently</strong> from mechanical devices is not.&quot;
 <li>Mechanical fault in the device.</li>
 <li>Problem with the circuit.</li>
 </ul>
-<p><strong>Concept</strong>: The idea of <strong>floating pins</strong> - pin with an indeterminant/fluctuating value.</p>
+<p><strong>Concept</strong>: The idea of <strong>floating pins</strong> - an input pin on a microcontroller that does not have a specified state (either High voltage, or Low voltage).</p>
 <p><strong>Solution</strong>: Use a <strong>&ldquo;pull up&rdquo; resistor</strong> to tie the floating pin to a specific state.</p>
 <ul>
 <li>Default state of the input pin is set to <strong>HIGH</strong>.</li>

@@ -22,7 +22,7 @@
 Reading input resiliently from mechanical devices is not.&amp;quot;
 Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &amp;ldquo;false-positives&amp;rdquo; (reading button press when it wasn&amp;rsquo;t in reality) from the input space?
 Causes (potential):
- Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - pin with an indeterminant/fluctuating value.</description>
+ Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - an input pin on a microcontroller that does not have a specified state (either High voltage, or Low voltage).</description>
     </item>
     
   </channel>
