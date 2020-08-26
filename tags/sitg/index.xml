@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>unix on Blog | kxsh</title>
-    <link>https://kshitij10496.github.io/tags/unix/</link>
-    <description>Recent content in unix on Blog | kxsh</description>
+    <title>sitg on Blog | kxsh</title>
+    <link>https://kshitij10496.github.io/tags/sitg/</link>
+    <description>Recent content in sitg on Blog | kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Wed, 26 Aug 2020 14:10:54 +0200</lastBuildDate>
     
-	<atom:link href="https://kshitij10496.github.io/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kshitij10496.github.io/tags/sitg/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,18 +20,6 @@
       <guid>https://kshitij10496.github.io/posts/2020-08-26/</guid>
       <description>Thought for the day  In #SkinintheGame I was shocked to see Italians eating at MacDonalds in the Milan train station: it&amp;rsquo;s abt lowering the variance, trading quality for certainty &amp;amp; reliability. It&amp;rsquo;s the same reason you hire employees: for their predictability/reliable mediocrity, never for quality.
  Tweet from Nassim Nicholas Taleb   The central theme of mediocrity is that it is always predictable - often thought of as the &amp;ldquo;safest&amp;rdquo; approach.</description>
-    </item>
-    
-    <item>
-      <title>Magical Files</title>
-      <link>https://kshitij10496.github.io/posts/magical-files/</link>
-      <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/magical-files/</guid>
-      <description>Context My Downloads folder is a mess!
-I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
-“Is there a way to only list all the PDF files present in a directory?”
-Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
     </item>
     
   </channel>
