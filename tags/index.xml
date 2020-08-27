@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 26 Aug 2020 14:10:54 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2020 10:53:29 +0200</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>database</title>
+      <link>https://kshitij10496.github.io/tags/database/</link>
+      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>distributed</title>
+      <link>https://kshitij10496.github.io/tags/distributed/</link>
+      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/distributed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://kshitij10496.github.io/tags/git/</link>
+      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/git/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>probability</title>
@@ -279,15 +306,6 @@
       <pubDate>Sun, 11 Nov 2018 09:06:32 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/lego/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://kshitij10496.github.io/tags/git/</link>
-      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/git/</guid>
       <description></description>
     </item>
     
