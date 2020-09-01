@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 27 Aug 2020 10:53:29 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 18:06:12 +0200</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>communication</title>
+      <link>https://kshitij10496.github.io/tags/communication/</link>
+      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keyboard</title>
+      <link>https://kshitij10496.github.io/tags/keyboard/</link>
+      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>language</title>
+      <link>https://kshitij10496.github.io/tags/language/</link>
+      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/language/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>database</title>
@@ -144,15 +171,6 @@
       <pubDate>Thu, 20 Aug 2020 13:59:10 +0200</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyboard</title>
-      <link>https://kshitij10496.github.io/tags/keyboard/</link>
-      <pubDate>Wed, 19 Aug 2020 13:30:11 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/keyboard/</guid>
       <description></description>
     </item>
     

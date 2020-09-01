@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 27 Aug 2020 10:53:29 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 18:06:12 +0200</lastBuildDate>
     
 	<atom:link href="https://kshitij10496.github.io/categories/journal/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Communication</title>
+      <link>https://kshitij10496.github.io/posts/2020-09-01/</link>
+      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/2020-09-01/</guid>
+      <description>Thought for the Day I was thinking about a very ubiquitous topic that I like to explore more about - the topic of communication. Whether it be my curiousity about the origins of writing, or fascination with old/dead languages, I always like to think of language as a tool - a tool for communicating with others. It is true that attaining a certain level of proficiency at weilding this tool leads to a lot of opportunities.</description>
+    </item>
     
     <item>
       <title>git push origin</title>
