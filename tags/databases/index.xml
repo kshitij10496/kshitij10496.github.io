@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>databases on Blog | kxsh</title>
+    <title>databases on kxsh</title>
     <link>https://kshitij10496.github.io/tags/databases/</link>
-    <description>Recent content in databases on Blog | kxsh</description>
+    <description>Recent content in databases on kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 13 Jan 2019 20:47:59 +0530</lastBuildDate>
-    
-	<atom:link href="https://kshitij10496.github.io/tags/databases/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 13 Jan 2019 20:47:59 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/databases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Postgres with Docker</title>
       <link>https://kshitij10496.github.io/posts/postgres-with-docker/</link>

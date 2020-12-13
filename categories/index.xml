@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Blog | kxsh</title>
+    <title>Categories on kxsh</title>
     <link>https://kshitij10496.github.io/categories/</link>
-    <description>Recent content in Categories on Blog | kxsh</description>
+    <description>Recent content in Categories on kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 01 Sep 2020 18:06:12 +0200</lastBuildDate>
-    
-	<atom:link href="https://kshitij10496.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 01 Sep 2020 18:06:12 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Journal</title>
       <link>https://kshitij10496.github.io/categories/journal/</link>
