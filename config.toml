@@ -1,0 +1,148 @@
+# Hostname (and path) to the root.
+baseURL = "https://kshitij10496.github.io/"
+
+# Enable to turn relative URLs into absolute.
+canonifyURLs = true
+
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+
+# The directory from where Hugo reads content files.
+contentDir = "content"
+
+# The directory from where Hugo reads data files.
+dataDir = "data" 
+
+# The default content language.
+defaultContentLanguage = "en"
+
+# Enable rendering of emojis
+enableEmoji = true
+
+enableGitInfo = true
+
+# The site’s language code used to generate RSS.
+languageCode = "en-us"
+
+# The directory from where Hugo reads layouts (templates).
+layoutDir = "layouts"
+
+# Default number of pages per page in pagination.
+paginate = 13
+
+# The directory to where Hugo will write the final static site (the HTML files etc.).
+publishDir = "public"
+
+# Color-theme or style for syntax highlighting.
+pygmentsStyle = "dracula"
+
+# Enable code fence background highlighting.
+pygmentsCodeFences = true
+
+# Enable syntax guessing for code fences without specified language.
+pygmentsCodeFencesGuessSyntax = true
+
+# A directory or a list of directories from where Hugo reads static files.
+staticDir = "static"
+
+# The directory where Hugo reads the themes from.
+themesDir = "themes"
+
+# Theme to use (located by default in /themes/THEMENAME/).
+theme = "coder"
+
+# Site title.
+title = "kxsh"
+
+[permalinks]
+    posts = "posts/:slug/"
+    default = ":slug/"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[params] # theme parameters
+    author = "KSHITIJ SARAOGI" # Author's name.
+    info = "MINIMALIST SOFTWARE DEVELOPER" # Author's job title or info.
+    description = "Kshitij Saraogi's personal website" # Site description.
+    keywords = "blog,developer,personal,minimal,software,engineer,mathematics" # Site keywords.
+    avatarurl = "images/avatar.jpg" # Contain the path of the optional avatar in the static folder.
+    favicon_32 = "images/favicon_32.png"
+    favicon_16 = "images/favicon_16.ico"
+
+    # hideFooter = true
+    # footercontent = "Hello Friend" # Add footer content
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = false
+    hideCopyright = false
+    since = 2016
+
+    # Custom CSS
+    custom_css = []
+
+    # RTL support
+    rtl = false
+
+    colorscheme = "auto"
+
+    enableTwemoji = true
+
+    [utterances]
+      repo = "kshitij10496/kshitij10496.github.io" # https://utteranc.es/#heading-repository
+      issueTerm = "title" # https://utteranc.es/#heading-mapping
+      label = "Comment" # https://utteranc.es/#heading-issue-label
+      theme = "preferred-color-scheme" # https://utteranc.es/#heading-theme
+
+    # Social links
+    [[params.social]]
+      name = "Github"
+      icon = "fa fa-github fa-2x"
+      weight = 1
+      url = "https://github.com/kshitij10496/"
+    [[params.social]]
+      name = "Twitter"
+      icon = "fa fa-twitter fa-2x"
+      weight = 2
+      url = "https://twitter.com/kshitij10496/"
+    [[params.social]]
+      name = "LinkedIn"
+      icon = "fa fa-linkedin fa-2x"
+      weight = 3
+      url = "https://www.linkedin.com/in/kshitij10496/"
+
+    # Menu links
+    [[menu.main]]
+      name = "ABOUT"
+      weight = 1
+      url = "/about/"
+    [[menu.main]]
+      name = "POSTS"
+      weight = 2
+      url  = "/posts/"
+    [[menu.main]]
+      name = "NOW"
+      weight = 3
+      url = "/now/"
+    [[menu.main]]
+      name = "RÉSUMÉ"
+      weight = 4
+      url = "https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing"
+    [[menu.main]]
+      name = "RSS"
+      weight = 5
+      url = "https://kshitij10496.github.io/index.xml"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
