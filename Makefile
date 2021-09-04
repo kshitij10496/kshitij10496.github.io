@@ -1,0 +1,2 @@
+clean:
+	rm -r public/
