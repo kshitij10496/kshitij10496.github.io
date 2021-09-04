@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
 
     <meta name="author" content="KSHITIJ SARAOGI">
     <meta name="description" content="This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
-Progress Suppose, we want to solve the following equation in the variable x:
+Progress    Suppose, we want to solve the following equation in the variable x:
 sin(x) = π / 2
 We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1">
     <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
@@ -16,19 +19,20 @@ We can straight away state that this equations has no solutions as the range of 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GSoC Week 02 - The One With Function Range (Part I)"/>
 <meta name="twitter:description" content="This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
-Progress Suppose, we want to solve the following equation in the variable x:
+Progress    Suppose, we want to solve the following equation in the variable x:
 sin(x) = π / 2
 We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1"/>
 
     <meta property="og:title" content="GSoC Week 02 - The One With Function Range (Part I)" />
 <meta property="og:description" content="This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
-Progress Suppose, we want to solve the following equation in the variable x:
+Progress    Suppose, we want to solve the following equation in the variable x:
 sin(x) = π / 2
 We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/gsoc-week-02/" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/gsoc-week-02/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-06-04T00:00:00+05:30" />
-<meta property="article:modified_time" content="2018-12-19T23:39:05+05:30" />
+<meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
 
 
     <title>
@@ -39,13 +43,12 @@ We can straight away state that this equations has no solutions as the range of 
       <link rel="canonical" href="https://kshitij10496.github.io/posts/gsoc-week-02/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha512-9QjPqX/aCNwEQDyMqqMluNOSsHxTwOJNO3d4m5aUeNbyOPm8RcBA5hCUhvGmKFtSmQYGajqPopGtD60FWiWUwg==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
     
       
       
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.c90db786e23416866c51b0874d50c078fd0444ba8bd1037c548fd2468b544544.css" integrity="sha256-yQ23huI0FoZsUbCHTVDAeP0ERLqL0QN8VI/SRotURUQ=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -54,7 +57,7 @@ We can straight away state that this equations has no solutions as the range of 
       
         
         
-        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -69,17 +72,18 @@ We can straight away state that this equations has no solutions as the range of 
     <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
 
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/twemoji.min.js" integrity="sha512-panBjUGuKarjg0qxHggQULmRf9jB/YVCy238hmzBWUuLeOuwMSuJgJcUv3T+rwXUBZ9zeUvc49ZcCRH+EO0H8g==" crossorigin="anonymous"></script>
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
+        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
     
 
-    <meta name="generator" content="Hugo 0.79.0" />
+    <meta name="generator" content="Hugo 0.88.0" />
   </head>
 
   
   
     
   
-  <body class="colorscheme-auto"
+  <body class="preload-transitions colorscheme-auto"
         onload=" twemoji.parse(document.body); "
   >
     
@@ -138,7 +142,11 @@ We can straight away state that this equations has no solutions as the range of 
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">GSoC Week 02 - The One With Function Range (Part I)</h1>
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/gsoc-week-02/">
+              GSoC Week 02 - The One With Function Range (Part I)
+            </a>
+          </h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -160,9 +168,13 @@ We can straight away state that this equations has no solutions as the range of 
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="https://kshitij10496.github.io/tags/sympy/">Sympy</a>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/sympy/">Sympy</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://kshitij10496.github.io/tags/python/">Python</a></div>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/python/">Python</a>
+    </span></div>
 
         </div>
       </header>
@@ -171,7 +183,12 @@ We can straight away state that this equations has no solutions as the range of 
         
         <p>This week I worked on developing methods for computing the range of an univariate function.
 For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.</p>
-<h3 id="progress"><strong>Progress</strong></h3>
+<h3 id="progress">
+  <strong>Progress</strong>
+  <a class="heading-link" href="#progress">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
 <p>Suppose, we want to solve the following equation in the variable <code>x</code>:</p>
 <p><code>sin(x) = π / 2</code></p>
 <p>We can straight away state that this equations has <em>no solutions</em> as the range of the function <code>sin</code> is -1 to 1<br>
@@ -201,7 +218,12 @@ i.e <code>sin(x) ∈ [-1, 1]</code>.</p>
 </li>
 </ol>
 <p>All this research helped me appreciate the difficulty of the problem at hand. Also, my approach to solving this issue is heavily inspired from these discussions.</p>
-<h3 id="design"><strong>Design</strong></h3>
+<h3 id="design">
+  <strong>Design</strong>
+  <a class="heading-link" href="#design">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
 <p>The methodology of determining the range of a function:</p>
 <ol>
 <li>Determine the points of discontinuities in the concerned domain.</li>
@@ -215,10 +237,20 @@ i.e <code>sin(x) ∈ [-1, 1]</code>.</p>
 <li>Function to divide the domain into sub-domains.</li>
 <li>Function to calculate the extremum values.</li>
 </ol>
-<h3 id="-git-log"><strong>$ git log</strong></h3>
+<h3 id="-git-log">
+  <strong>$ git log</strong>
+  <a class="heading-link" href="#-git-log">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
 <p><a href="https://github.com/sympy/sympy/pull/11141">PR#11141</a> : Method for solving equations using Decomposition and Rewriting
 <a href="https://github.com/sympy/sympy/pull/11164">PR#11164</a> : Intersection of certain ImageSets with Intervals</p>
-<h3 id="thoughts"><strong>Thoughts</strong></h3>
+<h3 id="thoughts">
+  <strong>Thoughts</strong>
+  <a class="heading-link" href="#thoughts">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
 <p>After tommorrow&rsquo;s meeting, I will iron out a more concrete design.
 My goal for next week would be to implement the above-said functions.</p>
 <p>Looking forward to another exciting week !</p>
@@ -266,9 +298,13 @@ My goal for next week would be to implement the above-said functions.</p>
 
     
       
-        
-        <script src="https://kshitij10496.github.io/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
-      
+      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
     
 
     

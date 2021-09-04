@@ -7,18 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 27 Aug 2020 10:53:29 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>git push origin</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-27/</link>
-      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-27/</guid>
-      <description>Git Trick One of the most common operation on Git is pushing the current branch to remote/upstream. Usually, the command for performing this goes something like:
-$ git push &amp;lt;remote&amp;gt; &amp;lt;branch_name&amp;gt; Pratical considerations:
- the remote is often fixed/low cardinality - source of the repo/frequent collaborators. multiple feature branches on the same repo. push the branch that is currently checked out.  Today, I wanted to share a small simplification that I find really helpful in this scenario - a branch name agnostic way of pushing the current changes.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 09 Sep 2018 19:03:31 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo Blog On GitHub Pages</title>
       <link>https://kshitij10496.github.io/posts/hugo-blog-setup/</link>

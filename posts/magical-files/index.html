@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
 
     <meta name="author" content="KSHITIJ SARAOGI">
-    <meta name="description" content="Context My Downloads folder is a mess!
+    <meta name="description" content="Context    My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
 “Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.">
@@ -15,20 +18,21 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Magical Files"/>
-<meta name="twitter:description" content="Context My Downloads folder is a mess!
+<meta name="twitter:description" content="Context    My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
 “Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*."/>
 
     <meta property="og:title" content="Magical Files" />
-<meta property="og:description" content="Context My Downloads folder is a mess!
+<meta property="og:description" content="Context    My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
 “Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/magical-files/" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/magical-files/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-02-10T18:55:02+05:30" />
-<meta property="article:modified_time" content="2019-11-03T16:30:11+05:30" />
+<meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
 
 
     <title>
@@ -39,13 +43,12 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
       <link rel="canonical" href="https://kshitij10496.github.io/posts/magical-files/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha512-9QjPqX/aCNwEQDyMqqMluNOSsHxTwOJNO3d4m5aUeNbyOPm8RcBA5hCUhvGmKFtSmQYGajqPopGtD60FWiWUwg==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
     
       
       
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.c90db786e23416866c51b0874d50c078fd0444ba8bd1037c548fd2468b544544.css" integrity="sha256-yQ23huI0FoZsUbCHTVDAeP0ERLqL0QN8VI/SRotURUQ=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -54,7 +57,7 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
       
         
         
-        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -69,17 +72,18 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
     <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
 
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/twemoji.min.js" integrity="sha512-panBjUGuKarjg0qxHggQULmRf9jB/YVCy238hmzBWUuLeOuwMSuJgJcUv3T+rwXUBZ9zeUvc49ZcCRH+EO0H8g==" crossorigin="anonymous"></script>
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
+        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
     
 
-    <meta name="generator" content="Hugo 0.79.0" />
+    <meta name="generator" content="Hugo 0.88.0" />
   </head>
 
   
   
     
   
-  <body class="colorscheme-auto"
+  <body class="preload-transitions colorscheme-auto"
         onload=" twemoji.parse(document.body); "
   >
     
@@ -138,7 +142,11 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Magical Files</h1>
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/magical-files/">
+              Magical Files
+            </a>
+          </h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -162,18 +170,29 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="https://kshitij10496.github.io/tags/unix/">unix</a>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/unix/">unix</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://kshitij10496.github.io/tags/osx/">osx</a>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/osx/">osx</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://kshitij10496.github.io/tags/linux/">linux</a></div>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/linux/">linux</a>
+    </span></div>
 
         </div>
       </header>
 
       <div>
         
-        <h1 id="context">Context</h1>
+        <h1 id="context">
+  Context
+  <a class="heading-link" href="#context">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>My <code>Downloads</code> folder is a mess!</p>
 <p>I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.</p>
 <p>“Is there a way to only list all the PDF files present in a directory?”</p>
@@ -186,7 +205,12 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
 <p>These findings helped me infer that the use of <code>*.pdf</code> RegEx is not robust enough to ensure that all PDF documents are selected. Apparently, even the OSX’s Finder fails at detecting the file “Kind” for <code>FileHandler.ashx</code>.</p>
 <p>Finder</p>
 <p>Looking for something more sophisticated, eh?</p>
-<h1 id="detour-magic-numbers-">Detour: Magic Numbers ✨</h1>
+<h1 id="detour-magic-numbers-">
+  Detour: Magic Numbers ✨
+  <a class="heading-link" href="#detour-magic-numbers-">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>What is a <strong>magic number</strong>?<br>
 Any constant numerical or text value that you find in your code is a magic number, especially the ones you “forget” to comment/document.</p>
 <p>Interestingly enough, many files have such constants that identify the contained data. In addition to this, detecting such constants in files is a simple and effective way of distinguishing between many file formats. 😲 These magic numbers, used to identify or verify the content of a file, are also called “file signatures”.</p>
@@ -205,16 +229,31 @@ Any constant numerical or text value that you find in your code is a magic numbe
 </ol>
 <p><strong>green light ✅:</strong></p>
 <p>Failing a well-designed magic number test is a pretty sure sign that the file is either <strong>corrupt</strong> or of the <strong>wrong type</strong>. On the other hand, a valid magic number does not guarantee that the file is not corrupt or is of a correct type.</p>
-<h1 id="preliminary-research">Preliminary Research</h1>
+<h1 id="preliminary-research">
+  Preliminary Research
+  <a class="heading-link" href="#preliminary-research">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>I have previously used the Unix <code>file</code> command for determining the file type by performing some “tests” via system calls. One of them is the <strong>magic test</strong> which checks the file header for the existence of these magic numbers using the <code>libmagic</code> library written in C.</p>
 <p>The next question confronting me: “Is there a way to use the libmagic library from Go?”</p>
 <p>That’s when I found the <a href="https://github.com/rakyll/magicmime">rakyll/magicmime</a> package from the inimitable JBD. 🎉
 It provides Go bindings for the <code>libmagic</code> library - exactly what I was looking for! 😁</p>
-<h1 id="solution">Solution</h1>
+<h1 id="solution">
+  Solution
+  <a class="heading-link" href="#solution">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>This week I will be developing a CLI using <a href="https://github.com/spf13/cobra">spf13/cobra</a> which can help the users filter files based on it’s format. My intention is to make a simple, decoupled and UNIX pipe compatible tool that plays well with other utilities. With my university exams starting in 10 days, this week would be the optimal period for me to work on the project.</p>
 <p>In case there are any existing solutions for solving this, do let me know!<br>
 If you currently experience this problem, I would love to hear your thoughts. 😃</p>
-<h1 id="references">References</h1>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <ol>
 <li><a href="https://en.wikipedia.org/wiki/Magic_number_(programming)">Magic number</a></li>
 <li><a href="https://en.wikipedia.org/wiki/File_(command)">file command</a></li>
@@ -265,9 +304,13 @@ If you currently experience this problem, I would love to hear your thoughts. �
 
     
       
-        
-        <script src="https://kshitij10496.github.io/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
-      
+      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
     
 
     

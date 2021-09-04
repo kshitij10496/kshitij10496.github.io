@@ -7,146 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 02 Jan 2021 18:09:04 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Review: A Case of Exploding Mangoes</title>
-      <link>https://kshitij10496.github.io/posts/a-case-of-exploding-mangoes/</link>
-      <pubDate>Sat, 02 Jan 2021 18:09:04 +0100</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/a-case-of-exploding-mangoes/</guid>
-      <description>Takeaways  About Curses  people abuse because it sounds cool and requires no imagination to vent. useless weapons for people who do not even have the courage of vocabulary to come up with proper invective for their enemies.   The ability to learn to defend against noise and wield it as a weapon is an important skill. Metaphor: being as innocent as canaries. It all depends on how you are feeling and how you would rather feel.</description>
-    </item>
-    
-    <item>
-      <title>Communication</title>
-      <link>https://kshitij10496.github.io/posts/2020-09-01/</link>
-      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-09-01/</guid>
-      <description>Thought for the Day I was thinking about a very ubiquitous topic that I like to explore more about - the topic of communication. Whether it be my curiousity about the origins of writing, or fascination with old/dead languages, I always like to think of language as a tool - a tool for communicating with others. It is true that attaining a certain level of proficiency at weilding this tool leads to a lot of opportunities.</description>
-    </item>
-    
-    <item>
-      <title>git push origin</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-27/</link>
-      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-27/</guid>
-      <description>Git Trick One of the most common operation on Git is pushing the current branch to remote/upstream. Usually, the command for performing this goes something like:
-$ git push &amp;lt;remote&amp;gt; &amp;lt;branch_name&amp;gt; Pratical considerations:
- the remote is often fixed/low cardinality - source of the repo/frequent collaborators. multiple feature branches on the same repo. push the branch that is currently checked out.  Today, I wanted to share a small simplification that I find really helpful in this scenario - a branch name agnostic way of pushing the current changes.</description>
-    </item>
-    
-    <item>
-      <title>Dining at Milan Train Station</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-26/</link>
-      <pubDate>Wed, 26 Aug 2020 14:10:54 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-26/</guid>
-      <description>Thought for the day  In #SkinintheGame I was shocked to see Italians eating at MacDonalds in the Milan train station: it&amp;rsquo;s abt lowering the variance, trading quality for certainty &amp;amp; reliability. It&amp;rsquo;s the same reason you hire employees: for their predictability/reliable mediocrity, never for quality.
- Tweet from Nassim Nicholas Taleb   The central theme of mediocrity is that it is always predictable - often thought of as the &amp;ldquo;safest&amp;rdquo; approach.</description>
-    </item>
-    
-    <item>
-      <title>Somebody once told me...</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-25/</link>
-      <pubDate>Tue, 25 Aug 2020 21:54:01 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-25/</guid>
-      <description>What brought me joy today?  Watching John Green vlog about how engagement is valued more than accuracy/quality in our attention economy, as reflected on popular social media platforms. And yes, I too would love to know how many titles Liverpool FC wins in the next decade! ⚽️ Learning about Minka which is a type of traditional farmhouse in Japan in this short film.  </description>
-    </item>
-    
-    <item>
-      <title>Crafting sofware has come so far</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-24/</link>
-      <pubDate>Mon, 24 Aug 2020 14:55:58 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-24/</guid>
-      <description>What brought me joy today?  This concise article on technological evolution in the way we write and deploy software - from VMs to Docker. Pretty basic but well put.  Not a lot going on but it&amp;rsquo;s normal to not be super active everyday.</description>
-    </item>
-    
-    <item>
-      <title>Decompress Sunday</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-23/</link>
-      <pubDate>Sun, 23 Aug 2020 23:27:49 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-23/</guid>
-      <description>What brought me joy today?  India edging the crucial encounter against China in the Chess Olympiad. Learning about the Parsi community in India. Watching Knives Out.  </description>
-    </item>
-    
-    <item>
-      <title>Memories</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-22/</link>
-      <pubDate>Sat, 22 Aug 2020 21:47:27 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-22/</guid>
-      <description>Thought of the Day  It&amp;rsquo;s like my very first memory, which I guess is the first time I was alive.
-- Stephen Chbosky
- Thinking about my first memory is actually much harder than it sounds, as if finding a needle in the haystack. Beside that I agree that a lot of our long term memories are moments that affect us to our core &amp;amp; events which shape something fundamental to our being.</description>
-    </item>
-    
-    <item>
-      <title>Vast Endless Sea</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-21/</link>
-      <pubDate>Fri, 21 Aug 2020 09:49:14 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-21/</guid>
-      <description>What brought me joy today?  Crossing 900 rating in Blitz chess for the first time in my life. Up &amp;amp; Up. Watching Raat Akeli Hai with brilliant performance from the entire cast.  Thought of the Day  &amp;ldquo;If you want to build a ship, don&amp;rsquo;t drum up the people to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast endless sea.&amp;rdquo; Antoine de Saint-Exupéry</description>
-    </item>
-    
-    <item>
-      <title>Keep It Simple Stupid?</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-20/</link>
-      <pubDate>Thu, 20 Aug 2020 13:59:10 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-20/</guid>
-      <description>Chess I hit my personal best 5 min Puzzle Rush score of 13 today. More importantly, I&amp;rsquo;m delighted to use one of the Queen sacrifice tactic to win a blitz match today. :party: Though my overall rating is stagnating towards 850 this week, I&amp;rsquo;m fairly happy with the progress I&amp;rsquo;m making. Need to focus on improving my accuracy and middle game.
-What brought me joy today?  Nakamura for putting up a fight till the literal last breath of the Magnus Carlsen Chess Tour Finals.</description>
-    </item>
-    
-    <item>
-      <title>Consistency</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-19/</link>
-      <pubDate>Wed, 19 Aug 2020 13:30:11 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-19/</guid>
-      <description>Keyboard Continuing my practice, I started playing with both hands today - basics, ofcourse.
-It surprisingly difficult for me to coordinate the movement of fingers on both hands.
-I belive it&amp;rsquo;s just a matter of continuous practice and effort now.
-What brought me joy today?  Watching John Green livestream working on his latest art project - drawing 170,000 circles.
-It was really inspirational and reaffirms the belief that we all are artists inside waiting to discover ourselves.</description>
-    </item>
-    
-    <item>
-      <title>Floating Pins</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-18/</link>
-      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-18/</guid>
-      <description>IoT &amp;ldquo;Reading input from mechanical devices is easy.
-Reading input resiliently from mechanical devices is not.&amp;quot;
-Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &amp;ldquo;false-positives&amp;rdquo; (reading button press when it wasn&amp;rsquo;t in reality) from the input space?
-Causes (potential):
- Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - an input pin on a microcontroller that does not have a specified state (either High voltage, or Low voltage).</description>
-    </item>
-    
-    <item>
-      <title>An Ode to Joy</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-17/</link>
-      <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-17/</guid>
-      <description>Learning should be a constant. Deliberate practice should be the tool.
-Keyboard Basics After a break of 2 weeks, I picked up my keyboard practice back again. Just to get some practice, I have decided the first week solely on revisiting the tunes/melodies I have already learned. This has the added benefit of easing me into reading the music sheet again as well as providing me with small boosts of confidence in the initial phase.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Magical Files</title>
       <link>https://kshitij10496.github.io/posts/magical-files/</link>
       <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/magical-files/</guid>
-      <description>Context My Downloads folder is a mess!
+      <description>Context    My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
 “Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
@@ -160,7 +28,7 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
       <guid>https://kshitij10496.github.io/posts/weekend-with-flutter/</guid>
       <description>I built my first-ever mobile application as a weekend project.
 This post describes my experience, thoughts and emotions over the past few days.
- Motivation Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
+ Motivation    Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
     </item>
     
     <item>
@@ -170,7 +38,7 @@ This post describes my experience, thoughts and emotions over the past few days.
       
       <guid>https://kshitij10496.github.io/posts/postgres-with-docker/</guid>
       <description>Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
-Problem I have got a lot of small personal projects which use separate databases.
+Problem    I have got a lot of small personal projects which use separate databases.
 Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
 Now, this soon got messy as my machine was polluted with lots of DBs and their configurations.</description>
     </item>
@@ -240,7 +108,7 @@ There are 2 complementary aspects of getting an education:
       <guid>https://kshitij10496.github.io/posts/blogging/</guid>
       <description>tl;dr: post about posting more posts
 I have forgotten to write blog posts for over a year or have I?
-Blogging 101 I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog. However soon after completing the project, I became lazy and procrastinated.</description>
+Blogging 101    I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
     </item>
     
     <item>
@@ -277,7 +145,7 @@ In addition to this, I also share my workflow for publishing posts using a shell
       <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
       <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
  How does the use of context help us in programming? When should a programmer use context?  In this blog post, I will share what I understand about context.
-Motivation Consider you are an event manager of a restaurant.</description>
+Motivation    Consider you are an event manager of a restaurant.</description>
     </item>
     
     <item>
@@ -297,7 +165,7 @@ Motivation Consider you are an event manager of a restaurant.</description>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
-      <description>What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+      <description>What is Duck Typing?    Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
  attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
     </item>
     
@@ -348,7 +216,7 @@ Another noticable point, from the point of implementation, was to deal with sing
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-09/</guid>
       <description>This week I worked on solving trigonometric inequalities.
-Trigonometric inequalities The primary univariate inequality solver - solve_univariate_inequality,
+Trigonometric inequalities    The primary univariate inequality solver - solve_univariate_inequality,
 depends upon the results of solve in order to solve the given inequality. Taking a cue from PR#10022 on incorporating solveset for inequalities, I worked on developing an approach for replacing the use of solve with solveset in solving inequalities.
 Idea
  Convert Set-type output from solveset to list objects similar to that returned by solve.</description>
@@ -361,7 +229,7 @@ Idea
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-07/</guid>
       <description>This week I updated my PR#11277 to find the period of a general function.
-Periodicity In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.
+Periodicity    In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.
 Here are my notes on periodicity which were the literature reference for the development of the method:</description>
     </item>
     
@@ -372,7 +240,7 @@ Here are my notes on periodicity which were the literature reference for the dev
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-06/</guid>
       <description>This week I worked on the topic of singularities.
-Singularities  A singularity is in general a point at which a given mathematical object is not defined.
+Singularities     A singularity is in general a point at which a given mathematical object is not defined.
  Examples:
  1/x has a singularity at x = 0 as it seems to reach infinity. |x| (Absolute) has a singularity at x = 0 since it is not differentiable at that point. √x (Square root) has a singularity at x = 0 since it doesnot admit a tangent there.</description>
     </item>
@@ -387,7 +255,7 @@ Singularities  A singularity is in general a point at which a given mathematical
 The past couple of weeks were spent of developing heuristics for determining the fundamental period of a given trigonometric function.
 In our higher school, we all must have come across Trigonometric Functions. One of the most striking properties of these functions is their periodicty.
 The ability of a function to repeat its values in regular intervals has always caught my imagination.
-Motivation Well, SymPy ought to have a functionality to determine the period of a function.</description>
+Motivation    Well, SymPy ought to have a functionality to determine the period of a function.</description>
     </item>
     
     <item>
@@ -398,7 +266,7 @@ Motivation Well, SymPy ought to have a functionality to determine the period of 
       <guid>https://kshitij10496.github.io/posts/gsoc-week-03/</guid>
       <description>Hey !
 This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&amp;rsquo;s research on the same, I tried to develop these utility functions.
-Implementation Here, I have defined the two functions along with some of their implementation details:
+Implementation    Here, I have defined the two functions along with some of their implementation details:
 continuous_in(f, x, interval)
 The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval.</description>
     </item>
@@ -410,7 +278,7 @@ The function returns the sub-domains as an Union of Interval in case a discontin
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-02/</guid>
       <description>This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
-Progress Suppose, we want to solve the following equation in the variable x:
+Progress    Suppose, we want to solve the following equation in the variable x:
 sin(x) = π / 2
 We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1</description>
     </item>
@@ -421,7 +289,7 @@ We can straight away state that this equations has no solutions as the range of 
       <pubDate>Sun, 29 May 2016 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-01/</guid>
-      <description>$ git log PR #11149 : Intersection of null Range and an Interval returns EmptySet
+      <description>$ git log    PR #11149 : Intersection of null Range and an Interval returns EmptySet
 PR #11164 : Intersection of certain ImageSets with Intervals
 In the next week, I will try to design a method to determine the range of a function in the given domain.
 This will require some digging up and a bit of research.
@@ -455,10 +323,10 @@ If we have to solve for x in the equation f(x) = 0, where</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kshitij10496.github.io/about/</guid>
-      <description>Hey there!
-This is Kshitij and you have reached my small place on the World Wide Web. 😄 😎
+      <description>Hey there! 👋
+This is Kshitij and you have reached my small place on the World Wide Web.
 I’m a software developer, an amateur poker player and an aspiring doodle artist from India. I like to think of myself as a problem solver who prefers to leverage the potential of technology to build a better, efficient and robust (possibly, antifragile) solutions.
- Builds simple APIs for everything useful Writes CLI for everything fun Reads daily Football/Poker on weekends Currently learning to draw, design &amp;amp; doodle  Recently, I designed a monogram with my initals.</description>
+ Builds simple APIs for everything useful Writes CLI for everything fun Reads daily Football/Poker on weekends Currently learning to draw, design &amp;amp; doodle  I designed an ugly monogram with my initals.</description>
     </item>
     
     <item>
@@ -468,7 +336,9 @@ I’m a software developer, an amateur poker player and an aspiring doodle artis
       
       <guid>https://kshitij10496.github.io/now/</guid>
       <description>Updates about what I&amp;rsquo;m up to lately.1
-  Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page &amp;#x21a9;&amp;#xfe0e;
+ Helping OneFootball build a platform for the football community as a software engineer. Training for my first ever marathon2. Learning to play Kicker3.    Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+ TCS Amsterdam Marathon 2021&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+ Table football - Wikipedia&amp;#160;&amp;#x21a9;&amp;#xfe0e;
    </description>
     </item>
     

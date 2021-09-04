@@ -7,205 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 02 Jan 2021 18:09:04 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>fiction</title>
-      <link>https://kshitij10496.github.io/tags/fiction/</link>
-      <pubDate>Sat, 02 Jan 2021 18:09:04 +0100</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/fiction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>communication</title>
-      <link>https://kshitij10496.github.io/tags/communication/</link>
-      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/communication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyboard</title>
-      <link>https://kshitij10496.github.io/tags/keyboard/</link>
-      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/keyboard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>language</title>
-      <link>https://kshitij10496.github.io/tags/language/</link>
-      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/language/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>database</title>
-      <link>https://kshitij10496.github.io/tags/database/</link>
-      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>distributed</title>
-      <link>https://kshitij10496.github.io/tags/distributed/</link>
-      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/distributed/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://kshitij10496.github.io/tags/git/</link>
-      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>probability</title>
-      <link>https://kshitij10496.github.io/tags/probability/</link>
-      <pubDate>Wed, 26 Aug 2020 14:10:54 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/probability/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sitg</title>
-      <link>https://kshitij10496.github.io/tags/sitg/</link>
-      <pubDate>Wed, 26 Aug 2020 14:10:54 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/sitg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unix</title>
-      <link>https://kshitij10496.github.io/tags/unix/</link>
-      <pubDate>Wed, 26 Aug 2020 14:10:54 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/unix/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>John Green</title>
-      <link>https://kshitij10496.github.io/tags/john-green/</link>
-      <pubDate>Tue, 25 Aug 2020 21:54:01 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/john-green/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Liverpool</title>
-      <link>https://kshitij10496.github.io/tags/liverpool/</link>
-      <pubDate>Tue, 25 Aug 2020 21:54:01 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/liverpool/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>minka</title>
-      <link>https://kshitij10496.github.io/tags/minka/</link>
-      <pubDate>Tue, 25 Aug 2020 21:54:01 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/minka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://kshitij10496.github.io/tags/docker/</link>
-      <pubDate>Mon, 24 Aug 2020 14:55:58 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chess</title>
-      <link>https://kshitij10496.github.io/tags/chess/</link>
-      <pubDate>Sun, 23 Aug 2020 23:27:49 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/chess/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>memory</title>
-      <link>https://kshitij10496.github.io/tags/memory/</link>
-      <pubDate>Sat, 22 Aug 2020 21:47:27 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/memory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nature</title>
-      <link>https://kshitij10496.github.io/tags/nature/</link>
-      <pubDate>Sat, 22 Aug 2020 21:47:27 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/nature/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>motivation</title>
-      <link>https://kshitij10496.github.io/tags/motivation/</link>
-      <pubDate>Fri, 21 Aug 2020 09:49:14 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/motivation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://kshitij10496.github.io/tags/math/</link>
-      <pubDate>Thu, 20 Aug 2020 13:59:10 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>arduino</title>
-      <link>https://kshitij10496.github.io/tags/arduino/</link>
-      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/arduino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iot</title>
-      <link>https://kshitij10496.github.io/tags/iot/</link>
-      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/iot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>learning</title>
-      <link>https://kshitij10496.github.io/tags/learning/</link>
-      <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/learning/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 10 Feb 2019 18:55:02 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux</title>
       <link>https://kshitij10496.github.io/tags/linux/</link>
@@ -221,6 +23,15 @@
       <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/osx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unix</title>
+      <link>https://kshitij10496.github.io/tags/unix/</link>
+      <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/unix/</guid>
       <description></description>
     </item>
     
@@ -266,6 +77,15 @@
       <pubDate>Sun, 13 Jan 2019 20:47:59 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/databases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://kshitij10496.github.io/tags/docker/</link>
+      <pubDate>Sun, 13 Jan 2019 20:47:59 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
@@ -329,6 +149,24 @@
       <pubDate>Sun, 11 Nov 2018 09:06:32 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/lego/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>motivation</title>
+      <link>https://kshitij10496.github.io/tags/motivation/</link>
+      <pubDate>Sun, 04 Nov 2018 00:21:02 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/motivation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://kshitij10496.github.io/tags/git/</link>
+      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/git/</guid>
       <description></description>
     </item>
     

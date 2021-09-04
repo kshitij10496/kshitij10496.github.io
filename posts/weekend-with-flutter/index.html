@@ -5,27 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
 
     <meta name="author" content="KSHITIJ SARAOGI">
     <meta name="description" content="I built my first-ever mobile application as a weekend project.
 This post describes my experience, thoughts and emotions over the past few days.
- Motivation Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.">
+ Motivation    Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.">
     <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Weekend with Flutter"/>
 <meta name="twitter:description" content="I built my first-ever mobile application as a weekend project.
 This post describes my experience, thoughts and emotions over the past few days.
- Motivation Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information."/>
+ Motivation    Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information."/>
 
     <meta property="og:title" content="Weekend with Flutter" />
 <meta property="og:description" content="I built my first-ever mobile application as a weekend project.
 This post describes my experience, thoughts and emotions over the past few days.
- Motivation Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information." />
+ Motivation    Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/weekend-with-flutter/" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/weekend-with-flutter/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-02-03T19:14:09+05:30" />
-<meta property="article:modified_time" content="2019-11-01T21:49:42+05:30" />
+<meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
 
 
     <title>
@@ -36,13 +40,12 @@ This post describes my experience, thoughts and emotions over the past few days.
       <link rel="canonical" href="https://kshitij10496.github.io/posts/weekend-with-flutter/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css" integrity="sha512-9QjPqX/aCNwEQDyMqqMluNOSsHxTwOJNO3d4m5aUeNbyOPm8RcBA5hCUhvGmKFtSmQYGajqPopGtD60FWiWUwg==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
     
       
       
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.c90db786e23416866c51b0874d50c078fd0444ba8bd1037c548fd2468b544544.css" integrity="sha256-yQ23huI0FoZsUbCHTVDAeP0ERLqL0QN8VI/SRotURUQ=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -51,7 +54,7 @@ This post describes my experience, thoughts and emotions over the past few days.
       
         
         
-        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -66,17 +69,18 @@ This post describes my experience, thoughts and emotions over the past few days.
     <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
 
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/twemoji.min.js" integrity="sha512-panBjUGuKarjg0qxHggQULmRf9jB/YVCy238hmzBWUuLeOuwMSuJgJcUv3T+rwXUBZ9zeUvc49ZcCRH+EO0H8g==" crossorigin="anonymous"></script>
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
+        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
     
 
-    <meta name="generator" content="Hugo 0.79.0" />
+    <meta name="generator" content="Hugo 0.88.0" />
   </head>
 
   
   
     
   
-  <body class="colorscheme-auto"
+  <body class="preload-transitions colorscheme-auto"
         onload=" twemoji.parse(document.body); "
   >
     
@@ -135,7 +139,11 @@ This post describes my experience, thoughts and emotions over the past few days.
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Weekend with Flutter</h1>
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/weekend-with-flutter/">
+              Weekend with Flutter
+            </a>
+          </h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -159,13 +167,21 @@ This post describes my experience, thoughts and emotions over the past few days.
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="https://kshitij10496.github.io/tags/flutter/">flutter</a>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/flutter/">flutter</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://kshitij10496.github.io/tags/development/">development</a>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/development/">development</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://kshitij10496.github.io/tags/cards/">cards</a>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/cards/">cards</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://kshitij10496.github.io/tags/game/">game</a></div>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/game/">game</a>
+    </span></div>
 
         </div>
       </header>
@@ -175,18 +191,43 @@ This post describes my experience, thoughts and emotions over the past few days.
         <p>I built my first-ever mobile application as a weekend project.<br>
 This post describes my experience, thoughts and emotions over the past few days.</p>
 <hr>
-<h1 id="motivation">Motivation</h1>
+<h1 id="motivation">
+  Motivation
+  <a class="heading-link" href="#motivation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information. I used Google Excel’s Android app as an ad-hoc way to track individual scores so as to reduce some friction. Excel sheet worked fine but it still could not display game related information in a consumable format.</p>
 <p>The next morning I started to think there <strong>must be a better way</strong> to do this. After some online research, I discovered that no existing application/software for book-keeping specifically for this game. Thus, my decision to dedicate the weekend on developing a simple mobile app for this.</p>
 <p>I was pretty excited about the project as this would be my first attempt at app development in around 4 years writing software. At the same time, it was a bit scary as I had no idea about the timeline and whether developing a MVP is even a practical expectation. However, being the optimist that I am, I decided to give it a go.</p>
 <p>Breathe!</p>
-<h1 id="laying-the-groundwork">Laying the Groundwork</h1>
-<h2 id="desgining-layouts">Desgining layouts</h2>
+<h1 id="laying-the-groundwork">
+  Laying the Groundwork
+  <a class="heading-link" href="#laying-the-groundwork">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h2 id="desgining-layouts">
+  Desgining layouts
+  <a class="heading-link" href="#desgining-layouts">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p>Kicking off the project, I started drawing basic layouts for the app screens on a piece of paper. My primary focus during this stage was to developing the bare minimum functionalities. With no idea of how to implement these layouts, I relied solely on my determination of getting them to work - after all it’s just UI!</p>
 <p><img src="https://kshitij10496.github.io/images/posts/play350-layout.jpg" alt="layouts"></p>
-<h2 id="choosing-flutter">Choosing Flutter</h2>
+<h2 id="choosing-flutter">
+  Choosing Flutter
+  <a class="heading-link" href="#choosing-flutter">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p>After building the screen layouts, I started looking for frameworks and tools which help build the actual app. I read about <a href="https://developer.android.com/studio/">Android Studio Code</a>, <a href="https://facebook.github.io/react-native/">React Native</a> and <a href="https://flutter.dev/">Flutter</a>. With my focus on rapid development, flexible UI and personal productivity, I choose Flutter. In addition to sparing me from writing Java-XML and Javascript, Flutter provided me with the added benefit of building cross-platform native applications.</p>
-<h1 id="flutter-101">Flutter 101</h1>
+<h1 id="flutter-101">
+  Flutter 101
+  <a class="heading-link" href="#flutter-101">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>The major issue with Flutter was that the application code must be written in Dart. With a clock on my back, the last thing I wanted to do was spend time learning a new programming language. So, I decided to dive head first into building the app itself and learning Dart syntax on the go.</p>
 <p>After setting my dev env, I completed the Google Codelabs to get a brief idea of how things worked in Flutter. I would highly recommend working out the Udacity Course on building Flutter apps as well. These resources taught me the following central concepts for building apps in Flutter:</p>
 <ol>
@@ -199,9 +240,14 @@ This post describes my experience, thoughts and emotions over the past few days.
 <p>My major takeaway from the exercises was: <strong>“Everything in Flutter is a widget”</strong>.</p>
 <p>It took me around 6 hours to complete both the labs along with their quizzes.<br>
 The decision to complete the sample project along in the codelabs paid rich dividends as I started developing my own app.</p>
-<h1 id="building-screens">Building screens</h1>
+<h1 id="building-screens">
+  Building screens
+  <a class="heading-link" href="#building-screens">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>With my initial focus on emulating the layouts I had built into the app, I started off by implementing every screen as a Stateless Widget and fixing on the display layout with the help of <em>Hot Reload</em>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#6272a4">// The Welcome Screen is the 1st page of the application.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#6272a4">// The Welcome Screen is the 1st page of the application.
 </span><span style="color:#6272a4">// It is a StatelessWidget as the only possible option for the user is to tap a button 
 </span><span style="color:#6272a4">// and navigate to a new screen.
 </span><span style="color:#6272a4"></span>
@@ -216,7 +262,7 @@ The decision to complete the sample project along in the codelabs paid rich divi
   <span style="color:#6272a4">// Implement methods for building the screen body layout
 </span><span style="color:#6272a4"></span>}
 </code></pre></div><p>When I was fairly satisfied with the screen, I refactored the code to a <em>Stateful Widget</em> along with the relevant <em>State</em> data. Note: Each <em>Stateful Screen</em> is related to its corresponding <em>ScreenState class</em> which stores the state and screen layout instructions.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">GameBidderScreen</span> <span style="color:#8be9fd;font-style:italic">extends</span> StatefulWidget {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">GameBidderScreen</span> <span style="color:#8be9fd;font-style:italic">extends</span> StatefulWidget {
   <span style="color:#6272a4">// Data which is not modified for this particular screen
 </span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">final</span> <span style="color:#8be9fd">String</span> boardID;
   <span style="color:#8be9fd;font-style:italic">final</span> <span style="color:#8be9fd">int</span> gameID;
@@ -266,10 +312,15 @@ The decision to complete the sample project along in the codelabs paid rich divi
 <p><img src="https://kshitij10496.github.io/images/posts/play350-welcome.png" alt="welcome screen">
 <img src="https://kshitij10496.github.io/images/posts/play350-gameplay.png" alt="gameplay screen">
 <img src="https://kshitij10496.github.io/images/posts/play350-gameresult.png" alt="gameresult screen"></p>
-<h1 id="navigation">Navigation</h1>
+<h1 id="navigation">
+  Navigation
+  <a class="heading-link" href="#navigation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>Now that we have built our screen layouts, its about time to connect all of them and build the user flow. Flutter uses a <strong>stack based navigation</strong> system for moving around screens. Basically, this means that you <strong>push</strong> a new screen on top of the current screen if you want to switch. Moreover, you have to <strong>pop</strong> screens in order to reduce the amount of RAM consumed by your application.</p>
 <p>In my case, I decided to pop screens before pushing in new ones whenever the user decided to start a <em>New Game</em>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  <span style="color:#6272a4">// When the user presses the &#34;New Game&#34; button on the result screen.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  <span style="color:#6272a4">// When the user presses the &#34;New Game&#34; button on the result screen.
 </span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">onPressed:</span> () {
         <span style="color:#6272a4">// Ensure that the scoreboard is updated
 </span><span style="color:#6272a4"></span>
@@ -289,7 +340,12 @@ The decision to complete the sample project along in the codelabs paid rich divi
           ),
         );
       },
-</code></pre></div><h1 id="whats-next">What’s Next?</h1>
+</code></pre></div><h1 id="whats-next">
+  What’s Next?
+  <a class="heading-link" href="#whats-next">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>In the future, I plan to complete the following tasks as well:</p>
 <ul>
 <li>Firebase integration</li>
@@ -299,12 +355,22 @@ The decision to complete the sample project along in the codelabs paid rich divi
 <li>Make scoreboard interactive.</li>
 <li>Add synchronisation between players.</li>
 </ul>
-<h1 id="parting-thoughts">Parting Thoughts</h1>
+<h1 id="parting-thoughts">
+  Parting Thoughts
+  <a class="heading-link" href="#parting-thoughts">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>I am super satisfied and proud of myself for completing the MVP I had set out at the start of the weekend. It was all down to the ease with which I was able to get things done in Flutter even though I did not learn Dart. Even though this would not be the best code architecture, I am fairly happy to get it working.</p>
 <p>Do give the app a try if you like to play 350.<br>
 Happy to incorporate feedback into the app! 😁</p>
 <p>Hopefully, this post motivates you to try Flutter for building your next disruptive mobile application!</p>
-<h1 id="references">References</h1>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
 <p>[1]: Source on GitHub: <a href="https://github.com/kshitij10496/play350">kshitij10496/play350</a><br>
 [2]: Google Codelabs: <a href="https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/index.html?index=..%2F..index#0">Write Your First Flutter App</a><br>
 [3]: Udacity: <a href="https://classroom.udacity.com/courses/ud905">Build Native Mobile Apps with Flutter</a></p>
@@ -352,9 +418,13 @@ Happy to incorporate feedback into the app! 😁</p>
 
     
       
-        
-        <script src="https://kshitij10496.github.io/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
-      
+      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
     
 
     
