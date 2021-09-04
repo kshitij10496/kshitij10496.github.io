@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="KSHITIJ SARAOGI">
+    <meta name="description" content="This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
+Progress    Suppose, we want to solve the following equation in the variable x:
+sin(x) = π / 2
+We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1">
+    <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GSoC Week 02 - The One With Function Range (Part I)"/>
+<meta name="twitter:description" content="This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
+Progress    Suppose, we want to solve the following equation in the variable x:
+sin(x) = π / 2
+We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1"/>
+
+    <meta property="og:title" content="GSoC Week 02 - The One With Function Range (Part I)" />
+<meta property="og:description" content="This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
+Progress    Suppose, we want to solve the following equation in the variable x:
+sin(x) = π / 2
+We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/gsoc-week-02/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2016-06-04T00:00:00+05:30" />
+<meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
+
+
+    <title>
+  GSoC Week 02 - The One With Function Range (Part I) · kxsh
+</title>
+
+    
+      <link rel="canonical" href="https://kshitij10496.github.io/posts/gsoc-week-02/">
+    
+
+    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
+        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.88.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kxsh
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/about/">ABOUT</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing">RÉSUMÉ</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/index.xml">RSS</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/gsoc-week-02/">
+              GSoC Week 02 - The One With Function Range (Part I)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2016-06-04T00:00:00&#43;05:30'>
+                June 4, 2016
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://kshitij10496.github.io/categories/gsoc/">GSoC</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/sympy/">Sympy</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/python/">Python</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>This week I worked on developing methods for computing the range of an univariate function.
+For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.</p>
+<h3 id="progress">
+  <strong>Progress</strong>
+  <a class="heading-link" href="#progress">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Suppose, we want to solve the following equation in the variable <code>x</code>:</p>
+<p><code>sin(x) = π / 2</code></p>
+<p>We can straight away state that this equations has <em>no solutions</em> as the range of the function <code>sin</code> is -1 to 1<br>
+i.e <code>sin(x) ∈ [-1, 1]</code>.</p>
+<p>Thus, we find that the range of the function can also be used to leverage the solutions of an equation. The implementation of a function to determine the range of a function in a given domain is particularly interesting for checking whether an equation is at all solvable.</p>
+<p>In the last meeting, Amit had suggested me to read the conversation on</p>
+<ul>
+<li><a href="https://github.com/sympy/sympy/pull/2723">PR#2723</a> : Fixed imageset for Interval</li>
+<li><a href="https://github.com/sympy/sympy/pull/2925">PR#2925</a> : find singularities for any expression.</li>
+</ul>
+<p>Along with this, I read the following mailing lists discussions:</p>
+<ol>
+<li>
+<p><a href="https://groups.google.com/forum/#!searchin/sympy/minimize/sympy/Na_p5pm1I7M/V6uv4ZAkp2oJ">Find minimum value of a function symbolically</a></p>
+</li>
+<li>
+<p><a href="https://groups.google.com/forum/#!topic/sympy/8TM8cnuzkG8">Best way to find extrema of function over interval</a></p>
+</li>
+<li>
+<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/ijhl7rkHEbk/lsWTuJ2Nb8wJ">GSoC 2013 Idea - Find Domain / Range / Continuity / Singularity of a Function</a></p>
+</li>
+<li>
+<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/c_fpCu9QiII/n2KaXN-z3rwJ">On a general representation for singularities and infinities</a></p>
+</li>
+<li>
+<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/mJlCxuZ5uZw/peWogHzbKekJ">Functions: Singularity and Continuity</a></p>
+</li>
+</ol>
+<p>All this research helped me appreciate the difficulty of the problem at hand. Also, my approach to solving this issue is heavily inspired from these discussions.</p>
+<h3 id="design">
+  <strong>Design</strong>
+  <a class="heading-link" href="#design">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>The methodology of determining the range of a function:</p>
+<ol>
+<li>Determine the points of discontinuities in the concerned domain.</li>
+<li>Divide the entire domain into sub-domains about the above-determined singularities.</li>
+<li>Use the <a href="https://en.wikipedia.org/wiki/Derivative_test#Second_derivative_test">Derivative Test</a> to locate the critical points of the function within each sub-domain.</li>
+<li>Calcuate the corresponding values of the function at the critical points and the boundary values of the sub-domains.</li>
+<li>The extremas of the function in the entire domain are the maximum and minimum values in all the smaller domains combined.</li>
+</ol>
+<p>For now, I have thought of designing 2 functions to solve this issue:</p>
+<ol>
+<li>Function to divide the domain into sub-domains.</li>
+<li>Function to calculate the extremum values.</li>
+</ol>
+<h3 id="-git-log">
+  <strong>$ git log</strong>
+  <a class="heading-link" href="#-git-log">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><a href="https://github.com/sympy/sympy/pull/11141">PR#11141</a> : Method for solving equations using Decomposition and Rewriting
+<a href="https://github.com/sympy/sympy/pull/11164">PR#11164</a> : Intersection of certain ImageSets with Intervals</p>
+<h3 id="thoughts">
+  <strong>Thoughts</strong>
+  <a class="heading-link" href="#thoughts">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>After tommorrow&rsquo;s meeting, I will iron out a more concrete design.
+My goal for next week would be to implement the above-said functions.</p>
+<p>Looking forward to another exciting week !</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2016 -
+        
+        2021
+         KSHITIJ SARAOGI 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

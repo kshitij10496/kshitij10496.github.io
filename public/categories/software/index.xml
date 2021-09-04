@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on kxsh</title>
+    <link>https://kshitij10496.github.io/categories/software/</link>
+    <description>Recent content in Software on kxsh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 10 Feb 2019 18:55:02 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magical Files</title>
+      <link>https://kshitij10496.github.io/posts/magical-files/</link>
+      <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/magical-files/</guid>
+      <description>Context    My Downloads folder is a mess!
+I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
+“Is there a way to only list all the PDF files present in a directory?”
+Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
+    </item>
+    
+    <item>
+      <title>For some Context</title>
+      <link>https://kshitij10496.github.io/posts/for-some-context/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
+      <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
+ How does the use of context help us in programming? When should a programmer use context?  In this blog post, I will share what I understand about context.
+Motivation    Consider you are an event manager of a restaurant.</description>
+    </item>
+    
+    <item>
+      <title>Typing in Python, Go and JavaScript</title>
+      <link>https://kshitij10496.github.io/posts/typing/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/typing/</guid>
+      <description>Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &amp;ldquo;ask for forgiveness&amp;rdquo; if the post seems too colloquial and pragmatic.
+ Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
+ &amp;ldquo;Python is a strongly typed, dynamic language.&amp;rdquo; &amp;ldquo;Go is a statically typed, strong language.&amp;rdquo; &amp;ldquo;JavaScript is a dynamic language which is weakly typed.</description>
+    </item>
+    
+    <item>
+      <title>Duck Typing in Python</title>
+      <link>https://kshitij10496.github.io/posts/duck-typing-in-python/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
+      <description>What is Duck Typing?    Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+ attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
+    </item>
+    
+    <item>
+      <title>How Iterables Actually Work in Python</title>
+      <link>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</guid>
+      <description>This past week I read about Python&amp;rsquo;s iterator protocol and how the philosophy of iteration is deeply embedded into the language design. Many features that I love about Python such as list comprehensions, tuple unpacking leverage the power of iterator protocol. I wrote an article on Medium explaining how developers can implement it and use these features much more efficiently in their day-to-day life.</description>
+    </item>
+    
+  </channel>
+</rss>

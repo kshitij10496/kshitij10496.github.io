@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="KSHITIJ SARAOGI">
+    <meta name="description" content="Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
+ modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential). using SymPy Set objects internally, instead of using the built-in Python lists. use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs.">
+    <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Auditing SymPy&#39;s Transcendental solver"/>
+<meta name="twitter:description" content="Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
+ modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential). using SymPy Set objects internally, instead of using the built-in Python lists. use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs."/>
+
+    <meta property="og:title" content="Auditing SymPy&#39;s Transcendental solver" />
+<meta property="og:description" content="Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
+ modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential). using SymPy Set objects internally, instead of using the built-in Python lists. use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2016-05-15T00:00:00+05:30" />
+<meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
+
+
+    <title>
+  Auditing SymPy&#39;s Transcendental solver · kxsh
+</title>
+
+    
+      <link rel="canonical" href="https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/">
+    
+
+    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
+        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.88.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kxsh
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/about/">ABOUT</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing">RÉSUMÉ</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/index.xml">RSS</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/">
+              Auditing SymPy&#39;s Transcendental solver
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2016-05-15T00:00:00&#43;05:30'>
+                May 15, 2016
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://kshitij10496.github.io/categories/gsoc/">GSoC</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/sympy/">Sympy</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/python/">Python</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Having considered the current codebase of <code>_tsolve</code> function, I find the following few points considered while implementing the new solver:</p>
+<ul>
+<li>modularise the code for various classes of equations(LambertW, <code>bivariate</code> equation type, logarithmic, exponential).</li>
+<li>using SymPy <code>Set</code> objects internally, instead of using the built-in Python <code>lists</code>.</li>
+<li>use of <code>decompogen</code> function to check for possible decomposition of the given expression into simpler functions.</li>
+<li>handle the case where the given equation has no closed-form solution and infinite recursion occurs.</li>
+</ul>
+<p>These are just a handful of strategies that I intend to use. However, the whole process of development is going to a lot more complex and might need some more considerations from my side.</p>
+<h3 id="task--implement-transolve-function">
+  Task : Implement <code>transolve</code> function.
+  <a class="heading-link" href="#task--implement-transolve-function">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>My plan is to do a <em>test-driven development</em> for this solver.<br>
+For this, I will start by porting the relevant tests present in <code>test_solvers.py</code> module to the <code>test_solveset.py</code>.
+Following this, I will start the developement process of the <code>transolve</code> solver.</p>
+<p>I aim to accomplish a major portion of this task by the end of this week.</p>
+<p>Thats all for now.
+And the coding begins !</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2016 -
+        
+        2021
+         KSHITIJ SARAOGI 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

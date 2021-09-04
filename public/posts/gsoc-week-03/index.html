@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="KSHITIJ SARAOGI">
+    <meta name="description" content="Hey !
+This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&rsquo;s research on the same, I tried to develop these utility functions.
+Implementation    Here, I have defined the two functions along with some of their implementation details:
+continuous_in(f, x, interval)
+The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval.">
+    <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GSoC Week 03 - The One With Function Range (Part II)"/>
+<meta name="twitter:description" content="Hey !
+This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&rsquo;s research on the same, I tried to develop these utility functions.
+Implementation    Here, I have defined the two functions along with some of their implementation details:
+continuous_in(f, x, interval)
+The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval."/>
+
+    <meta property="og:title" content="GSoC Week 03 - The One With Function Range (Part II)" />
+<meta property="og:description" content="Hey !
+This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&rsquo;s research on the same, I tried to develop these utility functions.
+Implementation    Here, I have defined the two functions along with some of their implementation details:
+continuous_in(f, x, interval)
+The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/gsoc-week-03/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2016-06-10T00:00:00+05:30" />
+<meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
+
+
+    <title>
+  GSoC Week 03 - The One With Function Range (Part II) · kxsh
+</title>
+
+    
+      <link rel="canonical" href="https://kshitij10496.github.io/posts/gsoc-week-03/">
+    
+
+    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
+        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.88.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kxsh
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/about/">ABOUT</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing">RÉSUMÉ</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/index.xml">RSS</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/gsoc-week-03/">
+              GSoC Week 03 - The One With Function Range (Part II)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2016-06-10T00:00:00&#43;05:30'>
+                June 10, 2016
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://kshitij10496.github.io/categories/gsoc/">GSoC</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/sympy/">Sympy</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/python/">Python</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Hey !</p>
+<p>This week I worked on implementing a method for finding the range of a function in a given domain.
+Following from last weeek&rsquo;s research on the same, I tried to develop these utility functions.</p>
+<h3 id="implementation">
+  <strong>Implementation</strong>
+  <a class="heading-link" href="#implementation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Here, I have defined the two functions along with some of their implementation details:</p>
+<p><strong><code>continuous_in(f, x, interval)</code></strong></p>
+<p>The function returns the sub-domains as an <code>Union</code> of <code>Interval</code> in case a discontinuity exists in the <code>interval</code>. If the function is continuous in the entire domain, the <code>interval</code> itself is returned.</p>
+<p>For this we need to consider 2 primary conditions:</p>
+<ul>
+<li>
+<p><strong>Domain constraints for real functions</strong>
+I have also added some code for domain constraints in <code>sqrt</code> and <code>log</code> functions.
+Using the <code>solve_univariate_inequality</code> method (as the name suggests, it solves univariate inequalities),
+we calculate these constraints.<br>
+Given <code>f(x) = sqrt(g(x))</code>, we determine the range of values of <code>x</code> for which the function <code>g(x) &gt;= 0</code>.<br>
+Similarly, for <code>f(x) = log(g(x))</code>, the interval of <code>x</code> in which <code>g(x) &gt; 0</code> is the constrained interval.</p>
+</li>
+<li>
+<p><strong>Singularities</strong>
+For determining the discontinuities, I tried to solve the reciprocal of the given function using <code>solveset</code>:<code>solveset(1/f, x, interval)</code>. The <code>singularities</code> function can also be used here but its implementation is
+restricted to rational functions only. There are possibilities of improving this function to create a universal
+function which returns all the possible singularities of the function in a given domain.</p>
+</li>
+</ul>
+<p><strong><code>function_range(f, x, domain)</code></strong></p>
+<p>Like the name suggests, this method returns the range of a univariate function in a given domain. This function is primarily designed for the purpose of <code>solve_decomposition</code>.</p>
+<p>This function calls the above implemented <code>continuous_in</code> method for finding the actual domain of <code>f</code>. Following this, we iterate over each <code>Interval</code> object returned by <code>continuous_in</code>.</p>
+<p>By using the boundaries of the interval and first derivate test, we determine the crtical points in the interval
+and their corresponding critical values.</p>
+<p>For determining the values of the function at the singularities, we determine its limit at that point.
+For this, I use the <code>limit</code> function of SymPy.</p>
+<p>After calculating the local extremas, I calculate the global minima and maxima using the <code>inf</code>(infimum) and <code>sup</code>(supremum) of the <code>FiniteSet</code> of all critical values. The range, which is the <code>Interval</code> of these extremasm, is returned.</p>
+<h3 id="-git-log">
+  <strong>$ git log</strong>
+  <a class="heading-link" href="#-git-log">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><a href="https://github.com/sympy/sympy/pull/11141">PR#11141</a>: Method for solving equations using Decomposition and Rewriting
+<em>Opened this week</em><br>
+<a href="https://github.com/sympy/sympy/pull/11224">PR#11224</a>: Methods for finding the range of a function in a given domain</p>
+<p><strong>Final Thoughts</strong></p>
+<p>That was all for this week.<br>
+My task for the upcoming days would be to update my <code>solve_decomposition</code> method to accomodate these methods.
+I aim to get all these PR merged before the midterm evaluation.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2016 -
+        
+        2021
+         KSHITIJ SARAOGI 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
