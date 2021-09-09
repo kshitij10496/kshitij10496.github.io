@@ -117,13 +117,13 @@ title = "kxsh"
       weight = 1
       url = "/about/"
     [[menu.main]]
-      name = "POSTS"
-      weight = 2
-      url  = "/posts/"
-    [[menu.main]]
       name = "NOW"
-      weight = 3
+      weight = 2
       url = "/now/"
+    [[menu.main]]
+      name = "POSTS"
+      weight = 3
+      url  = "/posts/"
     [[menu.main]]
       name = "RÉSUMÉ"
       weight = 4
