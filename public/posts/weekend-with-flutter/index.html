@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="KSHITIJ SARAOGI">
+    <meta name="description" content="I built my first-ever mobile application as a weekend project.
+This post describes my experience, thoughts and emotions over the past few days.
+ Motivation    Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.">
+    <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Weekend with Flutter"/>
+<meta name="twitter:description" content="I built my first-ever mobile application as a weekend project.
+This post describes my experience, thoughts and emotions over the past few days.
+ Motivation    Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information."/>
+
+    <meta property="og:title" content="Weekend with Flutter" />
+<meta property="og:description" content="I built my first-ever mobile application as a weekend project.
+This post describes my experience, thoughts and emotions over the past few days.
+ Motivation    Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/weekend-with-flutter/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-02-03T19:14:09+05:30" />
+<meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
+
+
+    <title>
+  Weekend with Flutter · kxsh
+</title>
+
+    
+      <link rel="canonical" href="https://kshitij10496.github.io/posts/weekend-with-flutter/">
+    
+
+    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+    
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
+        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.88.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kxsh
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/about/">ABOUT</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing">RÉSUMÉ</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/index.xml">RSS</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/weekend-with-flutter/">
+              Weekend with Flutter
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2019-02-03T19:14:09&#43;05:30'>
+                February 3, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://kshitij10496.github.io/categories/project/">Project</a>
+      <span class="separator">•</span>
+    <a href="https://kshitij10496.github.io/categories/mobile-app/">Mobile App</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/flutter/">flutter</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/development/">development</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/cards/">cards</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/game/">game</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>I built my first-ever mobile application as a weekend project.<br>
+This post describes my experience, thoughts and emotions over the past few days.</p>
+<hr>
+<h1 id="motivation">
+  Motivation
+  <a class="heading-link" href="#motivation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information. I used Google Excel’s Android app as an ad-hoc way to track individual scores so as to reduce some friction. Excel sheet worked fine but it still could not display game related information in a consumable format.</p>
+<p>The next morning I started to think there <strong>must be a better way</strong> to do this. After some online research, I discovered that no existing application/software for book-keeping specifically for this game. Thus, my decision to dedicate the weekend on developing a simple mobile app for this.</p>
+<p>I was pretty excited about the project as this would be my first attempt at app development in around 4 years writing software. At the same time, it was a bit scary as I had no idea about the timeline and whether developing a MVP is even a practical expectation. However, being the optimist that I am, I decided to give it a go.</p>
+<p>Breathe!</p>
+<h1 id="laying-the-groundwork">
+  Laying the Groundwork
+  <a class="heading-link" href="#laying-the-groundwork">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h2 id="desgining-layouts">
+  Desgining layouts
+  <a class="heading-link" href="#desgining-layouts">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Kicking off the project, I started drawing basic layouts for the app screens on a piece of paper. My primary focus during this stage was to developing the bare minimum functionalities. With no idea of how to implement these layouts, I relied solely on my determination of getting them to work - after all it’s just UI!</p>
+<p><img src="https://kshitij10496.github.io/images/posts/play350-layout.jpg" alt="layouts"></p>
+<h2 id="choosing-flutter">
+  Choosing Flutter
+  <a class="heading-link" href="#choosing-flutter">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>After building the screen layouts, I started looking for frameworks and tools which help build the actual app. I read about <a href="https://developer.android.com/studio/">Android Studio Code</a>, <a href="https://facebook.github.io/react-native/">React Native</a> and <a href="https://flutter.dev/">Flutter</a>. With my focus on rapid development, flexible UI and personal productivity, I choose Flutter. In addition to sparing me from writing Java-XML and Javascript, Flutter provided me with the added benefit of building cross-platform native applications.</p>
+<h1 id="flutter-101">
+  Flutter 101
+  <a class="heading-link" href="#flutter-101">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>The major issue with Flutter was that the application code must be written in Dart. With a clock on my back, the last thing I wanted to do was spend time learning a new programming language. So, I decided to dive head first into building the app itself and learning Dart syntax on the go.</p>
+<p>After setting my dev env, I completed the Google Codelabs to get a brief idea of how things worked in Flutter. I would highly recommend working out the Udacity Course on building Flutter apps as well. These resources taught me the following central concepts for building apps in Flutter:</p>
+<ol>
+<li><strong>Stateless Widgets</strong> : equivalent to static web pages like this blog post</li>
+<li><strong>Stateful Widgets</strong> : dynamic pages where contents change with user interactions</li>
+<li><strong>State Management</strong> : managing the data for Stateful Widgets</li>
+<li><strong>Routes</strong> : analogous to the URL for an application screen</li>
+<li><strong>Navigation</strong> : moving around the application screen via respective routes</li>
+</ol>
+<p>My major takeaway from the exercises was: <strong>“Everything in Flutter is a widget”</strong>.</p>
+<p>It took me around 6 hours to complete both the labs along with their quizzes.<br>
+The decision to complete the sample project along in the codelabs paid rich dividends as I started developing my own app.</p>
+<h1 id="building-screens">
+  Building screens
+  <a class="heading-link" href="#building-screens">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>With my initial focus on emulating the layouts I had built into the app, I started off by implementing every screen as a Stateless Widget and fixing on the display layout with the help of <em>Hot Reload</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#6272a4">// The Welcome Screen is the 1st page of the application.
+</span><span style="color:#6272a4">// It is a StatelessWidget as the only possible option for the user is to tap a button 
+</span><span style="color:#6272a4">// and navigate to a new screen.
+</span><span style="color:#6272a4"></span>
+<span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">WelcomeScreen</span> <span style="color:#8be9fd;font-style:italic">extends</span> StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    <span style="color:#ff79c6">return</span> Scaffold(
+      <span style="color:#8be9fd;font-style:italic">body:</span> buildBody(context),
+    );
+  }
+
+  <span style="color:#6272a4">// Implement methods for building the screen body layout
+</span><span style="color:#6272a4"></span>}
+</code></pre></div><p>When I was fairly satisfied with the screen, I refactored the code to a <em>Stateful Widget</em> along with the relevant <em>State</em> data. Note: Each <em>Stateful Screen</em> is related to its corresponding <em>ScreenState class</em> which stores the state and screen layout instructions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">GameBidderScreen</span> <span style="color:#8be9fd;font-style:italic">extends</span> StatefulWidget {
+  <span style="color:#6272a4">// Data which is not modified for this particular screen
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">final</span> <span style="color:#8be9fd">String</span> boardID;
+  <span style="color:#8be9fd;font-style:italic">final</span> <span style="color:#8be9fd">int</span> gameID;
+  <span style="color:#8be9fd;font-style:italic">final</span> List<span style="color:#ff79c6">&lt;</span><span style="color:#8be9fd">String</span><span style="color:#ff79c6">&gt;</span> players;
+  <span style="color:#8be9fd;font-style:italic">final</span> List<span style="color:#ff79c6">&lt;</span>List<span style="color:#ff79c6">&lt;</span><span style="color:#8be9fd">int</span><span style="color:#ff79c6">&gt;&gt;</span> scoreboard;
+
+  <span style="color:#8be9fd;font-style:italic">const</span> GameBidderScreen(
+      {<span style="color:#ff79c6">this</span>.boardID, <span style="color:#ff79c6">this</span>.gameID, <span style="color:#ff79c6">this</span>.players, <span style="color:#ff79c6">this</span>.scoreboard});
+
+  @override
+  State<span style="color:#ff79c6">&lt;</span>GameBidderScreen<span style="color:#ff79c6">&gt;</span> createState() <span style="color:#ff79c6">=&gt;</span> _GameBidderScreenState();
+}
+
+<span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">_GameBidderScreenState</span> <span style="color:#8be9fd;font-style:italic">extends</span> State<span style="color:#ff79c6">&lt;</span>GameBidderScreen<span style="color:#ff79c6">&gt;</span> {
+  <span style="color:#6272a4">// Data which populates the body and is modifiable.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd">String</span> bidder;
+  <span style="color:#8be9fd">int</span> bid <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
+  <span style="color:#8be9fd">String</span> trump;
+  List<span style="color:#ff79c6">&lt;</span>DropdownMenuItem<span style="color:#ff79c6">&gt;</span> _playersItems;
+
+  @override
+  Widget build(BuildContext context) {
+    <span style="color:#ff79c6">return</span> Scaffold(
+      <span style="color:#8be9fd;font-style:italic">appBar:</span> buildAppBar(context),
+      <span style="color:#8be9fd;font-style:italic">body:</span> buildBody(context),
+    );
+  }
+
+  <span style="color:#6272a4">// Implement the layout builders
+</span></code></pre></div><p>This process of continuous refactoring turned out to be rather simple and involved all of 10 LoC.</p>
+<ul>
+<li>
+<p>How to decide whether a screen should be a <em>Stateless Widget</em> or a <em>Stateful Widget</em>?</p>
+<ul>
+<li>If any user interactions (tap, long press, drag) change <strong>this</strong> screen’s content, use, then the screen can be a Stateless Widget.</li>
+<li>Note this conditional holds, even if some actions prompt navigation to another new screen entirely.</li>
+</ul>
+</li>
+<li>
+<p>What data should be stored as the screen state?</p>
+<ul>
+<li>Anything that the screen should not be able to change (e.g. user’s name, email) should not be a state variable; it should rather be a <em>final</em> instance variable in the Screen widget. Most likely, the value for such variables will be passed in from previous screens in the application flow.</li>
+<li>Anything that the screen needs to modify upon user interactions (e.g. like/unlike, retweet/share, text input) should be stored as instance variable in the respective ScreenState class.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://kshitij10496.github.io/images/posts/play350-welcome.png" alt="welcome screen">
+<img src="https://kshitij10496.github.io/images/posts/play350-gameplay.png" alt="gameplay screen">
+<img src="https://kshitij10496.github.io/images/posts/play350-gameresult.png" alt="gameresult screen"></p>
+<h1 id="navigation">
+  Navigation
+  <a class="heading-link" href="#navigation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Now that we have built our screen layouts, its about time to connect all of them and build the user flow. Flutter uses a <strong>stack based navigation</strong> system for moving around screens. Basically, this means that you <strong>push</strong> a new screen on top of the current screen if you want to switch. Moreover, you have to <strong>pop</strong> screens in order to reduce the amount of RAM consumed by your application.</p>
+<p>In my case, I decided to pop screens before pushing in new ones whenever the user decided to start a <em>New Game</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">  <span style="color:#6272a4">// When the user presses the &#34;New Game&#34; button on the result screen.
+</span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">onPressed:</span> () {
+        <span style="color:#6272a4">// Ensure that the scoreboard is updated
+</span><span style="color:#6272a4"></span>
+        <span style="color:#6272a4">// Pop the result screen itself
+</span><span style="color:#6272a4"></span>        Navigator.pop(context);
+
+        <span style="color:#6272a4">// Push a new game screen with the incremented game counter
+</span><span style="color:#6272a4"></span>        Navigator.push(
+          context,
+          MaterialPageRoute(
+            <span style="color:#8be9fd;font-style:italic">builder:</span> (context) <span style="color:#ff79c6">=&gt;</span> GameBidderScreen(
+                  <span style="color:#8be9fd;font-style:italic">boardID:</span> widget.boardID,
+                  <span style="color:#8be9fd;font-style:italic">gameID:</span> widget.gameID <span style="color:#ff79c6">+</span> <span style="color:#bd93f9">1</span>,
+                  <span style="color:#8be9fd;font-style:italic">players:</span> widget.players,
+                  <span style="color:#8be9fd;font-style:italic">scoreboard:</span> _updatedScoreboard,
+                ),
+          ),
+        );
+      },
+</code></pre></div><h1 id="whats-next">
+  What’s Next?
+  <a class="heading-link" href="#whats-next">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>In the future, I plan to complete the following tasks as well:</p>
+<ul>
+<li>Firebase integration</li>
+<li>Use Firestore database</li>
+<li>Google Sign-In</li>
+<li>Explore “Animations”</li>
+<li>Make scoreboard interactive.</li>
+<li>Add synchronisation between players.</li>
+</ul>
+<h1 id="parting-thoughts">
+  Parting Thoughts
+  <a class="heading-link" href="#parting-thoughts">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>I am super satisfied and proud of myself for completing the MVP I had set out at the start of the weekend. It was all down to the ease with which I was able to get things done in Flutter even though I did not learn Dart. Even though this would not be the best code architecture, I am fairly happy to get it working.</p>
+<p>Do give the app a try if you like to play 350.<br>
+Happy to incorporate feedback into the app! 😁</p>
+<p>Hopefully, this post motivates you to try Flutter for building your next disruptive mobile application!</p>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>[1]: Source on GitHub: <a href="https://github.com/kshitij10496/play350">kshitij10496/play350</a><br>
+[2]: Google Codelabs: <a href="https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/index.html?index=..%2F..index#0">Write Your First Flutter App</a><br>
+[3]: Udacity: <a href="https://classroom.udacity.com/courses/ud905">Build Native Mobile Apps with Flutter</a></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2016 -
+        
+        2021
+         KSHITIJ SARAOGI 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
