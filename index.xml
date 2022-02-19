@@ -14,7 +14,7 @@
       <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/magical-files/</guid>
-      <description>Context    My Downloads folder is a mess!
+      <description>Context My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
 “Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
@@ -28,7 +28,7 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
       <guid>https://kshitij10496.github.io/posts/weekend-with-flutter/</guid>
       <description>I built my first-ever mobile application as a weekend project.
 This post describes my experience, thoughts and emotions over the past few days.
- Motivation    Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
+ Motivation Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ This post describes my experience, thoughts and emotions over the past few days.
       
       <guid>https://kshitij10496.github.io/posts/postgres-with-docker/</guid>
       <description>Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
-Problem    I have got a lot of small personal projects which use separate databases.
+Problem I have got a lot of small personal projects which use separate databases.
 Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
 Now, this soon got messy as my machine was polluted with lots of DBs and their configurations.</description>
     </item>
@@ -108,7 +108,7 @@ There are 2 complementary aspects of getting an education:
       <guid>https://kshitij10496.github.io/posts/blogging/</guid>
       <description>tl;dr: post about posting more posts
 I have forgotten to write blog posts for over a year or have I?
-Blogging 101    I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
+Blogging 101 I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog. However soon after completing the project, I became lazy and procrastinated.</description>
     </item>
     
     <item>
@@ -145,7 +145,7 @@ In addition to this, I also share my workflow for publishing posts using a shell
       <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
       <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
  How does the use of context help us in programming? When should a programmer use context?  In this blog post, I will share what I understand about context.
-Motivation    Consider you are an event manager of a restaurant.</description>
+Motivation Consider you are an event manager of a restaurant.</description>
     </item>
     
     <item>
@@ -165,7 +165,7 @@ Motivation    Consider you are an event manager of a restaurant.</description>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
-      <description>What is Duck Typing?    Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+      <description>What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
  attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
     </item>
     
@@ -216,7 +216,7 @@ Another noticable point, from the point of implementation, was to deal with sing
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-09/</guid>
       <description>This week I worked on solving trigonometric inequalities.
-Trigonometric inequalities    The primary univariate inequality solver - solve_univariate_inequality,
+Trigonometric inequalities The primary univariate inequality solver - solve_univariate_inequality,
 depends upon the results of solve in order to solve the given inequality. Taking a cue from PR#10022 on incorporating solveset for inequalities, I worked on developing an approach for replacing the use of solve with solveset in solving inequalities.
 Idea
  Convert Set-type output from solveset to list objects similar to that returned by solve.</description>
@@ -229,7 +229,7 @@ Idea
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-07/</guid>
       <description>This week I updated my PR#11277 to find the period of a general function.
-Periodicity    In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.
+Periodicity In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.
 Here are my notes on periodicity which were the literature reference for the development of the method:</description>
     </item>
     
@@ -240,7 +240,7 @@ Here are my notes on periodicity which were the literature reference for the dev
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-06/</guid>
       <description>This week I worked on the topic of singularities.
-Singularities     A singularity is in general a point at which a given mathematical object is not defined.
+Singularities  A singularity is in general a point at which a given mathematical object is not defined.
  Examples:
  1/x has a singularity at x = 0 as it seems to reach infinity. |x| (Absolute) has a singularity at x = 0 since it is not differentiable at that point. √x (Square root) has a singularity at x = 0 since it doesnot admit a tangent there.</description>
     </item>
@@ -255,7 +255,7 @@ Singularities     A singularity is in general a point at which a given mathemati
 The past couple of weeks were spent of developing heuristics for determining the fundamental period of a given trigonometric function.
 In our higher school, we all must have come across Trigonometric Functions. One of the most striking properties of these functions is their periodicty.
 The ability of a function to repeat its values in regular intervals has always caught my imagination.
-Motivation    Well, SymPy ought to have a functionality to determine the period of a function.</description>
+Motivation Well, SymPy ought to have a functionality to determine the period of a function.</description>
     </item>
     
     <item>
@@ -266,7 +266,7 @@ Motivation    Well, SymPy ought to have a functionality to determine the period 
       <guid>https://kshitij10496.github.io/posts/gsoc-week-03/</guid>
       <description>Hey !
 This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&amp;rsquo;s research on the same, I tried to develop these utility functions.
-Implementation    Here, I have defined the two functions along with some of their implementation details:
+Implementation Here, I have defined the two functions along with some of their implementation details:
 continuous_in(f, x, interval)
 The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval.</description>
     </item>
@@ -278,7 +278,7 @@ The function returns the sub-domains as an Union of Interval in case a discontin
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-02/</guid>
       <description>This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
-Progress    Suppose, we want to solve the following equation in the variable x:
+Progress Suppose, we want to solve the following equation in the variable x:
 sin(x) = π / 2
 We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1</description>
     </item>
@@ -289,7 +289,7 @@ We can straight away state that this equations has no solutions as the range of 
       <pubDate>Sun, 29 May 2016 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-01/</guid>
-      <description>$ git log    PR #11149 : Intersection of null Range and an Interval returns EmptySet
+      <description>$ git log PR #11149 : Intersection of null Range and an Interval returns EmptySet
 PR #11164 : Intersection of certain ImageSets with Intervals
 In the next week, I will try to design a method to determine the range of a function in the given domain.
 This will require some digging up and a bit of research.
@@ -323,10 +323,10 @@ If we have to solve for x in the equation f(x) = 0, where</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kshitij10496.github.io/about/</guid>
-      <description>Hey there! 👋
-This is Kshitij and you have reached my small place on the World Wide Web.
+      <description>Hey there!
+This is Kshitij and you have reached my small place on the World Wide Web. 😄 😎
 I’m a software developer, an amateur poker player and an aspiring doodle artist from India. I like to think of myself as a problem solver who prefers to leverage the potential of technology to build a better, efficient and robust (possibly, antifragile) solutions.
- Builds simple APIs for everything useful Writes CLI for everything fun Reads daily Football/Poker on weekends Currently learning to draw, design &amp;amp; doodle  I designed an ugly monogram with my initals.</description>
+ Builds simple APIs for everything useful Writes CLI for everything fun Reads daily Football/Poker on weekends Currently learning to draw, design &amp;amp; doodle  Recently, I designed a monogram with my initals.</description>
     </item>
     
     <item>
@@ -336,10 +336,7 @@ I’m a software developer, an amateur poker player and an aspiring doodle artis
       
       <guid>https://kshitij10496.github.io/now/</guid>
       <description>Updates about what I&amp;rsquo;m up to lately.1
- Helping OneFootball build a platform for the football community as a software engineer. Training for my first ever marathon 2 3. Learning German. Learning to play Kicker 4.    Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;
- TCS Amsterdam Marathon 2021&amp;#160;&amp;#x21a9;&amp;#xfe0e;
- Running Log&amp;#160;&amp;#x21a9;&amp;#xfe0e;
- Table football - Wikipedia&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+  Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;
    </description>
     </item>
     
