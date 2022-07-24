@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="color-scheme" content="light dark">
 
-    
 
-    <meta name="author" content="KSHITIJ SARAOGI">
-    <meta name="description" content="Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
-Problem    I have got a lot of small personal projects which use separate databases.
+
+<meta name="author" content="KSHITIJ SARAOGI">
+<meta name="description" content="Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
+Problem I have got a lot of small personal projects which use separate databases.
 Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
 Now, this soon got messy as my machine was polluted with lots of DBs and their configurations.">
-    <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+<meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
-    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Postgres with Docker"/>
 <meta name="twitter:description" content="Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
-Problem    I have got a lot of small personal projects which use separate databases.
+Problem I have got a lot of small personal projects which use separate databases.
 Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
 Now, this soon got messy as my machine was polluted with lots of DBs and their configurations."/>
 
-    <meta property="og:title" content="Postgres with Docker" />
+<meta property="og:title" content="Postgres with Docker" />
 <meta property="og:description" content="Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
-Problem    I have got a lot of small personal projects which use separate databases.
+Problem I have got a lot of small personal projects which use separate databases.
 Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
 Now, this soon got messy as my machine was polluted with lots of DBs and their configurations." />
 <meta property="og:type" content="article" />
@@ -35,58 +34,65 @@ Now, this soon got messy as my machine was polluted with lots of DBs and their c
 
 
 
-    <title>
-  Postgres with Docker · kxsh
-</title>
 
-    
-      <link rel="canonical" href="https://kshitij10496.github.io/posts/postgres-with-docker/">
-    
+  <title>kxsh</title>
 
-    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="canonical" href="https://kshitij10496.github.io/posts/postgres-with-docker/">
+  
 
-    
-      
-      
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
-    
+  <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
 
-    
-      
-        
-        
-        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
-      
-    
+  
+  
+  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
 
-    
 
-    
 
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
 
-    <link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
-
-    
-      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
-        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
-    
-
-    <meta name="generator" content="Hugo 0.89.4" />
-  </head>
 
   
   
     
-  
-  <body class="preload-transitions colorscheme-auto"
-        onload=" twemoji.parse(document.body); "
-  >
     
+    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://kshitij10496.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://kshitij10496.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.101.0" />
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
         <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
@@ -94,8 +100,8 @@ Now, this soon got messy as my machine was polluted with lots of DBs and their c
 </div>
 
 
-    <main class="wrapper">
-      <nav class="navigation">
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://kshitij10496.github.io/">
       kxsh
@@ -136,8 +142,8 @@ Now, this soon got messy as my machine was polluted with lots of DBs and their c
 </nav>
 
 
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
@@ -152,7 +158,7 @@ Now, this soon got messy as my machine was polluted with lots of DBs and their c
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2019-01-13T20:47:59&#43;05:30'>
+              <time datetime="2019-01-13T20:47:59&#43;05:30">
                 January 13, 2019
               </time>
             </span>
@@ -279,13 +285,13 @@ This database is mission-critical to the Gotham PD for protecting the city from 
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker run --detach <span style="color:#f1fa8c">\ </span><span style="color:#6272a4"># run the container in background</span>
-            --name <span style="color:#f1fa8c">&#34;shadowsDB&#34;</span> <span style="color:#6272a4"># name the container</span>
-            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_USER</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;batman&#34;</span> <span style="color:#f1fa8c">\ </span><span style="color:#6272a4"># configuration specific to our database</span>
-            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_PASSWORD</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;blueflower&#34;</span> <span style="color:#f1fa8c">\
-</span><span style="color:#f1fa8c"></span>            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_DB</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;league_of_shadows&#34;</span> <span style="color:#f1fa8c">\ </span>        
-            postgres:11.1-alpine 
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker run --detach <span style="color:#f1fa8c">\ </span><span style="color:#6272a4"># run the container in background</span>
+</span></span><span style="display:flex;"><span>            --name <span style="color:#f1fa8c">&#34;shadowsDB&#34;</span> <span style="color:#6272a4"># name the container</span>
+</span></span><span style="display:flex;"><span>            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_USER</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;batman&#34;</span> <span style="color:#f1fa8c">\ </span><span style="color:#6272a4"># configuration specific to our database</span>
+</span></span><span style="display:flex;"><span>            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_PASSWORD</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;blueflower&#34;</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c"></span>            -e <span style="color:#8be9fd;font-style:italic">POSTGRES_DB</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;league_of_shadows&#34;</span> <span style="color:#f1fa8c">\ </span>        
+</span></span><span style="display:flex;"><span>            postgres:11.1-alpine 
+</span></span></code></pre></div><ul>
 <li>This command will run a container with a DB named “league_of_shadows” for the user “batman”.</li>
 <li>We are using <code>--detach</code> primarily because we do not want to pollute our terminal with logs from PostgreSQL.</li>
 <li>We use the Alpine image for experimentation purpose only. (<code>bash</code>)</li>
@@ -302,8 +308,8 @@ Let’s rewrite the same command in a <code>docker-compose.yml</code> file inste
 <script type="application/javascript" src="https://gist.github.com/kshitij10496/0fd513ea8c8ece1d4c9dba03bd988489.js?file=docker-compose.yml"></script>
 </p>
 <p>Now we can run the container from within the <code>shadows</code> directory with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker-compose up
-</code></pre></div><h3 id="4-access-the-db-running-within-the-container">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker-compose up
+</span></span></code></pre></div><h3 id="4-access-the-db-running-within-the-container">
   4. Access the DB running within the container
   <a class="heading-link" href="#4-access-the-db-running-within-the-container">
     <i class="fa fa-link" aria-hidden="true"></i>
@@ -311,12 +317,12 @@ Let’s rewrite the same command in a <code>docker-compose.yml</code> file inste
 </h3>
 <p>Now that the container is running, open a new terminal.</p>
 <p>Exercise: Check whether the DB has any tables or data?</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker <span style="color:#8be9fd;font-style:italic">exec</span> -it shadowsDB bash <span style="color:#6272a4"># opens up a Bash session inside the DB container</span>
-
-$ psql league_of_shadows -U batman <span style="color:#6272a4"># connect to the DB</span>
-<span style="color:#8be9fd;font-style:italic">league_of_shadows</span><span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">\d</span>t <span style="color:#6272a4"># list tables in the DB</span>
-Did not find any relations.
-</code></pre></div><p>It’s empty! 😢</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker <span style="color:#8be9fd;font-style:italic">exec</span> -it shadowsDB bash <span style="color:#6272a4"># opens up a Bash session inside the DB container</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ psql league_of_shadows -U batman <span style="color:#6272a4"># connect to the DB</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">league_of_shadows</span><span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">\d</span>t <span style="color:#6272a4"># list tables in the DB</span>
+</span></span><span style="display:flex;"><span>Did not find any relations.
+</span></span></code></pre></div><p>It’s empty! 😢</p>
 <ul>
 <li>Thanks to naming our container and using the Alpine image, we can easily use bash here.</li>
 <li>Password is not required when you are connecting to the DB from inside the container.</li>
@@ -347,13 +353,13 @@ The SQL files hold the SQL instructions required for creating the DB table and p
 <ol start="4">
 <li>Rebuild and run the container</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker-compose down <span style="color:#6272a4"># Stop the running container</span>
-Stopping shadowsDB ... <span style="color:#ff79c6">done</span>
-Removing shadowsDB ... <span style="color:#ff79c6">done</span>
-Removing network shadows_default
-
-$ docker-compose up
-</code></pre></div><ol start="5">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker-compose down <span style="color:#6272a4"># Stop the running container</span>
+</span></span><span style="display:flex;"><span>Stopping shadowsDB ... <span style="color:#ff79c6">done</span>
+</span></span><span style="display:flex;"><span>Removing shadowsDB ... <span style="color:#ff79c6">done</span>
+</span></span><span style="display:flex;"><span>Removing network shadows_default
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ docker-compose up
+</span></span></code></pre></div><ol start="5">
 <li>Access the container using Step#4 from above.</li>
 <li>Verify that the DB is populated with the data.</li>
 </ol>
@@ -430,51 +436,47 @@ Hopefully, you will consider the same when starting a new project! 😁</p>
     
   </section>
 
-      </div>
+    </div>
 
-      
-  <footer class="footer">
-    <section class="container">
-      
-      
-        ©
-        
-          2016 -
-        
-        2022
-         KSHITIJ SARAOGI 
-      
-      
-         · 
-        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-      
-      
-    </section>
-  </footer>
-
-
-    </main>
-
+    <footer class="footer">
+  <section class="container">
+    ©
     
-      
-      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+      2016 -
     
+    2022
+     KSHITIJ SARAOGI 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
 
-    
+  </main>
 
-    
+  
+  
+  <script src="https://kshitij10496.github.io/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-  </body>
+  
+
+  
+
+  
+
+  
+</body>
 
 </html>

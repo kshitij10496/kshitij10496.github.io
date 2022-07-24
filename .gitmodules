@@ -4,3 +4,6 @@
 [submodule "public/public"]
 	path = public/public
 	url = https://github.com/kshitij10496/kshitij10496.github.io
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git

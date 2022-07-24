@@ -9,22 +9,25 @@
 
 
 <meta name="author" content="KSHITIJ SARAOGI">
-<meta name="description" content="Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
-modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential). using SymPy Set objects internally, instead of using the built-in Python lists. use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs.">
+<meta name="description" content="I was quite absorbed with this trilogy over the last couple of months.
+I distinctly remember reading the first chapter of The Three-Body Problem, few years ago at the university. I had stashed it for later. So I eventually decided to pick up the 1st book in the trilogy early May, after returning from India.
+After reading the trilogy, I have a lot more questions than I did before. Questions ranging from astrophysics to humanity&rsquo;s collective decision making.">
 <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Auditing SymPy&#39;s Transcendental solver"/>
-<meta name="twitter:description" content="Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
-modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential). using SymPy Set objects internally, instead of using the built-in Python lists. use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs."/>
+<meta name="twitter:title" content="Review: Remembrance of Earth&#39;s Past"/>
+<meta name="twitter:description" content="I was quite absorbed with this trilogy over the last couple of months.
+I distinctly remember reading the first chapter of The Three-Body Problem, few years ago at the university. I had stashed it for later. So I eventually decided to pick up the 1st book in the trilogy early May, after returning from India.
+After reading the trilogy, I have a lot more questions than I did before. Questions ranging from astrophysics to humanity&rsquo;s collective decision making."/>
 
-<meta property="og:title" content="Auditing SymPy&#39;s Transcendental solver" />
-<meta property="og:description" content="Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
-modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential). using SymPy Set objects internally, instead of using the built-in Python lists. use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs." />
+<meta property="og:title" content="Review: Remembrance of Earth&#39;s Past" />
+<meta property="og:description" content="I was quite absorbed with this trilogy over the last couple of months.
+I distinctly remember reading the first chapter of The Three-Body Problem, few years ago at the university. I had stashed it for later. So I eventually decided to pick up the 1st book in the trilogy early May, after returning from India.
+After reading the trilogy, I have a lot more questions than I did before. Questions ranging from astrophysics to humanity&rsquo;s collective decision making." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-05-15T00:00:00+05:30" />
-<meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/review-remembrance-of-earths-past/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-24T18:00:30+02:00" />
+<meta property="article:modified_time" content="2022-07-24T18:00:30+02:00" />
 
 
 
@@ -32,7 +35,7 @@ modularise the code for various classes of equations(LambertW, bivariate equatio
   <title>kxsh</title>
 
   
-  <link rel="canonical" href="https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/">
+  <link rel="canonical" href="https://kshitij10496.github.io/posts/review-remembrance-of-earths-past/">
   
 
   <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -143,8 +146,8 @@ modularise the code for various classes of equations(LambertW, bivariate equatio
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/">
-              Auditing SymPy&#39;s Transcendental solver
+            <a class="title-link" href="https://kshitij10496.github.io/posts/review-remembrance-of-earths-past/">
+              Review: Remembrance of Earth&#39;s Past
             </a>
           </h1>
         </div>
@@ -152,8 +155,8 @@ modularise the code for various classes of equations(LambertW, bivariate equatio
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2016-05-15T00:00:00&#43;05:30">
-                May 15, 2016
+              <time datetime="2022-07-24T18:00:30&#43;02:00">
+                July 24, 2022
               </time>
             </span>
             <span class="reading-time">
@@ -162,18 +165,11 @@ modularise the code for various classes of equations(LambertW, bivariate equatio
             </span>
           </div>
           
-          <div class="categories">
-  <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="https://kshitij10496.github.io/categories/gsoc/">GSoC</a></div>
-
+          
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://kshitij10496.github.io/tags/sympy/">Sympy</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="https://kshitij10496.github.io/tags/python/">Python</a>
+      <a href="https://kshitij10496.github.io/tags/book/">Book</a>
     </span></div>
 
         </div>
@@ -181,26 +177,25 @@ modularise the code for various classes of equations(LambertW, bivariate equatio
 
       <div>
         
-        <p>Having considered the current codebase of <code>_tsolve</code> function, I find the following few points considered while implementing the new solver:</p>
-<ul>
-<li>modularise the code for various classes of equations(LambertW, <code>bivariate</code> equation type, logarithmic, exponential).</li>
-<li>using SymPy <code>Set</code> objects internally, instead of using the built-in Python <code>lists</code>.</li>
-<li>use of <code>decompogen</code> function to check for possible decomposition of the given expression into simpler functions.</li>
-<li>handle the case where the given equation has no closed-form solution and infinite recursion occurs.</li>
-</ul>
-<p>These are just a handful of strategies that I intend to use. However, the whole process of development is going to a lot more complex and might need some more considerations from my side.</p>
-<h3 id="task--implement-transolve-function">
-  Task : Implement <code>transolve</code> function.
-  <a class="heading-link" href="#task--implement-transolve-function">
+        <p>I was quite absorbed with this trilogy over the last couple of months.</p>
+<p>I distinctly remember reading the first chapter of <a href="https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)">The Three-Body Problem</a>, few years ago at the university. I had stashed it for later. So I eventually decided to pick up the 1st book in the trilogy early May, after returning from India.</p>
+<p>After reading the trilogy, I have a lot more questions than I did before.
+Questions ranging from astrophysics to humanity&rsquo;s collective decision making.
+There are quite a handful of ideas/theories that particularly intrigued me in the moment.</p>
+<p>I, definitely need more time, and probably a re-read to improve my understanding of some details.</p>
+<p>I&rsquo;m grateful to the writer and translator for putting together this work.
+Thoroughly enjoyed it.</p>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
-</h3>
-<p>My plan is to do a <em>test-driven development</em> for this solver.<br>
-For this, I will start by porting the relevant tests present in <code>test_solvers.py</code> module to the <code>test_solveset.py</code>.
-Following this, I will start the developement process of the <code>transolve</code> solver.</p>
-<p>I aim to accomplish a major portion of this task by the end of this week.</p>
-<p>Thats all for now.
-And the coding begins !</p>
+</h1>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)">The Three-Body Problem</a></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Dark_Forest">The Dark Forest</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Death%27s_End">Death&rsquo;s End</a></li>
+</ul>
 
       </div>
 
