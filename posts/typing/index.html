@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="color-scheme" content="light dark">
 
-    
 
-    <meta name="author" content="KSHITIJ SARAOGI">
-    <meta name="description" content="Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &ldquo;ask for forgiveness&rdquo; if the post seems too colloquial and pragmatic.
- Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
- &ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed.">
-    <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
-    <meta name="twitter:card" content="summary"/>
+<meta name="author" content="KSHITIJ SARAOGI">
+<meta name="description" content="Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &ldquo;ask for forgiveness&rdquo; if the post seems too colloquial and pragmatic.
+Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
+&ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed.">
+<meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Typing in Python, Go and JavaScript"/>
 <meta name="twitter:description" content="Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &ldquo;ask for forgiveness&rdquo; if the post seems too colloquial and pragmatic.
- Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
- &ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed."/>
+Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
+&ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed."/>
 
-    <meta property="og:title" content="Typing in Python, Go and JavaScript" />
+<meta property="og:title" content="Typing in Python, Go and JavaScript" />
 <meta property="og:description" content="Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &ldquo;ask for forgiveness&rdquo; if the post seems too colloquial and pragmatic.
- Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
- &ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed." />
+Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
+&ldquo;Python is a strongly typed, dynamic language.&rdquo; &ldquo;Go is a statically typed, strong language.&rdquo; &ldquo;JavaScript is a dynamic language which is weakly typed." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kshitij10496.github.io/posts/typing/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-12-10T00:00:00+05:30" />
@@ -32,58 +31,65 @@
 
 
 
-    <title>
-  Typing in Python, Go and JavaScript · kxsh
-</title>
 
-    
-      <link rel="canonical" href="https://kshitij10496.github.io/posts/typing/">
-    
+  <title>kxsh</title>
 
-    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="canonical" href="https://kshitij10496.github.io/posts/typing/">
+  
 
-    
-      
-      
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
-    
+  <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
 
-    
-      
-        
-        
-        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
-      
-    
+  
+  
+  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
 
-    
 
-    
 
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
 
-    <link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
-
-    
-      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
-        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
-    
-
-    <meta name="generator" content="Hugo 0.89.4" />
-  </head>
 
   
   
     
-  
-  <body class="preload-transitions colorscheme-auto"
-        onload=" twemoji.parse(document.body); "
-  >
     
+    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://kshitij10496.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://kshitij10496.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.101.0" />
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
         <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
@@ -91,8 +97,8 @@
 </div>
 
 
-    <main class="wrapper">
-      <nav class="navigation">
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://kshitij10496.github.io/">
       kxsh
@@ -133,8 +139,8 @@
 </nav>
 
 
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
@@ -149,7 +155,7 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2017-12-10T00:00:00&#43;05:30'>
+              <time datetime="2017-12-10T00:00:00&#43;05:30">
                 December 10, 2017
               </time>
             </span>
@@ -231,27 +237,27 @@ Each group defines important characteristics of a programming language independe
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">21</span>
-<span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;21&#39;</span>
-</code></pre></div><p><strong>Conclusion:</strong> The type of name <code>age</code> is the type of the object it refers to at that particular instant. Moreover, no further restriction is laid on it with regards to what values it can/cannot hold in the future.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">21</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> age <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;21&#39;</span>
+</span></span></code></pre></div><p><strong>Conclusion:</strong> The type of name <code>age</code> is the type of the object it refers to at that particular instant. Moreover, no further restriction is laid on it with regards to what values it can/cannot hold in the future.</p>
 <h3 id="go">
   Go
   <a class="heading-link" href="#go">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">age <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">21</span>
-age = <span style="color:#f1fa8c">&#34;21&#34;</span>
-</code></pre></div><p><strong>Conclusion:</strong> A compile time assignment error is raised. Once a type is associated with a variable, the variable cannot hold a value of other data types.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>age <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">21</span>
+</span></span><span style="display:flex;"><span>age = <span style="color:#f1fa8c">&#34;21&#34;</span>
+</span></span></code></pre></div><p><strong>Conclusion:</strong> A compile time assignment error is raised. Once a type is associated with a variable, the variable cannot hold a value of other data types.</p>
 <h3 id="javascript">
   JavaScript
   <a class="heading-link" href="#javascript">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">age = 21
-age = &#34;21&#34;
-</code></pre></div><p><strong>Conclusion:</strong> Same as Python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>age = 21
+</span></span><span style="display:flex;"><span>age = &#34;21&#34;
+</span></span></code></pre></div><p><strong>Conclusion:</strong> Same as Python</p>
 <hr>
 <h2 id="strong-typing-weak-typing">
   Strong Typing, Weak Typing
@@ -289,23 +295,23 @@ i.e a strongly typed language is restrictive of type intermingling.</p>
 <ol>
 <li>Adding a number to a string</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> a, b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#39;K&#39;</span>
-<span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># Binary operation on different types</span>
-<span style="color:#ff79c6">...</span>
-TypeError: unsupported operand <span style="color:#8be9fd;font-style:italic">type</span>(s) <span style="color:#ff79c6">for</span> <span style="color:#ff79c6">+</span>: <span style="color:#f1fa8c">&#39;int&#39;</span> <span style="color:#ff79c6">and</span> <span style="color:#f1fa8c">&#39;str&#39;</span>
-
-<span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> <span style="color:#8be9fd;font-style:italic">ord</span>(b) <span style="color:#6272a4"># Explicit type conversion of string to integer</span>
-<span style="color:#bd93f9">85</span>
-
-<span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#8be9fd;font-style:italic">str</span>(a) <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># Explicit type conversion of integer to string</span>
-<span style="color:#f1fa8c">&#39;10K&#39;</span>
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> a, b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#39;K&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># Binary operation on different types</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">...</span>
+</span></span><span style="display:flex;"><span>TypeError: unsupported operand <span style="color:#8be9fd;font-style:italic">type</span>(s) <span style="color:#ff79c6">for</span> <span style="color:#ff79c6">+</span>: <span style="color:#f1fa8c">&#39;int&#39;</span> <span style="color:#ff79c6">and</span> <span style="color:#f1fa8c">&#39;str&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> <span style="color:#8be9fd;font-style:italic">ord</span>(b) <span style="color:#6272a4"># Explicit type conversion of string to integer</span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">85</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> <span style="color:#8be9fd;font-style:italic">str</span>(a) <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># Explicit type conversion of integer to string</span>
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#39;10K&#39;</span>
+</span></span></code></pre></div><ol start="2">
 <li>Adding an integer to a floating point number</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">&gt;&gt;&gt;</span> a, b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
-<span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># No error</span>
-<span style="color:#bd93f9">3.5</span>
-</code></pre></div><p><strong>Conclusion:</strong> Raises errors when sense cannot be made. Also, the interpreter is not restrictive enough to spoil the fun in programming.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> a, b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;&gt;&gt;</span> a <span style="color:#ff79c6">+</span> b <span style="color:#6272a4"># No error</span>
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">3.5</span>
+</span></span></code></pre></div><p><strong>Conclusion:</strong> Raises errors when sense cannot be made. Also, the interpreter is not restrictive enough to spoil the fun in programming.</p>
 <h3 id="go-1">
   Go
   <a class="heading-link" href="#go-1">
@@ -315,18 +321,18 @@ TypeError: unsupported operand <span style="color:#8be9fd;font-style:italic">typ
 <ol>
 <li>Adding a number to a string</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumStr</span>() {
-     a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#34;K&#34;</span>
-     fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
-}
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumStr</span>() {
+</span></span><span style="display:flex;"><span>     a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">10</span>, <span style="color:#f1fa8c">&#34;K&#34;</span>
+</span></span><span style="display:flex;"><span>     fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="2">
 <li>Adding an integer to a floating point number</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumFloat</span>() {
-     a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
-     fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
-}
-</code></pre></div><p><strong>Conclusion:</strong> In both the cases, an &ldquo;invalid operation&rdquo; compile-time error is raised.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">AddNumFloat</span>() {
+</span></span><span style="display:flex;"><span>     a, b <span style="color:#ff79c6">:=</span> <span style="color:#bd93f9">1</span>, <span style="color:#bd93f9">2.5</span>
+</span></span><span style="display:flex;"><span>     fmt.<span style="color:#50fa7b">Println</span>(a <span style="color:#ff79c6">+</span> b)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Conclusion:</strong> In both the cases, an &ldquo;invalid operation&rdquo; compile-time error is raised.</p>
 <h3 id="javascript-1">
   JavaScript
   <a class="heading-link" href="#javascript-1">
@@ -336,18 +342,18 @@ TypeError: unsupported operand <span style="color:#8be9fd;font-style:italic">typ
 <ol>
 <li>Adding a number to a string</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
-<span style="color:#ff79c6">&gt;</span> b <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;K&#34;</span>
-<span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">+</span> b
-<span style="color:#f1fa8c">&#39;10K&#39;</span>
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;</span> b <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;K&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">+</span> b
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#39;10K&#39;</span>
+</span></span></code></pre></div><ol start="2">
 <li>Adding an integer to a floating point number</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
-<span style="color:#ff79c6">&gt;</span> b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">2.5</span>
-<span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">+</span> b
-<span style="color:#bd93f9">3.5</span>
-</code></pre></div><p><strong>Conclusion:</strong> The compiler <em>implicitly</em> converts the type of values to make sense of the operation rather than raising errors.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;</span> b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">2.5</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt;</span> a <span style="color:#ff79c6">+</span> b
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">3.5</span>
+</span></span></code></pre></div><p><strong>Conclusion:</strong> The compiler <em>implicitly</em> converts the type of values to make sense of the operation rather than raising errors.</p>
 <hr>
 <p>I hope that after reading this article, you are able to justify the statements regarding the type systems used in different languages. In this post, I explored these principles across Python, Go and JS just to cover a variety of examples. I encourage you to perform the same on the languages you know and share your results in the comments below.</p>
 
@@ -367,51 +373,47 @@ TypeError: unsupported operand <span style="color:#8be9fd;font-style:italic">typ
     
   </section>
 
-      </div>
+    </div>
 
-      
-  <footer class="footer">
-    <section class="container">
-      
-      
-        ©
-        
-          2016 -
-        
-        2022
-         KSHITIJ SARAOGI 
-      
-      
-         · 
-        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-      
-      
-    </section>
-  </footer>
-
-
-    </main>
-
+    <footer class="footer">
+  <section class="container">
+    ©
     
-      
-      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+      2016 -
     
+    2022
+     KSHITIJ SARAOGI 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
 
-    
+  </main>
 
-    
+  
+  
+  <script src="https://kshitij10496.github.io/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-  </body>
+  
+
+  
+
+  
+
+  
+</body>
 
 </html>

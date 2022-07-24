@@ -14,8 +14,8 @@
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
-      <description>What is Duck Typing?    Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
- attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
+      <description>What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
     </item>
     
   </channel>

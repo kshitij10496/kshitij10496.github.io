@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="color-scheme" content="light dark">
 
-    
 
-    <meta name="author" content="KSHITIJ SARAOGI">
-    <meta name="description" content="What is Duck Typing?    Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
- attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.">
-    <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
-    <meta name="twitter:card" content="summary"/>
+<meta name="author" content="KSHITIJ SARAOGI">
+<meta name="description" content="What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.">
+<meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Duck Typing in Python"/>
-<meta name="twitter:description" content="What is Duck Typing?    Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
- attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method."/>
+<meta name="twitter:description" content="What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method."/>
 
-    <meta property="og:title" content="Duck Typing in Python" />
-<meta property="og:description" content="What is Duck Typing?    Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
- attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method." />
+<meta property="og:title" content="Duck Typing in Python" />
+<meta property="og:description" content="What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kshitij10496.github.io/posts/duck-typing-in-python/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-12-03T00:00:00+05:30" />
@@ -29,58 +28,65 @@
 
 
 
-    <title>
-  Duck Typing in Python · kxsh
-</title>
 
-    
-      <link rel="canonical" href="https://kshitij10496.github.io/posts/duck-typing-in-python/">
-    
+  <title>kxsh</title>
 
-    <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="canonical" href="https://kshitij10496.github.io/posts/duck-typing-in-python/">
+  
 
-    
-      
-      
-      <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
-    
+  <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
 
-    
-      
-        
-        
-        <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
-      
-    
+  
+  
+  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
 
-    
 
-    
 
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
 
-    <link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
-
-    
-      <script defer src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js"
-        integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
-    
-
-    <meta name="generator" content="Hugo 0.89.4" />
-  </head>
 
   
   
     
-  
-  <body class="preload-transitions colorscheme-auto"
-        onload=" twemoji.parse(document.body); "
-  >
     
+    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://kshitij10496.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://kshitij10496.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.101.0" />
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
         <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
@@ -88,8 +94,8 @@
 </div>
 
 
-    <main class="wrapper">
-      <nav class="navigation">
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://kshitij10496.github.io/">
       kxsh
@@ -130,8 +136,8 @@
 </nav>
 
 
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
@@ -146,7 +152,7 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2017-12-03T00:00:00&#43;05:30'>
+              <time datetime="2017-12-03T00:00:00&#43;05:30">
                 December 3, 2017
               </time>
             </span>
@@ -212,58 +218,57 @@ Dynamic binding is the capability to use an instance without regard for its type
 </h2>
 <p>Suppose we are asked to display a dictionary of country names and it&rsquo;s captial in a tabular format. Let us try to write a generic utility function which displays a given input mapping in a tabular form:</p>
 <p><strong>Attempt 01</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">def tabulate_mapping(mapping, headers):
-    &#39;&#39;&#39;Tabulates the input mapping as columns with given headers.
-    
-    &gt;&gt;&gt; mapping = {&#39;India&#39;: &#39;New Delhi&#39;,
-    ...             &#39;USA&#39;: &#39;Washington&#39;,
-    ...             &#39;England&#39;: &#39;London&#39;}
-    &gt;&gt;&gt; headers = (&#39;Country&#39;, &#39;Captial&#39;)
-    &gt;&gt;&gt; tabulate_mapping_01(mapping, headers)
-            Country |        Capital |
-    ----------------------------------
-            England |         London |
-              India |      New Delhi |
-                USA |     Washington |
-    &#39;&#39;&#39;
-    heading = &#39;&#39;
-    for header in headers:  ##### NOTE 1
-        heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
-    print(heading)
-    print(&#39;-&#39;*len(heading))
-
-    for k, v in mapping.items():  ##### NOTE 2
-        print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))
-</code></pre></div><p>The code should look pretty straighforward to any programmer who has written even a few lines of Python. However, there are two salient features about the code which do not strike us at the first sight. After some experimenting, you will figure out the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>def tabulate_mapping(mapping, headers):
+</span></span><span style="display:flex;"><span>    &#39;&#39;&#39;Tabulates the input mapping as columns with given headers.
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &gt;&gt;&gt; mapping = {&#39;India&#39;: &#39;New Delhi&#39;,
+</span></span><span style="display:flex;"><span>    ...             &#39;USA&#39;: &#39;Washington&#39;,
+</span></span><span style="display:flex;"><span>    ...             &#39;England&#39;: &#39;London&#39;}
+</span></span><span style="display:flex;"><span>    &gt;&gt;&gt; headers = (&#39;Country&#39;, &#39;Captial&#39;)
+</span></span><span style="display:flex;"><span>    &gt;&gt;&gt; tabulate_mapping_01(mapping, headers)
+</span></span><span style="display:flex;"><span>            Country |        Capital |
+</span></span><span style="display:flex;"><span>    ----------------------------------
+</span></span><span style="display:flex;"><span>            England |         London |
+</span></span><span style="display:flex;"><span>              India |      New Delhi |
+</span></span><span style="display:flex;"><span>                USA |     Washington |
+</span></span><span style="display:flex;"><span>    &#39;&#39;&#39;
+</span></span><span style="display:flex;"><span>    heading = &#39;&#39;
+</span></span><span style="display:flex;"><span>    for header in headers:  ##### NOTE 1
+</span></span><span style="display:flex;"><span>        heading += &#39;{:&gt;15}&#39;.format(header) + &#39; |&#39;
+</span></span><span style="display:flex;"><span>    print(heading)
+</span></span><span style="display:flex;"><span>    print(&#39;-&#39;*len(heading))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    for k, v in mapping.items():  ##### NOTE 2
+</span></span><span style="display:flex;"><span>        print(&#39;{:&gt;15} |{:&gt;15} |&#39;.format(k, v))
+</span></span></code></pre></div><p>The code should look pretty straighforward to any programmer who has written even a few lines of Python. However, there are two salient features about the code which do not strike us at the first sight. After some experimenting, you will figure out the following:</p>
 <ol>
 <li>Any iterable can be passed as <code>headers</code> i.e. <code>list</code>, <code>tuple</code>, user-defined sequences. Even unordered collections such as <code>dict</code>, <code>set</code> would also work.</li>
 <li>Any object which implements an <code>items</code> method can be printed using <code>tabulate_mapping</code> function.</li>
 </ol>
 <p><strong>Duck Typing At Work!</strong></p>
 <p>Let us create a class which extends the Python built-in <code>list</code> and implements a <code>items</code> method.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql">class <span style="color:#50fa7b">MyList</span>(list):
-    <span style="color:#f1fa8c">&#39;&#39;&#39; A user-defined collection data type which extends the built-in list.
-</span><span style="color:#f1fa8c">    
-</span><span style="color:#f1fa8c">    &gt;&gt;&gt; alphabet = MyList(*&#39;</span>ABC<span style="color:#f1fa8c">&#39;)
-</span><span style="color:#f1fa8c">    &gt;&gt;&gt; print(alphabet)
-</span><span style="color:#f1fa8c">    [&#39;</span>A<span style="color:#f1fa8c">&#39;, &#39;</span>B<span style="color:#f1fa8c">&#39;, &#39;</span>C<span style="color:#f1fa8c">&#39;]
-</span><span style="color:#f1fa8c">    &gt;&gt;&gt; alphabet[1]
-</span><span style="color:#f1fa8c">    &#39;</span>B<span style="color:#f1fa8c">&#39;
-</span><span style="color:#f1fa8c">    &gt;&gt;&gt; for i, item in alphabet.items():
-</span><span style="color:#f1fa8c">    ...     print(i, item)
-</span><span style="color:#f1fa8c">    1 A
-</span><span style="color:#f1fa8c">    2 B
-</span><span style="color:#f1fa8c">    3 C
-</span><span style="color:#f1fa8c">    &#39;&#39;&#39;</span>
-    def <span style="color:#50fa7b">__init__</span>(self, <span style="color:#ff79c6">*</span>args):
-        <span style="color:#50fa7b">super</span>().<span style="color:#50fa7b">__init__</span>(args)
-        
-    def <span style="color:#50fa7b">items</span>(self):
-        <span style="color:#f1fa8c">&#39;&#39;&#39;Alternate utility to `enumerate` on the instance&#39;&#39;&#39;</span>
-        <span style="color:#ff79c6">for</span> i, item <span style="color:#ff79c6">in</span> <span style="color:#50fa7b">enumerate</span>(self, start<span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>):
-            yield i, item
-
-</code></pre></div><p>Now, by the grace of Duck Typing, we can use the <code>tabulate_mapping</code> function with instances of <code>MyList</code> class. However, what if we do not want malicious objects use our code this way. We all know about SQL Injection. It&rsquo;s about time we become aware of our privacy.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span>class <span style="color:#50fa7b">MyList</span>(list):
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#39;&#39;&#39; A user-defined collection data type which extends the built-in list.
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; alphabet = MyList(*&#39;</span>ABC<span style="color:#f1fa8c">&#39;)
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; print(alphabet)
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    [&#39;</span>A<span style="color:#f1fa8c">&#39;, &#39;</span>B<span style="color:#f1fa8c">&#39;, &#39;</span>C<span style="color:#f1fa8c">&#39;]
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; alphabet[1]
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#39;</span>B<span style="color:#f1fa8c">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; for i, item in alphabet.items():
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    ...     print(i, item)
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    1 A
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    2 B
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    3 C
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    def <span style="color:#50fa7b">__init__</span>(self, <span style="color:#ff79c6">*</span>args):
+</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">super</span>().<span style="color:#50fa7b">__init__</span>(args)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    def <span style="color:#50fa7b">items</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#f1fa8c">&#39;&#39;&#39;Alternate utility to `enumerate` on the instance&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">for</span> i, item <span style="color:#ff79c6">in</span> <span style="color:#50fa7b">enumerate</span>(self, start<span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>):
+</span></span><span style="display:flex;"><span>            yield i, item
+</span></span></code></pre></div><p>Now, by the grace of Duck Typing, we can use the <code>tabulate_mapping</code> function with instances of <code>MyList</code> class. However, what if we do not want malicious objects use our code this way. We all know about SQL Injection. It&rsquo;s about time we become aware of our privacy.</p>
 <h2 id="the-curious-case-of-input-validation">
   The Curious Case of Input Validation
   <a class="heading-link" href="#the-curious-case-of-input-validation">
@@ -277,54 +282,52 @@ i.e <strong>Too much of <code>isinstance</code> and <code>hasattr</code> works b
 <ol>
 <li>If we want the <code>tabulate_mapping</code> to be generic utility which can work on any <code>mapping</code> object with <code>items</code> and iterable <code>headers</code>.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def" data-lang="def">        
-        <span style="color:#ff79c6">#</span> Validate headers
-        try:
-            headers_iter <span style="color:#ff79c6">=</span> iter(headers)
-        except TypeError as e:
-            raise ValueError(<span style="color:#f1fa8c">&#39;headers needs to be an iterable.&#39;</span>)
-
-        <span style="color:#ff79c6">#</span> Validate mapping
-         try:
-             mapping_items <span style="color:#ff79c6">=</span> mapping.items()
-         except AttributeError as e:
-             raise ValueError(<span style="color:#f1fa8c">&#39;mapping should have an items method.&#39;</span>)
-
-        heading <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;&#39;</span>
-        
-         for header in headers_iter:
-             heading <span style="color:#ff79c6">+=</span> <span style="color:#f1fa8c">&#39;{:&gt;15}&#39;</span>.format(header) <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39; |&#39;</span>
-
-         print(heading)
-         print(<span style="color:#f1fa8c">&#39;-&#39;</span><span style="color:#ff79c6">*</span>len(heading))
-         
-         for k, v in mapping_items:
-             print(<span style="color:#f1fa8c">&#39;{:&gt;15} |{:&gt;15} |&#39;</span>.format(k, v))
-
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-def" data-lang="def"><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">#</span> Validate headers
+</span></span><span style="display:flex;"><span>        try:
+</span></span><span style="display:flex;"><span>            headers_iter <span style="color:#ff79c6">=</span> iter(headers)
+</span></span><span style="display:flex;"><span>        except TypeError as e:
+</span></span><span style="display:flex;"><span>            raise ValueError(<span style="color:#f1fa8c">&#39;headers needs to be an iterable.&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">#</span> Validate mapping
+</span></span><span style="display:flex;"><span>         try:
+</span></span><span style="display:flex;"><span>             mapping_items <span style="color:#ff79c6">=</span> mapping.items()
+</span></span><span style="display:flex;"><span>         except AttributeError as e:
+</span></span><span style="display:flex;"><span>             raise ValueError(<span style="color:#f1fa8c">&#39;mapping should have an items method.&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        heading <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>         for header in headers_iter:
+</span></span><span style="display:flex;"><span>             heading <span style="color:#ff79c6">+=</span> <span style="color:#f1fa8c">&#39;{:&gt;15}&#39;</span>.format(header) <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39; |&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>         print(heading)
+</span></span><span style="display:flex;"><span>         print(<span style="color:#f1fa8c">&#39;-&#39;</span><span style="color:#ff79c6">*</span>len(heading))
+</span></span><span style="display:flex;"><span>         
+</span></span><span style="display:flex;"><span>         for k, v in mapping_items:
+</span></span><span style="display:flex;"><span>             print(<span style="color:#f1fa8c">&#39;{:&gt;15} |{:&gt;15} |&#39;</span>.format(k, v))
+</span></span></code></pre></div><ol start="2">
 <li>If we want to restrict the <code>mapping</code> object to an instance of a subclass of the built-in <code>dict</code> and the <code>headers</code> are specified to be a <code>list</code> object:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-def" data-lang="def">        
-        <span style="color:#ff79c6">#</span> Validate headers
-        if not isinstance(headers, list)
-            raise ValueError(<span style="color:#f1fa8c">&#39;headers needs to be a list object.&#39;</span>)
-
-        <span style="color:#ff79c6">#</span> Validate mapping
-        if not isinstance(mapping, dict):
-            raise ValueError(<span style="color:#f1fa8c">&#39;mapping needs to be a dict object.&#39;</span>)
-     
-        heading <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;&#39;</span>
-        
-         for header in headers_iter:
-             heading <span style="color:#ff79c6">+=</span> <span style="color:#f1fa8c">&#39;{:&gt;15}&#39;</span>.format(header) <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39; |&#39;</span>
-
-         print(heading)
-         print(<span style="color:#f1fa8c">&#39;-&#39;</span><span style="color:#ff79c6">*</span>len(heading))
-         
-         for k, v in mapping_items:
-             print(<span style="color:#f1fa8c">&#39;{:&gt;15} |{:&gt;15} |&#39;</span>.format(k, v))
-
-</code></pre></div><h1 id="conclusion">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-def" data-lang="def"><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">#</span> Validate headers
+</span></span><span style="display:flex;"><span>        if not isinstance(headers, list)
+</span></span><span style="display:flex;"><span>            raise ValueError(<span style="color:#f1fa8c">&#39;headers needs to be a list object.&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">#</span> Validate mapping
+</span></span><span style="display:flex;"><span>        if not isinstance(mapping, dict):
+</span></span><span style="display:flex;"><span>            raise ValueError(<span style="color:#f1fa8c">&#39;mapping needs to be a dict object.&#39;</span>)
+</span></span><span style="display:flex;"><span>     
+</span></span><span style="display:flex;"><span>        heading <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>         for header in headers_iter:
+</span></span><span style="display:flex;"><span>             heading <span style="color:#ff79c6">+=</span> <span style="color:#f1fa8c">&#39;{:&gt;15}&#39;</span>.format(header) <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39; |&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>         print(heading)
+</span></span><span style="display:flex;"><span>         print(<span style="color:#f1fa8c">&#39;-&#39;</span><span style="color:#ff79c6">*</span>len(heading))
+</span></span><span style="display:flex;"><span>         
+</span></span><span style="display:flex;"><span>         for k, v in mapping_items:
+</span></span><span style="display:flex;"><span>             print(<span style="color:#f1fa8c">&#39;{:&gt;15} |{:&gt;15} |&#39;</span>.format(k, v))
+</span></span></code></pre></div><h1 id="conclusion">
   Conclusion
   <a class="heading-link" href="#conclusion">
     <i class="fa fa-link" aria-hidden="true"></i>
@@ -351,51 +354,47 @@ i.e <strong>Too much of <code>isinstance</code> and <code>hasattr</code> works b
     
   </section>
 
-      </div>
+    </div>
 
-      
-  <footer class="footer">
-    <section class="container">
-      
-      
-        ©
-        
-          2016 -
-        
-        2022
-         KSHITIJ SARAOGI 
-      
-      
-         · 
-        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-      
-      
-    </section>
-  </footer>
-
-
-    </main>
-
+    <footer class="footer">
+  <section class="container">
+    ©
     
-      
-      <script src="https://kshitij10496.github.io/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+      2016 -
     
+    2022
+     KSHITIJ SARAOGI 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
 
-    
+  </main>
 
-    
+  
+  
+  <script src="https://kshitij10496.github.io/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-  </body>
+  
+
+  
+
+  
+
+  
+</body>
 
 </html>
