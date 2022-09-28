@@ -16,7 +16,7 @@ After reading the trilogy, I have a lot more questions than I did before.
 Questions ranging from astrophysics to humanity's collective decision making.
 There are quite a handful of ideas/theories that particularly intrigued me in the moment.
 
-I, definitely need more time, and probably a re-read to improve my understanding of some details.
+It's quite easy to get overwhelmed by reading SciFi, especially when one has slight technical/scientific background. So I definitely need more time, and probably a re-read to improve my understanding of what the books presented.
 
 I'm grateful to the writer and translator for putting together this work.
 Thoroughly enjoyed it.
