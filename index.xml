@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 01 Jan 2023 10:32:38 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 17:08:57 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integrating GoatCounter into the blog</title>
+      <link>https://kshitij10496.github.io/posts/goatcounter/</link>
+      <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/goatcounter/</guid>
+      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
+Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
+    </item>
+    
     <item>
       <title>What I Talk About When I Talk About Running: 2022</title>
       <link>https://kshitij10496.github.io/posts/witawitar-2022/</link>
@@ -357,9 +367,9 @@ modularise the code for various classes of equations(LambertW, bivariate equatio
       
       <guid>https://kshitij10496.github.io/about/</guid>
       <description>Hey there! 👋
-This is Kshitij and you have reached my space on the World Wide Web.
-I am a software developer, and a distance running enthusiast from India.
-When I have something important/clever/funny/stupid to say, I scribble it down here, on my blog. A lot of my posts might be incoherent rough drafts wanting for an editor’s attention, but I think that’s how life is - a collection of unorganised, unexpected events with few planned ones in between.</description>
+This is Kshitij, and you have reached my space on the World Wide Web. Currently, I&amp;rsquo;m based out of Berlin where I work as a software engineer mostly focusing on backend systems.
+This blog is the place where I think in public. The posts are my attempt to share my ideas, reflections on experiences, or lessons I have learnt among many other things.
+Here are a links to know a bit more about me:</description>
     </item>
     
     <item>
@@ -368,11 +378,9 @@ When I have something important/clever/funny/stupid to say, I scribble it down h
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kshitij10496.github.io/now/</guid>
-      <description>Updates about what I&amp;rsquo;m up to lately.1
-Helping OneFootball build a platform for the football community as a software engineer. Training for my first ever marathon Ran my first marathon in sub 4 hours. 2 3. Learning German. Learning to play Kicker 4. Learning to swim. Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;
-Result - TCS Amsterdam Marathon 2021&amp;#160;&amp;#x21a9;&amp;#xfe0e;
-Running Log&amp;#160;&amp;#x21a9;&amp;#xfe0e;
-Table football - Wikipedia&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+      <description>This page hosts regular updates about what I have been up to lately. Insipred by Derek Siver&amp;rsquo;s Now Page.1
+Helping OneFootball build a platform for the football community as a backend software engineer. Learning about Observability of backend systems through Open Telemtry. Spending time with my family back at home. Updated: 1st January 2023
+Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     
   </channel>

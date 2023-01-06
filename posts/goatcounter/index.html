@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Integrating GoatCounter into the blog · kxsh
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="KSHITIJ SARAOGI">
+<meta name="description" content="This blog is tracked with GoatCounter. It&rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
+Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.">
+<meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Integrating GoatCounter into the blog"/>
+<meta name="twitter:description" content="This blog is tracked with GoatCounter. It&rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
+Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter."/>
+
+<meta property="og:title" content="Integrating GoatCounter into the blog" />
+<meta property="og:description" content="This blog is tracked with GoatCounter. It&rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
+Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/goatcounter/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-06T17:08:57+05:30" />
+<meta property="article:modified_time" content="2023-01-06T19:29:46+05:30" />
+
+
+
+
+
+<link rel="canonical" href="https://kshitij10496.github.io/posts/goatcounter/">
+
+
+<link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://kshitij10496.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://kshitij10496.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+
+<script data-goatcounter="https://kxsh.goatcounter.com/count"
+      async src="//gc.zgo.at/count.js"></script>
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kxsh
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/about/">ABOUT</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing">RÉSUMÉ</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/index.xml">RSS</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/goatcounter/">
+              Integrating GoatCounter into the blog
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-01-06T17:08:57&#43;05:30">
+                January 6, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://kshitij10496.github.io/categories/software/">software</a>
+      <span class="separator">•</span>
+    <a href="https://kshitij10496.github.io/categories/tool/">tool</a>
+      <span class="separator">•</span>
+    <a href="https://kshitij10496.github.io/categories/analytics/">analytics</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/journal/">journal</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/hugo/">hugo</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/goatcounter/">goatcounter</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>This blog is tracked with <a href="https://www.goatcounter.com/">GoatCounter</a>. It&rsquo;s a minimalist, privacy respecting, open source web analytics tool.
+Here is my small adventure into adding the tool into the blog.</p>
+<h1 id="why-did-i-add-a-tracker">
+  Why did I add a tracker?
+  <a class="heading-link" href="#why-did-i-add-a-tracker">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>I discovered GoatCounter on a random HackerNews post earlier this week.
+Eventually, I landed on <a href="https://www.goatcounter.com/design">GoatCounter&rsquo;s Design</a>.
+I appreciate the focus on simplicity, pragmatism, and keeping things boring.
+This convinced me to try out GoatCounter.</p>
+<h1 id="how-to-add-the-goatcounter-tracker-to-a-hugo-site">
+  How to add the GoatCounter tracker to a Hugo site?
+  <a class="heading-link" href="#how-to-add-the-goatcounter-tracker-to-a-hugo-site">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Like most trackers, I needed to add a simple HTML tag to every page on the site.
+This tag runs some JavaScript code on the visitors&rsquo; browser.</p>
+<p>It seems pretty straightforward if this site were built by vanilla HTML.
+However, I use Hugo as my static site generator tool with a custom theme.
+And, I didn&rsquo;t know how to add custom HTML to either Hugo or to the custom theme.
+So I started digging.</p>
+<p>Hugo uses inheritance for building the final HTML from different HTML templates (Hugo template, theme tempalte, custom HTML from user) one top of the other.
+There is also a specific <a href="https://gohugo.io/templates/lookup-order/">template lookup order</a> with all the information about this process.
+Essentially, in order to add custom HTML to our site using a Hugo theme, we have to create a new file in our project.
+The important note here is to create the file at a proper location to leverage Hugo&rsquo;s inheritance.
+This part is a bit tricky to debug because we lack observability into why our HTML is not loaded.
+The template lookup order comes in handy in these cases.</p>
+<p>For my case, it meant creating the file under <code>layouts/partials/head</code> directory as <code>extensions.html</code>.</p>
+<p><img src="coder.png" alt="Coder theme on Hugo" title="Coder theme on Hugo"></p>
+<p><img src="blog.png" alt="Updated my blog with custom HTML" title="Updated blog with GoatCounter tag"></p>
+<p>You can find the source code on <a href="https://github.com/kshitij10496/hugo-blog/blob/25d5e4393db48d6432aed970882c6c48bc10b27b/layouts/partials/head/extensions.html">github.com/kshitij10496/hugo-blog</a>.</p>
+<p>In retrospect, the integration process was a bit trickier that I first imagined.</p>
+<h1 id="now">
+  Now
+  <a class="heading-link" href="#now">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>I adore the retro, 90s web design of the hosted dashboards.
+The color palette and fonts are just perfect.
+More importantly, it gets the job done.
+It&rsquo;s extremely efficient for 30 mins of setup work.</p>
+<p>If you would like not to be tracked on this site, you have a couple of options:</p>
+<ol>
+<li>Use a browser extension that blocks trackers. (suggestion: <a href="https://adblockplus.org/">Adblock Plus</a>)</li>
+<li>Reach out to me over social media (or in private) and I will disable the tracker.</li>
+</ol>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2016 -
+    
+    2023
+     KSHITIJ SARAOGI 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://kshitij10496.github.io/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
