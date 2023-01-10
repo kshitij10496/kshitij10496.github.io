@@ -4,8 +4,8 @@ date: 2023-01-01T10:32:38+05:30
 draft: false
 
 slug: "witawitar-2022" 
-tags: ["journal", "review"]
-categories: ["running", "hobby"]
+tags: ["running"]
+categories: ["journal", "reflection"]
 ---
 
 This article was originally posted on my [Running Log Newsletter](https://runnerblues.substack.com/) on Substack. You can also read it [here](https://open.substack.com/pub/runnerblues/p/what-i-talk-about-when-i-talk-about-15f?r=4vzb5&utm_campaign=post&utm_medium=web).

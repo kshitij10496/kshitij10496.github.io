@@ -4,8 +4,8 @@ date: 2023-01-06T17:08:57+05:30
 draft: false
 
 slug: "goatcounter" 
-tags: ["journal", "hugo", "goatcounter"]
-categories: ["software", "tool", "analytics"]
+tags: ["hugo", "goatcounter"]
+categories: ["software", "journal", "analytics"]
 ---
 
 This blog is tracked with [GoatCounter](https://www.goatcounter.com/). It's a minimalist, privacy respecting, open source web analytics tool.
