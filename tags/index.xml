@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 06 Jan 2023 17:08:57 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Jan 2023 15:35:37 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fileserver</title>
+      <link>https://kshitij10496.github.io/tags/fileserver/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/fileserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://kshitij10496.github.io/tags/go/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kafka</title>
+      <link>https://kshitij10496.github.io/tags/kafka/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>patagonia</title>
+      <link>https://kshitij10496.github.io/tags/patagonia/</link>
+      <pubDate>Sat, 07 Jan 2023 11:57:56 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/patagonia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>https://kshitij10496.github.io/tags/review/</link>
+      <pubDate>Sat, 07 Jan 2023 11:57:56 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>goatcounter</title>
       <link>https://kshitij10496.github.io/tags/goatcounter/</link>
@@ -27,20 +72,11 @@
     </item>
     
     <item>
-      <title>journal</title>
-      <link>https://kshitij10496.github.io/tags/journal/</link>
-      <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/journal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://kshitij10496.github.io/tags/review/</link>
+      <title>running</title>
+      <link>https://kshitij10496.github.io/tags/running/</link>
       <pubDate>Sun, 01 Jan 2023 10:32:38 +0530</pubDate>
       
-      <guid>https://kshitij10496.github.io/tags/review/</guid>
+      <guid>https://kshitij10496.github.io/tags/running/</guid>
       <description></description>
     </item>
     
@@ -167,15 +203,6 @@
       <pubDate>Wed, 02 Jan 2019 21:37:59 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://kshitij10496.github.io/tags/go/</link>
-      <pubDate>Sun, 11 Nov 2018 09:06:32 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/go/</guid>
       <description></description>
     </item>
     

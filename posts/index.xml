@@ -9,6 +9,26 @@
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Zero Copy</title>
+      <link>https://kshitij10496.github.io/posts/zero-copy/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
+      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
+Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
+    </item>
+    
+    <item>
+      <title>Review: Let My People Go Surfing</title>
+      <link>https://kshitij10496.github.io/posts/review-lmpgs/</link>
+      <pubDate>Sat, 07 Jan 2023 11:57:56 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/review-lmpgs/</guid>
+      <description>Patagonia, Inc. is quite a fascinating brand. It&amp;rsquo;s founder, Yvon Chouinard, is even more eccentric. Recently, Yvon donated the company to a non-profit trust to fight the environmental crisis1. This was a sign of Skin in the Game and I was curious to learn more about the company. After listening to a couple of Yvon&amp;rsquo;s interviews, I picked up this book.
+Along with Yvon&amp;rsquo;s personal story, the book also expands his guiding principles about running a business.</description>
+    </item>
+    
+    <item>
       <title>Integrating GoatCounter into the blog</title>
       <link>https://kshitij10496.github.io/posts/goatcounter/</link>
       <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>

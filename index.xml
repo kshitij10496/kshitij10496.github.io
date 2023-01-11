@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 06 Jan 2023 17:08:57 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Jan 2023 15:35:37 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero Copy</title>
+      <link>https://kshitij10496.github.io/posts/zero-copy/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
+      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
+Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
+    </item>
+    
+    <item>
+      <title>Review: Let My People Go Surfing</title>
+      <link>https://kshitij10496.github.io/posts/review-lmpgs/</link>
+      <pubDate>Sat, 07 Jan 2023 11:57:56 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/review-lmpgs/</guid>
+      <description>Patagonia, Inc. is quite a fascinating brand. It&amp;rsquo;s founder, Yvon Chouinard, is even more eccentric. Recently, Yvon donated the company to a non-profit trust to fight the environmental crisis1. This was a sign of Skin in the Game and I was curious to learn more about the company. After listening to a couple of Yvon&amp;rsquo;s interviews, I picked up this book.
+Along with Yvon&amp;rsquo;s personal story, the book also expands his guiding principles about running a business.</description>
+    </item>
+    
     <item>
       <title>Integrating GoatCounter into the blog</title>
       <link>https://kshitij10496.github.io/posts/goatcounter/</link>
@@ -378,8 +398,9 @@ Here are a links to know a bit more about me:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kshitij10496.github.io/now/</guid>
-      <description>This page hosts regular updates about what I have been up to lately. Insipred by Derek Siver&amp;rsquo;s Now Page.1
-Helping OneFootball build a platform for the football community as a backend software engineer. Learning about Observability of backend systems through Open Telemtry. Spending time with my family back at home. Updated: 1st January 2023
+      <description>This page hosts regular updates about what I have been up to lately.
+Insipred by Derek Siver&amp;rsquo;s Now Page.1
+Helping OneFootball build a platform for the football community as a Software Engineer. Learning about Observability of modern backend systems through Open Telemetry. Spending time with my family back at home. Recovering from a minor surgery on the big toe of my right foot. Updated: 8th January 2023
 Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     

@@ -1,134 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Journal on kxsh</title>
+    <title>journal on kxsh</title>
     <link>https://kshitij10496.github.io/categories/journal/</link>
-    <description>Recent content in Journal on kxsh</description>
+    <description>Recent content in journal on kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 01 Sep 2020 18:06:12 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Jan 2023 15:35:37 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Communication</title>
-      <link>https://kshitij10496.github.io/posts/2020-09-01/</link>
-      <pubDate>Tue, 01 Sep 2020 18:06:12 +0200</pubDate>
+      <title>Zero Copy</title>
+      <link>https://kshitij10496.github.io/posts/zero-copy/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/2020-09-01/</guid>
-      <description>Thought for the Day I was thinking about a very ubiquitous topic that I like to explore more about - the topic of communication. Whether it be my curiousity about the origins of writing, or fascination with old/dead languages, I always like to think of language as a tool - a tool for communicating with others. It is true that attaining a certain level of proficiency at weilding this tool leads to a lot of opportunities.</description>
+      <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
+      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
+Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
     </item>
     
     <item>
-      <title>git push origin</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-27/</link>
-      <pubDate>Thu, 27 Aug 2020 10:53:29 +0200</pubDate>
+      <title>Integrating GoatCounter into the blog</title>
+      <link>https://kshitij10496.github.io/posts/goatcounter/</link>
+      <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/2020-08-27/</guid>
-      <description>Git Trick One of the most common operation on Git is pushing the current branch to remote/upstream. Usually, the command for performing this goes something like:
-$ git push &amp;lt;remote&amp;gt; &amp;lt;branch_name&amp;gt; Pratical considerations:
- the remote is often fixed/low cardinality - source of the repo/frequent collaborators. multiple feature branches on the same repo. push the branch that is currently checked out.  Today, I wanted to share a small simplification that I find really helpful in this scenario - a branch name agnostic way of pushing the current changes.</description>
+      <guid>https://kshitij10496.github.io/posts/goatcounter/</guid>
+      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
+Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
     </item>
     
     <item>
-      <title>Dining at Milan Train Station</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-26/</link>
-      <pubDate>Wed, 26 Aug 2020 14:10:54 +0200</pubDate>
+      <title>What I Talk About When I Talk About Running: 2022</title>
+      <link>https://kshitij10496.github.io/posts/witawitar-2022/</link>
+      <pubDate>Sun, 01 Jan 2023 10:32:38 +0530</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/2020-08-26/</guid>
-      <description>Thought for the day  In #SkinintheGame I was shocked to see Italians eating at MacDonalds in the Milan train station: it&amp;rsquo;s abt lowering the variance, trading quality for certainty &amp;amp; reliability. It&amp;rsquo;s the same reason you hire employees: for their predictability/reliable mediocrity, never for quality.
- Tweet from Nassim Nicholas Taleb   The central theme of mediocrity is that it is always predictable - often thought of as the &amp;ldquo;safest&amp;rdquo; approach.</description>
-    </item>
-    
-    <item>
-      <title>Somebody once told me...</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-25/</link>
-      <pubDate>Tue, 25 Aug 2020 21:54:01 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-25/</guid>
-      <description>What brought me joy today?  Watching John Green vlog about how engagement is valued more than accuracy/quality in our attention economy, as reflected on popular social media platforms. And yes, I too would love to know how many titles Liverpool FC wins in the next decade! ⚽️ Learning about Minka which is a type of traditional farmhouse in Japan in this short film.  </description>
-    </item>
-    
-    <item>
-      <title>Crafting sofware has come so far</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-24/</link>
-      <pubDate>Mon, 24 Aug 2020 14:55:58 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-24/</guid>
-      <description>What brought me joy today?  This concise article on technological evolution in the way we write and deploy software - from VMs to Docker. Pretty basic but well put.  Not a lot going on but it&amp;rsquo;s normal to not be super active everyday.</description>
-    </item>
-    
-    <item>
-      <title>Decompress Sunday</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-23/</link>
-      <pubDate>Sun, 23 Aug 2020 23:27:49 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-23/</guid>
-      <description>What brought me joy today?  India edging the crucial encounter against China in the Chess Olympiad. Learning about the Parsi community in India. Watching Knives Out.  </description>
-    </item>
-    
-    <item>
-      <title>Memories</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-22/</link>
-      <pubDate>Sat, 22 Aug 2020 21:47:27 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-22/</guid>
-      <description>Thought of the Day  It&amp;rsquo;s like my very first memory, which I guess is the first time I was alive.
-- Stephen Chbosky
- Thinking about my first memory is actually much harder than it sounds, as if finding a needle in the haystack. Beside that I agree that a lot of our long term memories are moments that affect us to our core &amp;amp; events which shape something fundamental to our being.</description>
-    </item>
-    
-    <item>
-      <title>Vast Endless Sea</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-21/</link>
-      <pubDate>Fri, 21 Aug 2020 09:49:14 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-21/</guid>
-      <description>What brought me joy today?  Crossing 900 rating in Blitz chess for the first time in my life. Up &amp;amp; Up. Watching Raat Akeli Hai with brilliant performance from the entire cast.  Thought of the Day  &amp;ldquo;If you want to build a ship, don&amp;rsquo;t drum up the people to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast endless sea.&amp;rdquo; Antoine de Saint-Exupéry</description>
-    </item>
-    
-    <item>
-      <title>Keep It Simple Stupid?</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-20/</link>
-      <pubDate>Thu, 20 Aug 2020 13:59:10 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-20/</guid>
-      <description>Chess I hit my personal best 5 min Puzzle Rush score of 13 today. More importantly, I&amp;rsquo;m delighted to use one of the Queen sacrifice tactic to win a blitz match today. :party: Though my overall rating is stagnating towards 850 this week, I&amp;rsquo;m fairly happy with the progress I&amp;rsquo;m making. Need to focus on improving my accuracy and middle game.
-What brought me joy today?  Nakamura for putting up a fight till the literal last breath of the Magnus Carlsen Chess Tour Finals.</description>
-    </item>
-    
-    <item>
-      <title>Consistency</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-19/</link>
-      <pubDate>Wed, 19 Aug 2020 13:30:11 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-19/</guid>
-      <description>Keyboard Continuing my practice, I started playing with both hands today - basics, ofcourse.
-It surprisingly difficult for me to coordinate the movement of fingers on both hands.
-I belive it&amp;rsquo;s just a matter of continuous practice and effort now.
-What brought me joy today?  Watching John Green livestream working on his latest art project - drawing 170,000 circles.
-It was really inspirational and reaffirms the belief that we all are artists inside waiting to discover ourselves.</description>
-    </item>
-    
-    <item>
-      <title>Floating Pins</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-18/</link>
-      <pubDate>Tue, 18 Aug 2020 16:17:34 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-18/</guid>
-      <description>IoT &amp;ldquo;Reading input from mechanical devices is easy.
-Reading input resiliently from mechanical devices is not.&amp;quot;
-Problem: Determine the value read by the pin when the mechanical device (such as push button/sensor) is not pressed. How to remove &amp;ldquo;false-positives&amp;rdquo; (reading button press when it wasn&amp;rsquo;t in reality) from the input space?
-Causes (potential):
- Mechanical fault in the device. Problem with the circuit.  Concept: The idea of floating pins - an input pin on a microcontroller that does not have a specified state (either High voltage, or Low voltage).</description>
-    </item>
-    
-    <item>
-      <title>An Ode to Joy</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-17/</link>
-      <pubDate>Mon, 17 Aug 2020 21:16:47 +0200</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/2020-08-17/</guid>
-      <description>Learning should be a constant. Deliberate practice should be the tool.
-Keyboard Basics After a break of 2 weeks, I picked up my keyboard practice back again. Just to get some practice, I have decided the first week solely on revisiting the tunes/melodies I have already learned. This has the added benefit of easing me into reading the music sheet again as well as providing me with small boosts of confidence in the initial phase.</description>
+      <guid>https://kshitij10496.github.io/posts/witawitar-2022/</guid>
+      <description>This article was originally posted on my Running Log Newsletter on Substack. You can also read it here.
+As we are trapped between the years, I took some time to reflect on my practice of running. This post is an attempt to better understand myself, and share my learning.
+I’m an average runner at best. There is no doubt about it. However, I start every run with a little curiosity to discover something new about myself.</description>
     </item>
     
   </channel>
