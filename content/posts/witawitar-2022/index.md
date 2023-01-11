@@ -18,7 +18,6 @@ This article was originally posted on my [Running Log Newsletter](https://runner
 
 ![August in Berlin](cover.jpg 'August in Berlin')
 
-
 I’m an average runner at best. There is no doubt about it. However, I start every run with a little curiosity to discover something new about myself. At the very least, I intend to simply observe the subtle differences within me from the previous run. Every time I put on my shoes, I’m ready to be the best average runner I could possibly be. This belief is all that matters to me.
 
 My relationship with running has matured a bit this past year. I feel more comfortable about accepting my limited abilities. Last year, things were a bit too overwhelming. This year was more about drawing a tiny bit of wisdom from all the knowledge I gained from running, and reading. At every starting line, I hoped that somewhere down the road, the pain makes way for some other thing, possibly contentment.
