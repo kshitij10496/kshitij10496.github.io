@@ -7,50 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 10 Jan 2023 15:35:37 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Zero Copy</title>
-      <link>https://kshitij10496.github.io/posts/zero-copy/</link>
-      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
-      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
-Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
-    </item>
-    
-    <item>
-      <title>Review: Let My People Go Surfing</title>
-      <link>https://kshitij10496.github.io/posts/review-lmpgs/</link>
-      <pubDate>Sat, 07 Jan 2023 11:57:56 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/review-lmpgs/</guid>
-      <description>Patagonia, Inc. is a fascinating brand. Yvon Chouinard, the founder , is an eccentric.
-Recently, Yvon donated the company to a non-profit trust to fight the environmental crisis1.
-This level of commitment intrigued me. After listening to a couple of Yvon&amp;rsquo;s interviews2, I picked up this book with the hope of learning more about him.
-Along with Yvon&amp;rsquo;s personal story, the book also expands his guiding principles on running a business.</description>
-    </item>
-    
-    <item>
-      <title>Integrating GoatCounter into the blog</title>
-      <link>https://kshitij10496.github.io/posts/goatcounter/</link>
-      <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/goatcounter/</guid>
-      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
-Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
-    </item>
-    
-    <item>
-      <title>What I Talk About When I Talk About Running: 2022</title>
-      <link>https://kshitij10496.github.io/posts/witawitar-2022/</link>
-      <pubDate>Sun, 01 Jan 2023 10:32:38 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/witawitar-2022/</guid>
-      <description>This article was originally posted on my Running Log Newsletter on Substack. You can also read it here.
-As we are trapped between the years, I took some time to reflect on my practice of running. This post is an attempt to better understand myself, and share my learning.
-I’m an average runner at best. There is no doubt about it. However, I start every run with a little curiosity to discover something new about myself.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 24 Jul 2022 18:00:30 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Review: Remembrance of Earth&#39;s Past</title>
       <link>https://kshitij10496.github.io/posts/review-remembrance-of-earths-past/</link>
@@ -69,7 +26,7 @@ After reading the trilogy, I have a lot more questions than I did before. Questi
       
       <guid>https://kshitij10496.github.io/posts/review-project-hail-mary/</guid>
       <description>Extremely engaging, fun pop &amp;ldquo;scientific&amp;rdquo; fiction.
-Thoughts Provoked Link to heading The difference between &amp;ldquo;science&amp;rdquo; and &amp;ldquo;engineering&amp;rdquo;. Without robust engineering skills at hand, scientific knowledge might not become a differentiating factor. An individual&amp;rsquo;s character is revealed only during an adversity. Most seemingly strong people can be cowards. There is nothing philosophical, in particular, throughout the storyline. However, a bunch of facts related to basic science are tied into the narrative; no rocket science.</description>
+Thoughts Provoked The difference between &amp;ldquo;science&amp;rdquo; and &amp;ldquo;engineering&amp;rdquo;. Without robust engineering skills at hand, scientific knowledge might not become a differentiating factor. An individual&amp;rsquo;s character is revealed only during an adversity. Most seemingly strong people can be cowards. There is nothing philosophical, in particular, throughout the storyline. However, a bunch of facts related to basic science are tied into the narrative; no rocket science.</description>
     </item>
     
     <item>
@@ -78,7 +35,7 @@ Thoughts Provoked Link to heading The difference between &amp;ldquo;science&amp;
       <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/magical-files/</guid>
-      <description>Context Link to heading My Downloads folder is a mess!
+      <description>Context My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
 “Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
@@ -92,7 +49,7 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
       <guid>https://kshitij10496.github.io/posts/weekend-with-flutter/</guid>
       <description>I built my first-ever mobile application as a weekend project.
 This post describes my experience, thoughts and emotions over the past few days.
-Motivation Link to heading Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
+Motivation Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
     </item>
     
     <item>
@@ -102,7 +59,7 @@ Motivation Link to heading Last week, my friends introduced me to a cards game c
       
       <guid>https://kshitij10496.github.io/posts/postgres-with-docker/</guid>
       <description>Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
-Problem Link to heading I have got a lot of small personal projects which use separate databases.
+Problem I have got a lot of small personal projects which use separate databases.
 Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
 Now, this soon got messy as my machine was polluted with lots of DBs and their configurations.</description>
     </item>
@@ -173,7 +130,7 @@ off-topic: When I was a little boy 👦, I used to play all day long with my leg
       <guid>https://kshitij10496.github.io/posts/blogging/</guid>
       <description>tl;dr: post about posting more posts
 I have forgotten to write blog posts for over a year or have I?
-Blogging 101 Link to heading I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
+Blogging 101 I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog. However soon after completing the project, I became lazy and procrastinated.</description>
     </item>
     
     <item>
@@ -210,7 +167,7 @@ In addition to this, I also share my workflow for publishing posts using a shell
       <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
       <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
 How does the use of context help us in programming? When should a programmer use context? In this blog post, I will share what I understand about context.
-Motivation Link to heading Consider you are an event manager of a restaurant.</description>
+Motivation Consider you are an event manager of a restaurant.</description>
     </item>
     
     <item>
@@ -230,7 +187,7 @@ Reading through the articles on programming languages, you are bound to stumble 
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
-      <description>What is Duck Typing? Link to heading Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+      <description>What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
 attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
     </item>
     
@@ -281,7 +238,7 @@ Another noticable point, from the point of implementation, was to deal with sing
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-09/</guid>
       <description>This week I worked on solving trigonometric inequalities.
-Trigonometric inequalities Link to heading The primary univariate inequality solver - solve_univariate_inequality,
+Trigonometric inequalities The primary univariate inequality solver - solve_univariate_inequality,
 depends upon the results of solve in order to solve the given inequality. Taking a cue from PR#10022 on incorporating solveset for inequalities, I worked on developing an approach for replacing the use of solve with solveset in solving inequalities.
 Idea
 Convert Set-type output from solveset to list objects similar to that returned by solve.</description>
@@ -294,7 +251,7 @@ Convert Set-type output from solveset to list objects similar to that returned b
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-07/</guid>
       <description>This week I updated my PR#11277 to find the period of a general function.
-Periodicity Link to heading In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.
+Periodicity In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.
 Here are my notes on periodicity which were the literature reference for the development of the method:</description>
     </item>
     
@@ -305,7 +262,7 @@ Here are my notes on periodicity which were the literature reference for the dev
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-06/</guid>
       <description>This week I worked on the topic of singularities.
-Singularities Link to heading A singularity is in general a point at which a given mathematical object is not defined.
+Singularities A singularity is in general a point at which a given mathematical object is not defined.
 Examples:
 1/x has a singularity at x = 0 as it seems to reach infinity. |x| (Absolute) has a singularity at x = 0 since it is not differentiable at that point. √x (Square root) has a singularity at x = 0 since it doesnot admit a tangent there.</description>
     </item>
@@ -320,7 +277,7 @@ Examples:
 The past couple of weeks were spent of developing heuristics for determining the fundamental period of a given trigonometric function.
 In our higher school, we all must have come across Trigonometric Functions. One of the most striking properties of these functions is their periodicty.
 The ability of a function to repeat its values in regular intervals has always caught my imagination.
-Motivation Link to heading Well, SymPy ought to have a functionality to determine the period of a function.</description>
+Motivation Well, SymPy ought to have a functionality to determine the period of a function.</description>
     </item>
     
     <item>
@@ -331,7 +288,7 @@ Motivation Link to heading Well, SymPy ought to have a functionality to determin
       <guid>https://kshitij10496.github.io/posts/gsoc-week-03/</guid>
       <description>Hey !
 This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&amp;rsquo;s research on the same, I tried to develop these utility functions.
-Implementation Link to heading Here, I have defined the two functions along with some of their implementation details:
+Implementation Here, I have defined the two functions along with some of their implementation details:
 continuous_in(f, x, interval)
 The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval.</description>
     </item>
@@ -343,7 +300,7 @@ The function returns the sub-domains as an Union of Interval in case a discontin
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-02/</guid>
       <description>This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
-Progress Link to heading Suppose, we want to solve the following equation in the variable x:
+Progress Suppose, we want to solve the following equation in the variable x:
 sin(x) = π / 2
 We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1</description>
     </item>
@@ -354,7 +311,7 @@ We can straight away state that this equations has no solutions as the range of 
       <pubDate>Sun, 29 May 2016 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/gsoc-week-01/</guid>
-      <description>$ git log Link to heading PR #11149 : Intersection of null Range and an Interval returns EmptySet
+      <description>$ git log PR #11149 : Intersection of null Range and an Interval returns EmptySet
 PR #11164 : Intersection of certain ImageSets with Intervals
 In the next week, I will try to design a method to determine the range of a function in the given domain.
 This will require some digging up and a bit of research.
@@ -389,9 +346,9 @@ modularise the code for various classes of equations(LambertW, bivariate equatio
       
       <guid>https://kshitij10496.github.io/about/</guid>
       <description>Hey there! 👋
-This is Kshitij, and you have reached my space on the World Wide Web. Currently, I&amp;rsquo;m based out of Berlin where I work as a software engineer mostly focusing on backend systems.
-This blog is the place where I think in public. The posts are my attempt to share my ideas, reflections on experiences, or lessons I have learnt among many other things.
-Here are a links to know a bit more about me:</description>
+This is Kshitij and you have reached my space on the World Wide Web.
+I am a software developer, and a distance running enthusiast from India.
+When I have something important/clever/funny/stupid to say, I scribble it down here, on my blog. A lot of my posts might be incoherent rough drafts wanting for an editor’s attention, but I think that’s how life is - a collection of unorganised, unexpected events with few planned ones in between.</description>
     </item>
     
     <item>
@@ -400,10 +357,8 @@ Here are a links to know a bit more about me:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kshitij10496.github.io/now/</guid>
-      <description>This page hosts regular updates about what I have been up to lately.
-Insipred by Derek Siver&amp;rsquo;s Now Page.1
-Helping OneFootball build a platform for the football community as a Software Engineer. Learning about Observability of modern backend systems through Open Telemetry. Spending time with my family back at home. Recovering from a minor surgery on the big toe of my right foot. Updated: 8th January 2023
-Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+      <description>Updates about what I&amp;rsquo;m up to lately.1
+Helping OneFootball build a platform for the football community as a software engineer. Waking up before 7 AM every morning. Workouts at gym at least 5 times a week. Weekly long runs on Sunday. Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     
   </channel>
