@@ -7,7 +7,88 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 24 Jul 2022 18:00:30 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 14:29:46 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>terraform</title>
+      <link>https://kshitij10496.github.io/tags/terraform/</link>
+      <pubDate>Thu, 30 Mar 2023 14:29:46 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fileserver</title>
+      <link>https://kshitij10496.github.io/tags/fileserver/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/fileserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://kshitij10496.github.io/tags/go/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kafka</title>
+      <link>https://kshitij10496.github.io/tags/kafka/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>patagonia</title>
+      <link>https://kshitij10496.github.io/tags/patagonia/</link>
+      <pubDate>Sat, 07 Jan 2023 11:57:56 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/patagonia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>https://kshitij10496.github.io/tags/review/</link>
+      <pubDate>Sat, 07 Jan 2023 11:57:56 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>goatcounter</title>
+      <link>https://kshitij10496.github.io/tags/goatcounter/</link>
+      <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/goatcounter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://kshitij10496.github.io/tags/hugo/</link>
+      <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>running</title>
+      <link>https://kshitij10496.github.io/tags/running/</link>
+      <pubDate>Sun, 01 Jan 2023 10:32:38 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/running/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Book</title>
       <link>https://kshitij10496.github.io/tags/book/</link>
@@ -117,15 +198,6 @@
     </item>
     
     <item>
-      <title>review</title>
-      <link>https://kshitij10496.github.io/tags/review/</link>
-      <pubDate>Sat, 05 Jan 2019 21:26:33 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>essay</title>
       <link>https://kshitij10496.github.io/tags/essay/</link>
       <pubDate>Thu, 03 Jan 2019 21:33:32 +0530</pubDate>
@@ -140,15 +212,6 @@
       <pubDate>Wed, 02 Jan 2019 21:37:59 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://kshitij10496.github.io/tags/go/</link>
-      <pubDate>Sun, 11 Nov 2018 09:06:32 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/go/</guid>
       <description></description>
     </item>
     
@@ -185,15 +248,6 @@
       <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://kshitij10496.github.io/tags/hugo/</link>
-      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     

@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software on kxsh</title>
+    <title>software on kxsh</title>
     <link>https://kshitij10496.github.io/categories/software/</link>
-    <description>Recent content in Software on kxsh</description>
+    <description>Recent content in software on kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 10 Feb 2019 18:55:02 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Jan 2023 15:35:37 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero Copy</title>
+      <link>https://kshitij10496.github.io/posts/zero-copy/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
+      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
+Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
+    </item>
+    
+    <item>
+      <title>Integrating GoatCounter into the blog</title>
+      <link>https://kshitij10496.github.io/posts/goatcounter/</link>
+      <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/goatcounter/</guid>
+      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
+Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
+    </item>
+    
     <item>
       <title>Magical Files</title>
       <link>https://kshitij10496.github.io/posts/magical-files/</link>
       <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/magical-files/</guid>
-      <description>Context My Downloads folder is a mess!
+      <description>Context Link to heading My Downloads folder is a mess!
 I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
 “Is there a way to only list all the PDF files present in a directory?”
 Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
@@ -28,7 +48,7 @@ Well, filtering based on file extension (.pdf) should be able to do this for me.
       <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
       <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
 How does the use of context help us in programming? When should a programmer use context? In this blog post, I will share what I understand about context.
-Motivation Consider you are an event manager of a restaurant.</description>
+Motivation Link to heading Consider you are an event manager of a restaurant.</description>
     </item>
     
     <item>
@@ -48,7 +68,7 @@ Reading through the articles on programming languages, you are bound to stumble 
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
-      <description>What is Duck Typing? Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
+      <description>What is Duck Typing? Link to heading Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
 attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
     </item>
     

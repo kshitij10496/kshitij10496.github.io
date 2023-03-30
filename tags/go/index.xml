@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 11 Nov 2018 09:06:32 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Jan 2023 15:35:37 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero Copy</title>
+      <link>https://kshitij10496.github.io/posts/zero-copy/</link>
+      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
+      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
+Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
+    </item>
+    
     <item>
       <title>Why I Write Go</title>
       <link>https://kshitij10496.github.io/posts/on-go/</link>
@@ -26,7 +36,7 @@ off-topic: When I was a little boy 👦, I used to play all day long with my leg
       <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
       <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
 How does the use of context help us in programming? When should a programmer use context? In this blog post, I will share what I understand about context.
-Motivation Consider you are an event manager of a restaurant.</description>
+Motivation Link to heading Consider you are an event manager of a restaurant.</description>
     </item>
     
     <item>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>terraform on kxsh</title>
+    <link>https://kshitij10496.github.io/tags/terraform/</link>
+    <description>Recent content in terraform on kxsh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 30 Mar 2023 14:29:46 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips for working with Terraform as a developer</title>
+      <link>https://kshitij10496.github.io/posts/tips-terraform/</link>
+      <pubDate>Thu, 30 Mar 2023 14:29:46 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/tips-terraform/</guid>
+      <description>At work lately, I have been working with Terraform for our Infrastructure-as-code. My limited domain expertise lies primarily within the scope of backend systems. I had never worked with provisioning infrastructure via code before. So it was a valuable experience to see code turn on machines to execute more code.
+Here are a few things I learnt during the process:
+Use tfswitch for dependency management to install and toggle between the various Terraform versions used across the modules.</description>
+    </item>
+    
+  </channel>
+</rss>

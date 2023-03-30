@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-  Review: Project Hail Mary · kxsh
+  Tips for working with Terraform as a developer · kxsh
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,28 +12,31 @@
 
 
 <meta name="author" content="KSHITIJ SARAOGI">
-<meta name="description" content="Extremely engaging, fun pop &ldquo;scientific&rdquo; fiction.
-Thoughts Provoked Link to heading The difference between &ldquo;science&rdquo; and &ldquo;engineering&rdquo;. Without robust engineering skills at hand, scientific knowledge might not become a differentiating factor. An individual&rsquo;s character is revealed only during an adversity. Most seemingly strong people can be cowards. There is nothing philosophical, in particular, throughout the storyline. However, a bunch of facts related to basic science are tied into the narrative; no rocket science.">
+<meta name="description" content="At work lately, I have been working with Terraform for our Infrastructure-as-code. My limited domain expertise lies primarily within the scope of backend systems. I had never worked with provisioning infrastructure via code before. So it was a valuable experience to see code turn on machines to execute more code.
+Here are a few things I learnt during the process:
+Use tfswitch for dependency management to install and toggle between the various Terraform versions used across the modules.">
 <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Review: Project Hail Mary"/>
-<meta name="twitter:description" content="Extremely engaging, fun pop &ldquo;scientific&rdquo; fiction.
-Thoughts Provoked Link to heading The difference between &ldquo;science&rdquo; and &ldquo;engineering&rdquo;. Without robust engineering skills at hand, scientific knowledge might not become a differentiating factor. An individual&rsquo;s character is revealed only during an adversity. Most seemingly strong people can be cowards. There is nothing philosophical, in particular, throughout the storyline. However, a bunch of facts related to basic science are tied into the narrative; no rocket science."/>
+<meta name="twitter:title" content="Tips for working with Terraform as a developer"/>
+<meta name="twitter:description" content="At work lately, I have been working with Terraform for our Infrastructure-as-code. My limited domain expertise lies primarily within the scope of backend systems. I had never worked with provisioning infrastructure via code before. So it was a valuable experience to see code turn on machines to execute more code.
+Here are a few things I learnt during the process:
+Use tfswitch for dependency management to install and toggle between the various Terraform versions used across the modules."/>
 
-<meta property="og:title" content="Review: Project Hail Mary" />
-<meta property="og:description" content="Extremely engaging, fun pop &ldquo;scientific&rdquo; fiction.
-Thoughts Provoked Link to heading The difference between &ldquo;science&rdquo; and &ldquo;engineering&rdquo;. Without robust engineering skills at hand, scientific knowledge might not become a differentiating factor. An individual&rsquo;s character is revealed only during an adversity. Most seemingly strong people can be cowards. There is nothing philosophical, in particular, throughout the storyline. However, a bunch of facts related to basic science are tied into the narrative; no rocket science." />
+<meta property="og:title" content="Tips for working with Terraform as a developer" />
+<meta property="og:description" content="At work lately, I have been working with Terraform for our Infrastructure-as-code. My limited domain expertise lies primarily within the scope of backend systems. I had never worked with provisioning infrastructure via code before. So it was a valuable experience to see code turn on machines to execute more code.
+Here are a few things I learnt during the process:
+Use tfswitch for dependency management to install and toggle between the various Terraform versions used across the modules." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/review-project-hail-mary/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-02-19T16:27:50+01:00" />
-<meta property="article:modified_time" content="2022-02-19T16:55:27+01:00" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/tips-terraform/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-30T14:29:46+02:00" />
+<meta property="article:modified_time" content="2023-03-30T16:33:58+02:00" />
 
 
 
 
 
-<link rel="canonical" href="https://kshitij10496.github.io/posts/review-project-hail-mary/">
+<link rel="canonical" href="https://kshitij10496.github.io/posts/tips-terraform/">
 
 
 <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -146,8 +149,8 @@ Thoughts Provoked Link to heading The difference between &ldquo;science&rdquo; a
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://kshitij10496.github.io/posts/review-project-hail-mary/">
-              Review: Project Hail Mary
+            <a class="title-link" href="https://kshitij10496.github.io/posts/tips-terraform/">
+              Tips for working with Terraform as a developer
             </a>
           </h1>
         </div>
@@ -155,8 +158,8 @@ Thoughts Provoked Link to heading The difference between &ldquo;science&rdquo; a
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2022-02-19T16:27:50&#43;01:00">
-                February 19, 2022
+              <time datetime="2023-03-30T14:29:46&#43;02:00">
+                March 30, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -169,7 +172,7 @@ Thoughts Provoked Link to heading The difference between &ldquo;science&rdquo; a
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://kshitij10496.github.io/tags/book/">Book</a>
+      <a href="https://kshitij10496.github.io/tags/terraform/">terraform</a>
     </span></div>
 
         </div>
@@ -177,34 +180,16 @@ Thoughts Provoked Link to heading The difference between &ldquo;science&rdquo; a
 
       <div class="post-content">
         
-        <p><img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Project_Hail_Mary%2C_First_Edition_Cover_%282021%29.jpg" alt="Project Hail Mary, 1st Edition Cover"></p>
-<p>Extremely engaging, fun pop &ldquo;scientific&rdquo; fiction.</p>
-<h1 id="thoughts-provoked">
-  Thoughts Provoked
-  <a class="heading-link" href="#thoughts-provoked">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<ul>
-<li>The difference between &ldquo;science&rdquo; and &ldquo;engineering&rdquo;. Without robust engineering skills at hand, scientific knowledge might not become a differentiating factor.</li>
-<li>An individual&rsquo;s character is revealed only during an adversity. Most seemingly strong people can be cowards.</li>
-</ul>
-<p>There is nothing philosophical, in particular, throughout the storyline.
-However, a bunch of facts related to basic science are tied into the narrative; no rocket science. Just the regular scientific jargon - &ldquo;relativity&rdquo;, &ldquo;evolution&rdquo;.</p>
-<p>The story of the protagonist has a redemption arc but it&rsquo;s a bit rushed towards the end of the story.</p>
-<p>All in all, I wouldn&rsquo;t read the book again. To be honest, I would prefer to watch the story as a movie.</p>
-<h1 id="references">
-  References
-  <a class="heading-link" href="#references">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Project_Hail_Mary">Wikipedia - Project Hail Mary</a></li>
-<li><a href="https://www.imdb.com/title/tt12042730/">IMDb - Project Hail Mary</a></li>
-</ul>
+        <p>At work lately, I have been working with Terraform for our Infrastructure-as-code.
+My limited domain expertise lies primarily within the scope of backend systems.
+I had never worked with provisioning infrastructure via code before.
+So it was a valuable experience to see code turn on machines to execute more code.</p>
+<p>Here are a few things I learnt during the process:</p>
+<ol>
+<li>Use <code>tfswitch</code> for dependency management to install and toggle between the various Terraform versions used across the modules.</li>
+<li>Always use <code>terraform init --upgrade</code> to never use cached modules. This saves a lot of potential trouble shooting at the cost of few seconds.</li>
+<li>Use <code>terraform plan -var='key:value'</code> whenever we have to use variables (for example, passwords).</li>
+</ol>
 
       </div>
 
