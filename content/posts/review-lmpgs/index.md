@@ -22,7 +22,7 @@ However, Yvon is committed to using Patagonia to change the way business is done
 Almost always, business owners, stakeholders treat the company as a cash printing *product*.
 According to Yvon, a company is a *resource* that should be used for the good - to create value rather than just a tool for minting money. 
 This ideology is starkly in contrast with the tech industry, especially with Web3.
-I'm fascinated to understand the depth of Yvon's thoughts without any formal education in business management.
+Yvon's depth of thoughts without any formal education in business management fascinates me.
 
 Another idea that stood out for me was Yvon emphasis on a long term vision.
 He has this 100-year timeframe perspective to taking decisions.
