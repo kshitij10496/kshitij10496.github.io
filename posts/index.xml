@@ -9,6 +9,17 @@
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Apple Notes</title>
+      <link>https://kshitij10496.github.io/posts/apple-notes/</link>
+      <pubDate>Mon, 03 Apr 2023 16:37:31 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/apple-notes/</guid>
+      <description>I use Apple Notes for taking quick notes, and a bin for random ideas that pop up in my head. It has one of the best product features I have come across any note taking app.
+Feature: Automatically deleting empty notes or No empty notes.
+My Notion and Google Drive is filled with Docs/Sheets titled &amp;ldquo;Untitled&amp;rdquo;. This adds to the noise. Perhaps the fundamental problem is my failure to name these docs at that moment.</description>
+    </item>
+    
+    <item>
       <title>Tips for working with Terraform as a developer</title>
       <link>https://kshitij10496.github.io/posts/tips-terraform/</link>
       <pubDate>Thu, 30 Mar 2023 14:29:46 +0200</pubDate>
