@@ -9,6 +9,17 @@
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>PostgreSQL Query Planning</title>
+      <link>https://kshitij10496.github.io/posts/pg-query-planning/</link>
+      <pubDate>Sun, 30 Apr 2023 16:21:26 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/pg-query-planning/</guid>
+      <description>This past week I triggered an incident on one of the production systems. The issue was a result of a AWS Aurora Postgres major version upgrade (10-&amp;gt;11) gone wrong. Here is a brief summary of what I learnt from it.
+Every running DBMS has some state associated with the data it stores. This state enables the DBMS to tune it&amp;rsquo;s own performance.
+Upgrading the DB is tricky for sure. Always try to create contingency plans (backups, snapshots, redundant DBs) before executing destructive operations.</description>
+    </item>
+    
+    <item>
       <title>Apple Notes</title>
       <link>https://kshitij10496.github.io/posts/apple-notes/</link>
       <pubDate>Mon, 03 Apr 2023 16:37:31 +0200</pubDate>

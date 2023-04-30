@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  PostgreSQL Query Planning · kxsh
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="KSHITIJ SARAOGI">
+<meta name="description" content="This past week I triggered an incident on one of the production systems. The issue was a result of a AWS Aurora Postgres major version upgrade (10-&gt;11) gone wrong. Here is a brief summary of what I learnt from it.
+Every running DBMS has some state associated with the data it stores. This state enables the DBMS to tune it&rsquo;s own performance.
+Upgrading the DB is tricky for sure. Always try to create contingency plans (backups, snapshots, redundant DBs) before executing destructive operations.">
+<meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PostgreSQL Query Planning"/>
+<meta name="twitter:description" content="This past week I triggered an incident on one of the production systems. The issue was a result of a AWS Aurora Postgres major version upgrade (10-&gt;11) gone wrong. Here is a brief summary of what I learnt from it.
+Every running DBMS has some state associated with the data it stores. This state enables the DBMS to tune it&rsquo;s own performance.
+Upgrading the DB is tricky for sure. Always try to create contingency plans (backups, snapshots, redundant DBs) before executing destructive operations."/>
+
+<meta property="og:title" content="PostgreSQL Query Planning" />
+<meta property="og:description" content="This past week I triggered an incident on one of the production systems. The issue was a result of a AWS Aurora Postgres major version upgrade (10-&gt;11) gone wrong. Here is a brief summary of what I learnt from it.
+Every running DBMS has some state associated with the data it stores. This state enables the DBMS to tune it&rsquo;s own performance.
+Upgrading the DB is tricky for sure. Always try to create contingency plans (backups, snapshots, redundant DBs) before executing destructive operations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/pg-query-planning/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-30T16:21:26+02:00" />
+<meta property="article:modified_time" content="2023-04-30T16:49:08+02:00" />
+
+
+
+
+
+<link rel="canonical" href="https://kshitij10496.github.io/posts/pg-query-planning/">
+
+
+<link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://kshitij10496.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://kshitij10496.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+
+<script data-goatcounter="https://kxsh.goatcounter.com/count"
+      async src="//gc.zgo.at/count.js"></script>
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kxsh
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/about/">ABOUT</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing">RÉSUMÉ</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/index.xml">RSS</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/posts/pg-query-planning/">
+              PostgreSQL Query Planning
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-04-30T16:21:26&#43;02:00">
+                April 30, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>This past week I triggered an incident on one of the production systems.
+The issue was a result of a AWS Aurora Postgres major version upgrade (10-&gt;11) gone wrong.
+Here is a brief summary of what I learnt from it.</p>
+<p>Every running DBMS has some state associated with the data it stores.
+This state enables the DBMS to tune it&rsquo;s own performance.</p>
+<p>Upgrading the DB is tricky for sure.
+Always try to create contingency plans (backups, snapshots, redundant DBs) before executing destructive operations.
+Migrating the data from one DB to another is part of the work.
+It&rsquo;s rather straightforward thanks to Cloud Providers.
+Verifing and validating data correctness post-migration is simple.</p>
+<p>However, the difficult part is to understand the DBMS state migration.
+Usually, this state is not migrated by default.
+DBAs need to force it post migration.</p>
+<p>The inconsistency between the states pre and post migration resulted in slower queries.
+Comparing the query plans can point out missing indexes, inefficient plans.
+This is how I discovered that PostgreSQL&rsquo;s query planner uses the statistics collected in <code>pg_statistic</code> catalog table to determine the most efficient execution plans.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+Morever, PostgreSQL provides a special statement called <code>ANALYZE</code> to populate the statistics into this table.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+Note: The <code>ANALYZE</code> statement is not in the SQL standard.</p>
+<p>There are considerations to be made around the <code>ANALYZE</code> statement.</p>
+<ol>
+<li><code>ANALYZE</code> requires only a read lock on the target table. This enables concurrent queries to run in parallel.</li>
+<li>In default configuration, <code>AUTOVACCUM</code> daemon automates the execution of the <code>ANALYZE</code> statement. Check for the <code>AUTOVACCUM</code> configuation of your DBs.</li>
+<li>A common strategy for read-mostly databases is to run <code>ANALYZE</code> once a day during a low-usage time of day.</li>
+</ol>
+<p>I&rsquo;m still trying to figure out a good strategy to tune <code>ANALYZE</code> on the production DBs for individual use cases.
+But that&rsquo;s a story for another time.</p>
+<p>I have learnt this lesson about query planning the hard way.
+Now, there is wisdom, and some scar tissue.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.postgresql.org/docs/11/routine-vacuuming.html#VACUUM-FOR-STATISTICS">PostgreSQL: Documentation: 11: Updating Planner Statistics</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.postgresql.org/docs/11/sql-analyze.html">PostgreSQL: Documentation: 11: ANALYZE</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2016 -
+    
+    2023
+     KSHITIJ SARAOGI 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://kshitij10496.github.io/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
