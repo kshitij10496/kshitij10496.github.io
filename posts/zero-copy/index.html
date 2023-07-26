@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
+
+<head>
+  <title>
   Zero Copy · kxsh
 </title>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark">
 
@@ -32,7 +33,6 @@ Usually when a user space process (our application binary) has to execute system
 
 
 
-
 <link rel="canonical" href="https://kshitij10496.github.io/posts/zero-copy/">
 
 
@@ -41,7 +41,7 @@ Usually when a user space process (our application binary) has to execute system
 
   
   
-  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -51,7 +51,7 @@ Usually when a user space process (our application binary) has to execute system
   
     
     
-    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -61,6 +61,7 @@ Usually when a user space process (our application binary) has to execute system
 
 
 
+<link rel="icon" type="image/svg+xml" href="https://kshitij10496.github.io/images/favicon.svg" sizes="any">
 <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
 
@@ -73,7 +74,6 @@ Usually when a user space process (our application binary) has to execute system
 
 
 
-<meta name="generator" content="Hugo 0.101.0" />
 
 
 
@@ -81,7 +81,7 @@ Usually when a user space process (our application binary) has to execute system
       async src="//gc.zgo.at/count.js"></script>
 
 
-  </head>
+</head>
 
 
 
@@ -174,7 +174,7 @@ Usually when a user space process (our application binary) has to execute system
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="https://kshitij10496.github.io/tags/go/">go</a>
+      <a href="https://kshitij10496.github.io/tags/go/">Go</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
@@ -200,7 +200,7 @@ However, these context switches from user space to kernel space are time consumi
 <p>The idea is to reduce the data tranfer operations using efficient system calls that do not perform such context switches.
 These system calls transfer bytes from one File Descriptor to another within the kernel space.
 Examples of such calls include <code>sendFile</code><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and <code>splice</code><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> among others.</p>
-<p>I would defer to an <a href="https://developer.ibm.com/articles/j-zerocopy/?mhsrc=ibmsearch_a&amp;mhq=copy#trad">article from IBM</a> which beautifully explains the intricacies.</p>
+<p>I would defer to an <a href="https://developer.ibm.com/articles/j-zerocopy/?mhsrc=ibmsearch_a&amp;mhq=copy#trad"  class="external-link" target="_blank" rel="noopener">article from IBM</a> which beautifully explains the intricacies.</p>
 <h1 id="applications">
   Applications
   <a class="heading-link" href="#applications">
@@ -213,7 +213,7 @@ Examples of such calls include <code>sendFile</code><sup id="fnref:4"><a href="#
 <p>Kafka uses zero-copy data transfer optimizations for high throughput between disk data and network.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
 </li>
 <li>
-<p><a href="https://pkg.go.dev/net/http#FileServer">Go HTTP FileServer</a> from standard library leverages zero-copy techniques <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
+<p><a href="https://pkg.go.dev/net/http#FileServer"  class="external-link" target="_blank" rel="noopener">Go HTTP FileServer</a> from standard library leverages zero-copy techniques <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
 </li>
 </ul>
 <p>It&rsquo;s pleasantly surprising to discover that the tools I use already implement this concept.
@@ -222,28 +222,28 @@ This idea of zero copy helps improve my mental model about distributed system de
 <hr>
 <ol>
 <li id="fn:1">
-<p><a href="https://en.wikipedia.org/wiki/Zero-copy">Wikipedia - Zero-copy</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Zero-copy"  class="external-link" target="_blank" rel="noopener">Wikipedia - Zero-copy</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p><a href="https://en.wikipedia.org/wiki/Read_(system_call)">Wikipedia - read (system call)</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Read_%28system_call%29"  class="external-link" target="_blank" rel="noopener">Wikipedia - read (system call)</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p><a href="https://en.wikipedia.org/wiki/Write_(system_call)">Wikipedia - write (system call)</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Write_%28system_call%29"  class="external-link" target="_blank" rel="noopener">Wikipedia - write (system call)</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
-<p><a href="https://man7.org/linux/man-pages/man2/sendfile.2.html">Linux Manual Page - sendfile(2)</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://man7.org/linux/man-pages/man2/sendfile.2.html"  class="external-link" target="_blank" rel="noopener">Linux Manual Page - sendfile(2)</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5">
-<p><a href="https://en.wikipedia.org/wiki/Splice_%28system_call%29">Wikipedia - splice (system call)</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Splice_%28system_call%29"  class="external-link" target="_blank" rel="noopener">Wikipedia - splice (system call)</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6">
-<p><a href="https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying">The Log: What every software engineer should know about real-time data&rsquo;s unifying abstraction</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying"  class="external-link" target="_blank" rel="noopener">The Log: What every software engineer should know about real-time data&rsquo;s unifying abstraction</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7">
-<p><a href="https://youtu.be/UNUz1-msbOM">YouTube - System Design: Why is Kafka fast?</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://youtu.be/UNUz1-msbOM"  class="external-link" target="_blank" rel="noopener">YouTube - System Design: Why is Kafka fast?</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8">
-<p><a href="https://www.sobyte.net/post/2022-07/go-zerocopy/">SoByte - Building a Zero-Copy File Web Server in Golang</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.sobyte.net/post/2022-07/go-zerocopy/"  class="external-link" target="_blank" rel="noopener">SoByte - Building a Zero-Copy File Web Server in Golang</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -255,6 +255,8 @@ This idea of zero copy helps improve my mental model about distributed system de
         
 
 
+        
+        
         
         
         
@@ -276,7 +278,7 @@ This idea of zero copy helps improve my mental model about distributed system de
      KSHITIJ SARAOGI 
     ·
     
-    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
   </section>
 </footer>
@@ -287,7 +289,22 @@ This idea of zero copy helps improve my mental model about distributed system de
 
   
   
-  <script src="https://kshitij10496.github.io/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  <script src="https://kshitij10496.github.io/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
   
 
   

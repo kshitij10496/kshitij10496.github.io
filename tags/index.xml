@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 30 Mar 2023 14:29:46 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dependencies</title>
+      <link>https://kshitij10496.github.io/tags/dependencies/</link>
+      <pubDate>Wed, 26 Jul 2023 22:24:51 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/dependencies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://kshitij10496.github.io/tags/go/</link>
+      <pubDate>Wed, 26 Jul 2023 22:24:51 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>terraform</title>
       <link>https://kshitij10496.github.io/tags/terraform/</link>
@@ -23,15 +41,6 @@
       <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
       
       <guid>https://kshitij10496.github.io/tags/fileserver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://kshitij10496.github.io/tags/go/</link>
-      <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/tags/go/</guid>
       <description></description>
     </item>
     

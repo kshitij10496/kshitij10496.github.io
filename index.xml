@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 30 Apr 2023 16:21:26 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Patching Go Modules</title>
+      <link>https://kshitij10496.github.io/posts/patching-go-modules/</link>
+      <pubDate>Wed, 26 Jul 2023 22:24:51 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/patching-go-modules/</guid>
+      <description>When I was searching for ways to write integation tests in a project, I discovered Test Containers project. I decided to give it a shot and learnt more about the project. Thanks to the wonderful testcontainers/testcontainers-go1 package, it was relatively straightforward to bootstrap the setup into my project - code, tests, and CI. I was pretty happy about the entire experience. Maybe I will share the setup here sometime in the future.</description>
+    </item>
+    
     <item>
       <title>PostgreSQL Query Planning</title>
       <link>https://kshitij10496.github.io/posts/pg-query-planning/</link>
@@ -210,19 +219,6 @@ Blogging 101 Link to heading I started this blog after I was selected as a GSoC 
     </item>
     
     <item>
-      <title>Quotes</title>
-      <link>https://kshitij10496.github.io/quotes/</link>
-      <pubDate>Wed, 31 Oct 2018 21:45:29 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/quotes/</guid>
-      <description>Curated list of my favourite quotes, aphorisms, adages and maxims
-&amp;#34;We do not learn from experience... we learn from reflecting on experience.&amp;#34; John Dewey tags: life
-&amp;#34;All animals are equal but some animals are more equal than others.&amp;#34; Animal Farm, George Orwell tags: equality, society
-“Be the change that you wish to see in the world.” Mahatma Gandhi tags: motivation
-“Fill the unforgiving minute with sixty seconds&amp;#39; worth of distance run.</description>
-    </item>
-    
-    <item>
       <title>Hugo Blog On GitHub Pages</title>
       <link>https://kshitij10496.github.io/posts/hugo-blog-setup/</link>
       <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
@@ -274,26 +270,6 @@ attribute is located by searching within the instance itself. This yields a posi
       
       <guid>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</guid>
       <description>This past week I read about Python&amp;rsquo;s iterator protocol and how the philosophy of iteration is deeply embedded into the language design. Many features that I love about Python such as list comprehensions, tuple unpacking leverage the power of iterator protocol. I wrote an article on Medium explaining how developers can implement it and use these features much more efficiently in their day-to-day life.</description>
-    </item>
-    
-    <item>
-      <title>Values</title>
-      <link>https://kshitij10496.github.io/values/</link>
-      <pubDate>Mon, 10 Apr 2017 00:00:00 +0530</pubDate>
-      
-      <guid>https://kshitij10496.github.io/values/</guid>
-      <description>| | Facilitate the success of those around you
-| | Honesty is always the best policy
-| | Pragmatism over Perfection
-| | Be responsible for today
-| | Love some randomness
-| | Grow Inside-Out
-| | Be Mindful
-| | Seek Discomfort
-| | Communicate nonviolently
-| | Do not fear making mistakes
-| | Failure empowers you to help others
-| | Success is about living a purposeful life</description>
     </item>
     
     <item>
@@ -435,7 +411,7 @@ Here are a links to know a bit more about me:</description>
       <guid>https://kshitij10496.github.io/now/</guid>
       <description>This page hosts regular updates about what I have been up to lately.
 Insipred by Derek Siver&amp;rsquo;s Now Page.1
-Helping OneFootball build a platform for the football community as a Software Engineer. Improving physical strength with daily workouts (1 hr every day). Squat: 55kg Deadlift: 60kg Bench Press: 35kg Updated: 30th April 2023
+Helping OneFootball build a platform for the football community as a Software Engineer. Improving physical strength with daily workouts (1 hr every day). Squat: 55kg Deadlift: 60kg Bench Press: 40kg Updated: 26th July 2023
 Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
+
+<head>
+  <title>
   GSoC Week 02 - The One With Function Range (Part I) · kxsh
 </title>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark">
 
@@ -38,7 +39,6 @@ We can straight away state that this equations has no solutions as the range of 
 
 
 
-
 <link rel="canonical" href="https://kshitij10496.github.io/posts/gsoc-week-02/">
 
 
@@ -47,7 +47,7 @@ We can straight away state that this equations has no solutions as the range of 
 
   
   
-  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -57,7 +57,7 @@ We can straight away state that this equations has no solutions as the range of 
   
     
     
-    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -67,6 +67,7 @@ We can straight away state that this equations has no solutions as the range of 
 
 
 
+<link rel="icon" type="image/svg+xml" href="https://kshitij10496.github.io/images/favicon.svg" sizes="any">
 <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
 
@@ -79,7 +80,6 @@ We can straight away state that this equations has no solutions as the range of 
 
 
 
-<meta name="generator" content="Hugo 0.101.0" />
 
 
 
@@ -87,7 +87,7 @@ We can straight away state that this equations has no solutions as the range of 
       async src="//gc.zgo.at/count.js"></script>
 
 
-  </head>
+</head>
 
 
 
@@ -206,25 +206,25 @@ i.e <code>sin(x) ∈ [-1, 1]</code>.</p>
 <p>Thus, we find that the range of the function can also be used to leverage the solutions of an equation. The implementation of a function to determine the range of a function in a given domain is particularly interesting for checking whether an equation is at all solvable.</p>
 <p>In the last meeting, Amit had suggested me to read the conversation on</p>
 <ul>
-<li><a href="https://github.com/sympy/sympy/pull/2723">PR#2723</a> : Fixed imageset for Interval</li>
-<li><a href="https://github.com/sympy/sympy/pull/2925">PR#2925</a> : find singularities for any expression.</li>
+<li><a href="https://github.com/sympy/sympy/pull/2723"  class="external-link" target="_blank" rel="noopener">PR#2723</a> : Fixed imageset for Interval</li>
+<li><a href="https://github.com/sympy/sympy/pull/2925"  class="external-link" target="_blank" rel="noopener">PR#2925</a> : find singularities for any expression.</li>
 </ul>
 <p>Along with this, I read the following mailing lists discussions:</p>
 <ol>
 <li>
-<p><a href="https://groups.google.com/forum/#!searchin/sympy/minimize/sympy/Na_p5pm1I7M/V6uv4ZAkp2oJ">Find minimum value of a function symbolically</a></p>
+<p><a href="https://groups.google.com/forum/#!searchin/sympy/minimize/sympy/Na_p5pm1I7M/V6uv4ZAkp2oJ"  class="external-link" target="_blank" rel="noopener">Find minimum value of a function symbolically</a></p>
 </li>
 <li>
-<p><a href="https://groups.google.com/forum/#!topic/sympy/8TM8cnuzkG8">Best way to find extrema of function over interval</a></p>
+<p><a href="https://groups.google.com/forum/#!topic/sympy/8TM8cnuzkG8"  class="external-link" target="_blank" rel="noopener">Best way to find extrema of function over interval</a></p>
 </li>
 <li>
-<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/ijhl7rkHEbk/lsWTuJ2Nb8wJ">GSoC 2013 Idea - Find Domain / Range / Continuity / Singularity of a Function</a></p>
+<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/ijhl7rkHEbk/lsWTuJ2Nb8wJ"  class="external-link" target="_blank" rel="noopener">GSoC 2013 Idea - Find Domain / Range / Continuity / Singularity of a Function</a></p>
 </li>
 <li>
-<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/c_fpCu9QiII/n2KaXN-z3rwJ">On a general representation for singularities and infinities</a></p>
+<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/c_fpCu9QiII/n2KaXN-z3rwJ"  class="external-link" target="_blank" rel="noopener">On a general representation for singularities and infinities</a></p>
 </li>
 <li>
-<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/mJlCxuZ5uZw/peWogHzbKekJ">Functions: Singularity and Continuity</a></p>
+<p><a href="https://groups.google.com/forum/#!searchin/sympy/singularity/sympy/mJlCxuZ5uZw/peWogHzbKekJ"  class="external-link" target="_blank" rel="noopener">Functions: Singularity and Continuity</a></p>
 </li>
 </ol>
 <p>All this research helped me appreciate the difficulty of the problem at hand. Also, my approach to solving this issue is heavily inspired from these discussions.</p>
@@ -239,7 +239,7 @@ i.e <code>sin(x) ∈ [-1, 1]</code>.</p>
 <ol>
 <li>Determine the points of discontinuities in the concerned domain.</li>
 <li>Divide the entire domain into sub-domains about the above-determined singularities.</li>
-<li>Use the <a href="https://en.wikipedia.org/wiki/Derivative_test#Second_derivative_test">Derivative Test</a> to locate the critical points of the function within each sub-domain.</li>
+<li>Use the <a href="https://en.wikipedia.org/wiki/Derivative_test#Second_derivative_test"  class="external-link" target="_blank" rel="noopener">Derivative Test</a> to locate the critical points of the function within each sub-domain.</li>
 <li>Calcuate the corresponding values of the function at the critical points and the boundary values of the sub-domains.</li>
 <li>The extremas of the function in the entire domain are the maximum and minimum values in all the smaller domains combined.</li>
 </ol>
@@ -255,8 +255,8 @@ i.e <code>sin(x) ∈ [-1, 1]</code>.</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p><a href="https://github.com/sympy/sympy/pull/11141">PR#11141</a> : Method for solving equations using Decomposition and Rewriting
-<a href="https://github.com/sympy/sympy/pull/11164">PR#11164</a> : Intersection of certain ImageSets with Intervals</p>
+<p><a href="https://github.com/sympy/sympy/pull/11141"  class="external-link" target="_blank" rel="noopener">PR#11141</a> : Method for solving equations using Decomposition and Rewriting
+<a href="https://github.com/sympy/sympy/pull/11164"  class="external-link" target="_blank" rel="noopener">PR#11164</a> : Intersection of certain ImageSets with Intervals</p>
 <h3 id="thoughts">
   <strong>Thoughts</strong>
   <a class="heading-link" href="#thoughts">
@@ -278,6 +278,8 @@ My goal for next week would be to implement the above-said functions.</p>
         
         
         
+        
+        
       </footer>
     </article>
 
@@ -296,7 +298,7 @@ My goal for next week would be to implement the above-said functions.</p>
      KSHITIJ SARAOGI 
     ·
     
-    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
   </section>
 </footer>
@@ -307,7 +309,22 @@ My goal for next week would be to implement the above-said functions.</p>
 
   
   
-  <script src="https://kshitij10496.github.io/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  <script src="https://kshitij10496.github.io/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
   
 
   

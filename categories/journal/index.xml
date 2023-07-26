@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 10 Jan 2023 15:35:37 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Patching Go Modules</title>
+      <link>https://kshitij10496.github.io/posts/patching-go-modules/</link>
+      <pubDate>Wed, 26 Jul 2023 22:24:51 +0200</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/patching-go-modules/</guid>
+      <description>When I was searching for ways to write integation tests in a project, I discovered Test Containers project. I decided to give it a shot and learnt more about the project. Thanks to the wonderful testcontainers/testcontainers-go1 package, it was relatively straightforward to bootstrap the setup into my project - code, tests, and CI. I was pretty happy about the entire experience. Maybe I will share the setup here sometime in the future.</description>
+    </item>
+    
     <item>
       <title>Zero Copy</title>
       <link>https://kshitij10496.github.io/posts/zero-copy/</link>
