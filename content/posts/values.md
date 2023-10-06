@@ -1,7 +1,7 @@
 +++ 
 draft = true
 date = 2018-10-19T17:16:29+05:30
-title = "Imporatance of Values"
+title = "Importance of Values"
 slug = "" 
 tags = []
 categories = []
