@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Nov 2023 15:48:41 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>podman</title>
+      <link>https://kshitij10496.github.io/tags/podman/</link>
+      <pubDate>Mon, 20 Nov 2023 15:48:41 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/podman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testcontainers</title>
+      <link>https://kshitij10496.github.io/tags/testcontainers/</link>
+      <pubDate>Mon, 20 Nov 2023 15:48:41 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/testcontainers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://kshitij10496.github.io/tags/testing/</link>
+      <pubDate>Mon, 20 Nov 2023 15:48:41 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/tags/testing/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dependencies</title>
       <link>https://kshitij10496.github.io/tags/dependencies/</link>
