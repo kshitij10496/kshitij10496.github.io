@@ -10,6 +10,7 @@ Currently, I'm based out of Berlin where I work as a software engineer mostly fo
 This blog is the place where I think in public. 
 Words help shape my thoughts. Though they may be far from perfect, but this process of discovery and expression is valuable.
 The posts are my attempt to share my ideas, and reflect on experiences.
+You can find my [notes](https://kshitij10496.github.io/categories/notes/) on this blog as well.
 
 Note: I have deliberately disabled comments on my articles on this site.  
 It is neither my intention to refrain from feedback nor censor criticism of my writings.  
