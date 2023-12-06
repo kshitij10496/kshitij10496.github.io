@@ -5,10 +5,10 @@ title = "Now"
 This page hosts regular updates about what I have been up to lately.  
 Insipred by Derek Siver's Now Page.[^1]
 
-- Helping [OneFootball](https://onefootball.com/en/home) build a platform for the football community as a Software Engineer.
-- Recovering from BMW Berlin Marathon 2023[^2].
+- Vacations.
+- Learning [Clojure from the Ground Up](https://kshitij10496.github.io/tags/cfgu/).
+- Solving [Advent of Code](https://adventofcode.com) challenges everyday in Clojure.
 
-_Updated: 6th October 2023_
+_Updated: 6th December 2023_
 
 [^1]: Derek Siver's movement for [creating a **"now"** page](https://nownownow.com/about)
-[^2]: [49th BMW Berlin Marathon 2023](https://www.bmw-berlin-marathon.com/en/)
