@@ -8,16 +8,37 @@ tags: []
 categories: []
 ---
 
-Say you would like to add an HTTP request's incoming headers to your OTel span as attributes.
+# Problem
+- Get observability into the headers set on the incoming HTTP request to the OpenTelemetry span. For example, we would like to associate data across User-Agents, Geo Locations.
 
-```
-func OTelMiddleware() func(next http.Handler) http.Handler {
+# Solution
+
+It turns out this problem is rather more common that I first thought.
+The `httpconv` package provides a helper according to the OpenTelemetry standard.
+
+One approach I wrote was to write a middleware to set relevant headers KV pairs to the span as as attributes.
+
+
+```go
+func OTelMiddleware(filterHeaders []string) func(next http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			ctx := r.Context()
 
+			// Build KV pairs of OTel span attributes from the request headers.
+			headers := httpconv.RequestHeader(r.Header)
+
+			// Apply filter for sensitive headers.
+			for _, h := range filterHeaders {
+				for _, attr := range headers {
+					if attr.Key() == h {
+
+						attrs = filterHeaders(header)
+					}
+				}
+			}
+
 			// Add request headers to the current span.
-			attrs := httpconv.RequestHeader(r.Header)
 			span := trace.SpanFromContext(ctx)
 			span.SetAttributes(attrs...)
 
