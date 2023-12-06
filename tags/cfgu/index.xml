@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>notes on kxsh</title>
-    <link>https://kshitij10496.github.io/categories/notes/</link>
-    <description>Recent content in notes on kxsh</description>
+    <title>cfgu on kxsh</title>
+    <link>https://kshitij10496.github.io/tags/cfgu/</link>
+    <description>Recent content in cfgu on kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 06 Dec 2023 18:17:39 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Dec 2023 18:17:39 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/cfgu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clojure From the Ground Up: Welcome</title>
       <link>https://kshitij10496.github.io/posts/cfgu-01/</link>
@@ -19,18 +19,6 @@ Really neat article (and series) about program design from first principles.
 I loved the emphasis on motivation and simplicity.
 Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
 You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on.</description>
-    </item>
-    
-    <item>
-      <title>Aphyr - Why is Jepsen Written in Clojure?</title>
-      <link>https://kshitij10496.github.io/posts/aphyr-jepsen-clojure/</link>
-      <pubDate>Wed, 06 Dec 2023 17:10:59 +0100</pubDate>
-      
-      <guid>https://kshitij10496.github.io/posts/aphyr-jepsen-clojure/</guid>
-      <description>Ref: Aphyr - Why is Jepsen Written in Clojure?
-Just as I am developing an interest in the Lisp family of languages, particularly Clojure, I discovered Kyle&amp;rsquo;s post on my feed.
-Few things that stood out from this piece:
-Clojure&amp;rsquo;s ability to interop with Java (and JVM primitives) opens up the potential to leverage an existing, mature ecosystem. Immutable, persistent data structures make it easier to write concurrent programs without static typing.</description>
     </item>
     
   </channel>

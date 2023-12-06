@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 06 Dec 2023 17:10:59 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Dec 2023 18:17:39 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clojure From the Ground Up: Welcome</title>
+      <link>https://kshitij10496.github.io/posts/cfgu-01/</link>
+      <pubDate>Wed, 06 Dec 2023 18:17:39 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/cfgu-01/</guid>
+      <description>Ref: Clojure from the ground up: welcome
+Really neat article (and series) about program design from first principles.
+I loved the emphasis on motivation and simplicity.
+Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
+You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on.</description>
+    </item>
+    
     <item>
       <title>Aphyr - Why is Jepsen Written in Clojure?</title>
       <link>https://kshitij10496.github.io/posts/aphyr-jepsen-clojure/</link>
@@ -435,9 +448,8 @@ This blog is the place where I think in public. Words help shape my thoughts. Th
       <guid>https://kshitij10496.github.io/now/</guid>
       <description>This page hosts regular updates about what I have been up to lately.
 Insipred by Derek Siver&amp;rsquo;s Now Page.1
-Helping OneFootball build a platform for the football community as a Software Engineer. Recovering from BMW Berlin Marathon 20232. Updated: 6th October 2023
-Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;
-49th BMW Berlin Marathon 2023&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+Vacations. Learning Clojure from the Ground Up. Solving Advent of Code challenges everyday in Clojure. Updated: 6th December 2023
+Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     
   </channel>
