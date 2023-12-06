@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 20 Nov 2023 15:48:41 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Dec 2023 17:10:59 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aphyr - Why is Jepsen Written in Clojure?</title>
+      <link>https://kshitij10496.github.io/posts/aphyr-jepsen-clojure/</link>
+      <pubDate>Wed, 06 Dec 2023 17:10:59 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/aphyr-jepsen-clojure/</guid>
+      <description>Ref: Aphyr - Why is Jepsen Written in Clojure?
+Just as I am developing an interest in the Lisp family of languages, particularly Clojure, I discovered Kyle&amp;rsquo;s post on my feed.
+Few things that stood out from this piece:
+Clojure&amp;rsquo;s ability to interop with Java (and JVM primitives) opens up the potential to leverage an existing, mature ecosystem. Immutable, persistent data structures make it easier to write concurrent programs without static typing.</description>
+    </item>
+    
     <item>
       <title>Testcontainers with Podman</title>
       <link>https://kshitij10496.github.io/posts/testcontainers-with-podman/</link>
