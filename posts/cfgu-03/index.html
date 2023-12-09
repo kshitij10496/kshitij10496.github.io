@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  Clojure From the Ground Up: Welcome · kxsh
+  Clojure From the Ground Up: Functions · kxsh
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,36 +13,39 @@
 
 
 <meta name="author" content="KSHITIJ SARAOGI">
-<meta name="description" content="Ref: Clojure from the ground up: welcome
-Really neat article (and series) about program design from first principles.
-I loved the emphasis on motivation and simplicity.
-Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
-You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on.">
+<meta name="description" content="Ref: Clojure from the ground up: Functions
+Functions are verbs.
+We can define symbols to values that will not change (called immutable) using let. These symbols are only available with an expression (&ldquo;scoped&rdquo;). The symbols can be overriden to point to a different value.
+def allows us to define mutable variables. These are helpful for experimentation.
+defn is a shorthand to define functions.
+The chapter builds an extremely powerful intuition behind the relation between let and functions.">
 <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Clojure From the Ground Up: Welcome"/>
-<meta name="twitter:description" content="Ref: Clojure from the ground up: welcome
-Really neat article (and series) about program design from first principles.
-I loved the emphasis on motivation and simplicity.
-Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
-You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on."/>
+<meta name="twitter:title" content="Clojure From the Ground Up: Functions"/>
+<meta name="twitter:description" content="Ref: Clojure from the ground up: Functions
+Functions are verbs.
+We can define symbols to values that will not change (called immutable) using let. These symbols are only available with an expression (&ldquo;scoped&rdquo;). The symbols can be overriden to point to a different value.
+def allows us to define mutable variables. These are helpful for experimentation.
+defn is a shorthand to define functions.
+The chapter builds an extremely powerful intuition behind the relation between let and functions."/>
 
-<meta property="og:title" content="Clojure From the Ground Up: Welcome" />
-<meta property="og:description" content="Ref: Clojure from the ground up: welcome
-Really neat article (and series) about program design from first principles.
-I loved the emphasis on motivation and simplicity.
-Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
-You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on." />
+<meta property="og:title" content="Clojure From the Ground Up: Functions" />
+<meta property="og:description" content="Ref: Clojure from the ground up: Functions
+Functions are verbs.
+We can define symbols to values that will not change (called immutable) using let. These symbols are only available with an expression (&ldquo;scoped&rdquo;). The symbols can be overriden to point to a different value.
+def allows us to define mutable variables. These are helpful for experimentation.
+defn is a shorthand to define functions.
+The chapter builds an extremely powerful intuition behind the relation between let and functions." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/cfgu-01/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-12-06T18:17:39+01:00" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/cfgu-03/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-09T16:01:30+01:00" />
 <meta property="article:modified_time" content="2023-12-09T16:11:35+01:00" />
 
 
 
 
-<link rel="canonical" href="https://kshitij10496.github.io/posts/cfgu-01/">
+<link rel="canonical" href="https://kshitij10496.github.io/posts/cfgu-03/">
 
 
 <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -155,8 +158,8 @@ You could think of this structure as a tree–which is a provocative idea, becau
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://kshitij10496.github.io/posts/cfgu-01/">
-              Clojure From the Ground Up: Welcome
+            <a class="title-link" href="https://kshitij10496.github.io/posts/cfgu-03/">
+              Clojure From the Ground Up: Functions
             </a>
           </h1>
         </div>
@@ -164,13 +167,13 @@ You could think of this structure as a tree–which is a provocative idea, becau
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-12-06T18:17:39&#43;01:00">
-                December 6, 2023
+              <time datetime="2023-12-09T16:01:30&#43;01:00">
+                December 9, 2023
               </time>
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              One-minute read
+              2-minute read
             </span>
           </div>
           
@@ -195,19 +198,27 @@ You could think of this structure as a tree–which is a provocative idea, becau
 
       <div class="post-content">
         
-        <p>Ref: <a href="https://aphyr.com/posts/301-clojure-from-the-ground-up-first-principles"  class="external-link" target="_blank" rel="noopener">Clojure from the ground up: welcome</a></p>
-<p>Really neat article (and series) about program design from first principles.</p>
-<p>I loved the emphasis on motivation and simplicity.</p>
-<p>Lisp is ridiculously simple to write computation.
-This post does a great job at developing intuition about programming.
-I found a lot of traces from SICP in the mental model.</p>
+        <p>Ref: <a href="https://aphyr.com/posts/303-clojure-from-the-ground-up-functions"  class="external-link" target="_blank" rel="noopener">Clojure from the ground up: Functions</a></p>
+<p>Functions are verbs.</p>
+<p>We can define symbols to values that will not change (called <code>immutable</code>) using <code>let</code>.
+These symbols are only available with an expression (&ldquo;scoped&rdquo;). The symbols can be overriden to point to a different value.</p>
+<p><code>def</code> allows us to define mutable variables. These are helpful for experimentation.</p>
+<p><code>defn</code> is a shorthand to define functions.</p>
+<p>The chapter builds an extremely powerful intuition behind the relation between <code>let</code> and functions.</p>
+<p>Also, it&rsquo;s helpful to think about functions as &ldquo;common patterns of computation&rdquo;.
+While problem solving, I&rsquo;m starting to adopt this approach as well:</p>
+<ul>
+<li>Look for patterns in the problem.</li>
+<li>Formulate a function to solve a simple pattern.</li>
+<li>Combine multiple patterns to solve the bigger problems. (composition using standard library functions)</li>
+</ul>
 <blockquote>
-<p>You could think of this structure as a tree–which is a provocative idea,
-because <em>languages</em> are like trees too: sentences are comprised
-of clauses, which can be nested, and each clause may have subjects
-modified by adjectives, and verbs modified by adverbs, and so on.</p>
+<p>This is core pursuit of software engineering: organizing expressions. Almost every programming language is in search of the right tools to break apart, name, and recombine expressions to solve large problems.</p>
 </blockquote>
-<p>Extremely powerful concept.</p>
+<p>I find this really insightful. Often, our mental models are constrained by the programming langauge we use.
+The way a backend engineer approaches a problem is quite different from a frontend engineer.
+I experienced this in a sense when I switched from Python to Go as my preferred language.
+And now, learning LISP (Racket, Clojure) has afforded me an even simpler way to approach problems.</p>
 
       </div>
 

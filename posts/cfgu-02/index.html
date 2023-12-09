@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  Clojure From the Ground Up: Welcome · kxsh
+  Clojure From the Ground Up: Basic Types · kxsh
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,36 +13,30 @@
 
 
 <meta name="author" content="KSHITIJ SARAOGI">
-<meta name="description" content="Ref: Clojure from the ground up: welcome
-Really neat article (and series) about program design from first principles.
-I loved the emphasis on motivation and simplicity.
-Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
-You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on.">
+<meta name="description" content="Ref: Clojure from the ground up: Basic Types
+What is a &ldquo;type&rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
+I find this to be a very neat and simple way to think about &ldquo;types&rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).">
 <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Clojure From the Ground Up: Welcome"/>
-<meta name="twitter:description" content="Ref: Clojure from the ground up: welcome
-Really neat article (and series) about program design from first principles.
-I loved the emphasis on motivation and simplicity.
-Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
-You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on."/>
+<meta name="twitter:title" content="Clojure From the Ground Up: Basic Types"/>
+<meta name="twitter:description" content="Ref: Clojure from the ground up: Basic Types
+What is a &ldquo;type&rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
+I find this to be a very neat and simple way to think about &ldquo;types&rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain)."/>
 
-<meta property="og:title" content="Clojure From the Ground Up: Welcome" />
-<meta property="og:description" content="Ref: Clojure from the ground up: welcome
-Really neat article (and series) about program design from first principles.
-I loved the emphasis on motivation and simplicity.
-Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
-You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on." />
+<meta property="og:title" content="Clojure From the Ground Up: Basic Types" />
+<meta property="og:description" content="Ref: Clojure from the ground up: Basic Types
+What is a &ldquo;type&rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
+I find this to be a very neat and simple way to think about &ldquo;types&rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kshitij10496.github.io/posts/cfgu-01/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-12-06T18:17:39+01:00" />
+<meta property="og:url" content="https://kshitij10496.github.io/posts/cfgu-02/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-07T15:45:14+01:00" />
 <meta property="article:modified_time" content="2023-12-09T16:11:35+01:00" />
 
 
 
 
-<link rel="canonical" href="https://kshitij10496.github.io/posts/cfgu-01/">
+<link rel="canonical" href="https://kshitij10496.github.io/posts/cfgu-02/">
 
 
 <link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -155,8 +149,8 @@ You could think of this structure as a tree–which is a provocative idea, becau
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://kshitij10496.github.io/posts/cfgu-01/">
-              Clojure From the Ground Up: Welcome
+            <a class="title-link" href="https://kshitij10496.github.io/posts/cfgu-02/">
+              Clojure From the Ground Up: Basic Types
             </a>
           </h1>
         </div>
@@ -164,8 +158,8 @@ You could think of this structure as a tree–which is a provocative idea, becau
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-12-06T18:17:39&#43;01:00">
-                December 6, 2023
+              <time datetime="2023-12-07T15:45:14&#43;01:00">
+                December 7, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -195,19 +189,25 @@ You could think of this structure as a tree–which is a provocative idea, becau
 
       <div class="post-content">
         
-        <p>Ref: <a href="https://aphyr.com/posts/301-clojure-from-the-ground-up-first-principles"  class="external-link" target="_blank" rel="noopener">Clojure from the ground up: welcome</a></p>
-<p>Really neat article (and series) about program design from first principles.</p>
-<p>I loved the emphasis on motivation and simplicity.</p>
-<p>Lisp is ridiculously simple to write computation.
-This post does a great job at developing intuition about programming.
-I found a lot of traces from SICP in the mental model.</p>
+        <p>Ref: <a href="https://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types"  class="external-link" target="_blank" rel="noopener">Clojure from the ground up: Basic Types</a></p>
+<h2 id="what-is-a-type-anyway">
+  What is a &ldquo;type&rdquo; anyway?
+  <a class="heading-link" href="#what-is-a-type-anyway">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <blockquote>
-<p>You could think of this structure as a tree–which is a provocative idea,
-because <em>languages</em> are like trees too: sentences are comprised
-of clauses, which can be nested, and each clause may have subjects
-modified by adjectives, and verbs modified by adverbs, and so on.</p>
+<p>A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.</p>
 </blockquote>
-<p>Extremely powerful concept.</p>
+<p>I find this to be a very neat and simple way to think about &ldquo;types&rdquo; in general.
+Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).</p>
+<p>The definition of &ldquo;type system&rdquo; is particularly interesting. Also, the 2 dimensions of any type system - strong/weak, static/dynamic.</p>
+<p>Some of the common programming constructs - symbols, lists, vectors, maps - provide a brief introduction to working with data.</p>
+<blockquote>
+<p>As software engineers, we model the world by creating a particular representation of the problem in the program. Having a rich set of values at our disposal allows us to talk about complex problems. In Clojure, we compose data structures to form more complex values; to talk about bigger ideas.</p>
+</blockquote>
+<p>Sweet! Looks extremely promising.</p>
 
       </div>
 
