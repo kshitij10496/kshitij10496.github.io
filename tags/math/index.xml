@@ -7,15 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 20 Aug 2020 13:59:10 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Dec 2023 16:57:47 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Keep It Simple Stupid?</title>
-      <link>https://kshitij10496.github.io/posts/2020-08-20/</link>
-      <pubDate>Thu, 20 Aug 2020 13:59:10 +0200</pubDate>
+      <title>The Borsuk-Ulam Explorer</title>
+      <link>https://kshitij10496.github.io/posts/borsuk-ulam-explorer/</link>
+      <pubDate>Sat, 16 Dec 2023 16:57:47 +0100</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/2020-08-20/</guid>
-      <description>Chess I hit my personal best 5 min Puzzle Rush score of 13 today. More importantly, I&amp;rsquo;m delighted to use one of the Queen sacrifice tactic to win a blitz match today. :party: Though my overall rating is stagnating towards 850 this week, I&amp;rsquo;m fairly happy with the progress I&amp;rsquo;m making. Need to focus on improving my accuracy and middle game.
-What brought me joy today?  Nakamura for putting up a fight till the literal last breath of the Magnus Carlsen Chess Tour Finals.</description>
+      <guid>https://kshitij10496.github.io/posts/borsuk-ulam-explorer/</guid>
+      <description>*Ref: The Borsuk-Ulam Explorer by Colin Cotter and Julius Ross *
+What a pretty visulisation of the Borsuk-Ulam Theorem in realtime!
+In mathematics, the Borsuk–Ulam theorem states that every continuous function from an n-sphere into Euclidean n-space maps some pair of antipodal points to the same point. Here, two points on a sphere are called antipodal if they are in exactly opposite directions from the sphere&amp;rsquo;s center.
+I don&amp;rsquo;t distinctly recall this theorem as part of my undergraduate studies.</description>
     </item>
     
   </channel>

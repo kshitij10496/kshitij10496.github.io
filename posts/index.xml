@@ -9,6 +9,31 @@
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Borsuk-Ulam Explorer</title>
+      <link>https://kshitij10496.github.io/posts/borsuk-ulam-explorer/</link>
+      <pubDate>Sat, 16 Dec 2023 16:57:47 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/borsuk-ulam-explorer/</guid>
+      <description>*Ref: The Borsuk-Ulam Explorer by Colin Cotter and Julius Ross *
+What a pretty visulisation of the Borsuk-Ulam Theorem in realtime!
+In mathematics, the Borsuk–Ulam theorem states that every continuous function from an n-sphere into Euclidean n-space maps some pair of antipodal points to the same point. Here, two points on a sphere are called antipodal if they are in exactly opposite directions from the sphere&amp;rsquo;s center.
+I don&amp;rsquo;t distinctly recall this theorem as part of my undergraduate studies.</description>
+    </item>
+    
+    <item>
+      <title>Peter Norvig: Programming in 10 Years</title>
+      <link>https://kshitij10496.github.io/posts/norvig-teach-yourself-programming-in-10-years/</link>
+      <pubDate>Sun, 10 Dec 2023 16:11:09 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/norvig-teach-yourself-programming-in-10-years/</guid>
+      <description>Ref: Peter Norvig: Teach Yourself Programming in 10 Years
+I remember reading this article way back in my uni days. It reminded me of a popular quote from Richard Feynmann
+Now that I have stumbled across it after few years of experience working as a professional software engineer, I related a bit more with the content.
+Ways to develop a deep understanding:
+Write more significant programs that solve problems. Work with experienced programmers.</description>
+    </item>
+    
+    <item>
       <title>Clojure From the Ground Up: Functions</title>
       <link>https://kshitij10496.github.io/posts/cfgu-03/</link>
       <pubDate>Sat, 09 Dec 2023 16:01:30 +0100</pubDate>
