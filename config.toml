@@ -88,12 +88,6 @@ title = "kxsh"
 
     enableTwemoji = true
 
-    [utterances]
-      repo = "kshitij10496/kshitij10496.github.io" # https://utteranc.es/#heading-repository
-      issueTerm = "title" # https://utteranc.es/#heading-mapping
-      label = "Comment" # https://utteranc.es/#heading-issue-label
-      theme = "preferred-color-scheme" # https://utteranc.es/#heading-theme
-
     # Social links
     [[params.social]]
       name = "Github"
@@ -110,6 +104,11 @@ title = "kxsh"
       icon = "fa fa-linkedin fa-2x"
       weight = 3
       url = "https://www.linkedin.com/in/kshitij10496/"
+    [[params.social]]
+      name = "RSS"
+      icon = "fa fa-solid fa-rss fa-2x"
+      weight = 4
+      url = "https://kshitij10496.github.io/index.xml"
 
     # Menu links
     [[menu.main]]
@@ -128,10 +127,6 @@ title = "kxsh"
       name = "RÉSUMÉ"
       weight = 4
       url = "https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing"
-    [[menu.main]]
-      name = "RSS"
-      weight = 5
-      url = "https://kshitij10496.github.io/index.xml"
 
 [privacy]
   [privacy.disqus]
