@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>engineering on kxsh</title>
+    <link>https://kshitij10496.github.io/tags/engineering/</link>
+    <description>Recent content in engineering on kxsh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 19 Dec 2023 21:17:57 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CodeSandbox: How we clone a running VM in 2 seconds</title>
+      <link>https://kshitij10496.github.io/posts/cloning-vms/</link>
+      <pubDate>Tue, 19 Dec 2023 21:17:57 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/cloning-vms/</guid>
+      <description>Ref: https://codesandbox.io/blog/how-we-clone-a-running-vm-in-2-seconds
+Amazing engineering work here!
+Two key technologies leveraged here:
+Firecracker, in particular microVMs. Copy-on-Write resource management technique. The concept of memory snapshotting is elaborately described. More so, I found the deep dive into the engineering work to put the pieces together very inspiring.
+I need to study and read up about Firecracker and the concept of KVM. Let me know if you have any good resources for this.</description>
+    </item>
+    
+  </channel>
+</rss>
