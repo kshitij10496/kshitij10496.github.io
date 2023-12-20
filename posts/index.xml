@@ -9,6 +9,18 @@
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Steve Yegge - Math for Programmers</title>
+      <link>https://kshitij10496.github.io/posts/math-programmer/</link>
+      <pubDate>Wed, 20 Dec 2023 15:48:30 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/math-programmer/</guid>
+      <description>Ref: https://steve-yegge.blogspot.com/2006/03/math-for-programmers.html
+One of the most inspiring articles to study mathematics, especially as a full-time programmer aka Liberal Arts degreee in Mathematics.
+Math is almost always about formalizing our &amp;ldquo;common sense&amp;rdquo; about some domain, so that we can deduce and/or prove new things about that domain.
+This is a such a powerful perspective to approach mathematics. For example, Formal Methods are mathematically techniques related to software systems (analysis, verification etc). Another example could be the real-life problems with travelling across cities resulting in the field of Graph Theory.</description>
+    </item>
+    
+    <item>
       <title>CodeSandbox: How we clone a running VM in 2 seconds</title>
       <link>https://kshitij10496.github.io/posts/cloning-vms/</link>
       <pubDate>Tue, 19 Dec 2023 21:17:57 +0100</pubDate>
