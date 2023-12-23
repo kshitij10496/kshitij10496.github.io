@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 23 Dec 2023 18:23:05 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 18:59:23 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elicit: Build a search engine, not a vector DB</title>
+      <link>https://kshitij10496.github.io/posts/search-vs-vector-db/</link>
+      <pubDate>Sat, 23 Dec 2023 18:59:23 +0100</pubDate>
+      
+      <guid>https://kshitij10496.github.io/posts/search-vs-vector-db/</guid>
+      <description>Ref: https://blog.elicit.com/search-vs-vector-db/
+Really interesting take on the problem of knowledge discovery.
+Full-text search still remains a challenging problem. At the same time, the increasing popularity of vector DBs, in particular, the embeddings data structure, provide another approach to the fundamental problem. A conjugation of both of these technologies can be used to build a valuable solution.
+However, questions around the efficiency of such a solution remains to be tested and monitored.</description>
+    </item>
+    
     <item>
       <title>Ethan Zuckerman: How Big Is Yt</title>
       <link>https://kshitij10496.github.io/posts/how-big-is-youtube/</link>
