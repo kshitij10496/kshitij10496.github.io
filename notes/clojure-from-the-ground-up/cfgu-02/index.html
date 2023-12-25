@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Clojure From the Ground Up: Basic Types · kxsh
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="KSHITIJ SARAOGI">
+<meta name="description" content="Ref: Clojure from the ground up: Basic Types
+What is a &ldquo;type&rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
+I find this to be a very neat and simple way to think about &ldquo;types&rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).">
+<meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Clojure From the Ground Up: Basic Types"/>
+<meta name="twitter:description" content="Ref: Clojure from the ground up: Basic Types
+What is a &ldquo;type&rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
+I find this to be a very neat and simple way to think about &ldquo;types&rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain)."/>
+
+<meta property="og:title" content="Clojure From the Ground Up: Basic Types" />
+<meta property="og:description" content="Ref: Clojure from the ground up: Basic Types
+What is a &ldquo;type&rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
+I find this to be a very neat and simple way to think about &ldquo;types&rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/" /><meta property="article:section" content="notes" />
+<meta property="article:published_time" content="2023-12-07T15:45:14+01:00" />
+<meta property="article:modified_time" content="2023-12-25T14:55:45+01:00" />
+
+
+
+
+<link rel="canonical" href="https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/">
+
+
+<link rel="preload" href="https://kshitij10496.github.io/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://kshitij10496.github.io/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="https://kshitij10496.github.io/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://kshitij10496.github.io/images/favicon_16.ico" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kshitij10496.github.io/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://kshitij10496.github.io/site.webmanifest">
+<link rel="mask-icon" href="https://kshitij10496.github.io/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<script data-goatcounter="https://kxsh.goatcounter.com/count"
+      async src="//gc.zgo.at/count.js"></script>
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kshitij10496.github.io/">
+      kxsh
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/about/">ABOUT</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/now/">NOW</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/notes/">NOTES</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://kshitij10496.github.io/posts/">POSTS</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing">RÉSUMÉ</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/">
+              Clojure From the Ground Up: Basic Types
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-12-07T15:45:14&#43;01:00">
+                December 7, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://kshitij10496.github.io/categories/autodidact/">autodidact</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/clojure/">clojure</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://kshitij10496.github.io/tags/cfgu/">cfgu</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Ref: <a href="https://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types"  class="external-link" target="_blank" rel="noopener">Clojure from the ground up: Basic Types</a></p>
+<h2 id="what-is-a-type-anyway">
+  What is a &ldquo;type&rdquo; anyway?
+  <a class="heading-link" href="#what-is-a-type-anyway">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<blockquote>
+<p>A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.</p>
+</blockquote>
+<p>I find this to be a very neat and simple way to think about &ldquo;types&rdquo; in general.
+Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).</p>
+<p>The definition of &ldquo;type system&rdquo; is particularly interesting. Also, the 2 dimensions of any type system - strong/weak, static/dynamic.</p>
+<p>Some of the common programming constructs - symbols, lists, vectors, maps - provide a brief introduction to working with data.</p>
+<blockquote>
+<p>As software engineers, we model the world by creating a particular representation of the problem in the program. Having a rich set of values at our disposal allows us to talk about complex problems. In Clojure, we compose data structures to form more complex values; to talk about bigger ideas.</p>
+</blockquote>
+<p>Sweet! Looks extremely promising.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2016 -
+    
+    2023
+     KSHITIJ SARAOGI 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://kshitij10496.github.io/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

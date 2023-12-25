@@ -10,10 +10,10 @@
     <lastBuildDate>Wed, 20 Dec 2023 15:48:30 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Steve Yegge - Math for Programmers</title>
-      <link>https://kshitij10496.github.io/posts/math-programmer/</link>
+      <link>https://kshitij10496.github.io/notes/math-programmer/</link>
       <pubDate>Wed, 20 Dec 2023 15:48:30 +0100</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/math-programmer/</guid>
+      <guid>https://kshitij10496.github.io/notes/math-programmer/</guid>
       <description>Ref: https://steve-yegge.blogspot.com/2006/03/math-for-programmers.html
 One of the most inspiring articles to study mathematics, especially as a full-time programmer aka Liberal Arts degreee in Mathematics.
 Math is almost always about formalizing our &amp;ldquo;common sense&amp;rdquo; about some domain, so that we can deduce and/or prove new things about that domain.
@@ -22,10 +22,10 @@ This is a such a powerful perspective to approach mathematics. For example, Form
     
     <item>
       <title>The Borsuk-Ulam Explorer</title>
-      <link>https://kshitij10496.github.io/posts/borsuk-ulam-explorer/</link>
+      <link>https://kshitij10496.github.io/notes/borsuk-ulam-explorer/</link>
       <pubDate>Sat, 16 Dec 2023 16:57:47 +0100</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/borsuk-ulam-explorer/</guid>
+      <guid>https://kshitij10496.github.io/notes/borsuk-ulam-explorer/</guid>
       <description>*Ref: The Borsuk-Ulam Explorer by Colin Cotter and Julius Ross *
 What a pretty visulisation of the Borsuk-Ulam Theorem in realtime!
 In mathematics, the Borsuk–Ulam theorem states that every continuous function from an n-sphere into Euclidean n-space maps some pair of antipodal points to the same point. Here, two points on a sphere are called antipodal if they are in exactly opposite directions from the sphere&amp;rsquo;s center.

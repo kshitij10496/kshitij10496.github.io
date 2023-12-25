@@ -10,10 +10,10 @@
     <lastBuildDate>Sat, 09 Dec 2023 16:01:30 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/cfgu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clojure From the Ground Up: Functions</title>
-      <link>https://kshitij10496.github.io/posts/cfgu-03/</link>
+      <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-03/</link>
       <pubDate>Sat, 09 Dec 2023 16:01:30 +0100</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/cfgu-03/</guid>
+      <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-03/</guid>
       <description>Ref: Clojure from the ground up: Functions
 Functions are verbs.
 We can define symbols to values that will not change (called immutable) using let. These symbols are only available with an expression (&amp;ldquo;scoped&amp;rdquo;). The symbols can be overriden to point to a different value.
@@ -24,10 +24,10 @@ The chapter builds an extremely powerful intuition behind the relation between l
     
     <item>
       <title>Clojure From the Ground Up: Basic Types</title>
-      <link>https://kshitij10496.github.io/posts/cfgu-02/</link>
+      <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/</link>
       <pubDate>Thu, 07 Dec 2023 15:45:14 +0100</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/cfgu-02/</guid>
+      <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/</guid>
       <description>Ref: Clojure from the ground up: Basic Types
 What is a &amp;ldquo;type&amp;rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
 I find this to be a very neat and simple way to think about &amp;ldquo;types&amp;rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).</description>
@@ -35,10 +35,10 @@ I find this to be a very neat and simple way to think about &amp;ldquo;types&amp
     
     <item>
       <title>Clojure From the Ground Up: Welcome</title>
-      <link>https://kshitij10496.github.io/posts/cfgu-01/</link>
+      <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-01/</link>
       <pubDate>Wed, 06 Dec 2023 18:17:39 +0100</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/cfgu-01/</guid>
+      <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-01/</guid>
       <description>Ref: Clojure from the ground up: welcome
 Really neat article (and series) about program design from first principles.
 I loved the emphasis on motivation and simplicity.

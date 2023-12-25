@@ -10,10 +10,10 @@
     <lastBuildDate>Sat, 23 Dec 2023 18:23:05 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/study/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ethan Zuckerman: How Big Is Yt</title>
-      <link>https://kshitij10496.github.io/posts/how-big-is-youtube/</link>
+      <link>https://kshitij10496.github.io/notes/how-big-is-youtube/</link>
       <pubDate>Sat, 23 Dec 2023 18:23:05 +0100</pubDate>
       
-      <guid>https://kshitij10496.github.io/posts/how-big-is-youtube/</guid>
+      <guid>https://kshitij10496.github.io/notes/how-big-is-youtube/</guid>
       <description>Ref: https://ethanzuckerman.com/2023/12/22/how-big-is-youtube/
 I don&amp;rsquo;t see a lot of talk about the &amp;ldquo;denominator problem&amp;rdquo;. This article does a great job at providing context to the discussion of normalizing data. It&amp;rsquo;s not too difficult to skew most datasets to fit our viewpoint. As a undergrad student, I had shared in this guilty pleasure too. And I would not be surprised if a similar practice exists in some of the industry. Not that it&amp;rsquo;s anybody&amp;rsquo;s fault, I belive it&amp;rsquo;s just part of our nature.</description>
     </item>
