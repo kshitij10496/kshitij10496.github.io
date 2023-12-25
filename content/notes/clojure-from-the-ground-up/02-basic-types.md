@@ -5,7 +5,7 @@ draft: false
 
 slug: "cfgu-02" 
 tags: ["clojure", "cfgu"]
-categories: ["notes", "autodidact"]
+categories: ["autodidact"]
 ---
 
 Ref: [Clojure from the ground up: Basic Types](https://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types)

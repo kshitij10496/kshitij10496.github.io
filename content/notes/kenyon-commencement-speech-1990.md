@@ -5,7 +5,7 @@ draft: false
 
 slug: "bill-watterson-speech" 
 tags: ["speech"]
-categories: ["notes"]
+categories: []
 ---
 
 Such an excellent read!

@@ -5,7 +5,7 @@ draft: false
 
 slug: "math-programmer" 
 tags: ["math"]
-categories: ["notes"]
+categories: []
 ---
 
 Ref: https://steve-yegge.blogspot.com/2006/03/math-for-programmers.html

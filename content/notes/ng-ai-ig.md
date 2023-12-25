@@ -5,7 +5,7 @@ draft: false
 
 slug: "ng-ai-ig" 
 tags: ["ai"]
-categories: ["notes"]
+categories: []
 ---
 
 Ref: https://web.archive.org/web/20230924131456/https://www.deeplearning.ai/the-batch/someone-elses-cool-ai-project-doesnt-make-your-project-less-valuable/

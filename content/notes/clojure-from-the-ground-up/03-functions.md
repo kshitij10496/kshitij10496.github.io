@@ -5,7 +5,7 @@ draft: false
 
 slug: "cfgu-03" 
 tags: ["clojure", "cfgu"]
-categories: ["notes", "autodidact"]
+categories: ["autodidact"]
 ---
 
 Ref: [Clojure from the ground up: Functions](https://aphyr.com/posts/303-clojure-from-the-ground-up-functions)

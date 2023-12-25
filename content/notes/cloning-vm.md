@@ -5,7 +5,7 @@ draft: false
 
 slug: "cloning-vms" 
 tags: ["engineering", "firecracker"]
-categories: ["notes"]
+categories: []
 ---
 
 Ref: https://codesandbox.io/blog/how-we-clone-a-running-vm-in-2-seconds

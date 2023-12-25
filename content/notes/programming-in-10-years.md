@@ -5,7 +5,7 @@ draft: false
 
 slug: "norvig-teach-yourself-programming-in-10-years" 
 tags: ["programming", "career"]
-categories: ["notes"]
+categories: []
 ---
 
 *Ref: [Peter Norvig: Teach Yourself Programming in 10 Years](http://norvig.com/21-days.html)*

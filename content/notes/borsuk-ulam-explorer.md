@@ -3,13 +3,14 @@ title: "The Borsuk-Ulam Explorer"
 date: 2023-12-16T16:57:47+01:00
 draft: false
 
+ref: "http://julius-ross.com/Borsuk-Ulam/"
 slug: "borsuk-ulam-explorer" 
 tags: ["math"]
-categories: ["notes"]
+categories: []
 ---
 
 *Ref: [The Borsuk-Ulam Explorer
-by Colin Cotter and Julius Ross](http://julius-ross.com/Borsuk-Ulam/) *
+by Colin Cotter and Julius Ross]() *
 
 What a pretty visulisation of the Borsuk-Ulam Theorem in realtime!
 

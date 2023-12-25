@@ -5,7 +5,7 @@ draft: false
 
 slug: "cheap-web" 
 tags: ["tech"]
-categories: ["notes"]
+categories: []
 ---
 
 Ref: https://potato.cheap/

@@ -5,7 +5,7 @@ draft: false
 
 slug: "search-vs-vector-db" 
 tags: []
-categories: ["notes"]
+categories: []
 ---
 
 Ref: https://blog.elicit.com/search-vs-vector-db/

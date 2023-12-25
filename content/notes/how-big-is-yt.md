@@ -5,7 +5,7 @@ draft: false
 
 slug: "how-big-is-youtube" 
 tags: ["youtube", "study"]
-categories: ["notes"]
+categories: []
 ---
 
 Ref: https://ethanzuckerman.com/2023/12/22/how-big-is-youtube/

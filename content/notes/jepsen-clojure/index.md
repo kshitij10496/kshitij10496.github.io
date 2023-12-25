@@ -5,7 +5,7 @@ draft: false
 
 slug: "aphyr-jepsen-clojure" 
 tags: ["clojure", "jepsen"]
-categories: ["notes"]
+categories: []
 ---
 
 Ref: [Aphyr - Why is Jepsen Written in Clojure?](https://aphyr.com/posts/367-why-is-jepsen-written-in-clojure)

@@ -5,7 +5,7 @@ draft: false
 
 slug: "cfgu-01" 
 tags: ["clojure", "cfgu"]
-categories: ["notes", "autodidact"]
+categories: ["autodidact"]
 ---
 
 Ref: [Clojure from the ground up: welcome](https://aphyr.com/posts/301-clojure-from-the-ground-up-first-principles)
