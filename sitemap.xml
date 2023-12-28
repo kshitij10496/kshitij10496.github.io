@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kshitij10496.github.io/categories/</loc>
+    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/notes/ancient-babylonian-algorithms/</loc>
+    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/tags/history/</loc>
+    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/</loc>
+    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/tags/math/</loc>
+    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/notes/</loc>
+    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/categories/paper/</loc>
+    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/tags/</loc>
+    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+  </url><url>
     <loc>https://kshitij10496.github.io/notes/bill-watterson-speech/</loc>
     <lastmod>2023-12-25T14:55:45+01:00</lastmod>
   </url><url>
-    <loc>https://kshitij10496.github.io/</loc>
-    <lastmod>2023-12-25T14:55:45+01:00</lastmod>
-  </url><url>
-    <loc>https://kshitij10496.github.io/notes/</loc>
-    <lastmod>2023-12-25T14:55:45+01:00</lastmod>
-  </url><url>
     <loc>https://kshitij10496.github.io/tags/speech/</loc>
-    <lastmod>2023-12-25T14:55:45+01:00</lastmod>
-  </url><url>
-    <loc>https://kshitij10496.github.io/tags/</loc>
     <lastmod>2023-12-25T14:55:45+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/notes/search-vs-vector-db/</loc>
@@ -27,9 +42,6 @@
     <lastmod>2023-12-25T14:55:45+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/tags/youtube/</loc>
-    <lastmod>2023-12-25T14:55:45+01:00</lastmod>
-  </url><url>
-    <loc>https://kshitij10496.github.io/tags/math/</loc>
     <lastmod>2023-12-25T14:55:45+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/notes/math-programmer/</loc>
@@ -69,9 +81,6 @@
     <lastmod>2023-12-25T14:55:45+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/categories/autodidact/</loc>
-    <lastmod>2023-12-25T14:55:45+01:00</lastmod>
-  </url><url>
-    <loc>https://kshitij10496.github.io/categories/</loc>
     <lastmod>2023-12-25T14:55:45+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/tags/cfgu/</loc>
