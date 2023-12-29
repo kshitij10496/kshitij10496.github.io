@@ -8,7 +8,7 @@ tags: ["programming", "career"]
 categories: []
 ---
 
-*Ref: [Peter Norvig: Teach Yourself Programming in 10 Years](http://norvig.com/21-days.html)*
+Ref: [Peter Norvig: Teach Yourself Programming in 10 Years](http://norvig.com/21-days.html)
 
 I remember reading this article way back in my uni days. It reminded me of a popular quote from Richard Feynmann 
 
