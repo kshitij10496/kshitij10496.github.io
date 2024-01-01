@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kshitij10496.github.io/tags/blog/</loc>
-    <lastmod>2023-12-29T16:57:38+01:00</lastmod>
-  </url><url>
-    <loc>https://kshitij10496.github.io/notes/relics-of-the-web/</loc>
-    <lastmod>2023-12-29T16:57:38+01:00</lastmod>
+    <loc>https://kshitij10496.github.io/categories/</loc>
+    <lastmod>2024-01-01T20:29:09+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/</loc>
-    <lastmod>2023-12-29T16:57:38+01:00</lastmod>
+    <lastmod>2024-01-01T20:29:09+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/tags/motivation/</loc>
+    <lastmod>2024-01-01T20:29:09+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/categories/notes/</loc>
+    <lastmod>2024-01-01T20:29:09+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/notes/</loc>
-    <lastmod>2023-12-29T16:57:38+01:00</lastmod>
+    <lastmod>2024-01-01T20:29:09+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/tags/running/</loc>
+    <lastmod>2024-01-01T20:29:09+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/tags/</loc>
-    <lastmod>2023-12-29T16:57:38+01:00</lastmod>
+    <lastmod>2024-01-01T20:29:09+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/notes/the-year-of-the-amateur/</loc>
+    <lastmod>2024-01-01T20:29:09+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/tags/blog/</loc>
+    <lastmod>2023-12-29T17:04:53+01:00</lastmod>
+  </url><url>
+    <loc>https://kshitij10496.github.io/notes/relics-of-the-web/</loc>
+    <lastmod>2023-12-29T17:04:53+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/tags/web/</loc>
-    <lastmod>2023-12-29T16:57:38+01:00</lastmod>
-  </url><url>
-    <loc>https://kshitij10496.github.io/categories/</loc>
-    <lastmod>2023-12-28T15:44:31+01:00</lastmod>
+    <lastmod>2023-12-29T17:04:53+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/notes/ancient-babylonian-algorithms/</loc>
     <lastmod>2023-12-28T15:44:31+01:00</lastmod>
@@ -81,13 +93,13 @@
     <lastmod>2023-12-25T14:55:45+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/tags/career/</loc>
-    <lastmod>2023-12-25T14:55:45+01:00</lastmod>
+    <lastmod>2023-12-29T17:04:53+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/notes/norvig-teach-yourself-programming-in-10-years/</loc>
-    <lastmod>2023-12-25T14:55:45+01:00</lastmod>
+    <lastmod>2023-12-29T17:04:53+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/tags/programming/</loc>
-    <lastmod>2023-12-25T14:55:45+01:00</lastmod>
+    <lastmod>2023-12-29T17:04:53+01:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/categories/autodidact/</loc>
     <lastmod>2023-12-25T14:55:45+01:00</lastmod>
@@ -186,9 +198,6 @@
     <lastmod>2023-01-10T22:33:41+05:30</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/categories/reflection/</loc>
-    <lastmod>2023-01-11T08:42:32+05:30</lastmod>
-  </url><url>
-    <loc>https://kshitij10496.github.io/tags/running/</loc>
     <lastmod>2023-01-11T08:42:32+05:30</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/posts/witawitar-2022/</loc>
@@ -294,9 +303,6 @@
     <lastmod>2021-09-04T14:16:29+02:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/posts/blogging/</loc>
-    <lastmod>2021-09-04T14:16:29+02:00</lastmod>
-  </url><url>
-    <loc>https://kshitij10496.github.io/tags/motivation/</loc>
     <lastmod>2021-09-04T14:16:29+02:00</lastmod>
   </url><url>
     <loc>https://kshitij10496.github.io/tags/git/</loc>
