@@ -7,57 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate>
+    <atom:link href="https://kshitij10496.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Patching Go Modules</title>
       <link>https://kshitij10496.github.io/posts/patching-go-modules/</link>
       <pubDate>Wed, 26 Jul 2023 22:24:51 +0200</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/patching-go-modules/</guid>
       <description>When I was searching for ways to write integation tests in a project, I discovered Test Containers project. I decided to give it a shot and learnt more about the project. Thanks to the wonderful testcontainers/testcontainers-go1 package, it was relatively straightforward to bootstrap the setup into my project - code, tests, and CI. I was pretty happy about the entire experience. Maybe I will share the setup here sometime in the future.</description>
     </item>
-    
     <item>
       <title>Zero Copy</title>
       <link>https://kshitij10496.github.io/posts/zero-copy/</link>
       <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
-      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
-Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
+      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.&#xA;Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
     </item>
-    
     <item>
       <title>Why I Write Go</title>
       <link>https://kshitij10496.github.io/posts/on-go/</link>
       <pubDate>Sun, 11 Nov 2018 09:06:32 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/on-go/</guid>
-      <description>tl;dr: This is not a rant about how Go is &amp;ldquo;superior&amp;rdquo; to other languages. It&amp;rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊
-off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&amp;rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins.</description>
+      <description>tl;dr: This is not a rant about how Go is &amp;ldquo;superior&amp;rdquo; to other languages. It&amp;rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊&#xA;off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&amp;rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins.</description>
     </item>
-    
     <item>
       <title>For some Context</title>
       <link>https://kshitij10496.github.io/posts/for-some-context/</link>
       <pubDate>Sun, 17 Dec 2017 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
-      <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
-How does the use of context help us in programming? When should a programmer use context? In this blog post, I will share what I understand about context.
-Motivation Link to heading Consider you are an event manager of a restaurant.</description>
+      <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:&#xA;How does the use of context help us in programming? When should a programmer use context? In this blog post, I will share what I understand about context.&#xA;Motivation Link to heading Consider you are an event manager of a restaurant.</description>
     </item>
-    
     <item>
       <title>Typing in Python, Go and JavaScript</title>
       <link>https://kshitij10496.github.io/posts/typing/</link>
       <pubDate>Sun, 10 Dec 2017 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/typing/</guid>
-      <description>Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &amp;ldquo;ask for forgiveness&amp;rdquo; if the post seems too colloquial and pragmatic.
-Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
-&amp;ldquo;Python is a strongly typed, dynamic language.&amp;rdquo; &amp;ldquo;Go is a statically typed, strong language.&amp;rdquo; &amp;ldquo;JavaScript is a dynamic language which is weakly typed.</description>
+      <description>Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &amp;ldquo;ask for forgiveness&amp;rdquo; if the post seems too colloquial and pragmatic.&#xA;Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:&#xA;&amp;ldquo;Python is a strongly typed, dynamic language.&amp;rdquo; &amp;ldquo;Go is a statically typed, strong language.&amp;rdquo; &amp;ldquo;JavaScript is a dynamic language which is weakly typed.</description>
     </item>
-    
   </channel>
 </rss>

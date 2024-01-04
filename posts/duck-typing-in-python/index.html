@@ -17,8 +17,7 @@
 attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.">
 <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Duck Typing in Python"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Duck Typing in Python"/>
 <meta name="twitter:description" content="What is Duck Typing? Link to heading Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
 attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method."/>
 
@@ -29,6 +28,7 @@ attribute is located by searching within the instance itself. This yields a posi
 <meta property="og:url" content="https://kshitij10496.github.io/posts/duck-typing-in-python/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-12-03T00:00:00+05:30" />
 <meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
 
 
 
@@ -253,27 +253,27 @@ Dynamic binding is the capability to use an instance without regard for its type
 </ol>
 <p><strong>Duck Typing At Work!</strong></p>
 <p>Let us create a class which extends the Python built-in <code>list</code> and implements a <code>items</code> method.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span>class <span style="color:#50fa7b">MyList</span>(list):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#ff79c6">class</span> MyList(list):
 </span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#39;&#39;&#39; A user-defined collection data type which extends the built-in list.
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; alphabet = MyList(*&#39;</span>ABC<span style="color:#f1fa8c">&#39;)
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; alphabet = MyList(*&#39;ABC&#39;)
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; print(alphabet)
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    [&#39;</span>A<span style="color:#f1fa8c">&#39;, &#39;</span>B<span style="color:#f1fa8c">&#39;, &#39;</span>C<span style="color:#f1fa8c">&#39;]
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; alphabet[1]
-</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#39;</span>B<span style="color:#f1fa8c">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#39;B&#39;
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &gt;&gt;&gt; for i, item in alphabet.items():
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    ...     print(i, item)
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    1 A
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    2 B
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    3 C
 </span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#39;&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    def <span style="color:#50fa7b">__init__</span>(self, <span style="color:#ff79c6">*</span>args):
-</span></span><span style="display:flex;"><span>        <span style="color:#50fa7b">super</span>().<span style="color:#50fa7b">__init__</span>(args)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__init__</span>(self, <span style="color:#ff79c6">*</span>args):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#ff79c6">.</span>__init__(args)
 </span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>    def <span style="color:#50fa7b">items</span>(self):
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">items</span>(self):
 </span></span><span style="display:flex;"><span>        <span style="color:#f1fa8c">&#39;&#39;&#39;Alternate utility to `enumerate` on the instance&#39;&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">for</span> i, item <span style="color:#ff79c6">in</span> <span style="color:#50fa7b">enumerate</span>(self, start<span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>):
-</span></span><span style="display:flex;"><span>            yield i, item
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">for</span> i, item <span style="color:#ff79c6">in</span> enumerate(self, start<span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#8be9fd;font-style:italic">yield</span> i, item
 </span></span></code></pre></div><p>Now, by the grace of Duck Typing, we can use the <code>tabulate_mapping</code> function with instances of <code>MyList</code> class. However, what if we do not want malicious objects use our code this way. We all know about SQL Injection. It&rsquo;s about time we become aware of our privacy.</p>
 <h2 id="the-curious-case-of-input-validation">
   The Curious Case of Input Validation

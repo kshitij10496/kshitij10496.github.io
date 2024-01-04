@@ -7,56 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 09 Dec 2023 16:01:30 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Dec 2023 16:01:30 +0100</lastBuildDate>
+    <atom:link href="https://kshitij10496.github.io/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clojure From the Ground Up: Functions</title>
       <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-03/</link>
       <pubDate>Sat, 09 Dec 2023 16:01:30 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-03/</guid>
-      <description>Ref: Clojure from the ground up: Functions
-Functions are verbs.
-We can define symbols to values that will not change (called immutable) using let. These symbols are only available with an expression (&amp;ldquo;scoped&amp;rdquo;). The symbols can be overriden to point to a different value.
-def allows us to define mutable variables. These are helpful for experimentation.
-defn is a shorthand to define functions.
-The chapter builds an extremely powerful intuition behind the relation between let and functions.</description>
+      <description>Ref: Clojure from the ground up: Functions&#xA;Functions are verbs.&#xA;We can define symbols to values that will not change (called immutable) using let. These symbols are only available with an expression (&amp;ldquo;scoped&amp;rdquo;). The symbols can be overriden to point to a different value.&#xA;def allows us to define mutable variables. These are helpful for experimentation.&#xA;defn is a shorthand to define functions.&#xA;The chapter builds an extremely powerful intuition behind the relation between let and functions.</description>
     </item>
-    
     <item>
       <title>Clojure From the Ground Up: Basic Types</title>
       <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/</link>
       <pubDate>Thu, 07 Dec 2023 15:45:14 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/</guid>
-      <description>Ref: Clojure from the ground up: Basic Types
-What is a &amp;ldquo;type&amp;rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
-I find this to be a very neat and simple way to think about &amp;ldquo;types&amp;rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).</description>
+      <description>Ref: Clojure from the ground up: Basic Types&#xA;What is a &amp;ldquo;type&amp;rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.&#xA;I find this to be a very neat and simple way to think about &amp;ldquo;types&amp;rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).</description>
     </item>
-    
     <item>
       <title>Clojure From the Ground Up: Welcome</title>
       <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-01/</link>
       <pubDate>Wed, 06 Dec 2023 18:17:39 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-01/</guid>
-      <description>Ref: Clojure from the ground up: welcome
-Really neat article (and series) about program design from first principles.
-I loved the emphasis on motivation and simplicity.
-Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
-You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on.</description>
+      <description>Ref: Clojure from the ground up: welcome&#xA;Really neat article (and series) about program design from first principles.&#xA;I loved the emphasis on motivation and simplicity.&#xA;Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.&#xA;You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on.</description>
     </item>
-    
     <item>
       <title>Aphyr - Why is Jepsen Written in Clojure?</title>
       <link>https://kshitij10496.github.io/notes/aphyr-jepsen-clojure/</link>
       <pubDate>Wed, 06 Dec 2023 17:10:59 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/aphyr-jepsen-clojure/</guid>
-      <description>Ref: Aphyr - Why is Jepsen Written in Clojure?
-Just as I am developing an interest in the Lisp family of languages, particularly Clojure, I discovered Kyle&amp;rsquo;s post on my feed.
-Few things that stood out from this piece:
-Clojure&amp;rsquo;s ability to interop with Java (and JVM primitives) opens up the potential to leverage an existing, mature ecosystem. Immutable, persistent data structures make it easier to write concurrent programs without static typing.</description>
+      <description>Ref: Aphyr - Why is Jepsen Written in Clojure?&#xA;Just as I am developing an interest in the Lisp family of languages, particularly Clojure, I discovered Kyle&amp;rsquo;s post on my feed.&#xA;Few things that stood out from this piece:&#xA;Clojure&amp;rsquo;s ability to interop with Java (and JVM primitives) opens up the potential to leverage an existing, mature ecosystem. Immutable, persistent data structures make it easier to write concurrent programs without static typing.</description>
     </item>
-    
   </channel>
 </rss>

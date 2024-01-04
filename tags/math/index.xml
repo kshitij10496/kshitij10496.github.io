@@ -7,42 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 28 Dec 2023 15:30:20 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Dec 2023 15:30:20 +0100</lastBuildDate>
+    <atom:link href="https://kshitij10496.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Donald Knuth: Ancient Babylonian Algorithms</title>
       <link>https://kshitij10496.github.io/notes/ancient-babylonian-algorithms/</link>
       <pubDate>Thu, 28 Dec 2023 15:30:20 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/ancient-babylonian-algorithms/</guid>
-      <description>Ref: https://fermatslibrary.com/p/06445717
-This is such an intriguing paper on the history of computing, hence mathematics. I highly recommend reading it yourself.
-Few notes from the paper:
-Question: How is computer science connected with the human history further beyond the developments in the last century? Base 60 system instead of Base 10 for mathematics. Pergamonmusuem in Berlin houses a part of one of the clay tablets from Mesopotamia. I would have liked to see it but the museum is closed for renovations (for 14 years).</description>
+      <description>Ref: https://fermatslibrary.com/p/06445717&#xA;This is such an intriguing paper on the history of computing, hence mathematics. I highly recommend reading it yourself.&#xA;Few notes from the paper:&#xA;Question: How is computer science connected with the human history further beyond the developments in the last century? Base 60 system instead of Base 10 for mathematics. Pergamonmusuem in Berlin houses a part of one of the clay tablets from Mesopotamia. I would have liked to see it but the museum is closed for renovations (for 14 years).</description>
     </item>
-    
     <item>
       <title>Steve Yegge - Math for Programmers</title>
       <link>https://kshitij10496.github.io/notes/math-programmer/</link>
       <pubDate>Wed, 20 Dec 2023 15:48:30 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/math-programmer/</guid>
-      <description>Ref: https://steve-yegge.blogspot.com/2006/03/math-for-programmers.html
-One of the most inspiring articles to study mathematics, especially as a full-time programmer aka Liberal Arts degreee in Mathematics.
-Math is almost always about formalizing our &amp;ldquo;common sense&amp;rdquo; about some domain, so that we can deduce and/or prove new things about that domain.
-This is a such a powerful perspective to approach mathematics. For example, Formal Methods are mathematically techniques related to software systems (analysis, verification etc). Another example could be the real-life problems with travelling across cities resulting in the field of Graph Theory.</description>
+      <description>Ref: https://steve-yegge.blogspot.com/2006/03/math-for-programmers.html&#xA;One of the most inspiring articles to study mathematics, especially as a full-time programmer aka Liberal Arts degreee in Mathematics.&#xA;Math is almost always about formalizing our &amp;ldquo;common sense&amp;rdquo; about some domain, so that we can deduce and/or prove new things about that domain.&#xA;This is a such a powerful perspective to approach mathematics. For example, Formal Methods are mathematically techniques related to software systems (analysis, verification etc). Another example could be the real-life problems with travelling across cities resulting in the field of Graph Theory.</description>
     </item>
-    
     <item>
       <title>The Borsuk-Ulam Explorer</title>
       <link>https://kshitij10496.github.io/notes/borsuk-ulam-explorer/</link>
       <pubDate>Sat, 16 Dec 2023 16:57:47 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/borsuk-ulam-explorer/</guid>
-      <description>*Ref: The Borsuk-Ulam Explorer by Colin Cotter and Julius Ross *
-What a pretty visulisation of the Borsuk-Ulam Theorem in realtime!
-In mathematics, the Borsuk–Ulam theorem states that every continuous function from an n-sphere into Euclidean n-space maps some pair of antipodal points to the same point. Here, two points on a sphere are called antipodal if they are in exactly opposite directions from the sphere&amp;rsquo;s center.
-I don&amp;rsquo;t distinctly recall this theorem as part of my undergraduate studies.</description>
+      <description>*Ref: The Borsuk-Ulam Explorer by Colin Cotter and Julius Ross *&#xA;What a pretty visulisation of the Borsuk-Ulam Theorem in realtime!&#xA;In mathematics, the Borsuk–Ulam theorem states that every continuous function from an n-sphere into Euclidean n-space maps some pair of antipodal points to the same point. Here, two points on a sphere are called antipodal if they are in exactly opposite directions from the sphere&amp;rsquo;s center.&#xA;I don&amp;rsquo;t distinctly recall this theorem as part of my undergraduate studies.</description>
     </item>
-    
   </channel>
 </rss>

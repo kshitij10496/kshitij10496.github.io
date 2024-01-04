@@ -7,46 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate><atom:link href="https://kshitij10496.github.io/categories/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate>
+    <atom:link href="https://kshitij10496.github.io/categories/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Patching Go Modules</title>
       <link>https://kshitij10496.github.io/posts/patching-go-modules/</link>
       <pubDate>Wed, 26 Jul 2023 22:24:51 +0200</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/patching-go-modules/</guid>
       <description>When I was searching for ways to write integation tests in a project, I discovered Test Containers project. I decided to give it a shot and learnt more about the project. Thanks to the wonderful testcontainers/testcontainers-go1 package, it was relatively straightforward to bootstrap the setup into my project - code, tests, and CI. I was pretty happy about the entire experience. Maybe I will share the setup here sometime in the future.</description>
     </item>
-    
     <item>
       <title>Zero Copy</title>
       <link>https://kshitij10496.github.io/posts/zero-copy/</link>
       <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
-      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
-Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
+      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.&#xA;Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
     </item>
-    
     <item>
       <title>Integrating GoatCounter into the blog</title>
       <link>https://kshitij10496.github.io/posts/goatcounter/</link>
       <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/goatcounter/</guid>
-      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
-Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
+      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.&#xA;Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
     </item>
-    
     <item>
       <title>What I Talk About When I Talk About Running: 2022</title>
       <link>https://kshitij10496.github.io/posts/witawitar-2022/</link>
       <pubDate>Sun, 01 Jan 2023 10:32:38 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/witawitar-2022/</guid>
-      <description>This article was originally posted on my Running Log Newsletter on Substack. You can also read it here.
-As we are trapped between the years, I took some time to reflect on my practice of running. This post is an attempt to better understand myself, and share my learning.
-I’m an average runner at best. There is no doubt about it. However, I start every run with a little curiosity to discover something new about myself.</description>
+      <description>This article was originally posted on my Running Log Newsletter on Substack. You can also read it here.&#xA;As we are trapped between the years, I took some time to reflect on my practice of running. This post is an attempt to better understand myself, and share my learning.&#xA;I’m an average runner at best. There is no doubt about it. However, I start every run with a little curiosity to discover something new about myself.</description>
     </item>
-    
   </channel>
 </rss>

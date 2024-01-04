@@ -7,402 +7,252 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate>
+    <atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testcontainers with Podman</title>
       <link>https://kshitij10496.github.io/posts/testcontainers-with-podman/</link>
       <pubDate>Mon, 20 Nov 2023 15:48:41 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/testcontainers-with-podman/</guid>
-      <description>I use Testcontainers for writing integration tests for my APIs.
-In particular, the tests concerning DBs - migrations, SQL queries.
-Currently, I replacing Docker with Podman as the preferred tool for managing Containers.
-Eventually, I stumbled upon the problem of configuring Testcontainers with Podman on my local machine. Here is what I discovered during the process of migration from Docker to Podman, with respect to Testcontainers:
-Problem Link to heading Testcontainers implicitly use Docker as the default container runtime.</description>
+      <description>I use Testcontainers for writing integration tests for my APIs.&#xA;In particular, the tests concerning DBs - migrations, SQL queries.&#xA;Currently, I replacing Docker with Podman as the preferred tool for managing Containers.&#xA;Eventually, I stumbled upon the problem of configuring Testcontainers with Podman on my local machine. Here is what I discovered during the process of migration from Docker to Podman, with respect to Testcontainers:&#xA;Problem Link to heading Testcontainers implicitly use Docker as the default container runtime.</description>
     </item>
-    
     <item>
       <title>Patching Go Modules</title>
       <link>https://kshitij10496.github.io/posts/patching-go-modules/</link>
       <pubDate>Wed, 26 Jul 2023 22:24:51 +0200</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/patching-go-modules/</guid>
       <description>When I was searching for ways to write integation tests in a project, I discovered Test Containers project. I decided to give it a shot and learnt more about the project. Thanks to the wonderful testcontainers/testcontainers-go1 package, it was relatively straightforward to bootstrap the setup into my project - code, tests, and CI. I was pretty happy about the entire experience. Maybe I will share the setup here sometime in the future.</description>
     </item>
-    
     <item>
       <title>PostgreSQL Query Planning</title>
       <link>https://kshitij10496.github.io/posts/pg-query-planning/</link>
       <pubDate>Sun, 30 Apr 2023 16:21:26 +0200</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/pg-query-planning/</guid>
-      <description>This past week I triggered an incident on one of the production systems. The issue was a result of a AWS Aurora Postgres major version upgrade (10-&amp;gt;11) gone wrong. Here is a brief summary of what I learnt from it.
-Every running DBMS has some state associated with the data it stores. This state enables the DBMS to tune it&amp;rsquo;s own performance.
-Upgrading the DB is tricky for sure. Always try to create contingency plans (backups, snapshots, redundant DBs) before executing destructive operations.</description>
+      <description>This past week I triggered an incident on one of the production systems. The issue was a result of a AWS Aurora Postgres major version upgrade (10-&amp;gt;11) gone wrong. Here is a brief summary of what I learnt from it.&#xA;Every running DBMS has some state associated with the data it stores. This state enables the DBMS to tune it&amp;rsquo;s own performance.&#xA;Upgrading the DB is tricky for sure. Always try to create contingency plans (backups, snapshots, redundant DBs) before executing destructive operations.</description>
     </item>
-    
     <item>
       <title>Apple Notes</title>
       <link>https://kshitij10496.github.io/posts/apple-notes/</link>
       <pubDate>Mon, 03 Apr 2023 16:37:31 +0200</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/apple-notes/</guid>
-      <description>I use Apple Notes for taking quick notes, and a bin for random ideas that pop up in my head. It has one of the best product features I have come across any note taking app.
-Feature: Automatically deleting empty notes or No empty notes.
-My Notion and Google Drive is filled with Docs/Sheets titled &amp;ldquo;Untitled&amp;rdquo;. This adds to the noise. Perhaps the fundamental problem is my failure to name these docs at that moment.</description>
+      <description>I use Apple Notes for taking quick notes, and a bin for random ideas that pop up in my head. It has one of the best product features I have come across any note taking app.&#xA;Feature: Automatically deleting empty notes or No empty notes.&#xA;My Notion and Google Drive is filled with Docs/Sheets titled &amp;ldquo;Untitled&amp;rdquo;. This adds to the noise. Perhaps the fundamental problem is my failure to name these docs at that moment.</description>
     </item>
-    
     <item>
       <title>Tips for working with Terraform as a developer</title>
       <link>https://kshitij10496.github.io/posts/tips-terraform/</link>
       <pubDate>Thu, 30 Mar 2023 14:29:46 +0200</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/tips-terraform/</guid>
-      <description>At work lately, I have been working with Terraform for our Infrastructure-as-code. My limited domain expertise lies primarily within the scope of backend systems. I had never worked with provisioning infrastructure via code before. So it was a valuable experience to see code turn on machines to execute more code.
-Here are a few things I learnt during the process:
-Use tfswitch for dependency management to install and toggle between the various Terraform versions used across the modules.</description>
+      <description>At work lately, I have been working with Terraform for our Infrastructure-as-code. My limited domain expertise lies primarily within the scope of backend systems. I had never worked with provisioning infrastructure via code before. So it was a valuable experience to see code turn on machines to execute more code.&#xA;Here are a few things I learnt during the process:&#xA;Use tfswitch for dependency management to install and toggle between the various Terraform versions used across the modules.</description>
     </item>
-    
     <item>
       <title>Zero Copy</title>
       <link>https://kshitij10496.github.io/posts/zero-copy/</link>
       <pubDate>Tue, 10 Jan 2023 15:35:37 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/zero-copy/</guid>
-      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.
-Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
+      <description>Fundamentally, a lot of API development is about gathering, manipulating, and tranferring data across processes. The concept of copying data from one memory area to another memory area is integral to the efficiency of the system. My interest is to better understand how this &amp;ldquo;copy&amp;rdquo; operation works. More so, I want to learn how to make this copy process efficient from a software engineer&amp;rsquo;s POV.&#xA;Usually when a user space process (our application binary) has to execute system operations like reading or writing data from/to a device (disk, network etc.</description>
     </item>
-    
     <item>
       <title>Review: Let My People Go Surfing</title>
       <link>https://kshitij10496.github.io/posts/review-lmpgs/</link>
       <pubDate>Sat, 07 Jan 2023 11:57:56 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/review-lmpgs/</guid>
-      <description>Patagonia, Inc. is a fascinating brand. Yvon Chouinard, the founder , is an eccentric.
-Recently, Yvon donated the company to a non-profit trust to fight the environmental crisis1.
-This level of commitment intrigued me. After listening to a couple of Yvon&amp;rsquo;s interviews2, I picked up this book with the hope of learning more about him.
-Along with Yvon&amp;rsquo;s personal story, the book also expands his guiding principles on running a business.</description>
+      <description>Patagonia, Inc. is a fascinating brand. Yvon Chouinard, the founder , is an eccentric.&#xA;Recently, Yvon donated the company to a non-profit trust to fight the environmental crisis1.&#xA;This level of commitment intrigued me. After listening to a couple of Yvon&amp;rsquo;s interviews2, I picked up this book with the hope of learning more about him.&#xA;Along with Yvon&amp;rsquo;s personal story, the book also expands his guiding principles on running a business.</description>
     </item>
-    
     <item>
       <title>Integrating GoatCounter into the blog</title>
       <link>https://kshitij10496.github.io/posts/goatcounter/</link>
       <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/goatcounter/</guid>
-      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
-Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
+      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.&#xA;Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
     </item>
-    
     <item>
       <title>What I Talk About When I Talk About Running: 2022</title>
       <link>https://kshitij10496.github.io/posts/witawitar-2022/</link>
       <pubDate>Sun, 01 Jan 2023 10:32:38 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/witawitar-2022/</guid>
-      <description>This article was originally posted on my Running Log Newsletter on Substack. You can also read it here.
-As we are trapped between the years, I took some time to reflect on my practice of running. This post is an attempt to better understand myself, and share my learning.
-I’m an average runner at best. There is no doubt about it. However, I start every run with a little curiosity to discover something new about myself.</description>
+      <description>This article was originally posted on my Running Log Newsletter on Substack. You can also read it here.&#xA;As we are trapped between the years, I took some time to reflect on my practice of running. This post is an attempt to better understand myself, and share my learning.&#xA;I’m an average runner at best. There is no doubt about it. However, I start every run with a little curiosity to discover something new about myself.</description>
     </item>
-    
     <item>
       <title>Review: Remembrance of Earth&#39;s Past</title>
       <link>https://kshitij10496.github.io/posts/review-remembrance-of-earths-past/</link>
       <pubDate>Sun, 24 Jul 2022 18:00:30 +0200</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/review-remembrance-of-earths-past/</guid>
-      <description>I was quite absorbed with this trilogy over the last couple of months.
-I distinctly remember reading the first chapter of The Three-Body Problem, few years ago at the university. I had stashed it for later. So I eventually decided to pick up the 1st book in the trilogy early May, after returning from India.
-After reading the trilogy, I have a lot more questions than I did before. Questions ranging from astrophysics to humanity&amp;rsquo;s collective decision making.</description>
+      <description>I was quite absorbed with this trilogy over the last couple of months.&#xA;I distinctly remember reading the first chapter of The Three-Body Problem, few years ago at the university. I had stashed it for later. So I eventually decided to pick up the 1st book in the trilogy early May, after returning from India.&#xA;After reading the trilogy, I have a lot more questions than I did before. Questions ranging from astrophysics to humanity&amp;rsquo;s collective decision making.</description>
     </item>
-    
     <item>
       <title>Review: Project Hail Mary</title>
       <link>https://kshitij10496.github.io/posts/review-project-hail-mary/</link>
       <pubDate>Sat, 19 Feb 2022 16:27:50 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/review-project-hail-mary/</guid>
-      <description>Extremely engaging, fun pop &amp;ldquo;scientific&amp;rdquo; fiction.
-Thoughts Provoked Link to heading The difference between &amp;ldquo;science&amp;rdquo; and &amp;ldquo;engineering&amp;rdquo;. Without robust engineering skills at hand, scientific knowledge might not become a differentiating factor. An individual&amp;rsquo;s character is revealed only during an adversity. Most seemingly strong people can be cowards. There is nothing philosophical, in particular, throughout the storyline. However, a bunch of facts related to basic science are tied into the narrative; no rocket science.</description>
+      <description>Extremely engaging, fun pop &amp;ldquo;scientific&amp;rdquo; fiction.&#xA;Thoughts Provoked Link to heading The difference between &amp;ldquo;science&amp;rdquo; and &amp;ldquo;engineering&amp;rdquo;. Without robust engineering skills at hand, scientific knowledge might not become a differentiating factor. An individual&amp;rsquo;s character is revealed only during an adversity. Most seemingly strong people can be cowards. There is nothing philosophical, in particular, throughout the storyline. However, a bunch of facts related to basic science are tied into the narrative; no rocket science.</description>
     </item>
-    
     <item>
       <title>Magical Files</title>
       <link>https://kshitij10496.github.io/posts/magical-files/</link>
       <pubDate>Sun, 10 Feb 2019 18:55:02 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/magical-files/</guid>
-      <description>Context Link to heading My Downloads folder is a mess!
-I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.
-“Is there a way to only list all the PDF files present in a directory?”
-Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
+      <description>Context Link to heading My Downloads folder is a mess!&#xA;I have got hundreds of files in that directory. Most of them are PDF documents with some images, archives and disk images.&#xA;“Is there a way to only list all the PDF files present in a directory?”&#xA;Well, filtering based on file extension (.pdf) should be able to do this for me. Moreover, I can leverage the power of regular expression: $ ls -lh ~/Downloads/*.</description>
     </item>
-    
     <item>
       <title>Weekend with Flutter</title>
       <link>https://kshitij10496.github.io/posts/weekend-with-flutter/</link>
       <pubDate>Sun, 03 Feb 2019 19:14:09 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/weekend-with-flutter/</guid>
-      <description>I built my first-ever mobile application as a weekend project.
-This post describes my experience, thoughts and emotions over the past few days.
-Motivation Link to heading Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
+      <description>I built my first-ever mobile application as a weekend project.&#xA;This post describes my experience, thoughts and emotions over the past few days.&#xA;Motivation Link to heading Last week, my friends introduced me to a cards game called “350”. It involved bidding points, calling trumps, playing hands - so much fun! Now the only issue was that there was no simple way to store our points table. We found ourselves repeatedly checking the scores and wasting a lot of time talking about game information.</description>
     </item>
-    
     <item>
       <title>Postgres with Docker</title>
       <link>https://kshitij10496.github.io/posts/postgres-with-docker/</link>
       <pubDate>Sun, 13 Jan 2019 20:47:59 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/postgres-with-docker/</guid>
-      <description>Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
-Problem Link to heading I have got a lot of small personal projects which use separate databases.
-Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
-Now, this soon got messy as my machine was polluted with lots of DBs and their configurations.</description>
+      <description>Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.&#xA;Problem Link to heading I have got a lot of small personal projects which use separate databases.&#xA;Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.&#xA;Now, this soon got messy as my machine was polluted with lots of DBs and their configurations.</description>
     </item>
-    
     <item>
       <title>Review: Fahrenheit 451</title>
       <link>https://kshitij10496.github.io/posts/fahrenheit-451/</link>
       <pubDate>Sat, 05 Jan 2019 21:26:33 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/fahrenheit-451/</guid>
-      <description>Fahrenheit 451 by Ray Bradbury
-451F: Temperature at which book-paper catches fire and burns.
-Enter a dystopia where firemen are responsible for burning books rather than preventing houses from fires - in both cases, the firemen are the custodians of peace, saving people from potential “dangers”.
-Recommended for: Anyone who doesn’t read regularly.
-Characters:
-Guy Montag Clarrise McClellan Mildred Captain Beatty Faber This is a story of Montag, a fireman, awakening to the reality of world he is living in (similar to that of Winston in 1984).</description>
+      <description>Fahrenheit 451 by Ray Bradbury&#xA;451F: Temperature at which book-paper catches fire and burns.&#xA;Enter a dystopia where firemen are responsible for burning books rather than preventing houses from fires - in both cases, the firemen are the custodians of peace, saving people from potential “dangers”.&#xA;Recommended for: Anyone who doesn’t read regularly.&#xA;Characters:&#xA;Guy Montag Clarrise McClellan Mildred Captain Beatty Faber This is a story of Montag, a fireman, awakening to the reality of world he is living in (similar to that of Winston in 1984).</description>
     </item>
-    
     <item>
       <title>Asymmetry</title>
       <link>https://kshitij10496.github.io/posts/on-asymmetry/</link>
       <pubDate>Thu, 03 Jan 2019 21:33:32 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/on-asymmetry/</guid>
-      <description>cross-posting from 200 Words A Day
-Let’s talk about the asymmetries in our lives today.
-After reading Fooled By Randomness and The Black Swan from Nassim Nicholas Taleb, I am convinced by the presence and importance of asymmetries in all walks of our lives. Moreover, these asymmetries are almost always associated with a “rare”(low probability), “unforeseeable”, highly consequential event (called a Black Swan).
-Turning a blind eye to them can result in a massive blowup – the much fraught unbecoming.</description>
+      <description>cross-posting from 200 Words A Day&#xA;Let’s talk about the asymmetries in our lives today.&#xA;After reading Fooled By Randomness and The Black Swan from Nassim Nicholas Taleb, I am convinced by the presence and importance of asymmetries in all walks of our lives. Moreover, these asymmetries are almost always associated with a “rare”(low probability), “unforeseeable”, highly consequential event (called a Black Swan).&#xA;Turning a blind eye to them can result in a massive blowup – the much fraught unbecoming.</description>
     </item>
-    
     <item>
       <title>Education</title>
       <link>https://kshitij10496.github.io/posts/on-education/</link>
       <pubDate>Wed, 02 Jan 2019 21:37:59 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/on-education/</guid>
-      <description>cross-posting from 200 Words A Day
-Let’s talk about education today.
-There are 2 complementary aspects of getting an education:
-the scholarly education obtained from rigorously studying academic texts obtained from schooling. the practical education learned from life experiences dealing in the real world. I’m sure that most of us would agree that they fall somewhere on this spectrum of the wise and academic to the streetwise and practical.
-Too much theory results in losing Skin in The Game while too much of hacking renders the bigger picture of your life a blur.</description>
+      <description>cross-posting from 200 Words A Day&#xA;Let’s talk about education today.&#xA;There are 2 complementary aspects of getting an education:&#xA;the scholarly education obtained from rigorously studying academic texts obtained from schooling. the practical education learned from life experiences dealing in the real world. I’m sure that most of us would agree that they fall somewhere on this spectrum of the wise and academic to the streetwise and practical.&#xA;Too much theory results in losing Skin in The Game while too much of hacking renders the bigger picture of your life a blur.</description>
     </item>
-    
     <item>
       <title>Case for Non-violence</title>
       <link>https://kshitij10496.github.io/posts/on-non-violence/</link>
       <pubDate>Wed, 28 Nov 2018 20:14:30 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/on-non-violence/</guid>
       <description>It was not about being the &amp;ldquo;bigger man&amp;rdquo;. Essentially it was about becoming a principled, disciplined person. I think it&amp;rsquo;s totally normal for us to feel angry at some point. It&amp;rsquo;s not about teleology - estiology: answer what could this experience mean? From now onwards, whenever I find myself getting frustrated at a person/thing, I delude myself to think of a happy memory associated with it. It&amp;rsquo;s a pretty hack I&amp;rsquo;ve been using lately.</description>
     </item>
-    
     <item>
       <title>Why I Write Go</title>
       <link>https://kshitij10496.github.io/posts/on-go/</link>
       <pubDate>Sun, 11 Nov 2018 09:06:32 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/on-go/</guid>
-      <description>tl;dr: This is not a rant about how Go is &amp;ldquo;superior&amp;rdquo; to other languages. It&amp;rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊
-off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&amp;rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins.</description>
+      <description>tl;dr: This is not a rant about how Go is &amp;ldquo;superior&amp;rdquo; to other languages. It&amp;rsquo;s all apples and oranges and I like them both, not at the same time, ofcourse! 🍎/🍊&#xA;off-topic: When I was a little boy 👦, I used to play all day long with my legos - constructing buildings, trucks, everything that I could imagine. Chaining dominoes with my parent&amp;rsquo;s music collection cassettes, solving jigsaw puzzles and playing scrabble with my cousins.</description>
     </item>
-    
     <item>
       <title>Make Blog Great Again</title>
       <link>https://kshitij10496.github.io/posts/blogging/</link>
       <pubDate>Sun, 04 Nov 2018 00:21:02 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/blogging/</guid>
-      <description>tl;dr: post about posting more posts
-I have forgotten to write blog posts for over a year or have I?
-Blogging 101 Link to heading I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
+      <description>tl;dr: post about posting more posts&#xA;I have forgotten to write blog posts for over a year or have I?&#xA;Blogging 101 Link to heading I started this blog after I was selected as a GSoC 2016 student under SymPy so as to log my progress. Few weeks working into the program, it seemed that I had developed the habit of writing weekly articles. Back then, I intended to continue maintaining my blog.</description>
     </item>
-    
     <item>
       <title>Hugo Blog On GitHub Pages</title>
       <link>https://kshitij10496.github.io/posts/hugo-blog-setup/</link>
       <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/hugo-blog-setup/</guid>
-      <description>Looking to create your personal blog using Hugo and hosting it on GitHub Pages?
-To be honest, it can sound a bit intimidating and challenging at first.
-I, too, felt the same while I setup this blog using Hugo and the Coder theme.
-In this post, I share my experience during the process - from the specific commands to the lessons learnt.
-In addition to this, I also share my workflow for publishing posts using a shell script.</description>
+      <description>Looking to create your personal blog using Hugo and hosting it on GitHub Pages?&#xA;To be honest, it can sound a bit intimidating and challenging at first.&#xA;I, too, felt the same while I setup this blog using Hugo and the Coder theme.&#xA;In this post, I share my experience during the process - from the specific commands to the lessons learnt.&#xA;In addition to this, I also share my workflow for publishing posts using a shell script.</description>
     </item>
-    
     <item>
       <title>For some Context</title>
       <link>https://kshitij10496.github.io/posts/for-some-context/</link>
       <pubDate>Sun, 17 Dec 2017 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/for-some-context/</guid>
-      <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
-How does the use of context help us in programming? When should a programmer use context? In this blog post, I will share what I understand about context.
-Motivation Link to heading Consider you are an event manager of a restaurant.</description>
+      <description>There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:&#xA;How does the use of context help us in programming? When should a programmer use context? In this blog post, I will share what I understand about context.&#xA;Motivation Link to heading Consider you are an event manager of a restaurant.</description>
     </item>
-    
     <item>
       <title>Typing in Python, Go and JavaScript</title>
       <link>https://kshitij10496.github.io/posts/typing/</link>
       <pubDate>Sun, 10 Dec 2017 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/typing/</guid>
-      <description>Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &amp;ldquo;ask for forgiveness&amp;rdquo; if the post seems too colloquial and pragmatic.
-Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:
-&amp;ldquo;Python is a strongly typed, dynamic language.&amp;rdquo; &amp;ldquo;Go is a statically typed, strong language.&amp;rdquo; &amp;ldquo;JavaScript is a dynamic language which is weakly typed.</description>
+      <description>Disclaimer: This post has been written from the point-of-view of a software developer rather than a theoretical computer science. So I &amp;ldquo;ask for forgiveness&amp;rdquo; if the post seems too colloquial and pragmatic.&#xA;Reading through the articles on programming languages, you are bound to stumble upon statements similar to the following:&#xA;&amp;ldquo;Python is a strongly typed, dynamic language.&amp;rdquo; &amp;ldquo;Go is a statically typed, strong language.&amp;rdquo; &amp;ldquo;JavaScript is a dynamic language which is weakly typed.</description>
     </item>
-    
     <item>
       <title>Duck Typing in Python</title>
       <link>https://kshitij10496.github.io/posts/duck-typing-in-python/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/duck-typing-in-python/</guid>
-      <description>What is Duck Typing? Link to heading Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:
-attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
+      <description>What is Duck Typing? Link to heading Python is a dynamic language which is strongly typed. Dynamic binding is the capability to use an instance without regard for its type. It is handled entirely through a simple attribute lookup process. Whenever an attribute is accessed as object.attribute:&#xA;attribute is located by searching within the instance itself. This yields a positive result when the attribute being searched for is an instance variable or method.</description>
     </item>
-    
     <item>
       <title>How Iterables Actually Work in Python</title>
       <link>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/how-iterables-actually-work-in-python/</guid>
       <description>This past week I read about Python&amp;rsquo;s iterator protocol and how the philosophy of iteration is deeply embedded into the language design. Many features that I love about Python such as list comprehensions, tuple unpacking leverage the power of iterator protocol. I wrote an article on Medium explaining how developers can implement it and use these features much more efficiently in their day-to-day life.</description>
     </item>
-    
     <item>
       <title>GSoC Week 10 &amp; 11 - The One with `solvify`</title>
       <link>https://kshitij10496.github.io/posts/gsoc-week-10-11/</link>
       <pubDate>Sun, 07 Aug 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/gsoc-week-10-11/</guid>
-      <description>FiniteSet | list ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None Adding domain support.
-I added a domain argument to isolve whose default value is the real domain (domain=S.Reals). A few limitation to the conditions of S.Infinity and S.NegativeInfinity followed.
-Another noticable point, from the point of implementation, was to deal with singularities and discontinuities of the given inequality. For this, I used the continuous_domain method to find the continuous domains of the expression within the specified domain.</description>
+      <description>FiniteSet | list ImageSet, | list (if `f` is periodic) Union | EmptySet | empty list Others | None Adding domain support.&#xA;I added a domain argument to isolve whose default value is the real domain (domain=S.Reals). A few limitation to the conditions of S.Infinity and S.NegativeInfinity followed.&#xA;Another noticable point, from the point of implementation, was to deal with singularities and discontinuities of the given inequality. For this, I used the continuous_domain method to find the continuous domains of the expression within the specified domain.</description>
     </item>
-    
     <item>
       <title>GSoC Week 09 - The One with Inequalities</title>
       <link>https://kshitij10496.github.io/posts/gsoc-week-09/</link>
       <pubDate>Sun, 24 Jul 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/gsoc-week-09/</guid>
-      <description>This week I worked on solving trigonometric inequalities.
-Trigonometric inequalities Link to heading The primary univariate inequality solver - solve_univariate_inequality,
-depends upon the results of solve in order to solve the given inequality. Taking a cue from PR#10022 on incorporating solveset for inequalities, I worked on developing an approach for replacing the use of solve with solveset in solving inequalities.
-Idea
-Convert Set-type output from solveset to list objects similar to that returned by solve.</description>
+      <description>This week I worked on solving trigonometric inequalities.&#xA;Trigonometric inequalities Link to heading The primary univariate inequality solver - solve_univariate_inequality,&#xA;depends upon the results of solve in order to solve the given inequality. Taking a cue from PR#10022 on incorporating solveset for inequalities, I worked on developing an approach for replacing the use of solve with solveset in solving inequalities.&#xA;Idea&#xA;Convert Set-type output from solveset to list objects similar to that returned by solve.</description>
     </item>
-    
     <item>
       <title>GSoC Week 07 - The One With Generalised Periodicity</title>
       <link>https://kshitij10496.github.io/posts/gsoc-week-07/</link>
       <pubDate>Thu, 07 Jul 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/gsoc-week-07/</guid>
-      <description>This week I updated my PR#11277 to find the period of a general function.
-Periodicity Link to heading In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.
-Here are my notes on periodicity which were the literature reference for the development of the method:</description>
+      <description>This week I updated my PR#11277 to find the period of a general function.&#xA;Periodicity Link to heading In the past few weeks, I dedicated a lot of my time reading about the property of periodicity of a function. Earlier, I had implemented a trivial(and restricted) functionality for this task. This motivated me to study this topic as I planned to generalise the function.&#xA;Here are my notes on periodicity which were the literature reference for the development of the method:</description>
     </item>
-    
     <item>
       <title>GSoC Week 06 - The One with Singularities</title>
       <link>https://kshitij10496.github.io/posts/gsoc-week-06/</link>
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/gsoc-week-06/</guid>
-      <description>This week I worked on the topic of singularities.
-Singularities Link to heading A singularity is in general a point at which a given mathematical object is not defined.
-Examples:
-1/x has a singularity at x = 0 as it seems to reach infinity. |x| (Absolute) has a singularity at x = 0 since it is not differentiable at that point. √x (Square root) has a singularity at x = 0 since it doesnot admit a tangent there.</description>
+      <description>This week I worked on the topic of singularities.&#xA;Singularities Link to heading A singularity is in general a point at which a given mathematical object is not defined.&#xA;Examples:&#xA;1/x has a singularity at x = 0 as it seems to reach infinity. |x| (Absolute) has a singularity at x = 0 since it is not differentiable at that point. √x (Square root) has a singularity at x = 0 since it doesnot admit a tangent there.</description>
     </item>
-    
     <item>
       <title>GSoC Weeks 04 &amp; 05 - The One with Periodicity</title>
       <link>https://kshitij10496.github.io/posts/gsoc-week-04-05/</link>
       <pubDate>Fri, 24 Jun 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/gsoc-week-04-05/</guid>
-      <description>Hi folks !
-The past couple of weeks were spent of developing heuristics for determining the fundamental period of a given trigonometric function.
-In our higher school, we all must have come across Trigonometric Functions. One of the most striking properties of these functions is their periodicty.
-The ability of a function to repeat its values in regular intervals has always caught my imagination.
-Motivation Link to heading Well, SymPy ought to have a functionality to determine the period of a function.</description>
+      <description>Hi folks !&#xA;The past couple of weeks were spent of developing heuristics for determining the fundamental period of a given trigonometric function.&#xA;In our higher school, we all must have come across Trigonometric Functions. One of the most striking properties of these functions is their periodicty.&#xA;The ability of a function to repeat its values in regular intervals has always caught my imagination.&#xA;Motivation Link to heading Well, SymPy ought to have a functionality to determine the period of a function.</description>
     </item>
-    
     <item>
       <title>GSoC Week 03 - The One With Function Range (Part II)</title>
       <link>https://kshitij10496.github.io/posts/gsoc-week-03/</link>
       <pubDate>Fri, 10 Jun 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/gsoc-week-03/</guid>
-      <description>Hey !
-This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&amp;rsquo;s research on the same, I tried to develop these utility functions.
-Implementation Link to heading Here, I have defined the two functions along with some of their implementation details:
-continuous_in(f, x, interval)
-The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval.</description>
+      <description>Hey !&#xA;This week I worked on implementing a method for finding the range of a function in a given domain. Following from last weeek&amp;rsquo;s research on the same, I tried to develop these utility functions.&#xA;Implementation Link to heading Here, I have defined the two functions along with some of their implementation details:&#xA;continuous_in(f, x, interval)&#xA;The function returns the sub-domains as an Union of Interval in case a discontinuity exists in the interval.</description>
     </item>
-    
     <item>
       <title>GSoC Week 02 - The One With Function Range (Part I)</title>
       <link>https://kshitij10496.github.io/posts/gsoc-week-02/</link>
       <pubDate>Sat, 04 Jun 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/gsoc-week-02/</guid>
-      <description>This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.
-Progress Link to heading Suppose, we want to solve the following equation in the variable x:
-sin(x) = π / 2
-We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1</description>
+      <description>This week I worked on developing methods for computing the range of an univariate function. For this pupose, I spent most of my time in research; reading previous discussions on mailing lists, pull requests and wikis.&#xA;Progress Link to heading Suppose, we want to solve the following equation in the variable x:&#xA;sin(x) = π / 2&#xA;We can straight away state that this equations has no solutions as the range of the function sin is -1 to 1</description>
     </item>
-    
     <item>
       <title>GSoC Week 01 - The One with Intersections</title>
       <link>https://kshitij10496.github.io/posts/gsoc-week-01/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/gsoc-week-01/</guid>
-      <description>$ git log Link to heading PR #11149 : Intersection of null Range and an Interval returns EmptySet
-PR #11164 : Intersection of certain ImageSets with Intervals
-In the next week, I will try to design a method to determine the range of a function in the given domain.
-This will require some digging up and a bit of research.
-Looking forward to it !</description>
+      <description>$ git log Link to heading PR #11149 : Intersection of null Range and an Interval returns EmptySet&#xA;PR #11164 : Intersection of certain ImageSets with Intervals&#xA;In the next week, I will try to design a method to determine the range of a function in the given domain.&#xA;This will require some digging up and a bit of research.&#xA;Looking forward to it !</description>
     </item>
-    
     <item>
       <title>Solving equations via Decomposition and Rewriting</title>
       <link>https://kshitij10496.github.io/posts/solving-equations-via-decomposition-and-rewriting/</link>
       <pubDate>Sun, 22 May 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/solving-equations-via-decomposition-and-rewriting/</guid>
-      <description>A robust framework for solving equations is a salient feature of any Computer Algebra System. An important idea in this regard is &amp;ldquo;Rewriting and Decomposition&amp;rdquo;. By using this techniques, we try to reduce the given equation to a set of simpler equations which can be solved with relative ease.
-An example here would be the best way to establish the significance of the above idea.
-If we have to solve for x in the equation f(x) = 0, where</description>
+      <description>A robust framework for solving equations is a salient feature of any Computer Algebra System. An important idea in this regard is &amp;ldquo;Rewriting and Decomposition&amp;rdquo;. By using this techniques, we try to reduce the given equation to a set of simpler equations which can be solved with relative ease.&#xA;An example here would be the best way to establish the significance of the above idea.&#xA;If we have to solve for x in the equation f(x) = 0, where</description>
     </item>
-    
     <item>
       <title>Auditing SymPy&#39;s Transcendental solver</title>
       <link>https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</link>
       <pubDate>Sun, 15 May 2016 00:00:00 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/auditing-sympys-transcendental-solver/</guid>
-      <description>Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:
-modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential). using SymPy Set objects internally, instead of using the built-in Python lists. use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs.</description>
+      <description>Having considered the current codebase of _tsolve function, I find the following few points considered while implementing the new solver:&#xA;modularise the code for various classes of equations(LambertW, bivariate equation type, logarithmic, exponential). using SymPy Set objects internally, instead of using the built-in Python lists. use of decompogen function to check for possible decomposition of the given expression into simpler functions. handle the case where the given equation has no closed-form solution and infinite recursion occurs.</description>
     </item>
-    
   </channel>
 </rss>

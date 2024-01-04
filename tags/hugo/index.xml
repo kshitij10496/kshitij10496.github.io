@@ -7,29 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 06 Jan 2023 17:08:57 +0530</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 17:08:57 +0530</lastBuildDate>
+    <atom:link href="https://kshitij10496.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Integrating GoatCounter into the blog</title>
       <link>https://kshitij10496.github.io/posts/goatcounter/</link>
       <pubDate>Fri, 06 Jan 2023 17:08:57 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/goatcounter/</guid>
-      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.
-Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
+      <description>This blog is tracked with GoatCounter. It&amp;rsquo;s a minimalist, privacy respecting, open source web analytics tool. Here is my small adventure into adding the tool into the blog.&#xA;Why did I add a tracker? Link to heading I discovered GoatCounter on a random HackerNews post earlier this week. Eventually, I landed on GoatCounter&amp;rsquo;s Design. I appreciate the focus on simplicity, pragmatism, and keeping things boring. This convinced me to try out GoatCounter.</description>
     </item>
-    
     <item>
       <title>Hugo Blog On GitHub Pages</title>
       <link>https://kshitij10496.github.io/posts/hugo-blog-setup/</link>
       <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
-      
       <guid>https://kshitij10496.github.io/posts/hugo-blog-setup/</guid>
-      <description>Looking to create your personal blog using Hugo and hosting it on GitHub Pages?
-To be honest, it can sound a bit intimidating and challenging at first.
-I, too, felt the same while I setup this blog using Hugo and the Coder theme.
-In this post, I share my experience during the process - from the specific commands to the lessons learnt.
-In addition to this, I also share my workflow for publishing posts using a shell script.</description>
+      <description>Looking to create your personal blog using Hugo and hosting it on GitHub Pages?&#xA;To be honest, it can sound a bit intimidating and challenging at first.&#xA;I, too, felt the same while I setup this blog using Hugo and the Coder theme.&#xA;In this post, I share my experience during the process - from the specific commands to the lessons learnt.&#xA;In addition to this, I also share my workflow for publishing posts using a shell script.</description>
     </item>
-    
   </channel>
 </rss>

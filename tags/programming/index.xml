@@ -7,19 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 10 Dec 2023 16:11:09 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Dec 2023 16:11:09 +0100</lastBuildDate>
+    <atom:link href="https://kshitij10496.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Peter Norvig: Programming in 10 Years</title>
       <link>https://kshitij10496.github.io/notes/norvig-teach-yourself-programming-in-10-years/</link>
       <pubDate>Sun, 10 Dec 2023 16:11:09 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/norvig-teach-yourself-programming-in-10-years/</guid>
-      <description>Ref: Peter Norvig: Teach Yourself Programming in 10 Years
-I remember reading this article way back in my uni days. It reminded me of a popular quote from Richard Feynmann
-Now that I have stumbled across it after few years of experience working as a professional software engineer, I related a bit more with the content.
-Ways to develop a deep understanding:
-Write more significant programs that solve problems. Work with experienced programmers.</description>
+      <description>Ref: Peter Norvig: Teach Yourself Programming in 10 Years&#xA;I remember reading this article way back in my uni days. It reminded me of a popular quote from Richard Feynmann&#xA;Now that I have stumbled across it after few years of experience working as a professional software engineer, I related a bit more with the content.&#xA;Ways to develop a deep understanding:&#xA;Write more significant programs that solve problems. Work with experienced programmers.</description>
     </item>
-    
   </channel>
 </rss>

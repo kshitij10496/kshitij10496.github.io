@@ -7,201 +7,119 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 20:22:22 +0100</lastBuildDate><atom:link href="https://kshitij10496.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 20:22:22 +0100</lastBuildDate>
+    <atom:link href="https://kshitij10496.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tracksmith: The Year of the Amateur</title>
       <link>https://kshitij10496.github.io/notes/the-year-of-the-amateur/</link>
       <pubDate>Mon, 01 Jan 2024 20:22:22 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/the-year-of-the-amateur/</guid>
-      <description>Ref: YouTube - The Year of the Amatuer
-I admire most of the films from Tracksmith on their YouTube channel. And this one goes right up there.
-Because the act of devotion reveals a path to fulfillment we can&amp;rsquo;t find anywhere else.
-What a beautiful way to express the potential running holds for some of us.
-In running, we are all amatuers.</description>
+      <description>Ref: YouTube - The Year of the Amatuer&#xA;I admire most of the films from Tracksmith on their YouTube channel. And this one goes right up there.&#xA;Because the act of devotion reveals a path to fulfillment we can&amp;rsquo;t find anywhere else.&#xA;What a beautiful way to express the potential running holds for some of us.&#xA;In running, we are all amatuers.</description>
     </item>
-    
     <item>
       <title>Flamed Fury: Relics of Web</title>
       <link>https://kshitij10496.github.io/notes/relics-of-the-web/</link>
       <pubDate>Fri, 29 Dec 2023 16:57:38 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/relics-of-the-web/</guid>
-      <description>Ref: Relics Of The Web
-Linking content on the web is a superpower. A superpower that is easy to overlook.
-The web is inherently designed for ease of discovery (through links). At the same time, the relevancy is a burden for the individual to resolve. We do not need any centralised service to curate a personalised experience for us. Yet, in reality the situation is quite different.
-This post provides a lot of context around web-native ideas to improve the process of discovery and relevancy.</description>
+      <description>Ref: Relics Of The Web&#xA;Linking content on the web is a superpower. A superpower that is easy to overlook.&#xA;The web is inherently designed for ease of discovery (through links). At the same time, the relevancy is a burden for the individual to resolve. We do not need any centralised service to curate a personalised experience for us. Yet, in reality the situation is quite different.&#xA;This post provides a lot of context around web-native ideas to improve the process of discovery and relevancy.</description>
     </item>
-    
     <item>
       <title>Donald Knuth: Ancient Babylonian Algorithms</title>
       <link>https://kshitij10496.github.io/notes/ancient-babylonian-algorithms/</link>
       <pubDate>Thu, 28 Dec 2023 15:30:20 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/ancient-babylonian-algorithms/</guid>
-      <description>Ref: https://fermatslibrary.com/p/06445717
-This is such an intriguing paper on the history of computing, hence mathematics. I highly recommend reading it yourself.
-Few notes from the paper:
-Question: How is computer science connected with the human history further beyond the developments in the last century? Base 60 system instead of Base 10 for mathematics. Pergamonmusuem in Berlin houses a part of one of the clay tablets from Mesopotamia. I would have liked to see it but the museum is closed for renovations (for 14 years).</description>
+      <description>Ref: https://fermatslibrary.com/p/06445717&#xA;This is such an intriguing paper on the history of computing, hence mathematics. I highly recommend reading it yourself.&#xA;Few notes from the paper:&#xA;Question: How is computer science connected with the human history further beyond the developments in the last century? Base 60 system instead of Base 10 for mathematics. Pergamonmusuem in Berlin houses a part of one of the clay tablets from Mesopotamia. I would have liked to see it but the museum is closed for renovations (for 14 years).</description>
     </item>
-    
     <item>
       <title>Bill Watterson: Some Thoughts On The Real World By One Who Glimpsed It And Fled</title>
       <link>https://kshitij10496.github.io/notes/bill-watterson-speech/</link>
       <pubDate>Sun, 24 Dec 2023 17:49:37 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/bill-watterson-speech/</guid>
-      <description>Such an excellent read! I am more curious to read about Bill Watterson.
-Despite the futility of the whole episode, my fondest memories of college are times like these, where things were done out of some inexplicable inner imperative, rather than because the work was demanded.
-It&amp;rsquo;s surprising how hard we&amp;rsquo;ll work when the work is done just for ourselves.
-The conventional &amp;ldquo;utility&amp;rdquo; of a piece of work is independent of our ability to relish the effort.</description>
+      <description>Such an excellent read! I am more curious to read about Bill Watterson.&#xA;Despite the futility of the whole episode, my fondest memories of college are times like these, where things were done out of some inexplicable inner imperative, rather than because the work was demanded.&#xA;It&amp;rsquo;s surprising how hard we&amp;rsquo;ll work when the work is done just for ourselves.&#xA;The conventional &amp;ldquo;utility&amp;rdquo; of a piece of work is independent of our ability to relish the effort.</description>
     </item>
-    
     <item>
       <title>Elicit: Build a search engine, not a vector DB</title>
       <link>https://kshitij10496.github.io/notes/search-vs-vector-db/</link>
       <pubDate>Sat, 23 Dec 2023 18:59:23 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/search-vs-vector-db/</guid>
-      <description>Ref: https://blog.elicit.com/search-vs-vector-db/
-Really interesting take on the problem of knowledge discovery.
-Full-text search still remains a challenging problem. At the same time, the increasing popularity of vector DBs, in particular, the embeddings data structure, provide another approach to the fundamental problem. A conjugation of both of these technologies can be used to build a valuable solution.
-However, questions around the efficiency of such a solution remains to be tested and monitored.</description>
+      <description>Ref: https://blog.elicit.com/search-vs-vector-db/&#xA;Really interesting take on the problem of knowledge discovery.&#xA;Full-text search still remains a challenging problem. At the same time, the increasing popularity of vector DBs, in particular, the embeddings data structure, provide another approach to the fundamental problem. A conjugation of both of these technologies can be used to build a valuable solution.&#xA;However, questions around the efficiency of such a solution remains to be tested and monitored.</description>
     </item>
-    
     <item>
       <title>Ethan Zuckerman: How Big Is Yt</title>
       <link>https://kshitij10496.github.io/notes/how-big-is-youtube/</link>
       <pubDate>Sat, 23 Dec 2023 18:23:05 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/how-big-is-youtube/</guid>
-      <description>Ref: https://ethanzuckerman.com/2023/12/22/how-big-is-youtube/
-I don&amp;rsquo;t see a lot of talk about the &amp;ldquo;denominator problem&amp;rdquo;. This article does a great job at providing context to the discussion of normalizing data. It&amp;rsquo;s not too difficult to skew most datasets to fit our viewpoint. As a undergrad student, I had shared in this guilty pleasure too. And I would not be surprised if a similar practice exists in some of the industry. Not that it&amp;rsquo;s anybody&amp;rsquo;s fault, I belive it&amp;rsquo;s just part of our nature.</description>
+      <description>Ref: https://ethanzuckerman.com/2023/12/22/how-big-is-youtube/&#xA;I don&amp;rsquo;t see a lot of talk about the &amp;ldquo;denominator problem&amp;rdquo;. This article does a great job at providing context to the discussion of normalizing data. It&amp;rsquo;s not too difficult to skew most datasets to fit our viewpoint. As a undergrad student, I had shared in this guilty pleasure too. And I would not be surprised if a similar practice exists in some of the industry. Not that it&amp;rsquo;s anybody&amp;rsquo;s fault, I belive it&amp;rsquo;s just part of our nature.</description>
     </item>
-    
     <item>
       <title>Steve Yegge - Math for Programmers</title>
       <link>https://kshitij10496.github.io/notes/math-programmer/</link>
       <pubDate>Wed, 20 Dec 2023 15:48:30 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/math-programmer/</guid>
-      <description>Ref: https://steve-yegge.blogspot.com/2006/03/math-for-programmers.html
-One of the most inspiring articles to study mathematics, especially as a full-time programmer aka Liberal Arts degreee in Mathematics.
-Math is almost always about formalizing our &amp;ldquo;common sense&amp;rdquo; about some domain, so that we can deduce and/or prove new things about that domain.
-This is a such a powerful perspective to approach mathematics. For example, Formal Methods are mathematically techniques related to software systems (analysis, verification etc). Another example could be the real-life problems with travelling across cities resulting in the field of Graph Theory.</description>
+      <description>Ref: https://steve-yegge.blogspot.com/2006/03/math-for-programmers.html&#xA;One of the most inspiring articles to study mathematics, especially as a full-time programmer aka Liberal Arts degreee in Mathematics.&#xA;Math is almost always about formalizing our &amp;ldquo;common sense&amp;rdquo; about some domain, so that we can deduce and/or prove new things about that domain.&#xA;This is a such a powerful perspective to approach mathematics. For example, Formal Methods are mathematically techniques related to software systems (analysis, verification etc). Another example could be the real-life problems with travelling across cities resulting in the field of Graph Theory.</description>
     </item>
-    
     <item>
       <title>CodeSandbox: How we clone a running VM in 2 seconds</title>
       <link>https://kshitij10496.github.io/notes/cloning-vms/</link>
       <pubDate>Tue, 19 Dec 2023 21:17:57 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/cloning-vms/</guid>
-      <description>Ref: https://codesandbox.io/blog/how-we-clone-a-running-vm-in-2-seconds
-Amazing engineering work here!
-Two key technologies leveraged here:
-Firecracker, in particular microVMs. Copy-on-Write resource management technique. The concept of memory snapshotting is elaborately described. More so, I found the deep dive into the engineering work to put the pieces together very inspiring.
-I need to study and read up about Firecracker and the concept of KVM. Let me know if you have any good resources for this.</description>
+      <description>Ref: https://codesandbox.io/blog/how-we-clone-a-running-vm-in-2-seconds&#xA;Amazing engineering work here!&#xA;Two key technologies leveraged here:&#xA;Firecracker, in particular microVMs. Copy-on-Write resource management technique. The concept of memory snapshotting is elaborately described. More so, I found the deep dive into the engineering work to put the pieces together very inspiring.&#xA;I need to study and read up about Firecracker and the concept of KVM. Let me know if you have any good resources for this.</description>
     </item>
-    
     <item>
       <title>Andrew Ng: AI&#39;s Instagram Problem</title>
       <link>https://kshitij10496.github.io/notes/ng-ai-ig/</link>
       <pubDate>Tue, 19 Dec 2023 19:45:48 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/ng-ai-ig/</guid>
-      <description>Ref: https://web.archive.org/web/20230924131456/https://www.deeplearning.ai/the-batch/someone-elses-cool-ai-project-doesnt-make-your-project-less-valuable/
-Judge your projects according to your own standard, and don’t let the shiny objects make you doubt the worth of your work!
-I think of 2 things when I read this article:
-FOMO due to the latest fashionable trend is not worth it. I have read and realised it through Taleb&amp;rsquo;s writings as well. One of the most important characteristics of the 21st century (atleast my generation) is the ability to learn, adapt and relearn new skills; especially my skillsets a tech worker.</description>
+      <description>Ref: https://web.archive.org/web/20230924131456/https://www.deeplearning.ai/the-batch/someone-elses-cool-ai-project-doesnt-make-your-project-less-valuable/&#xA;Judge your projects according to your own standard, and don’t let the shiny objects make you doubt the worth of your work!&#xA;I think of 2 things when I read this article:&#xA;FOMO due to the latest fashionable trend is not worth it. I have read and realised it through Taleb&amp;rsquo;s writings as well. One of the most important characteristics of the 21st century (atleast my generation) is the ability to learn, adapt and relearn new skills; especially my skillsets a tech worker.</description>
     </item>
-    
     <item>
       <title>Cheap Web</title>
       <link>https://kshitij10496.github.io/notes/cheap-web/</link>
       <pubDate>Tue, 19 Dec 2023 17:32:58 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/cheap-web/</guid>
-      <description>Ref: https://potato.cheap/
-This piece evoked the following emotions:
-Strong alignment in principle around how I envision Web technology (in general, any tech) to work. Reminded me of the Low Tech Magazine. Introduced me to the idea of Solarpunk - as a Cyberpunk derivative. A wobbly wooden chair built by a friend beats any designer chair.
-Websites/web apps built around static web pages (like this blog) are a great example of &amp;ldquo;Cheap Web&amp;rdquo;.</description>
+      <description>Ref: https://potato.cheap/&#xA;This piece evoked the following emotions:&#xA;Strong alignment in principle around how I envision Web technology (in general, any tech) to work. Reminded me of the Low Tech Magazine. Introduced me to the idea of Solarpunk - as a Cyberpunk derivative. A wobbly wooden chair built by a friend beats any designer chair.&#xA;Websites/web apps built around static web pages (like this blog) are a great example of &amp;ldquo;Cheap Web&amp;rdquo;.</description>
     </item>
-    
     <item>
       <title>The Borsuk-Ulam Explorer</title>
       <link>https://kshitij10496.github.io/notes/borsuk-ulam-explorer/</link>
       <pubDate>Sat, 16 Dec 2023 16:57:47 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/borsuk-ulam-explorer/</guid>
-      <description>*Ref: The Borsuk-Ulam Explorer by Colin Cotter and Julius Ross *
-What a pretty visulisation of the Borsuk-Ulam Theorem in realtime!
-In mathematics, the Borsuk–Ulam theorem states that every continuous function from an n-sphere into Euclidean n-space maps some pair of antipodal points to the same point. Here, two points on a sphere are called antipodal if they are in exactly opposite directions from the sphere&amp;rsquo;s center.
-I don&amp;rsquo;t distinctly recall this theorem as part of my undergraduate studies.</description>
+      <description>*Ref: The Borsuk-Ulam Explorer by Colin Cotter and Julius Ross *&#xA;What a pretty visulisation of the Borsuk-Ulam Theorem in realtime!&#xA;In mathematics, the Borsuk–Ulam theorem states that every continuous function from an n-sphere into Euclidean n-space maps some pair of antipodal points to the same point. Here, two points on a sphere are called antipodal if they are in exactly opposite directions from the sphere&amp;rsquo;s center.&#xA;I don&amp;rsquo;t distinctly recall this theorem as part of my undergraduate studies.</description>
     </item>
-    
     <item>
       <title>Peter Norvig: Programming in 10 Years</title>
       <link>https://kshitij10496.github.io/notes/norvig-teach-yourself-programming-in-10-years/</link>
       <pubDate>Sun, 10 Dec 2023 16:11:09 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/norvig-teach-yourself-programming-in-10-years/</guid>
-      <description>Ref: Peter Norvig: Teach Yourself Programming in 10 Years
-I remember reading this article way back in my uni days. It reminded me of a popular quote from Richard Feynmann
-Now that I have stumbled across it after few years of experience working as a professional software engineer, I related a bit more with the content.
-Ways to develop a deep understanding:
-Write more significant programs that solve problems. Work with experienced programmers.</description>
+      <description>Ref: Peter Norvig: Teach Yourself Programming in 10 Years&#xA;I remember reading this article way back in my uni days. It reminded me of a popular quote from Richard Feynmann&#xA;Now that I have stumbled across it after few years of experience working as a professional software engineer, I related a bit more with the content.&#xA;Ways to develop a deep understanding:&#xA;Write more significant programs that solve problems. Work with experienced programmers.</description>
     </item>
-    
     <item>
       <title>Clojure From the Ground Up: Functions</title>
       <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-03/</link>
       <pubDate>Sat, 09 Dec 2023 16:01:30 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-03/</guid>
-      <description>Ref: Clojure from the ground up: Functions
-Functions are verbs.
-We can define symbols to values that will not change (called immutable) using let. These symbols are only available with an expression (&amp;ldquo;scoped&amp;rdquo;). The symbols can be overriden to point to a different value.
-def allows us to define mutable variables. These are helpful for experimentation.
-defn is a shorthand to define functions.
-The chapter builds an extremely powerful intuition behind the relation between let and functions.</description>
+      <description>Ref: Clojure from the ground up: Functions&#xA;Functions are verbs.&#xA;We can define symbols to values that will not change (called immutable) using let. These symbols are only available with an expression (&amp;ldquo;scoped&amp;rdquo;). The symbols can be overriden to point to a different value.&#xA;def allows us to define mutable variables. These are helpful for experimentation.&#xA;defn is a shorthand to define functions.&#xA;The chapter builds an extremely powerful intuition behind the relation between let and functions.</description>
     </item>
-    
     <item>
       <title>Clojure From the Ground Up: Basic Types</title>
       <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/</link>
       <pubDate>Thu, 07 Dec 2023 15:45:14 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-02/</guid>
-      <description>Ref: Clojure from the ground up: Basic Types
-What is a &amp;ldquo;type&amp;rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.
-I find this to be a very neat and simple way to think about &amp;ldquo;types&amp;rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).</description>
+      <description>Ref: Clojure from the ground up: Basic Types&#xA;What is a &amp;ldquo;type&amp;rdquo; anyway? Link to heading A type is a group of values which work in the same way. It’s a property that some values share, which allows us to organize the world into sets of similar things.&#xA;I find this to be a very neat and simple way to think about &amp;ldquo;types&amp;rdquo; in general. Try to determine the appropriate type for a value based on how well it fits into a particular universe (programming language), and context (problem domain).</description>
     </item>
-    
     <item>
       <title>Clojure From the Ground Up: Welcome</title>
       <link>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-01/</link>
       <pubDate>Wed, 06 Dec 2023 18:17:39 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/clojure-from-the-ground-up/cfgu-01/</guid>
-      <description>Ref: Clojure from the ground up: welcome
-Really neat article (and series) about program design from first principles.
-I loved the emphasis on motivation and simplicity.
-Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.
-You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on.</description>
+      <description>Ref: Clojure from the ground up: welcome&#xA;Really neat article (and series) about program design from first principles.&#xA;I loved the emphasis on motivation and simplicity.&#xA;Lisp is ridiculously simple to write computation. This post does a great job at developing intuition about programming. I found a lot of traces from SICP in the mental model.&#xA;You could think of this structure as a tree–which is a provocative idea, because languages are like trees too: sentences are comprised of clauses, which can be nested, and each clause may have subjects modified by adjectives, and verbs modified by adverbs, and so on.</description>
     </item>
-    
     <item>
       <title>Aphyr - Why is Jepsen Written in Clojure?</title>
       <link>https://kshitij10496.github.io/notes/aphyr-jepsen-clojure/</link>
       <pubDate>Wed, 06 Dec 2023 17:10:59 +0100</pubDate>
-      
       <guid>https://kshitij10496.github.io/notes/aphyr-jepsen-clojure/</guid>
-      <description>Ref: Aphyr - Why is Jepsen Written in Clojure?
-Just as I am developing an interest in the Lisp family of languages, particularly Clojure, I discovered Kyle&amp;rsquo;s post on my feed.
-Few things that stood out from this piece:
-Clojure&amp;rsquo;s ability to interop with Java (and JVM primitives) opens up the potential to leverage an existing, mature ecosystem. Immutable, persistent data structures make it easier to write concurrent programs without static typing.</description>
+      <description>Ref: Aphyr - Why is Jepsen Written in Clojure?&#xA;Just as I am developing an interest in the Lisp family of languages, particularly Clojure, I discovered Kyle&amp;rsquo;s post on my feed.&#xA;Few things that stood out from this piece:&#xA;Clojure&amp;rsquo;s ability to interop with Java (and JVM primitives) opens up the potential to leverage an existing, mature ecosystem. Immutable, persistent data structures make it easier to write concurrent programs without static typing.</description>
     </item>
-    
   </channel>
 </rss>

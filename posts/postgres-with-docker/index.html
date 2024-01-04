@@ -19,8 +19,7 @@ Each DB is associated with a unique configuration (combination of user, password
 Now, this soon got messy as my machine was polluted with lots of DBs and their configurations.">
 <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Postgres with Docker"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Postgres with Docker"/>
 <meta name="twitter:description" content="Lately, I have been experimenting with running PostgreSQL in a Docker container and communicating with it - from an application. This article documents my experience, learnings and methodology.
 Problem Link to heading I have got a lot of small personal projects which use separate databases.
 Each DB is associated with a unique configuration (combination of user, password, name) which as exported as environment variables in the relevant applications.
@@ -35,6 +34,7 @@ Now, this soon got messy as my machine was polluted with lots of DBs and their c
 <meta property="og:url" content="https://kshitij10496.github.io/posts/postgres-with-docker/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-01-13T20:47:59+05:30" />
 <meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
 
 
 
@@ -316,7 +316,7 @@ This database is mission-critical to the Gotham PD for protecting the city from 
 <p>As you can see, the multi-line command looks a bit clunky and is prone to mistakes.
 Let’s rewrite the same command in a <code>docker-compose.yml</code> file instead.</p>
 <p>Create the following <code>docker-compose.yml</code> file inside the project directory <code>shadows</code>:
-<script type="application/javascript" src="https://gist.github.com/kshitij10496/0fd513ea8c8ece1d4c9dba03bd988489.js?file=docker-compose.yml"></script>
+<script src="https://gist.github.com/kshitij10496/0fd513ea8c8ece1d4c9dba03bd988489.js?file=docker-compose.yml"></script>
 </p>
 <p>Now we can run the container from within the <code>shadows</code> directory with:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker-compose up
@@ -354,14 +354,14 @@ Let’s rewrite the same command in a <code>docker-compose.yml</code> file inste
 <li>Create <code>1.sql</code> and <code>2.sql</code> files inside a postgres directory within the project.<br>
 The SQL files hold the SQL instructions required for creating the DB table and populating it respectively.</li>
 </ol>
-<script type="application/javascript" src="https://gist.github.com/kshitij10496/4eb85645164a454b7db72a9bb5c2ba48.js?file=1.sql"></script>
+<script src="https://gist.github.com/kshitij10496/4eb85645164a454b7db72a9bb5c2ba48.js?file=1.sql"></script>
 
-<script type="application/javascript" src="https://gist.github.com/kshitij10496/aada57ee13fecb9ae8a8f9f4264339b4.js?file=2.sql"></script>
+<script src="https://gist.github.com/kshitij10496/aada57ee13fecb9ae8a8f9f4264339b4.js?file=2.sql"></script>
 
 <ol>
 <li>Add the files to the container as volume by modifying the docker-compose.yml</li>
 </ol>
-<script type="application/javascript" src="https://gist.github.com/kshitij10496/88474f0a63643f59337574774a00f52a.js?file=docker-compose.yml"></script>
+<script src="https://gist.github.com/kshitij10496/88474f0a63643f59337574774a00f52a.js?file=docker-compose.yml"></script>
 
 <ol start="4">
 <li>Rebuild and run the container</li>
@@ -409,7 +409,7 @@ The SQL files hold the SQL instructions required for creating the DB table and p
 <p>We simply need to define a new volume for the container where we can store a dump of the database. This could any empty directory on your machine which will reflect the <code>/var/lib/postgresql/data</code> directory present inside the DB container.</p>
 <ol>
 <li>Modify <code>docker-compose.yml</code> by adding the new volume.
-<script type="application/javascript" src="https://gist.github.com/kshitij10496/2e203ce2651671cd8b5d10ff23c1c319.js?file=docker-compose.yml"></script>
+<script src="https://gist.github.com/kshitij10496/2e203ce2651671cd8b5d10ff23c1c319.js?file=docker-compose.yml"></script>
 </li>
 <li>Repeat Step#7</li>
 <li>Verify that <code>Bruce Wayne</code> is successfully removed from the DB.</li>

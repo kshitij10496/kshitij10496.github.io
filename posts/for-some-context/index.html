@@ -18,8 +18,7 @@ How does the use of context help us in programming? When should a programmer use
 Motivation Link to heading Consider you are an event manager of a restaurant.">
 <meta name="keywords" content="blog,developer,personal,minimal,software,engineer,mathematics">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="For some Context"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="For some Context"/>
 <meta name="twitter:description" content="There are a lot of good resources about using context packages in software based on your programming language. However, I found that most of these do not address the basic questions of motivation behind the need of context:
 How does the use of context help us in programming? When should a programmer use context? In this blog post, I will share what I understand about context.
 Motivation Link to heading Consider you are an event manager of a restaurant."/>
@@ -32,6 +31,7 @@ Motivation Link to heading Consider you are an event manager of a restaurant." /
 <meta property="og:url" content="https://kshitij10496.github.io/posts/for-some-context/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-12-17T00:00:00+05:30" />
 <meta property="article:modified_time" content="2021-09-04T14:16:29+02:00" />
+
 
 
 
@@ -223,14 +223,14 @@ Even though you are disappointed by this request, you accept the apology.</p>
 The use of context can make programs efficient with respect to use of computer resources as well as graceful fallback mechanism.</li>
 </ul>
 <p>Let us understand how we can use <code>context</code> with a simple example.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>// Some time consuming process like:
-</span></span><span style="display:flex;"><span>// - API calls
-</span></span><span style="display:flex;"><span>// - Cruching data from database
-</span></span><span style="display:flex;"><span>//
-</span></span><span style="display:flex;"><span>func someFunc() {
-</span></span><span style="display:flex;"><span>    fmt.Println(&#34;Starting computation&#34;)
-</span></span><span style="display:flex;"><span>    time.Sleep(10*time.Second)
-</span></span><span style="display:flex;"><span>    fmt.Println(&#34;Completed computing&#34;)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#ff79c6">//</span> Some time consuming process like:
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">//</span> <span style="color:#ff79c6">-</span> API calls
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">//</span> <span style="color:#ff79c6">-</span> Cruching data from database
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">//</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">func</span> someFunc() {
+</span></span><span style="display:flex;"><span>    fmt<span style="color:#ff79c6">.</span>Println(<span style="color:#f1fa8c">&#34;Starting computation&#34;</span>)
+</span></span><span style="display:flex;"><span>    time<span style="color:#ff79c6">.</span>Sleep(<span style="color:#bd93f9">10</span><span style="color:#ff79c6">*</span>time<span style="color:#ff79c6">.</span>Second)
+</span></span><span style="display:flex;"><span>    fmt<span style="color:#ff79c6">.</span>Println(<span style="color:#f1fa8c">&#34;Completed computing&#34;</span>)
 </span></span></code></pre></div><p>Now, the caller of this function is expected to wait for a while (10s in this case) until the processing is complete. However, if the user somehow decides to cancel this process before it completes, he is at a loss. The only way the user can exit is by <code>CTRL</code> + <code>C</code> i.e by sending an interuption signal to the running process; this maynot even be possible all the time. However, the use of <code>context</code> provides him a way to set time deadlines or logical cancellations. Maybe the user wants to wait for atmost 5 seconds before cancelling; the context gives him this power.</p>
 <h1 id="resources">
   Resources
