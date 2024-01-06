@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 20:22:22 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jan 2024 16:13:12 +0100</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>https://kshitij10496.github.io/tags/git/</link>
+      <pubDate>Sat, 06 Jan 2024 16:13:12 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ssh</title>
+      <link>https://kshitij10496.github.io/tags/ssh/</link>
+      <pubDate>Sat, 06 Jan 2024 16:13:12 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/tags/ssh/</guid>
+      <description></description>
+    </item>
     <item>
       <title>motivation</title>
       <link>https://kshitij10496.github.io/tags/motivation/</link>
@@ -322,13 +336,6 @@
       <link>https://kshitij10496.github.io/tags/lego/</link>
       <pubDate>Sun, 11 Nov 2018 09:06:32 +0530</pubDate>
       <guid>https://kshitij10496.github.io/tags/lego/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>git</title>
-      <link>https://kshitij10496.github.io/tags/git/</link>
-      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
-      <guid>https://kshitij10496.github.io/tags/git/</guid>
       <description></description>
     </item>
     <item>

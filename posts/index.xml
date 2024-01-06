@@ -10,6 +10,13 @@
     <lastBuildDate>Sun, 03 Nov 2019 19:14:54 +0530</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Signing Git Commits</title>
+      <link>https://kshitij10496.github.io/posts/signing-git-commits/</link>
+      <pubDate>Sat, 06 Jan 2024 16:13:12 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/posts/signing-git-commits/</guid>
+      <description>Whenever I setup a new machine, the following Git commands are a staple:&#xA;git config user.name &amp;#34;Your Name&amp;#34; git config user.email &amp;#34;your.email@domain.ext&amp;#34; I have always wondered what&amp;rsquo;s preventing a person from impersonating somebody other than themselves.&#xA;This curiousity led me to learning about Signatures, especially how to configure them on Git. In particular, I was interested in setting up my machine to sign via my work and personal identities.&#xA;The solution to the generic problem of identification (authentication) is addressed with the concept of &amp;ldquo;digital signature&amp;rdquo;.</description>
+    </item>
+    <item>
       <title>Testcontainers with Podman</title>
       <link>https://kshitij10496.github.io/posts/testcontainers-with-podman/</link>
       <pubDate>Mon, 20 Nov 2023 15:48:41 +0100</pubDate>

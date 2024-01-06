@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on kxsh</title>
-    <link>https://kshitij10496.github.io/tags/git/</link>
-    <description>Recent content in git on kxsh</description>
+    <title>ssh on kxsh</title>
+    <link>https://kshitij10496.github.io/tags/ssh/</link>
+    <description>Recent content in ssh on kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Sat, 06 Jan 2024 16:13:12 +0100</lastBuildDate>
-    <atom:link href="https://kshitij10496.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kshitij10496.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Signing Git Commits</title>
       <link>https://kshitij10496.github.io/posts/signing-git-commits/</link>
       <pubDate>Sat, 06 Jan 2024 16:13:12 +0100</pubDate>
       <guid>https://kshitij10496.github.io/posts/signing-git-commits/</guid>
       <description>Whenever I setup a new machine, the following Git commands are a staple:&#xA;git config user.name &amp;#34;Your Name&amp;#34; git config user.email &amp;#34;your.email@domain.ext&amp;#34; I have always wondered what&amp;rsquo;s preventing a person from impersonating somebody other than themselves.&#xA;This curiousity led me to learning about Signatures, especially how to configure them on Git. In particular, I was interested in setting up my machine to sign via my work and personal identities.&#xA;The solution to the generic problem of identification (authentication) is addressed with the concept of &amp;ldquo;digital signature&amp;rdquo;.</description>
-    </item>
-    <item>
-      <title>Hugo Blog On GitHub Pages</title>
-      <link>https://kshitij10496.github.io/posts/hugo-blog-setup/</link>
-      <pubDate>Sun, 09 Sep 2018 19:03:31 +0530</pubDate>
-      <guid>https://kshitij10496.github.io/posts/hugo-blog-setup/</guid>
-      <description>Looking to create your personal blog using Hugo and hosting it on GitHub Pages?&#xA;To be honest, it can sound a bit intimidating and challenging at first.&#xA;I, too, felt the same while I setup this blog using Hugo and the Coder theme.&#xA;In this post, I share my experience during the process - from the specific commands to the lessons learnt.&#xA;In addition to this, I also share my workflow for publishing posts using a shell script.</description>
     </item>
   </channel>
 </rss>

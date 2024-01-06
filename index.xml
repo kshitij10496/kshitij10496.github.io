@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 20:22:22 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jan 2024 16:13:12 +0100</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Signing Git Commits</title>
+      <link>https://kshitij10496.github.io/posts/signing-git-commits/</link>
+      <pubDate>Sat, 06 Jan 2024 16:13:12 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/posts/signing-git-commits/</guid>
+      <description>Whenever I setup a new machine, the following Git commands are a staple:&#xA;git config user.name &amp;#34;Your Name&amp;#34; git config user.email &amp;#34;your.email@domain.ext&amp;#34; I have always wondered what&amp;rsquo;s preventing a person from impersonating somebody other than themselves.&#xA;This curiousity led me to learning about Signatures, especially how to configure them on Git. In particular, I was interested in setting up my machine to sign via my work and personal identities.&#xA;The solution to the generic problem of identification (authentication) is addressed with the concept of &amp;ldquo;digital signature&amp;rdquo;.</description>
+    </item>
     <item>
       <title>Tracksmith: The Year of the Amateur</title>
       <link>https://kshitij10496.github.io/notes/the-year-of-the-amateur/</link>
