@@ -17,10 +17,12 @@ It is neither my intention to refrain from feedback nor censor criticism of my w
 However, I definitely desire to *Make It Difficult* to do so.
 
 Here are a links to know a bit more about me:
+
 - Check out [Now](https://kshitij10496.github.io/now) to know more about my current interests.
 - My public [Running Log](https://runnerblues.substack.com/) on Substack.
 
 Feeds
+
 - Notes [](https://kshitij10496.github.io/notes/index.xml)
 - Posts [](https://kshitij10496.github.io/posts/index.xml)
 - All content [](https://kshitij10496.github.io/index.xml)
