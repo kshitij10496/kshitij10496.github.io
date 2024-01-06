@@ -21,13 +21,13 @@ enableEmoji = true
 enableGitInfo = true
 
 # The site’s language code used to generate RSS.
-languageCode = "en-us"
+languageCode = "en-gb"
 
 # The directory from where Hugo reads layouts (templates).
 layoutDir = "layouts"
 
 # Default number of pages per page in pagination.
-paginate = 13
+paginate = 15
 
 # The directory to where Hugo will write the final static site (the HTML files etc.).
 publishDir = "public"
@@ -67,8 +67,8 @@ title = "kxsh"
     description = "Kshitij Saraogi's personal website" # Site description.
     keywords = "blog,developer,personal,minimal,software,engineer,mathematics" # Site keywords.
     avatarurl = "images/avatar.jpg" # Contain the path of the optional avatar in the static folder.
-    favicon_32 = "images/favicon_32.png"
-    favicon_16 = "images/favicon_16.ico"
+    favicon_32 = "images/favicon.png"
+    favicon_16 = "images/favicon.png"
 
     # hideFooter = true
     # footercontent = "Hello Friend" # Add footer content
