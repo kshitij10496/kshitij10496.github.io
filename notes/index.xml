@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 20:22:22 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2024 16:35:13 +0100</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chris Coyier: Exposed RSS</title>
+      <link>https://kshitij10496.github.io/notes/exposed-rss/</link>
+      <pubDate>Sun, 14 Jan 2024 16:35:13 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/notes/exposed-rss/</guid>
+      <description>Ref: Chris Coyier - Exposed RSS&#xA;I have always admired the RSS discovery feature from NetNewsWire.&#xA;Every time a website asks their viewers to Sign Up for newsletter, I just wish they chose to provide their RSS feed as an alternate.</description>
+    </item>
     <item>
       <title>Tracksmith: The Year of the Amateur</title>
       <link>https://kshitij10496.github.io/notes/the-year-of-the-amateur/</link>

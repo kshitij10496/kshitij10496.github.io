@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 06 Jan 2024 16:13:12 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2024 16:35:13 +0100</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chris Coyier: Exposed RSS</title>
+      <link>https://kshitij10496.github.io/notes/exposed-rss/</link>
+      <pubDate>Sun, 14 Jan 2024 16:35:13 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/notes/exposed-rss/</guid>
+      <description>Ref: Chris Coyier - Exposed RSS&#xA;I have always admired the RSS discovery feature from NetNewsWire.&#xA;Every time a website asks their viewers to Sign Up for newsletter, I just wish they chose to provide their RSS feed as an alternate.</description>
+    </item>
     <item>
       <title>Signing Git Commits</title>
       <link>https://kshitij10496.github.io/posts/signing-git-commits/</link>
@@ -385,7 +392,7 @@
       <link>https://kshitij10496.github.io/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kshitij10496.github.io/now/</guid>
-      <description>This page hosts regular updates about what I have been up to lately.&#xA;Insipred by Derek Siver&amp;rsquo;s Now Page.1&#xA;Enabling engineers with developer tools at Upvest. Building distance running mileage. Updated: 6th January 2024&#xA;Derek Siver&amp;rsquo;s movement for creating a &amp;ldquo;now&amp;rdquo; page&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+      <description>This page hosts regular updates about what I have been up to lately.&#xA;Insipred by Derek Siver&amp;rsquo;s Now Page.1&#xA;Enabling engineers with developer tools at Upvest. Building distance running stamina (30-40 km per week). Waking up before 0600. Workouts at the gym 5 days a week. Bench: 42.5 kg Squat: 45 kg Deadlift: 95 kg OHP: 30 kg Pullups: 0 Reading: Surely You&amp;rsquo;re Joking, Mr. Feynman for the 3rd time. The Creative Act by Rick Rubin.</description>
     </item>
   </channel>
 </rss>
