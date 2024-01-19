@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 14 Jan 2024 16:35:13 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jan 2024 12:34:53 +0100</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cold Blooded Software</title>
+      <link>https://kshitij10496.github.io/notes/cold-blooded-software/</link>
+      <pubDate>Fri, 19 Jan 2024 12:34:53 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/notes/cold-blooded-software/</guid>
+      <description>Ref: Patrick Dubroy: Cold-blooded software&#xA;The technology choices for a software project should be influenced by it&amp;rsquo;s expected velocity. For projects that require hibernation and convenience of long-term reliability, the author proposes to use boring technology. I tend to agree with the idea. Moreover, it&amp;rsquo;s helpful to use this criteria as a dimension when approaching new project ideas.&#xA;I also enjoyed Jim Nielson&amp;rsquo;s take on this topic.</description>
+    </item>
     <item>
       <title>Chris Coyier: Exposed RSS</title>
       <link>https://kshitij10496.github.io/notes/exposed-rss/</link>
