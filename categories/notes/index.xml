@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 19 Jan 2024 12:34:53 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jan 2024 12:19:24 +0100</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dev Dependencies</title>
+      <link>https://kshitij10496.github.io/notes/dev-dependencies/</link>
+      <pubDate>Thu, 25 Jan 2024 12:19:24 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/notes/dev-dependencies/</guid>
+      <description>Ref: Redowan Delowar - Omitting dev dependencies in Go binaries&#xA;Today I got a chance to finish my 2nd-pass over this article.&#xA;Problem: Updating dependencies (Go version -&amp;gt; golangci-lint etc) with least effort.&#xA;Essentially, the idea is to add any tooling (such as linters) to the list of dev dependencies in the project. It allows for easier, proactive, frequent updates to the project with dependabot integration. This is not a new idea - other language ecosystems well support it.</description>
+    </item>
     <item>
       <title>Cold Blooded Software</title>
       <link>https://kshitij10496.github.io/notes/cold-blooded-software/</link>

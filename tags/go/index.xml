@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Go on kxsh</title>
+    <title>go on kxsh</title>
     <link>https://kshitij10496.github.io/tags/go/</link>
-    <description>Recent content in Go on kxsh</description>
+    <description>Recent content in go on kxsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 22:24:51 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jan 2024 12:19:24 +0100</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dev Dependencies</title>
+      <link>https://kshitij10496.github.io/notes/dev-dependencies/</link>
+      <pubDate>Thu, 25 Jan 2024 12:19:24 +0100</pubDate>
+      <guid>https://kshitij10496.github.io/notes/dev-dependencies/</guid>
+      <description>Ref: Redowan Delowar - Omitting dev dependencies in Go binaries&#xA;Today I got a chance to finish my 2nd-pass over this article.&#xA;Problem: Updating dependencies (Go version -&amp;gt; golangci-lint etc) with least effort.&#xA;Essentially, the idea is to add any tooling (such as linters) to the list of dev dependencies in the project. It allows for easier, proactive, frequent updates to the project with dependabot integration. This is not a new idea - other language ecosystems well support it.</description>
+    </item>
     <item>
       <title>Patching Go Modules</title>
       <link>https://kshitij10496.github.io/posts/patching-go-modules/</link>
