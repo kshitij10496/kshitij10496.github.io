@@ -1,5 +1,5 @@
 ---
-title: "Cold Blooded Software"
+title: "Patrick Dubroy: Cold Blooded Software"
 date: 2024-01-19T12:34:53+01:00
 draft: false
 

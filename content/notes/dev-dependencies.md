@@ -1,5 +1,5 @@
 ---
-title: "Dev Dependencies"
+title: "Redowan Delowar: Dev Dependencies"
 date: 2024-01-25T12:19:24+01:00
 draft: false
 
