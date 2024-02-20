@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 25 Jan 2024 12:19:24 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 20 Feb 2024 18:31:58 +0530</lastBuildDate>
     <atom:link href="https://kshitij10496.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>David Moldawer: Page Pacing</title>
+      <link>https://kshitij10496.github.io/notes/page-pacing/</link>
+      <pubDate>Tue, 20 Feb 2024 18:31:58 +0530</pubDate>
+      <guid>https://kshitij10496.github.io/notes/page-pacing/</guid>
+      <description>Ref: page pacing&#xA;The best attribute of a physical book is its width.&#xA;I use the metrics of Reading Time (on Firefox Reader View) or Number of Words on web content as a measure of expected commitment.&#xA;Thanks to digital screens destroying our brains, none of us run marathons anymore, either. We&amp;rsquo;re sprinters now. When the flow of words bogs down, we set the text aside and move on to another distraction.</description>
+    </item>
     <item>
       <title>Redowan Delowar: Dev Dependencies</title>
       <link>https://kshitij10496.github.io/notes/dev-dependencies/</link>
