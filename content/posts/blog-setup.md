@@ -7,6 +7,8 @@ tags = ["Hugo", "git", "GitHub"]
 categories = ["Setup", "Blog"]
 +++
 
+Update: I have published an updated [blogging setup in 2024](https://kshitij10496.github.io/posts/blog-setup/). Thus, the content of this post is not entirely accurate anymore.
+
 **Looking to create your personal blog using Hugo and hosting it on GitHub Pages?**  
 
 To be honest, it can sound a bit intimidating and challenging at first.  
