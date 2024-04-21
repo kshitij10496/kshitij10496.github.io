@@ -19,6 +19,7 @@ However, I definitely desire to *Make It Difficult* to do so.
 Here are a links to know a bit more about me:
 
 - Check out [Now](https://kshitij10496.github.io/now) to know more about my current interests.
+- My [Shelf](https://kshitij10496.github.io/shelf) to explore the content I'm consuming.
 - My public [Running Log](https://runnerblues.substack.com/) on Substack.
 
 Feeds
