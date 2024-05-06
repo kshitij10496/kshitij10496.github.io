@@ -28,7 +28,6 @@ Feeds
 - Posts [](https://kshitij10496.github.io/posts/index.xml)
 - All content [](https://kshitij10496.github.io/index.xml)
 
-
 In case you would like to discuss anything, please reach out to me on the social media accounts linked on the [Home page](https://kshitij10496.github.io). Alternately, via [email](mailto:kshitij.saraogi@gmail.com).
 
 Cheers! :beer:
