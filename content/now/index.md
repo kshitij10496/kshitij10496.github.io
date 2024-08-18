@@ -11,18 +11,19 @@ Insipred by Derek Siver's Now Page.[^1]
   - Squat: 60 kg
   - Deadlift: 80 kg (1 x 100 kg)
   - Bench: 45 kg
-  - Rows: 35kg
-  - OHP: 30kg
-  - Pullups: -
+  - Rows: 35 kg
+  - OHP: 30 kg
+  - Pullups: 2
 - Reading 
-  - [Dance Dance Dance](https://en.wikipedia.org/wiki/Dance_Dance_Dance_(novel)?useskin=vector) by Haruki Murakami.
+  - [Contact](https://en.wikipedia.org/wiki/Contact_(novel)?useskin=vector) by Carl Sagan.
   - The Creative Act: A Way of Being by [Rick Rubin](https://en.wikipedia.org/wiki/Rick_Rubin?useskin=vector).
-- Listening
+- Listening.
+  - [Lift Your Skinny Fists Like Antennas to Heaven](https://en.wikipedia.org/wiki/Lift_Your_Skinny_Fists_Like_Antennas_to_Heaven?useskin=vector) by Godspeed You! Black Emperor.
   - [Spirit of Eden](https://en.wikipedia.org/wiki/Spirit_of_Eden?useskin=vector) and [Laughing Stock](https://en.wikipedia.org/wiki/Laughing_Stock?useskin=vector) by Talk Talk.
   - II by [Kiasmos](https://en.wikipedia.org/wiki/Kiasmos?useskin=vector)
 - Watching
   - [Summer Olympics 2024 in Paris](https://en.wikipedia.org/wiki/2024_Summer_Olympics?useskin=vector)
 
-_Updated: 28th July 2024_
+_Updated: 18th August 2024_
 
 [^1]: Derek Siver's movement for [creating a **"now"** page](https://nownownow.com/about)
