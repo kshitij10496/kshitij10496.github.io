@@ -3,12 +3,14 @@ title: "It's Natural to Be Afraid"
 date: 2024-08-18T18:56:29+02:00
 draft: false
 
-slug: "intba" 
+slug: "intba"
 tags: ["running"]
 categories: []
 ---
 
-This article was originally posted on my [Running Log Newsletter](https://runnerblues.substack.com/) on Substack. You can also read it [here](https://open.substack.com/pub/runnerblues/p/its-natural-to-be-afraid?r=4vzb5&utm_campaign=post&utm_medium=web).
+*This article was originally posted on my [Running Log Newsletter](https://runnerblues.substack.com/) on Substack. You can also read it [here](https://open.substack.com/pub/runnerblues/p/its-natural-to-be-afraid?r=4vzb5&utm_campaign=post&utm_medium=web).*
+
+----------------
 
 
 This morning I ran about 22 km, for a weekly total of over 65kms across 6 runs. Louis joined me for the run. It was overcast and humid. Not ideal conditions for running but not too terrible either.
