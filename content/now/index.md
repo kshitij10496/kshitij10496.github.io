@@ -15,18 +15,17 @@ Insipred by Derek Siver's Now Page.[^1]
   - OHP: 30 kg
   - Pullups: 2x5
 - Reading
-  - [Contact](https://en.wikipedia.org/wiki/Contact_(novel)?useskin=vector) by Carl Sagan.
   - [Fooled by Randomness](https://en.wikipedia.org/wiki/Fooled_by_Randomness?useskin=vector) by *Maestro* Nassim Nicholas Taleb.
-  - [Chaos Kings](https://www.goodreads.com/book/show/62918551-chaos-kings) by Scott Patterson.
+  - [The Quants](https://en.wikipedia.org/wiki/The_Quants?useskin=vector) by Scott Patterson.
   - [Option Volatility & Pricing](https://www.goodreads.com/book/show/119373.Option_Volatility_Pricing) by Sheldon Natenberg.
   - The Creative Act: A Way of Being by [Rick Rubin](https://en.wikipedia.org/wiki/Rick_Rubin?useskin=vector).
-
+  - [Contact](https://en.wikipedia.org/wiki/Contact_(novel)?useskin=vector) by Carl Sagan.
 - Listening.
   - **Embers** by [God is an Astronaut](https://en.wikipedia.org/wiki/God_Is_an_Astronaut?useskin=vector).
   - [Lift Your Skinny Fists Like Antennas to Heaven](https://en.wikipedia.org/wiki/Lift_Your_Skinny_Fists_Like_Antennas_to_Heaven?useskin=vector) by Godspeed You! Black Emperor.
   - [Spirit of Eden](https://en.wikipedia.org/wiki/Spirit_of_Eden?useskin=vector) and [Laughing Stock](https://en.wikipedia.org/wiki/Laughing_Stock?useskin=vector) by Talk Talk.
   - II by [Kiasmos](https://en.wikipedia.org/wiki/Kiasmos?useskin=vector)
 
-_Updated: 7th September 2024_
+_Updated: 13th September 2024_
 
 [^1]: Derek Siver's movement for [creating a **"now"** page](https://nownownow.com/about)
