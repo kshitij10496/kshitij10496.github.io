@@ -21,9 +21,9 @@ Here are a links to know a bit more about me:
 - Check out [Now](https://kshitij10496.github.io/now) to know more about my current interests.
 - My [Shelf](https://kshitij10496.github.io/shelf) to explore the content I'm consuming.
 - My public [Running Log](https://runnerblues.substack.com/) on Substack.
-- Influences: [People](https://kshitij10496.github.io//people) who continue to shap my thinking.
+- [Influences](https://kshitij10496.github.io/influences/) that continue to shape my thinking.
 
-Feeds
+### Feeds
 
 - Notes [](https://kshitij10496.github.io/notes/index.xml)
 - Posts [](https://kshitij10496.github.io/posts/index.xml)
