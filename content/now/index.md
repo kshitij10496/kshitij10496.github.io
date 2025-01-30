@@ -11,10 +11,9 @@ Insipred by Derek Siver's Now Page.[^1]
   - Strength Training: [Stronglifts 5x5](https://stronglifts.com/stronglifts-5x5/workout-program/), 3x per week
   - Running: 4x per week
 - Reading:
-  - [The Vegetarian](https://en.wikipedia.org/wiki/The_Vegetarian?useskin=vector) by Han Kang.
-  - [The Little Book of Common Sense Investing](https://en.wikipedia.org/wiki/The_Little_Book_of_Common_Sense_Investing?useskin=vector) by John C. Bogle.
-  - [The Theory of Poker](https://en.wikipedia.org/wiki/The_Theory_of_Poker?useskin=vector) by David Sklanksky.
+  - [Rendezvous with Rama](https://en.wikipedia.org/wiki/Rendezvous_with_Rama) by Arthur C. Clarke.
+  - [The Code Book](https://en.wikipedia.org/wiki/The_Code_Book) by Simon Singh.
 
-*Updated: 3rd Jan 2025*
+*Updated: 30th Jan 2025*
 
 [^1]: Derek Siver's movement for [creating a **"now"** page](https://nownownow.com/about)
