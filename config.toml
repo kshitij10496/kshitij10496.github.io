@@ -1,6 +1,21 @@
 # Hostname (and path) to the root.
 baseURL = "https://kshitij10496.github.io/"
 
+# The directory where Hugo reads the themes from.
+themesDir = "themes"
+
+# Theme to use (located by default in /themes/THEMENAME/).
+theme = "coder"
+
+# The site’s language code used to generate RSS (English American).
+languageCode = "en"
+
+# The default content language.
+defaultContentLanguage = "en"
+
+# Enable rendering of emojis
+enableEmoji = true
+
 # Enable to turn relative URLs into absolute.
 canonifyURLs = true
 
@@ -10,24 +25,16 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 contentDir = "content"
 
 # The directory from where Hugo reads data files.
-dataDir = "data" 
-
-# The default content language.
-defaultContentLanguage = "en"
-
-# Enable rendering of emojis
-enableEmoji = true
+dataDir = "data"
 
 enableGitInfo = true
-
-# The site’s language code used to generate RSS.
-languageCode = "en-gb"
 
 # The directory from where Hugo reads layouts (templates).
 layoutDir = "layouts"
 
 # Default number of pages per page in pagination.
-paginate = 15
+[pagination]
+pagerSize = 15
 
 # The directory to where Hugo will write the final static site (the HTML files etc.).
 publishDir = "public"
@@ -44,104 +51,119 @@ pygmentsCodeFencesGuessSyntax = true
 # A directory or a list of directories from where Hugo reads static files.
 staticDir = "static"
 
-# The directory where Hugo reads the themes from.
-themesDir = "themes"
-
-# Theme to use (located by default in /themes/THEMENAME/).
-theme = "coder"
 
 # Site title.
 title = "kxsh"
 
 [permalinks]
-    posts = "posts/:slug/"
-    default = ":slug/"
+posts = "posts/:slug/"
+default = ":slug/"
 
 [taxonomies]
-   tag = "tags"
-   category = "categories"
+tag = "tags"
+category = "categories"
 
 [params] # theme parameters
-    author = "KSHITIJ SARAOGI" # Author's name.
-    info = "MINIMALIST SOFTWARE DEVELOPER" # Author's job title or info.
-    description = "Kshitij Saraogi's personal website" # Site description.
-    keywords = "blog,developer,personal,minimal,software,engineer,mathematics" # Site keywords.
-    avatarurl = "images/avatar.jpg" # Contain the path of the optional avatar in the static folder.
-    favicon_32 = "images/favicon.png"
-    favicon_16 = "images/favicon.png"
+author = "Kshitij Saraogi"                                                 # Author's name.
+info = "Minimalist Software Developer"                                     # Author's job title or info.
+description = "Kshitij Saraogi's personal website"                         # Site description.
+keywords = "blog,developer,personal,minimal,software,engineer,mathematics" # Site keywords.
+avatarURL = "images/avatar.jpg"                                            # Contain the path of the optional avatar in the static folder.
+favicon_32 = "images/favicon.png"
+favicon_16 = "images/favicon.png"
 
-    # hideFooter = true
-    # footercontent = "Hello Friend" # Add footer content
+# hideFooter = true
+# footercontent = "Hello Friend" # Add footer content
 
-    # Whether you want to hide copyright and credits in the footer.
-    hideCredits = false
-    hideCopyright = false
-    since = 2016
+# Whether you want to hide copyright and credits in the footer.
+hideCredits = false
+hideCopyright = false
+since = 2016
 
-    # Custom CSS
-    custom_css = []
+# Custom CSS
+custom_css = []
 
-    # RTL support
-    rtl = false
+# RTL support
+rtl = false
 
-    colorscheme = "auto"
+colorScheme = "auto"
 
-    enableTwemoji = true
+enableTwemoji = true
 
-    # Social links
-    [[params.social]]
-      name = "Github"
-      icon = "fa fa-github fa-2x"
-      weight = 1
-      url = "https://github.com/kshitij10496/"
-    [[params.social]]
-      name = "Twitter"
-      icon = "fa fa-twitter fa-2x"
-      weight = 2
-      url = "https://twitter.com/kshitij10496/"
-    [[params.social]]
-      name = "LinkedIn"
-      icon = "fa fa-linkedin fa-2x"
-      weight = 3
-      url = "https://www.linkedin.com/in/kshitij10496/"
-    [[params.social]]
-      name = "RSS"
-      icon = "fa fa-solid fa-rss fa-2x"
-      weight = 4
-      url = "https://kshitij10496.github.io/index.xml"
+license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 
-    # Menu links
-    [[menu.main]]
-      name = "ABOUT"
-      weight = 1
-      url = "/about/"
-    [[menu.main]]
-      name = "NOW"
-      weight = 2
-      url = "/now/"
-    [[menu.main]]
-      name = "POSTS"
-      weight = 3
-      url  = "/posts/"
-    [[menu.main]]
-      name = "NOTES"
-      weight = 3
-      url  = "/notes/"
-    [[menu.main]]
-      name = "RÉSUMÉ"
-      weight = 4
-      url = "https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing"
+[params.goatCounter]
+code = "kxsh"
+
+# Social links
+[[params.social]]
+name = "Github"
+icon = "fa fa-github fa-2x"
+weight = 1
+url = "https://github.com/kshitij10496/"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa fa-twitter fa-2x"
+weight = 2
+url = "https://twitter.com/kshitij10496/"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-linkedin fa-2x"
+weight = 3
+url = "https://www.linkedin.com/in/kshitij10496/"
+
+[[params.social]]
+name = "RSS"
+icon = "fa fa-solid fa-rss fa-2x"
+weight = 4
+url = "https://kshitij10496.github.io/index.xml"
+
+# Menu links
+[[menu.main]]
+name = "ABOUT"
+weight = 1
+url = "/about/"
+
+[[menu.main]]
+name = "NOW"
+weight = 2
+url = "/now/"
+
+[[menu.main]]
+name = "POSTS"
+weight = 3
+url = "/posts/"
+
+[[menu.main]]
+name = "NOTES"
+weight = 3
+url = "/notes/"
+
+[[menu.main]]
+name = "RÉSUMÉ"
+weight = 4
+url = "https://drive.google.com/file/d/1-PqZNNRAuCvtquXWbgvBFEyrTRDwesKV/view?usp=sharing"
 
 [privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    disable = true
-  [privacy.instagram]
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = true
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = true
+[privacy.instagram]
+disable = true
+[privacy.x]
+disable = true
+[privacy.vimeo]
+disable = true
+[privacy.youtube]
+disable = true
+
+[markup]
+[markup.highlight]
+noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
