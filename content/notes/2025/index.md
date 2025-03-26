@@ -1,9 +1,9 @@
 ---
 title: "2025"
-date: 2025-03-25T15:59:21+01:00
+date: 2025-01-01T00:00:00+02:00
 draft: false
 
-slug: ""
+slug: "2025"
 tags: []
 categories: []
 ---
