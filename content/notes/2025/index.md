@@ -8,6 +8,18 @@ tags: []
 categories: []
 ---
 
+### July 24
+
+#### [Agentic Engineering | Zed][3]
+
+This series by Zed Industries is worth following.
+I really enjoyed the [episode with Mitchell Hashimoto][4] about his appraoch to using AI Agents while developing software systems. Key takeways include:
+- Thinking more like an architect.
+- Allow AI Agents to use tools to achieve the desired outcome.
+- Comment what the code implementation as a way to build redundancy (AI can flag any discrepancies now)
+
+And I look forward to Steve Yegge's episode next.
+
 ### April 3
 
 #### [Why I Maintain a 17 Year Old Thinkpad][2]
@@ -23,3 +35,5 @@ I have used the `sort.Interface` interface as well as the `sort.Slice` function 
 
 [1]: https://rednafi.com/go/sort_slice/
 [2]: https://pilledtexts.com/why-i-use-a-17-year-old-thinkpad/
+[3]: https://zed.dev/agentic-engineering#leverage
+[4]: https://www.youtube.com/watch?v=XyQ4ZTS5dGw
