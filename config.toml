@@ -1,5 +1,5 @@
 # Hostname (and path) to the root.
-baseURL = "https://kshitij10496.github.io/"
+baseURL = "https://kxsh.dev/"
 
 # The directory where Hugo reads the themes from.
 themesDir = "themes"
@@ -118,7 +118,7 @@ url = "https://www.linkedin.com/in/kshitij10496/"
 name = "RSS"
 icon = "fa fa-solid fa-rss fa-2x"
 weight = 4
-url = "https://kshitij10496.github.io/index.xml"
+url = "https://kxsh.dev/index.xml"
 
 # Menu links
 [[menu.main]]
