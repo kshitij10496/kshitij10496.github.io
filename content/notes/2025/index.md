@@ -7,6 +7,13 @@ slug: "2025"
 tags: []
 categories: []
 ---
+
+### October 6
+
+#### [The Runner's Routine | YouTube][8]
+
+Beautiful, motivating video yet again from Tracksmith.
+
 ### August 24
 
 #### [The Only Video You Need to Get Started with Neovim][7]
@@ -60,3 +67,4 @@ I have used the `sort.Interface` interface as well as the `sort.Slice` function 
 [5]: https://www.youtube.com/watch?v=XyQ4ZTS5dGw
 [6]: https://web.archive.org/web/20250823111049/https://herman.bearblog.dev/exercise/#expand
 [7]: https://youtu.be/m8C0Cq9Uv9o?si=YCi7qHrvJ64-cPR7
+[8]: https://www.youtube.com/watch?v=d1KqXECNCGM
